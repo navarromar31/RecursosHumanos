@@ -13,8 +13,5 @@ namespace WebApplication1.Models
         [Required(ErrorMessage = "La descripcion de la institucion es obligatoria")]
         public string DescripcionInstitucion { get; set; }
 
-        [Required(ErrorMessage = "El estado de la institucion es obligatoria")]
-        public string EstadoInstitucion { get; set; }
-
     }
 }
