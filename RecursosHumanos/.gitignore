@@ -1,0 +1,11 @@
+/bin
+/obj
+/RecursosHumanos/.vs
+/RecursosHumanos/obj
+/*.log.1
+/*.log.*
+*.log
+*.db
+.vs/
+Publish/
+.cache
