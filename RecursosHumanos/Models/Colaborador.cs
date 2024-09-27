@@ -8,7 +8,7 @@ namespace WebApplication1.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage = "La cedula del colaborador es obligatorio")]
-        public string CedulaColaborador { get; set; }
+        public string? CedulaColaborador { get; set; }
 
         [Required(ErrorMessage = "El nombre del colaborador es obligatorio")]
         public string NombreColaborador { get; set; }
