@@ -16,6 +16,8 @@ namespace RecursosHumanos.Models
 
         public string TipoEvaluacion { get; set; }
 
+        public List<Pregunta> Preguntas { get; set; } = new();
+
     }
 
 }
