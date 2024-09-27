@@ -14,13 +14,6 @@ namespace RecursosHumanos.Models
         [Required(ErrorMessage = "La descripcion de la evaluacion es obligatoria")]
         public string Descripcion { get; set; }
 
-      
-        public int ColaboradorEvaluado { get; set; }
-        [ForeignKey("IdColaboradorEvaluado")]
-
-        public int ColaboradorEvaluador { get; set; }
-        [ForeignKey("IdColaboradorEvaluador")]
-
         public string TipoEvaluacion { get; set; }
 
     }

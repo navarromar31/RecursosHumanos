@@ -17,7 +17,6 @@ namespace RecursosHumanos.Models
         public int ColaboradorEvaluador { get; set; }
         [ForeignKey("IdColaboradorEvaluador")]
 
-        [Required(ErrorMessage = "La descripcion de la respuesta es obligatoria")]
-        public string DescripcionRespuesta { get; set; }
+        public int ValorRespuesta { get; set; }
     }
 }
