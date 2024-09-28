@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using WebApplication1.Models;
 
 namespace ProyectoYo.Models
 {
@@ -18,12 +19,10 @@ namespace ProyectoYo.Models
         public int MaxPersonas { get; set;  }
         public string Modalidad { get; set; }
         
-        //una vez subido al main se descomenta, ya que se relaciona con colaborador
-
-       /* public int ColaboradorId    { get; set; }
+        public int ColaboradorId    { get; set; }
         [ForeignKey("ColaboradorId")]
         public virtual Colaborador? Colaborador { get; set; }
-       */
+      
 
     }
 }

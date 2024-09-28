@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using WebApplication1.Models;
 
 namespace RecursosHumanos.Models
 {
@@ -14,8 +15,9 @@ namespace RecursosHumanos.Models
         public int ColaboradorEvaluador { get; set; }
         [ForeignKey("IdColaboradorEvaluador")]
 
-        public int Evaluacion{ get; set; }
-        [ForeignKey("IdEvaluacion")]
+        public int EvaluacionId { get; set; }
+        [ForeignKey("EvaluacionId")]
+        public virtual Evaluacion? Evaluacion { get; set; }
 
     }
 }
