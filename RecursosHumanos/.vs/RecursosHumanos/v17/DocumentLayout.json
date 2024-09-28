@@ -63,7 +63,7 @@
               "RelativeDocumentMoniker": "Models\\ViewModels\\ColaboradorVM.cs",
               "ToolTip": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Models\\ViewModels\\ColaboradorVM.cs",
               "RelativeToolTip": "Models\\ViewModels\\ColaboradorVM.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T20:40:34.912Z",
               "EditorCaption": ""
@@ -78,8 +78,7 @@
               "RelativeToolTip": "Models\\Respuesta.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T00:30:40.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-27T00:30:40.667Z"
             },
             {
               "$type": "Document",
@@ -91,8 +90,7 @@
               "RelativeToolTip": "Datos\\AplicationDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIAwwAIAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T00:53:40.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-27T00:53:40.761Z"
             },
             {
               "$type": "Document",
@@ -102,7 +100,7 @@
               "RelativeDocumentMoniker": "Controllers\\ColaboradorController.cs",
               "ToolTip": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\ColaboradorController.cs",
               "RelativeToolTip": "Controllers\\ColaboradorController.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAAAGEAAAANAAAA",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAIwIkAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T16:40:01.599Z",
               "EditorCaption": ""
@@ -117,8 +115,7 @@
               "RelativeToolTip": "RecursosHumanos.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-28T02:47:30.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T02:47:30.757Z"
             },
             {
               "$type": "Document",

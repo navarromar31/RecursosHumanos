@@ -5,7 +5,7 @@ namespace RecursosHumanos.Models.ViewModels
     public class ColaboradorVM
     {
 
-        public ColaboradorVM Colaborador { get; set; }
+        public Colaborador Colaborador { get; set; }
 
         public IEnumerable<SelectListItem>? Puesto { get; set; }
         public IEnumerable<SelectListItem>? Departamento { get; set; }

@@ -88,7 +88,6 @@ namespace RecursosHumanos.Controllers
             }
             else
             {
-                /************************************************BUSCAR EL ERROR************************************************/
                 colaboradorVM.Colaborador = _db.colaborador.Find(Id);
                 if (colaboradorVM == null)
                 {
@@ -122,8 +121,6 @@ namespace RecursosHumanos.Controllers
                     }
 
                     colaboradorVM.Colaborador.ImagenUrl = fileName + extension;
-
-                    /*********************************************************Encontrar el error***********************************************************/
                     _db.colaborador.Add(colaboradorVM.Colaborador); //Si el modelo no existe, lo crea
                 }
                 else
@@ -162,7 +159,6 @@ namespace RecursosHumanos.Controllers
                     {
                         colaboradorVM.Colaborador.ImagenUrl = objColaborador.ImagenUrl;
                     }
-                    /**********************************************************Encontrar el error******************************************************/
                     _db.colaborador.Update(colaboradorVM.Colaborador);
                 }
 
