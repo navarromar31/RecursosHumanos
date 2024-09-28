@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj": {}
+    "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj": {
+    "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj",
+        "projectUniqueName": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj",
         "projectName": "RecursosHumanos",
-        "projectPath": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj",
-        "packagesPath": "C:\\Users\\sasar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\obj\\",
+        "projectPath": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj",
+        "packagesPath": "C:\\Users\\arias\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\sasar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\arias\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -76,6 +72,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.33, 6.0.33]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.33, 6.0.33]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.33, 6.0.33]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.33, 6.0.33]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -84,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
