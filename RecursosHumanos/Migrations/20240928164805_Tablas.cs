@@ -46,7 +46,8 @@ namespace RecursosHumanos.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NombreInstitucion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DescripcionInstitucion = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    DescripcionInstitucion = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImagenUrlIns = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -115,6 +116,7 @@ namespace RecursosHumanos.Migrations
                     Apellido1 = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Apellido2 = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CorreoColaborador = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImagenUrlCol = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IdPuesto = table.Column<int>(type: "int", nullable: false),
                     PuestoId = table.Column<int>(type: "int", nullable: true),
                     IdInstitucion = table.Column<int>(type: "int", nullable: false),
@@ -153,6 +155,7 @@ namespace RecursosHumanos.Migrations
                     MinPersonas = table.Column<int>(type: "int", nullable: false),
                     MaxPersonas = table.Column<int>(type: "int", nullable: false),
                     Modalidad = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImagenUrlCap = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ColaboradorId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

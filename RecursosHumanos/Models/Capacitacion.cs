@@ -18,7 +18,8 @@ namespace ProyectoYo.Models
         public int MinPersonas  { get; set; }
         public int MaxPersonas { get; set;  }
         public string Modalidad { get; set; }
-        
+        public string? ImagenUrlCap { get; set; }
+
         public int ColaboradorId    { get; set; }
         [ForeignKey("ColaboradorId")]
         public virtual Colaborador? Colaborador { get; set; }

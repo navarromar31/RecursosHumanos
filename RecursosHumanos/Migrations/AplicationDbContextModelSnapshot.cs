@@ -37,6 +37,9 @@ namespace RecursosHumanos.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImagenUrlCap")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("MaxPersonas")
                         .HasColumnType("int");
 
@@ -201,6 +204,9 @@ namespace RecursosHumanos.Migrations
                     b.Property<int>("IdPuesto")
                         .HasColumnType("int");
 
+                    b.Property<string>("ImagenUrlCol")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("InstitucionId")
                         .HasColumnType("int");
 
@@ -253,6 +259,9 @@ namespace RecursosHumanos.Migrations
 
                     b.Property<string>("DescripcionInstitucion")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImagenUrlIns")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NombreInstitucion")

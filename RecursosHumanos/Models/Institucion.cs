@@ -12,6 +12,7 @@ namespace WebApplication1.Models
 
         [Required(ErrorMessage = "La descripcion de la institucion es obligatoria")]
         public string DescripcionInstitucion { get; set; }
+        public string? ImagenUrlIns { get; set; }
 
     }
 }

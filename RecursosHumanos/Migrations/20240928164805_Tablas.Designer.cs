@@ -12,7 +12,7 @@ using RecursosHumanos.Datos;
 namespace RecursosHumanos.Migrations
 {
     [DbContext(typeof(AplicationDbContext))]
-    [Migration("20240928035516_Tablas")]
+    [Migration("20240928164805_Tablas")]
     partial class Tablas
     {
         /// <inheritdoc />
@@ -38,6 +38,9 @@ namespace RecursosHumanos.Migrations
 
                     b.Property<string>("Duracion")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImagenUrlCap")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("MaxPersonas")
@@ -204,6 +207,9 @@ namespace RecursosHumanos.Migrations
                     b.Property<int>("IdPuesto")
                         .HasColumnType("int");
 
+                    b.Property<string>("ImagenUrlCol")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("InstitucionId")
                         .HasColumnType("int");
 
@@ -256,6 +262,9 @@ namespace RecursosHumanos.Migrations
 
                     b.Property<string>("DescripcionInstitucion")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImagenUrlIns")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NombreInstitucion")
