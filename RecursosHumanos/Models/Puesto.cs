@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace WebApplication1.Models
+namespace RecursosHumanos.Models
 {
     public class Puesto
     {

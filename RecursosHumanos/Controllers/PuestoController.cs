@@ -3,27 +3,25 @@ using RecursosHumanos.Datos;
 using RecursosHumanos.Models;
 
 namespace RecursosHumanos.Controllers
-
 {
-    public class DepartamentoController : Controller
+    public class PuestoController : Controller
     {
 
         private readonly AplicationDbContext _db;
 
-        public DepartamentoController(AplicationDbContext db)
+        public PuestoController(AplicationDbContext db)
         {
             _db = db;
         }
 
-
         public IActionResult Index()
         {
-            IEnumerable<Departamento> lista = _db.departamento;
+            IEnumerable<Puesto> lista = _db.puesto;
 
             return View(lista);
         }
 
-        //Get
+        //CREAR
 
         public IActionResult Crear()
         {
@@ -33,17 +31,19 @@ namespace RecursosHumanos.Controllers
         //post
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Crear(Departamento departamento)
+        public IActionResult Crear(Puesto puesto)
         {
             if (ModelState.IsValid)
             {
-                _db.departamento.Add(departamento);
+                _db.puesto.Add(puesto);
                 _db.SaveChanges();
                 return RedirectToAction(nameof(Index));
 
             }
-            return View(departamento);
+            return View(puesto);
         }
+
+        //EDITAR
 
         public IActionResult Editar(int? Id)
         {
@@ -53,7 +53,7 @@ namespace RecursosHumanos.Controllers
 
             }
 
-            var obj = _db.departamento.Find(Id);
+            var obj = _db.puesto.Find(Id);
             if (obj == null)
             {
                 return NotFound();
@@ -64,17 +64,19 @@ namespace RecursosHumanos.Controllers
         //post
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Editar(Departamento departamento)
+        public IActionResult Editar(Puesto puesto)
         {
             if (ModelState.IsValid)
             {
-                _db.departamento.Update(departamento);
+                _db.puesto.Update(puesto);
                 _db.SaveChanges();
                 return RedirectToAction(nameof(Index));
 
             }
-            return View(departamento);
+            return View(puesto);
         }
+
+        //ELIMINAR
 
         public IActionResult Eliminar(int? Id)
         {
@@ -84,7 +86,7 @@ namespace RecursosHumanos.Controllers
 
             }
 
-            var obj = _db.departamento.Find(Id);
+            var obj = _db.puesto.Find(Id);
             if (obj == null)
             {
                 return NotFound();
@@ -95,15 +97,16 @@ namespace RecursosHumanos.Controllers
         //post
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Eliminar(Departamento departamento)
+        public IActionResult Eliminar(Puesto puesto)
         {
             if (ModelState.IsValid)
             {
                 return NotFound();
             }
-            _db.departamento.Remove(departamento);
+            _db.puesto.Remove(puesto);
             _db.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
+
     }
 }

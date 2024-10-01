@@ -1,11 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-namespace WebApplication1.Models
+namespace RecursosHumanos.Models
 {
     public class Colaborador
     {
         [Key]
-        public int Id { get; set; }
+        public int? Id { get; set; }
 
         [Required(ErrorMessage = "La cedula del colaborador es obligatorio")]
         public string? CedulaColaborador { get; set; }
@@ -22,6 +22,8 @@ namespace WebApplication1.Models
         [Required(ErrorMessage = "El correo del colaborador es obligatorio")]
         public string CorreoColaborador { get; set; }
         public string? ImagenUrlCol { get; set; }
+
+        public string? ImagenUrl { get; set; }
 
         [Required(ErrorMessage = "El colaborador debe ser asignado a un puesto obligatoriamente")]
         public int IdPuesto { get; set; }

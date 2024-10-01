@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProyectoYo.Models;
 using RecursosHumanos.Models;
-using WebApplication1.Models;
 namespace RecursosHumanos.Datos
 {
     public class AplicationDbContext : DbContext
