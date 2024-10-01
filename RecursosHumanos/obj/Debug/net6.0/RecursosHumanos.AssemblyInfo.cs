@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecursosHumanos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1b5317ae97e38fcfd653c1de1f92497275c6295")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76e5fa592624a384898dc88db22f122a06bbf9ff")]
->>>>>>> Controllers_Colaborador_y_Puesto
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a74554359990d24e3a5108dc77509db5e59731d9")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecursosHumanos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecursosHumanos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

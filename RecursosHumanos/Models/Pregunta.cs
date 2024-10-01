@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using WebApplication1.Models;
-using ProyectoYo.Models;
+using RecursosHumanos.Models;
 
 namespace RecursosHumanos.Models
 {
