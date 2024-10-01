@@ -3,40 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\sasar\\documents\\github\\recursoshumanos\\recursoshumanos\\controllers\\respuestacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\respuestacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\sasar\\documents\\github\\recursoshumanos\\recursoshumanos\\controllers\\preguntacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\preguntacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\sasar\\documents\\github\\recursoshumanos\\recursoshumanos\\models\\viewmodels\\respuestavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:models\\viewmodels\\respuestavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\sasar\\documents\\github\\recursoshumanos\\recursoshumanos\\models\\pregunta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:models\\pregunta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\sasar\\documents\\github\\recursoshumanos\\recursoshumanos\\controllers\\departamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\departamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\sasar\\documents\\github\\recursoshumanos\\recursoshumanos\\models\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:models\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\sasar\\documents\\github\\recursoshumanos\\recursoshumanos\\models\\viewmodels\\preguntavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:models\\viewmodels\\preguntavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\sasar\\documents\\github\\recursoshumanos\\recursoshumanos\\models\\capacitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:models\\capacitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\sasar\\documents\\github\\recursoshumanos\\recursoshumanos\\models\\evaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:models\\evaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\sasar\\documents\\github\\recursoshumanos\\recursoshumanos\\datos\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:datos\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\sasar\\documents\\github\\recursoshumanos\\recursoshumanos\\controllers\\respuestacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\respuestacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\sasar\\documents\\github\\recursoshumanos\\recursoshumanos\\models\\respuesta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:models\\respuesta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,123 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DepartamentoController.cs",
-              "DocumentMoniker": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\DepartamentoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DepartamentoController.cs",
-              "ToolTip": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\DepartamentoController.cs",
-              "RelativeToolTip": "Controllers\\DepartamentoController.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAAAGoAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T23:05:18.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Departamento.cs",
-              "DocumentMoniker": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Models\\Departamento.cs",
-              "RelativeDocumentMoniker": "Models\\Departamento.cs",
-              "ToolTip": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Models\\Departamento.cs",
-              "RelativeToolTip": "Models\\Departamento.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T23:05:12.815Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Capacitacion.cs",
-              "DocumentMoniker": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Models\\Capacitacion.cs",
-              "RelativeDocumentMoniker": "Models\\Capacitacion.cs",
-              "ToolTip": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Models\\Capacitacion.cs",
-              "RelativeToolTip": "Models\\Capacitacion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T22:10:20.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PreguntaController.cs",
-              "DocumentMoniker": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\PreguntaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PreguntaController.cs",
-              "ToolTip": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\PreguntaController.cs",
-              "RelativeToolTip": "Controllers\\PreguntaController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAcwI0AAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T21:24:28.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PreguntaVM.cs",
-              "DocumentMoniker": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Models\\ViewModels\\PreguntaVM.cs",
-              "RelativeDocumentMoniker": "Models\\ViewModels\\PreguntaVM.cs",
-              "ToolTip": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Models\\ViewModels\\PreguntaVM.cs",
-              "RelativeToolTip": "Models\\ViewModels\\PreguntaVM.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T21:44:36.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Pregunta.cs",
               "DocumentMoniker": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Models\\Pregunta.cs",
               "RelativeDocumentMoniker": "Models\\Pregunta.cs",
               "ToolTip": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Models\\Pregunta.cs",
               "RelativeToolTip": "Models\\Pregunta.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAcwBMAAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T00:30:24.186Z",
+              "WhenOpened": "2024-10-01T01:21:05.334Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Evaluacion.cs",
-              "DocumentMoniker": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Models\\Evaluacion.cs",
-              "RelativeDocumentMoniker": "Models\\Evaluacion.cs",
-              "ToolTip": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Models\\Evaluacion.cs",
-              "RelativeToolTip": "Models\\Evaluacion.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "Respuesta.cs",
+              "DocumentMoniker": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Models\\Respuesta.cs",
+              "RelativeDocumentMoniker": "Models\\Respuesta.cs",
+              "ToolTip": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Models\\Respuesta.cs",
+              "RelativeToolTip": "Models\\Respuesta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T21:52:26.508Z",
+              "WhenOpened": "2024-10-01T01:10:28.562Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Datos\\AplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Datos\\AplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Datos\\AplicationDbContext.cs",
-              "RelativeToolTip": "Datos\\AplicationDbContext.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "RespuestaVM.cs",
+              "DocumentMoniker": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Models\\ViewModels\\RespuestaVM.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\RespuestaVM.cs",
+              "ToolTip": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Models\\ViewModels\\RespuestaVM.cs",
+              "RelativeToolTip": "Models\\ViewModels\\RespuestaVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T21:55:13.562Z",
+              "WhenOpened": "2024-10-01T01:10:24.237Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
+              "Title": "PreguntaController.cs",
+              "DocumentMoniker": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\PreguntaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PreguntaController.cs",
+              "ToolTip": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\PreguntaController.cs",
+              "RelativeToolTip": "Controllers\\PreguntaController.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAQwJEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T00:49:47.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "RespuestaController.cs",
               "DocumentMoniker": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\RespuestaController.cs",
               "RelativeDocumentMoniker": "Controllers\\RespuestaController.cs",
               "ToolTip": "C:\\Users\\sasar\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\RespuestaController.cs",
               "RelativeToolTip": "Controllers\\RespuestaController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAswJIAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T21:25:12.86Z",
+              "WhenOpened": "2024-10-01T00:49:44.957Z",
               "EditorCaption": ""
             }
           ]
