@@ -10,12 +10,12 @@ using RecursosHumanos.Models;
 
 namespace RecursosHumanos.Controllers
 {
-    public class CapacitacionCrontroller : Controller
+    public class CapacitacionController : Controller
     {
 
         private readonly AplicationDbContext _db;
         private readonly IWebHostEnvironment _webHostEnvironment;
-        public CapacitacionCrontroller(AplicationDbContext db, IWebHostEnvironment webHostEnvironment)
+        public CapacitacionController(AplicationDbContext db, IWebHostEnvironment webHostEnvironment)
         {
             _db = db;
             _webHostEnvironment = webHostEnvironment;
