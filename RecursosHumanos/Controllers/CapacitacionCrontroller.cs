@@ -128,5 +128,46 @@ namespace RecursosHumanos.Controllers
             return View(capacitacionVM); //Si algo no es valido, retorna a la vista, el modleo tal y como estaba
 
         }
+
+        //METODO GET
+        public IActionResult Eliminar(int? Id)
+        {
+            if (Id == null || Id == 0)
+            { return NotFound(); }
+
+            Capacitacion capacitacion = _db.capacitacion.Include(c => c.Colaborador)
+            .FirstOrDefault(p => p.Id == Id);
+
+            if (capacitacion == null)
+            {
+                return NotFound();
+            }
+            return View(capacitacion);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Eliminar(Capacitacion capacitacion)
+        {
+            if (capacitacion == null)
+            {
+                return NotFound();
+            }
+
+            string upload = _webHostEnvironment.WebRootPath + WC.ImagenRuta;
+            var anteriorFile = Path.Combine(upload, capacitacion.ImagenUrlCap);
+
+            //Si la tiene, la borra
+            if (System.IO.File.Exists(anteriorFile))
+            {
+                System.IO.File.Delete(anteriorFile);
+            }
+            _db.capacitacion.RemoveRange(capacitacion);
+            _db.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+
+
     }
 }
