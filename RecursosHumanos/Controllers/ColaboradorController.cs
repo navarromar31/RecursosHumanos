@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using RecursosHumanos.Datos;
@@ -33,6 +34,8 @@ namespace RecursosHumanos.Controllers
 
         public IActionResult Insertar(int? Id)
         {
+            //******************************* COMIENZA EL VIEWBAG *******************************
+
             /*IEnumerable<SelectListItem> puestoDropDown = _db.puesto.Select(
                 p => new SelectListItem
                 {
@@ -58,6 +61,8 @@ namespace RecursosHumanos.Controllers
             ViewBag.puestoDropDown = institucionDropDown;
 
             Colaborador colaborador = new Colaborador();*/
+
+            //******************************** FINALIZA EL VIEWBAG *********************************
             
             ColaboradorVM colaboradorVM = new ColaboradorVM
             {
@@ -171,7 +176,48 @@ namespace RecursosHumanos.Controllers
 
         }
 
+        //***************************************************** ELIMINAR PRODUCTO **************************************************//
 
+        public IActionResult Eliminar(int? Id)
+        {
+            if (Id == null || Id == 0)
+            {
+                return NotFound();
 
+            }
+            Colaborador colaborador = _db.colaborador.Include(p => p.Puesto)
+                .Include(d => d.Departamento).FirstOrDefault(p => p.Id == Id);
+            if (colaborador == null)
+            {
+                return NotFound();
+
+            }
+            return View(colaborador);
+        }
+
+        // CIERRE ELIMINAR
+        //METODO POST
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Eliminar(Colaborador colaborador)
+        {
+            if (colaborador == null)
+            {
+                return NotFound();
+
+            }
+            string upload = _webHostEnvironment.WebRootPath + WC.ImagenRuta;
+            var anteriorFile = Path.Combine(upload, colaborador.ImagenUrl);
+            if (System.IO.File.Exists(anteriorFile))
+            {
+
+                System.IO.File.Delete(anteriorFile);
+            }
+            _db.colaborador.Remove(colaborador);
+            _db.SaveChanges();
+            return RedirectToAction(nameof(Index));
+
+        }
     }
 }
