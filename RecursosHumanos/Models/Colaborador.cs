@@ -22,8 +22,7 @@ namespace RecursosHumanos.Models
         [Required(ErrorMessage = "El correo del colaborador es obligatorio")]
         public string CorreoColaborador { get; set; }
         public string? ImagenUrlCol { get; set; }
-
-        public string? ImagenUrl { get; set; }
+        public bool? EstadoColaborador { get; set; }
 
         [Required(ErrorMessage = "El colaborador debe ser asignado a un puesto obligatoriamente")]
         public int IdPuesto { get; set; }

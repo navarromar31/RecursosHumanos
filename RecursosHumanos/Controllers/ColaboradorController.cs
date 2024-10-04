@@ -125,7 +125,7 @@ namespace RecursosHumanos.Controllers
                         files[0].CopyTo(fileStream);
                     }
 
-                    colaboradorVM.Colaborador.ImagenUrl = fileName + extension;
+                    colaboradorVM.Colaborador.ImagenUrlCol = fileName + extension;
                     _db.colaborador.Add(colaboradorVM.Colaborador); //Si el modelo no existe, lo crea
                 }
                 else
@@ -144,7 +144,7 @@ namespace RecursosHumanos.Controllers
                         string fileName = Guid.NewGuid().ToString();//Asingnar a la imagen un nombre automaticamente
                         string extension = Path.GetExtension(files[0].FileName);//Extrae la extension para que se gaurde con la imagen de la respectiva extension
 
-                        var anteriorFile = Path.Combine(upload, objColaborador.ImagenUrl + extension);
+                        var anteriorFile = Path.Combine(upload, objColaborador.ImagenUrlCol + extension);
 
                         //Verificar si el producto tiene una iamgen asociada
                         if (System.IO.File.Exists(anteriorFile))
@@ -158,11 +158,11 @@ namespace RecursosHumanos.Controllers
                         }
 
                         //actualizamos nuestro producto con la nueva imagen
-                        colaboradorVM.Colaborador.ImagenUrl = fileName + extension;
+                        colaboradorVM.Colaborador.ImagenUrlCol = fileName + extension;
                     }
                     else //Mantiene lamisma imagen
                     {
-                        colaboradorVM.Colaborador.ImagenUrl = objColaborador.ImagenUrl;
+                        colaboradorVM.Colaborador.ImagenUrlCol = objColaborador.ImagenUrlCol;
                     }
                     _db.colaborador.Update(colaboradorVM.Colaborador);
                 }
@@ -208,7 +208,7 @@ namespace RecursosHumanos.Controllers
 
             }
             string upload = _webHostEnvironment.WebRootPath + WC.ImagenRuta;
-            var anteriorFile = Path.Combine(upload, colaborador.ImagenUrl);
+            var anteriorFile = Path.Combine(upload, colaborador.ImagenUrlCol);
             if (System.IO.File.Exists(anteriorFile))
             {
 
