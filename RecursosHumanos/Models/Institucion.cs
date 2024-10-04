@@ -12,7 +12,9 @@ namespace RecursosHumanos.Models
 
         [Required(ErrorMessage = "La descripcion de la institucion es obligatoria")]
         public string DescripcionInstitucion { get; set; }
-        public string? ImagenUrlIns { get; set; }
+        public string? ImagenUrlInstitucion{ get; set; }
+
+        public string Estado { get; set; }
 
     }
 }

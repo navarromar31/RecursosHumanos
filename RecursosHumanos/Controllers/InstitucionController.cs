@@ -1,171 +1,195 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
+
+using RecursosHumanos.Models;
 using RecursosHumanos.Datos;
-using RecursosHumanos.Models;
-using RecursosHumanos.Models.ViewModels;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using RecursosHumanos.Models;
+using NuGet.Packaging.Signing;
+using System.Collections;
+
 
 namespace RecursosHumanos.Controllers
 {
     public class InstitucionController : Controller
     {
-
+        //Instancia del db context
         private readonly AplicationDbContext _db;
         private readonly IWebHostEnvironment _webHostEnvironment;
+        //Metodo constructor que recibe parametros de la clase DBContext
         public InstitucionController(AplicationDbContext db, IWebHostEnvironment webHostEnvironment)
         {
             _db = db;
             _webHostEnvironment = webHostEnvironment;
         }
 
+        //Metodos que se ejecutan desde la vista 
         public IActionResult Index()
         {
-            IEnumerable<Institucion> lista = _db.institucion
-                .Include(c => c.Institucion);
+            IEnumerable<Institucion> lista = _db.instituciones; //Accede a las categorias por medio del _db y trae a todos los objetos del modelo categoria y los almacena en la lista
+
 
             return View(lista);
         }
 
-        public IActionResult Upsert(int? Id)
+        //Get del action crear
+        public IActionResult Crear()
         {
-            InstitucionVM institucionVM = new InstitucionVM()
-            {
-                Institucion = new Institucion(),
-                InstitucionLista = _db.institucion.Select(c => new SelectListItem
-                {
-                    Text = c.NombreInstitucion,
-                    Value = c.Id.ToString()
-                }),
+            return View();
+        }
 
-            };
+        //Post Envia informacion
+        [HttpPost]
+        [ValidateAntiForgeryToken] //Datos encriptados
+        public IActionResult Crear(Institucion institucion)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.instituciones.Add(institucion);//Guarde los datos en la BD
+                _db.SaveChanges();//Se salven los datos
+                return RedirectToAction(nameof(Index));//Una vez los datos fueron insertados, muestre el index con la categoria insertada
+            }
+            return View(institucion);
+        }
 
-            if (Id == null)
+
+
+        //Get del action EDITAR
+        public IActionResult Editar(int? Id) //Recibe el id de la categoria a editar, puede ser que venga nuelo, por eso el ?
+        {
+            if (Id == null || Id == 0)
+            { return View(); }
+
+            var obj = _db.instituciones.Find(Id); //Busque la categoria con el id y traiga el objeto de ese id
+            if (obj == null)
             {
-                return View(institucionVM);
+                return NotFound();
             }
-            else
+            return View(obj);
+
+        }
+
+        //Post Envia informacion
+        [HttpPost]
+        [ValidateAntiForgeryToken] //Datos encriptados
+        public IActionResult Editar(Institucion institucion)
+        {
+            if (ModelState.IsValid)
             {
-                institucionVM.Institucion = _db.institucion.Find(Id);
-                if (institucionVM == null)
-                {
-                    return NotFound();
-                }
-                return View(institucionVM);
+                _db.instituciones.Update(institucion);//Actualiza los datos en la BD
+                _db.SaveChanges();//Se salven los datos
+                return RedirectToAction(nameof(Index));//Una vez los datos fueron insertados, muestre el index con la categoria insertada
             }
+
+            return View(institucion);
+        }
+
+
+        //Get del action Eliminar
+        public IActionResult Eliminar(int? Id) //Recibe el id de la categoria a eliminar, puede ser que venga nuelo, por eso el ?
+        {
+            if (Id == null || Id == 0)
+            { return View(); }
+
+            var obj = _db.instituciones.Find(Id); //Busque la categoria con el id y traiga el objeto de ese id
+            if (obj == null)
+            {
+                return NotFound();
+            }
+            return View(obj);
+
+        }
+
+        //Post Envia informacion
+        [HttpPost]
+        [ValidateAntiForgeryToken] //Datos encriptados
+        public IActionResult Eliminar(Institucion institucion)
+        {
+            if (ModelState.IsValid)
+            {
+                return NotFound();
+            }
+
+            _db.instituciones.Remove(institucion);//Actualiza los datos en la BD
+            _db.SaveChanges();//Se salven los datos
+            return RedirectToAction(nameof(Index));//Una vez los datos fueron insertados, muestre el index con la categoria insertada
+
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Upsert(InstitucionVM institucionVM)
+        public IActionResult UpsertInstitucion(Institucion institucion)
         {
             if (ModelState.IsValid)
             {
-                var files = HttpContext.Request.Form.Files;
-                string webRootPath = _webHostEnvironment.WebRootPath;
+                var files = HttpContext.Request.Form.Files; // Archivos enviados desde la vista
+                string webRootPath = _webHostEnvironment.WebRootPath; // Ruta física para las imágenes
 
-                if (institucionVM.Institucion.Id == 0)
+                if (institucion.Id == 0)
                 {
-                    string upload = webRootPath + WC.ImagenRuta;
-                    string fileName = Guid.NewGuid().ToString();
-                    string extension = Path.GetExtension(files[0].FileName);
+                    // NUEVA INSTITUCIÓN
+                    string upload = webRootPath + WC.ImagenRuta; // Repositorio de imágenes
+                    string fileName = Guid.NewGuid().ToString(); // Nombre único para la imagen
+                    string extension = Path.GetExtension(files[0].FileName); // Obtener la extensión de la imagen
 
-                    //guardar imagen
+                    // Guardar la imagen
                     using (var fileStream = new FileStream(Path.Combine(upload, fileName + extension), FileMode.Create))
                     {
                         files[0].CopyTo(fileStream);
                     }
 
-                    institucionVM.Institucion.ImagenUrlCap = fileName + extension;
-                    _db.institucion.Add(institucionVM.Institucion);
+                    institucion.ImagenUrlInstitucion = fileName + extension; // Asignar el nombre y extensión a la propiedad
+                    _db.instituciones.Add(institucion); // Añadir la nueva institución
                 }
                 else
                 {
+                    // ACTUALIZAR INSTITUCIÓN
+                    var objInstitucion = _db.instituciones.AsNoTracking().FirstOrDefault(i => i.Id == institucion.Id);
 
-
-                    var objInstitucion = _db.institucion.AsNoTracking().FirstOrDefault(p => p.Id == institucionVM.Institucion.Id);
-
-
-
+                    // Si se envió una nueva imagen, actualizarla
                     if (files.Count > 0)
                     {
-                        string upload = webRootPath + WC.ImagenRuta;
-                        string fileName = Guid.NewGuid().ToString();
-                        string extension = Path.GetExtension(files[0].FileName);
+                        string upload = webRootPath + WC.ImagenRuta; // Ruta de las imágenes
+                        string fileName = Guid.NewGuid().ToString(); // Nombre único para la imagen
+                        string extension = Path.GetExtension(files[0].FileName); // Obtener la extensión de la nueva imagen
 
-                        var anteriorFile = Path.Combine(upload, objInstitucion.ImagenUrlCap + extension);
+                        var anteriorFile = Path.Combine(upload, objInstitucion.ImagenUrlInstitucion);
 
-
+                        // Verificar si existe una imagen anterior y eliminarla
                         if (System.IO.File.Exists(anteriorFile))
                         {
                             System.IO.File.Delete(anteriorFile);
                         }
 
+                        // Guardar la nueva imagen
                         using (var fileStream = new FileStream(Path.Combine(upload, fileName + extension), FileMode.Create))
                         {
                             files[0].CopyTo(fileStream);
                         }
 
-
-                        institucionVM.InstitucionImagenUrlCap = fileName + extension;
+                        institucion.ImagenUrlInstitucion = fileName + extension; // Asignar la nueva imagen
                     }
                     else
                     {
-                        institucionVM.Institucion.ImagenUrlCap = objInstitucion.ImagenUrlCap;
+                        // Mantener la imagen anterior
+                        institucion.ImagenUrlInstitucion = objInstitucion.ImagenUrlInstitucion;
                     }
 
-                    _db.institucion.Update(institucionVM.Institucion);
+                    _db.instituciones.Update(institucion); // Actualizar la institución
                 }
 
-                _db.SaveChanges();
-                return RedirectToAction("Index");
-
+                _db.SaveChanges(); // Guardar los cambios en la base de datos
+                return RedirectToAction("Index"); // Redirigir a la vista principal
             }
 
-            return View(institucionVM);
-
-        }
-
-        //get
-        public IActionResult Eliminar(int? Id)
-        {
-            if (Id == null || Id == 0)
-            { return NotFound(); }
-
-            Institucion institucion = _db.institucion.Include(c => c.NombreInstitucion)
-                .FirstOrDefault(p => p.Id == Id);
-
-            if (institucion == null)
-            {
-                return NotFound();
-            }
+            // Si el modelo no es válido, retornar a la vista con el mismo objeto
             return View(institucion);
         }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Eliminar(Institucion institucion)
-        {
-            if (institucion == null)
-            {
-                return NotFound();
-            }
-
-            string upload = _webHostEnvironment.WebRootPath + WC.ImagenRuta;
-            var anteriorFile = Path.Combine(upload, institucion.ImagenUrlCap);
-
-
-            if (System.IO.File.Exists(anteriorFile))
-            {
-                System.IO.File.Delete(anteriorFile);
-            }
-            _db.institucion.RemoveRange(institucion);
-            _db.SaveChanges();
-
-            return RedirectToAction("Index");
-        }
+    }
 
     }
-}
+
+

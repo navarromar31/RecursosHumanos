@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using ProyectoYo.Models;
+using RecursosHumanos.Models;
 
 namespace RecursosHumanos.Models.ViewModels
 {

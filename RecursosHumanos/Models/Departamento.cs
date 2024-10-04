@@ -12,5 +12,7 @@ namespace RecursosHumanos.Models
         [Required(ErrorMessage = "La descripcion del departamento es obligatoria")]
         public string DescripcionPuesto { get; set; }
 
+        public string Estado { get; set; }
+
     }
 }
