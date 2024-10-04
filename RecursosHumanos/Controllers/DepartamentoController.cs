@@ -1,171 +1,114 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
+
+using RecursosHumanos.Models;
 using RecursosHumanos.Datos;
-using RecursosHumanos.Models;
-using RecursosHumanos.Models.ViewModels;
-using System.Collections.Generic;
-using RecursosHumanos.Models;
+
 
 namespace RecursosHumanos.Controllers
 {
     public class DepartamentoController : Controller
     {
-
+        //Instancia del db context
         private readonly AplicationDbContext _db;
-        private readonly IWebHostEnvironment _webHostEnvironment;
-        public DepartamentoController(AplicationDbContext db, IWebHostEnvironment webHostEnvironment)
+
+        //Metodo constructor que recibe parametros de la clase DBContext
+        public DepartamentoController(AplicationDbContext db)
         {
             _db = db;
-            _webHostEnvironment = webHostEnvironment;
+
         }
 
+        //Metodos que se ejecutan desde la vista 
         public IActionResult Index()
         {
-            IEnumerable<Departamento> lista = _db.departamento
-                .Include(c => c.Departamento);
+            IEnumerable<Departamento> lista = _db.departamentos; //Accede a las categorias por medio del _db y trae a todos los objetos del modelo categoria y los almacena en la lista
+
 
             return View(lista);
         }
 
-        public IActionResult Upsert(int? Id)
+        //Get del action crear
+        public IActionResult Crear()
         {
-            DepartamentoVM departamentoVM = new DepartamentoVM()
-            {
-                Departamento = new Departamento(),
-                DepartamentoLista = _db.departamento.Select(c => new SelectListItem
-                {
-                    Text = c.NombreDepartamento,
-                    Value = c.Id.ToString()
-                }),
-
-            };
-
-            if (Id == null)
-            {
-                return View(departamentoVM);
-            }
-            else
-            {
-                departamentoVM.Departamento = _db.departamento.Find(Id);
-                if (departamentoVM == null)
-                {
-                    return NotFound();
-                }
-                return View(departamentoVM);
-            }
-
+            return View();
         }
 
+        //Post Envia informacion
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Upsert(DepartamentoVM departamentoVM)
+        [ValidateAntiForgeryToken] //Datos encriptados
+        public IActionResult Crear(Departamento departamento)
         {
             if (ModelState.IsValid)
             {
-                var files = HttpContext.Request.Form.Files;
-                string webRootPath = _webHostEnvironment.WebRootPath;
-
-                if (departamentoVM.Departamento.Id == 0)
-                {
-                    string upload = webRootPath + WC.ImagenRuta;
-                    string fileName = Guid.NewGuid().ToString();
-                    string extension = Path.GetExtension(files[0].FileName);
-
-                    //guardar imagen
-                    using (var fileStream = new FileStream(Path.Combine(upload, fileName + extension), FileMode.Create))
-                    {
-                        files[0].CopyTo(fileStream);
-                    }
-
-                    departamentoVM.Departamento.ImagenUrlCap = fileName + extension;
-                    _db.departamento.Add(departamentoVM.Departamento);
-                }
-                else
-                {
-
-
-                    var objDepartamento = _db.departamento.AsNoTracking().FirstOrDefault(p => p.Id == departamentoVM.Departamento.Id);
-
-
-
-                    if (files.Count > 0)
-                    {
-                        string upload = webRootPath + WC.ImagenRuta;
-                        string fileName = Guid.NewGuid().ToString();
-                        string extension = Path.GetExtension(files[0].FileName);
-
-                        var anteriorFile = Path.Combine(upload, objDepartamento.ImagenUrlCap + extension);
-
-
-                        if (System.IO.File.Exists(anteriorFile))
-                        {
-                            System.IO.File.Delete(anteriorFile);
-                        }
-
-                        using (var fileStream = new FileStream(Path.Combine(upload, fileName + extension), FileMode.Create))
-                        {
-                            files[0].CopyTo(fileStream);
-                        }
-
-
-                        departamentoVM.DepartamentoImagenUrlCap = fileName + extension;
-                    }
-                    else
-                    {
-                        departamentoVM.Departamento.ImagenUrlCap = objDepartamento.ImagenUrlCap;
-                    }
-
-                    _db.departamento.Update(departamentoVM.Departamento);
-                }
-
-                _db.SaveChanges();
-                return RedirectToAction("Index");
-
-            }
-
-            return View(departamentoVM);
-
-        }
-
-        //get
-        public IActionResult Eliminar(int? Id)
-        {
-            if (Id == null || Id == 0)
-            { return NotFound(); }
-
-            Departamento departamento = _db.departamento.Include(c => c.NombreDepartamento)
-                .FirstOrDefault(p => p.Id == Id);
-
-            if (departamento == null)
-            {
-                return NotFound();
+                _db.departamentos.Add(departamento);//Guarde los datos en la BD
+                _db.SaveChanges();//Se salven los datos
+                return RedirectToAction(nameof(Index));//Una vez los datos fueron insertados, muestre el index con la categoria insertada
             }
             return View(departamento);
         }
 
+
+
+        //Get del action EDITAR
+        public IActionResult Editar(int? Id) //Recibe el id de la categoria a editar, puede ser que venga nuelo, por eso el ?
+        {
+            if (Id == null || Id == 0)
+            { return View(); }
+
+            var obj = _db.departamentos.Find(Id); //Busque la categoria con el id y traiga el objeto de ese id
+            if (obj == null)
+            {
+                return NotFound();
+            }
+            return View(obj);
+
+        }
+
+        //Post Envia informacion
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken] //Datos encriptados
+        public IActionResult Editar(Departamento departamento)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.departamentos.Update(departamento);//Actualiza los datos en la BD
+                _db.SaveChanges();//Se salven los datos
+                return RedirectToAction(nameof(Index));//Una vez los datos fueron insertados, muestre el index con la categoria insertada
+            }
+
+            return View(departamento);
+        }
+
+
+        //Get del action Eliminar
+        public IActionResult Eliminar(int? Id) //Recibe el id de la categoria a eliminar, puede ser que venga nuelo, por eso el ?
+        {
+            if (Id == null || Id == 0)
+            { return View(); }
+
+            var obj = _db.departamentos.Find(Id); //Busque la categoria con el id y traiga el objeto de ese id
+            if (obj == null)
+            {
+                return NotFound();
+            }
+            return View(obj);
+
+        }
+
+        //Post Envia informacion
+        [HttpPost]
+        [ValidateAntiForgeryToken] //Datos encriptados
         public IActionResult Eliminar(Departamento departamento)
         {
-            if (departamento == null)
+            if (ModelState.IsValid)
             {
                 return NotFound();
             }
 
-            string upload = _webHostEnvironment.WebRootPath + WC.ImagenRuta;
-            var anteriorFile = Path.Combine(upload, departamento.ImagenUrlCap);
+            _db.departamentos.Remove(departamento);//Actualiza los datos en la BD
+            _db.SaveChanges();//Se salven los datos
+            return RedirectToAction(nameof(Index));//Una vez los datos fueron insertados, muestre el index con la categoria insertada
 
-
-            if (System.IO.File.Exists(anteriorFile))
-            {
-                System.IO.File.Delete(anteriorFile);
-            }
-            _db.departamento.RemoveRange(departamento);
-            _db.SaveChanges();
-
-            return RedirectToAction("Index");
         }
 
     }

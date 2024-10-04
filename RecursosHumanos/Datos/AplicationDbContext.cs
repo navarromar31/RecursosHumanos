@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ProyectoYo.Models;
+using RecursosHumanos.Models;
 using RecursosHumanos.Models;
 namespace RecursosHumanos.Datos
 {
@@ -11,8 +11,8 @@ namespace RecursosHumanos.Datos
         }
         //Aca iremos Creando basados en el modelo las respectivas tablas en la bd 
 
-        public DbSet<Institucion> institucion { get; set; }
-        public DbSet<Departamento> departamento { get; set; }
+        public DbSet<Institucion> instituciones { get; set; }
+        public DbSet<Departamento> departamentos { get; set; }
         public DbSet<Capacitacion> capacitacion { get; set; }
         public DbSet<Colaborador> colaborador { get; set; }
         public DbSet<Evaluacion> evaluacion { get; set; }

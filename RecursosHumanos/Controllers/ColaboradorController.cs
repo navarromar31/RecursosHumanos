@@ -72,12 +72,12 @@ namespace RecursosHumanos.Controllers
                     Text = p.NombrePuesto,
                     Value = p.Id.ToString()
                 }),
-                Departamento = _db.departamento.Select(d => new SelectListItem
+                Departamento = _db.departamentos.Select(d => new SelectListItem
                 {
                     Text = d.NombreDepartamento,
                     Value = d.Id.ToString()
                 }),
-                Institucion = _db.institucion.Select(i => new SelectListItem
+                Institucion = _db.instituciones.Select(i => new SelectListItem
                 {
                     Text = i.NombreInstitucion,
                     Value = i.Id.ToString()
