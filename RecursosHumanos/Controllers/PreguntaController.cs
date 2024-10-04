@@ -33,7 +33,7 @@ namespace RecursosHumanos.Controllers
         {
             IEnumerable<Pregunta> lista = _db.pregunta
                 .Include(evaluacion=> evaluacion.Evaluacion)
-                .Include(capacitacion=> capacitacion.Capacitacion);
+                .Include(capacitacion=> capacitacion.Capacitacion).Where(pregunta => pregunta.EstadoPregunta == true);
 
             return View(lista);
         }
@@ -135,14 +135,14 @@ namespace RecursosHumanos.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Eliminar(Pregunta pregunta)
         {
-            if (pregunta == null)
+            if (ModelState.IsValid)
             {
-                return NotFound();
-
+                pregunta.EstadoPregunta = false;
+                _db.pregunta.Update(pregunta);
+                _db.SaveChanges();
+                return RedirectToAction(nameof(Index));
             }
-            _db.pregunta.Remove(pregunta);
-            _db.SaveChanges();
-            return RedirectToAction(nameof(Index));
+            return View(pregunta);
 
         }
 

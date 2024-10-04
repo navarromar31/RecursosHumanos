@@ -33,7 +33,7 @@ namespace RecursosHumanos.Controllers
             IEnumerable<Respuesta> lista = _db.respuesta
                 .Include(Colaborador =>Colaborador.ColaboradorEvaluado)
                 .Include(Colaborador=> Colaborador.ColaboradorEvaluador)
-                .Include(Pregunta => Pregunta.IdPregunta);
+                .Include(Pregunta => Pregunta.IdPregunta).Where( respuesta => respuesta.EstadoRespuesta == true);
 
             return View(lista);
         }
@@ -149,11 +149,12 @@ namespace RecursosHumanos.Controllers
         {
             if (ModelState.IsValid)
             {
-                return NotFound();
+                respuesta.EstadoRespuesta = false;
+                _db.respuesta.Update(respuesta);
+                _db.SaveChanges();
+                return RedirectToAction(nameof(Index));
             }
-            _db.respuesta.Remove(respuesta);
-            _db.SaveChanges();
-            return RedirectToAction(nameof(Index));
+            return View(respuesta);
         }
 
     }

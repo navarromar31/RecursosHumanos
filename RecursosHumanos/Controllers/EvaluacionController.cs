@@ -23,7 +23,7 @@ namespace RecursosHumanos.Controllers
          * de hospedaje web en el que se está ejecutando la aplicación, como el nombre del 
          * entorno (desarrollo, producción, etc.), la ruta del contenido web y otros detalles 
          * específicos del entorno.*/
-
+      
         public EvaluacionController(AplicationDbContext db)
         {
             _db = db;
@@ -31,7 +31,7 @@ namespace RecursosHumanos.Controllers
         }
         public IActionResult Index ()
         {
-            IEnumerable<Evaluacion> lista = _db.evaluacion;
+            IEnumerable<Evaluacion> lista = _db.evaluacion.Where(x => x.EstadoEvaluacion == true);
 
             return View(lista);
         }
@@ -103,11 +103,14 @@ namespace RecursosHumanos.Controllers
         {
             if (ModelState.IsValid)
             {
-                return NotFound();
+                evaluacion.EstadoEvaluacion = false;
+                _db.evaluacion.Update(evaluacion);
+                _db.SaveChanges();
+                return RedirectToAction(nameof(Index));
+
             }
-            _db.evaluacion.Remove(evaluacion);
-            _db.SaveChanges();
-            return RedirectToAction(nameof(Index));
+            //Meter control de errores
+            return View(evaluacion);
         }
     }
 }
