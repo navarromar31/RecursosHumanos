@@ -10,6 +10,7 @@ using NuGet.Packaging.Signing;
 using System.Collections.Generic;
 using System.Net.Http.Headers;
 using WebApplication1.Models;
+using Microsoft.AspNetCore.Hosting;
 
 namespace RecursosHumanos.Controllers
 {
@@ -28,7 +29,7 @@ namespace RecursosHumanos.Controllers
             _db = db;
           
         }
-        public IActionResult Upsert()
+        public IActionResult Index()
         {
             IEnumerable<Pregunta> lista = _db.pregunta
                 .Include(evaluacion=> evaluacion.Evaluacion)
@@ -83,37 +84,35 @@ namespace RecursosHumanos.Controllers
 
         }//cierreupsert
          //post
-        public IActionResult Editar(int? Id)
-        {
-            if (Id == null || Id == 0)
-            {
-                return NotFound();
-
-            }
-
-            var obj = _db.pregunta.Find(Id);
-            if (obj == null)
-            {
-                return NotFound();
-            }
-            return View(obj);
-        }
-
-        //post
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Editar(Pregunta pregunta)
+        public IActionResult Upsert(PreguntaVM preguntaVM)
         {
             if (ModelState.IsValid)
             {
-                _db.pregunta.Update(pregunta);
-                _db.SaveChanges();
-                return RedirectToAction(nameof(Index));
+              
+                if (preguntaVM.Pregunta.Id == 0)// id es 0, no hay objeto , hay que crear uno nuevo 
+                {
+                   
+                    _db.pregunta.Add(preguntaVM.Pregunta);
+                }
+                else
+                {
+                    // si hay un producto ya creado y hay que actualizar 
+                    //ACTULIZAR PRODUCTO }
+                    var objProducto = _db.pregunta.AsNoTracking().FirstOrDefault(p => p.Id == preguntaVM.Pregunta.Id);
 
-            }
-            return View(pregunta);
+                    
+                    _db.pregunta.Update(preguntaVM.Pregunta);
+                }
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }//cierre modelo no valido 
+            return View(preguntaVM);
+
         }
 
+        //GET ELIMINAR 
         public IActionResult Eliminar(int? Id)
         {
             if (Id == null || Id == 0)
@@ -121,27 +120,30 @@ namespace RecursosHumanos.Controllers
                 return NotFound();
 
             }
-
-            var obj = _db.pregunta.Find(Id);
-            if (obj == null)
+            Pregunta pregunta = _db.pregunta
+                .Include(evaluacion => evaluacion.Evaluacion)
+                .Include(capacitacion => capacitacion.Capacitacion).FirstOrDefault(p=>p.Id==0);
+            if (pregunta == null)
             {
                 return NotFound();
-            }
-            return View(obj);
-        }
 
-        //post
+            }
+            return View(pregunta);
+        }// CIERRE ELIMINAR
+        //METODO POST
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Eliminar(Pregunta pregunta)
         {
-            if (ModelState.IsValid)
+            if (pregunta == null)
             {
                 return NotFound();
+
             }
             _db.pregunta.Remove(pregunta);
             _db.SaveChanges();
             return RedirectToAction(nameof(Index));
+
         }
 
     }
