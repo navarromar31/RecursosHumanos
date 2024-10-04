@@ -20,6 +20,8 @@ namespace RecursosHumanos.Models
         public string Modalidad { get; set; }
         public string? ImagenUrlCap { get; set; }
 
+        public bool EstadoCapacitacion { get; set; }
+
         public int ColaboradorId    { get; set; }
         [ForeignKey("ColaboradorId")]
         public virtual Colaborador? Colaborador { get; set; }
