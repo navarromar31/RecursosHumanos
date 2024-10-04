@@ -17,6 +17,7 @@ namespace RecursosHumanos.Models
 
         public int EvaluacionId { get; set; }
         [ForeignKey("EvaluacionId")]
+      
         public virtual Evaluacion? Evaluacion { get; set; }
 
     }

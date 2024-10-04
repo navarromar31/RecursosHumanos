@@ -20,6 +20,6 @@ namespace RecursosHumanos.Models
         public string Texto { get; set; }
         public int InicioEscala { get; set; }
         public int FinalEscala { get; set; }
-        public bool Estado { get; set; }    
+        public bool EstadoPregunta { get; set; }    
     }
 }
