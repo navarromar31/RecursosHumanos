@@ -1,12 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using RecursosHumanos.Datos;
 using RecursosHumanos.Models;
 using RecursosHumanos.Models.ViewModels;
 using System.Collections.Generic;
-using RecursosHumanos.Models;
 
 namespace RecursosHumanos.Controllers
 {
