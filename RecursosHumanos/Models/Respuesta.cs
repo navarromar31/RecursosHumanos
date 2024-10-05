@@ -18,5 +18,6 @@ namespace RecursosHumanos.Models
         [ForeignKey("IdColaboradorEvaluador")]
 
         public int ValorRespuesta { get; set; }
+        public bool EstadoRespuesta { get; set; }
     }
 }
