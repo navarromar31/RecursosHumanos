@@ -14,7 +14,7 @@ namespace RecursosHumanos.Models
         public string DescripcionInstitucion { get; set; }
         public string? ImagenUrlInstitucion{ get; set; }
 
-        public string Estado { get; set; }
+        public bool EstadoInstitucion { get; set; }
 
     }
 }

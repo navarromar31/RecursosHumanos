@@ -12,5 +12,6 @@ namespace RecursosHumanos.Models
         [Required(ErrorMessage = "La descripcion del puesto es obligatoria")]
         public string DescripcionPuesto { get; set; }
 
+        public bool EstadoPuesto { get; set; }
     }
 }
