@@ -11,17 +11,18 @@ namespace RecursosHumanos.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "departamento",
+                name: "departamentos",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NombreDepartamento = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DescripcionPuesto = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    DescripcionDepartamento = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    EstadoDepartamento = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_departamento", x => x.Id);
+                    table.PrimaryKey("PK_departamentos", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -32,7 +33,8 @@ namespace RecursosHumanos.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Titulo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    TipoEvaluacion = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    TipoEvaluacion = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    EstadoEvaluacion = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -40,18 +42,19 @@ namespace RecursosHumanos.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "institucion",
+                name: "instituciones",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NombreInstitucion = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DescripcionInstitucion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ImagenUrlIns = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    ImagenUrlInstitucion = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    EstadoInstitucion = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_institucion", x => x.Id);
+                    table.PrimaryKey("PK_instituciones", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -61,7 +64,8 @@ namespace RecursosHumanos.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NombrePuesto = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DescripcionPuesto = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    DescripcionPuesto = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    EstadoPuesto = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -77,7 +81,8 @@ namespace RecursosHumanos.Migrations
                     IdPregunta = table.Column<int>(type: "int", nullable: false),
                     ColaboradorEvaluado = table.Column<int>(type: "int", nullable: false),
                     ColaboradorEvaluador = table.Column<int>(type: "int", nullable: false),
-                    ValorRespuesta = table.Column<int>(type: "int", nullable: false)
+                    ValorRespuesta = table.Column<int>(type: "int", nullable: false),
+                    EstadoRespuesta = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -117,6 +122,7 @@ namespace RecursosHumanos.Migrations
                     Apellido2 = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CorreoColaborador = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ImagenUrlCol = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    EstadoColaborador = table.Column<bool>(type: "bit", nullable: true),
                     IdPuesto = table.Column<int>(type: "int", nullable: false),
                     PuestoId = table.Column<int>(type: "int", nullable: true),
                     IdInstitucion = table.Column<int>(type: "int", nullable: false),
@@ -128,14 +134,14 @@ namespace RecursosHumanos.Migrations
                 {
                     table.PrimaryKey("PK_colaborador", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_colaborador_departamento_DepartamentoId",
+                        name: "FK_colaborador_departamentos_DepartamentoId",
                         column: x => x.DepartamentoId,
-                        principalTable: "departamento",
+                        principalTable: "departamentos",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_colaborador_institucion_InstitucionId",
+                        name: "FK_colaborador_instituciones_InstitucionId",
                         column: x => x.InstitucionId,
-                        principalTable: "institucion",
+                        principalTable: "instituciones",
                         principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_colaborador_puesto_PuestoId",
@@ -156,6 +162,7 @@ namespace RecursosHumanos.Migrations
                     MaxPersonas = table.Column<int>(type: "int", nullable: false),
                     Modalidad = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ImagenUrlCap = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    EstadoCapacitacion = table.Column<bool>(type: "bit", nullable: false),
                     ColaboradorId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -179,7 +186,8 @@ namespace RecursosHumanos.Migrations
                     IdEvaluacion = table.Column<int>(type: "int", nullable: false),
                     Texto = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     InicioEscala = table.Column<int>(type: "int", nullable: false),
-                    FinalEscala = table.Column<int>(type: "int", nullable: false)
+                    FinalEscala = table.Column<int>(type: "int", nullable: false),
+                    EstadoPregunta = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -256,10 +264,10 @@ namespace RecursosHumanos.Migrations
                 name: "colaborador");
 
             migrationBuilder.DropTable(
-                name: "departamento");
+                name: "departamentos");
 
             migrationBuilder.DropTable(
-                name: "institucion");
+                name: "instituciones");
 
             migrationBuilder.DropTable(
                 name: "puesto");

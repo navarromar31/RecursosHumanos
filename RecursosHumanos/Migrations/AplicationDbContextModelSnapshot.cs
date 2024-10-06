@@ -22,7 +22,7 @@ namespace RecursosHumanos.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ProyectoYo.Models.Capacitacion", b =>
+            modelBuilder.Entity("RecursosHumanos.Models.Capacitacion", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -36,6 +36,9 @@ namespace RecursosHumanos.Migrations
                     b.Property<string>("Duracion")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("EstadoCapacitacion")
+                        .HasColumnType("bit");
 
                     b.Property<string>("ImagenUrlCap")
                         .HasColumnType("nvarchar(max)");
@@ -61,6 +64,93 @@ namespace RecursosHumanos.Migrations
                     b.ToTable("capacitacion");
                 });
 
+            modelBuilder.Entity("RecursosHumanos.Models.Colaborador", b =>
+                {
+                    b.Property<int?>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("Id"));
+
+                    b.Property<string>("Apellido1")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Apellido2")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CedulaColaborador")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CorreoColaborador")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("DepartamentoId")
+                        .HasColumnType("int");
+
+                    b.Property<bool?>("EstadoColaborador")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("IdDepartamento")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdInstitucion")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdPuesto")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ImagenUrlCol")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("InstitucionId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NombreColaborador")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("PuestoId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DepartamentoId");
+
+                    b.HasIndex("InstitucionId");
+
+                    b.HasIndex("PuestoId");
+
+                    b.ToTable("colaborador");
+                });
+
+            modelBuilder.Entity("RecursosHumanos.Models.Departamento", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("DescripcionDepartamento")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("EstadoDepartamento")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("NombreDepartamento")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("departamentos");
+                });
+
             modelBuilder.Entity("RecursosHumanos.Models.Evaluacion", b =>
                 {
                     b.Property<int>("Id")
@@ -72,6 +162,9 @@ namespace RecursosHumanos.Migrations
                     b.Property<string>("Descripcion")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("EstadoEvaluacion")
+                        .HasColumnType("bit");
 
                     b.Property<string>("TipoEvaluacion")
                         .IsRequired()
@@ -110,6 +203,33 @@ namespace RecursosHumanos.Migrations
                     b.ToTable("evaluacionColaborador");
                 });
 
+            modelBuilder.Entity("RecursosHumanos.Models.Institucion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("DescripcionInstitucion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("EstadoInstitucion")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ImagenUrlInstitucion")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NombreInstitucion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("instituciones");
+                });
+
             modelBuilder.Entity("RecursosHumanos.Models.Pregunta", b =>
                 {
                     b.Property<int>("Id")
@@ -117,6 +237,9 @@ namespace RecursosHumanos.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("EstadoPregunta")
+                        .HasColumnType("bit");
 
                     b.Property<int>("FinalEscala")
                         .HasColumnType("int");
@@ -143,6 +266,30 @@ namespace RecursosHumanos.Migrations
                     b.ToTable("pregunta");
                 });
 
+            modelBuilder.Entity("RecursosHumanos.Models.Puesto", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("DescripcionPuesto")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("EstadoPuesto")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("NombrePuesto")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("puesto");
+                });
+
             modelBuilder.Entity("RecursosHumanos.Models.Respuesta", b =>
                 {
                     b.Property<int>("Id")
@@ -157,6 +304,9 @@ namespace RecursosHumanos.Migrations
                     b.Property<int>("ColaboradorEvaluador")
                         .HasColumnType("int");
 
+                    b.Property<bool>("EstadoRespuesta")
+                        .HasColumnType("bit");
+
                     b.Property<int>("IdPregunta")
                         .HasColumnType("int");
 
@@ -168,141 +318,36 @@ namespace RecursosHumanos.Migrations
                     b.ToTable("respuesta");
                 });
 
-            modelBuilder.Entity("WebApplication1.Models.Colaborador", b =>
+            modelBuilder.Entity("RecursosHumanos.Models.Capacitacion", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Apellido1")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Apellido2")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CedulaColaborador")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CorreoColaborador")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("DepartamentoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdDepartamento")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdInstitucion")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdPuesto")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ImagenUrlCol")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("InstitucionId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("NombreColaborador")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("PuestoId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("DepartamentoId");
-
-                    b.HasIndex("InstitucionId");
-
-                    b.HasIndex("PuestoId");
-
-                    b.ToTable("colaborador");
-                });
-
-            modelBuilder.Entity("WebApplication1.Models.Departamento", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("DescripcionPuesto")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NombreDepartamento")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("departamento");
-                });
-
-            modelBuilder.Entity("WebApplication1.Models.Institucion", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("DescripcionInstitucion")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImagenUrlIns")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NombreInstitucion")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("institucion");
-                });
-
-            modelBuilder.Entity("WebApplication1.Models.Puesto", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("DescripcionPuesto")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NombrePuesto")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("puesto");
-                });
-
-            modelBuilder.Entity("ProyectoYo.Models.Capacitacion", b =>
-                {
-                    b.HasOne("WebApplication1.Models.Colaborador", "Colaborador")
+                    b.HasOne("RecursosHumanos.Models.Colaborador", "Colaborador")
                         .WithMany()
                         .HasForeignKey("ColaboradorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Colaborador");
+                });
+
+            modelBuilder.Entity("RecursosHumanos.Models.Colaborador", b =>
+                {
+                    b.HasOne("RecursosHumanos.Models.Departamento", "Departamento")
+                        .WithMany()
+                        .HasForeignKey("DepartamentoId");
+
+                    b.HasOne("RecursosHumanos.Models.Institucion", "Institucion")
+                        .WithMany()
+                        .HasForeignKey("InstitucionId");
+
+                    b.HasOne("RecursosHumanos.Models.Puesto", "Puesto")
+                        .WithMany()
+                        .HasForeignKey("PuestoId");
+
+                    b.Navigation("Departamento");
+
+                    b.Navigation("Institucion");
+
+                    b.Navigation("Puesto");
                 });
 
             modelBuilder.Entity("RecursosHumanos.Models.EvaluacionColaborador", b =>
@@ -318,7 +363,7 @@ namespace RecursosHumanos.Migrations
 
             modelBuilder.Entity("RecursosHumanos.Models.Pregunta", b =>
                 {
-                    b.HasOne("ProyectoYo.Models.Capacitacion", "Capacitacion")
+                    b.HasOne("RecursosHumanos.Models.Capacitacion", "Capacitacion")
                         .WithMany()
                         .HasForeignKey("IdCapacitacion")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -333,27 +378,6 @@ namespace RecursosHumanos.Migrations
                     b.Navigation("Capacitacion");
 
                     b.Navigation("Evaluacion");
-                });
-
-            modelBuilder.Entity("WebApplication1.Models.Colaborador", b =>
-                {
-                    b.HasOne("WebApplication1.Models.Departamento", "Departamento")
-                        .WithMany()
-                        .HasForeignKey("DepartamentoId");
-
-                    b.HasOne("WebApplication1.Models.Institucion", "Institucion")
-                        .WithMany()
-                        .HasForeignKey("InstitucionId");
-
-                    b.HasOne("WebApplication1.Models.Puesto", "Puesto")
-                        .WithMany()
-                        .HasForeignKey("PuestoId");
-
-                    b.Navigation("Departamento");
-
-                    b.Navigation("Institucion");
-
-                    b.Navigation("Puesto");
                 });
 
             modelBuilder.Entity("RecursosHumanos.Models.Evaluacion", b =>
