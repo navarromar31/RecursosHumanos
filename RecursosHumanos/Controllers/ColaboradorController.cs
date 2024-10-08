@@ -24,7 +24,7 @@ namespace RecursosHumanos.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<Colaborador> lista = _db.colaborador
+            IEnumerable<Colaborador> lista = _db.colaborador.Where(x => x.EstadoColaborador == true)
                 .Include(p => p.Puesto)
                 .Include(d => d.Departamento)
                 .Include(i => i.Institucion);
@@ -106,7 +106,7 @@ namespace RecursosHumanos.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Insertar(ColaboradorVM colaboradorVM)
+        public IActionResult Upsert(ColaboradorVM colaboradorVM)
         {
             if (ModelState.IsValid)
             {
@@ -177,7 +177,7 @@ namespace RecursosHumanos.Controllers
         }
 
         //***************************************************** ELIMINAR PRODUCTO **************************************************//
-
+        //METODO GET
         public IActionResult Eliminar(int? Id)
         {
             if (Id == null || Id == 0)
@@ -214,8 +214,12 @@ namespace RecursosHumanos.Controllers
 
                 System.IO.File.Delete(anteriorFile);
             }
+
+            colaborador.EstadoColaborador = false; 
+
             _db.colaborador.Remove(colaborador);
             _db.SaveChanges();
+
             return RedirectToAction(nameof(Index));
 
         }
