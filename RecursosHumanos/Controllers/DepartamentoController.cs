@@ -21,7 +21,7 @@ namespace RecursosHumanos.Controllers
         //Metodos que se ejecutan desde la vista 
         public IActionResult Index()
         {
-            IEnumerable<Departamento> lista = _db.departamentos; //Accede a las categorias por medio del _db y trae a todos los objetos del modelo categoria y los almacena en la lista
+            IEnumerable<Departamento> lista = _db.departamentos.Where(x => x.EstadoDepartamento == true); //Accede a las categorias por medio del _db y trae a todos los objetos del modelo categoria y los almacena en la lista
 
 
             return View(lista);
@@ -105,6 +105,7 @@ namespace RecursosHumanos.Controllers
                 return NotFound();
             }
 
+            departamento.EstadoDepartamento = false;
             _db.departamentos.Remove(departamento);//Actualiza los datos en la BD
             _db.SaveChanges();//Se salven los datos
             return RedirectToAction(nameof(Index));//Una vez los datos fueron insertados, muestre el index con la categoria insertada
