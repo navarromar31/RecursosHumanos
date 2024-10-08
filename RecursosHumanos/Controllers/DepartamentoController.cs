@@ -106,7 +106,7 @@ namespace RecursosHumanos.Controllers
             }
 
             departamento.EstadoDepartamento = false;
-            _db.departamentos.Remove(departamento);//Actualiza los datos en la BD
+            _db.departamentos.Update(departamento);//Actualiza los datos en la BD
             _db.SaveChanges();//Se salven los datos
             return RedirectToAction(nameof(Index));//Una vez los datos fueron insertados, muestre el index con la categoria insertada
 

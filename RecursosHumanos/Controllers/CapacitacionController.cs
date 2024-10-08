@@ -23,7 +23,8 @@ namespace RecursosHumanos.Controllers
         public IActionResult Index()
         {
             IEnumerable<Capacitacion> lista = _db.capacitacion
-                .Include(c => c.Colaborador);
+                .Include(c => c.Colaborador).Where(x => x.EstadoCapacitacion == true)
+                .ToList();
 
             return View(lista);
         }
@@ -161,7 +162,10 @@ namespace RecursosHumanos.Controllers
             {
                 System.IO.File.Delete(anteriorFile);
             }
-            _db.capacitacion.RemoveRange(capacitacion);
+
+            capacitacion.EstadoCapacitacion = false;
+
+            _db.capacitacion.Update(capacitacion);
             _db.SaveChanges();
 
             return RedirectToAction("Index");

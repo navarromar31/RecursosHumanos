@@ -113,7 +113,7 @@ namespace RecursosHumanos.Controllers
                 return NotFound();
             }
             institucion.EstadoInstitucion = false;
-            _db.instituciones.Remove(institucion);//Actualiza los datos en la BD
+            _db.instituciones.Update(institucion);//Actualiza los datos en la BD
             _db.SaveChanges();//Se salven los datos
             return RedirectToAction(nameof(Index));//Una vez los datos fueron insertados, muestre el index con la categoria insertada
 
