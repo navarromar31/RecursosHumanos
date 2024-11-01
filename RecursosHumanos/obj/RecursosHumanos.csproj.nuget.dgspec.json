@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj": {}
+    "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj": {
+    "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj",
+        "projectUniqueName": "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj",
         "projectName": "RecursosHumanos",
-        "projectPath": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj",
-        "packagesPath": "C:\\Users\\Usuario01\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\obj\\",
+        "projectPath": "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj",
+        "packagesPath": "C:\\Users\\Estudiante-12\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Usuario01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Estudiante-12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,39 +32,36 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\RecursosHumanos_AccesoDatos.csproj": {
+                "projectPath": "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\RecursosHumanos_AccesoDatos.csproj"
+              },
+              "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Modelos\\RecursosHumanos_Models.csproj": {
+                "projectPath": "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Modelos\\RecursosHumanos_Models.csproj"
+              },
+              "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\RecursosHumanos_Utilidades.csproj": {
+                "projectPath": "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\RecursosHumanos_Utilidades.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.35, )"
-            },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[6.0.35, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[7.0.20, )"
+              "version": "[6.0.33, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[6.0.35, )"
+              "version": "[6.0.33, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -68,9 +69,9 @@
               "target": "Package",
               "version": "[7.0.20, )"
             },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "SendGrid": {
               "target": "Package",
-              "version": "[6.0.18, )"
+              "version": "[9.24.4, )"
             }
           },
           "imports": [
@@ -84,6 +85,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -92,8 +111,53 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\RecursosHumanos_AccesoDatos.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\RecursosHumanos_AccesoDatos.csproj",
+        "projectName": "RecursosHumanos_AccesoDatos",
+        "projectPath": "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\RecursosHumanos_AccesoDatos.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Modelos\\RecursosHumanos_Models.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Modelos\\RecursosHumanos_Models.csproj",
+        "projectName": "RecursosHumanos_Models",
+        "projectPath": "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Modelos\\RecursosHumanos_Models.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\RecursosHumanos_Utilidades.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\RecursosHumanos_Utilidades.csproj",
+        "projectName": "RecursosHumanos_Utilidades",
+        "projectPath": "C:\\Users\\Estudiante-12\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\RecursosHumanos_Utilidades.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
       }
     }
   }
