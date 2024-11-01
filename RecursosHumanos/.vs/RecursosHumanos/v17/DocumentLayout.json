@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\",
+  "WorkspaceRootPath": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\usuario01\\documents\\github\\recursoshumanos\\recursoshumanos\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\dayra solano\\documents\\github\\recursoshumanos\\recursoshumanos\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\usuario01\\documents\\github\\recursoshumanos\\recursoshumanos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\dayra solano\\documents\\github\\recursoshumanos\\recursoshumanos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ScaffoldingReadMe.txt",
-              "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
-              "ToolTip": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\ScaffoldingReadMe.txt",
               "RelativeToolTip": "ScaffoldingReadMe.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-11-01T01:55:01.209Z",
               "EditorCaption": ""
@@ -37,14 +37,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Program.cs",
+              "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAowBMAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T00:36:26.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T00:36:26.09Z"
             }
           ]
         }
