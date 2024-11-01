@@ -1,9 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
-using RecursosHumanos.Models;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using RecursosHumanos.Models;
 namespace RecursosHumanos.Datos
 {
-    public class AplicationDbContext : DbContext
+    public class AplicationDbContext : IdentityDbContext
     {
         public AplicationDbContext(DbContextOptions<AplicationDbContext> options) : base(options)
         {

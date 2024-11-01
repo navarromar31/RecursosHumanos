@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj": {}
+    "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj": {
+    "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj",
         "projectName": "RecursosHumanos",
-        "projectPath": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj",
-        "packagesPath": "C:\\Users\\chale\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\obj\\",
+        "projectPath": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj",
+        "packagesPath": "C:\\Users\\Usuario01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\chale\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Usuario01\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -50,9 +46,21 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.35, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.35, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.20, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.35, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -62,7 +70,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.17, )"
+              "version": "[6.0.18, )"
             }
           },
           "imports": [
@@ -76,24 +84,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.32, 6.0.32]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.32, 6.0.32]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.32, 6.0.32]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.32, 6.0.32]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -102,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
