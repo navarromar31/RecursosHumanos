@@ -1,0 +1,2 @@
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\RecursosHumanos_AccesoDatos.csproj.AssemblyReference.cache
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\RecursosHumanos_AccesoDatos.csproj.CoreCompileInputs.cache

@@ -1,0 +1,2 @@
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Modelos\obj\Debug\RecursosHumanos_Models.csproj.AssemblyReference.cache
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Modelos\obj\Debug\RecursosHumanos_Models.csproj.CoreCompileInputs.cache
