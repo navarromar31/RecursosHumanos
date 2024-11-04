@@ -4,3 +4,9 @@ C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_Acceso
 C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.AssemblyInfo.cs
 C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.csproj.CoreCompileInputs.cache
 C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.sourcelink.json
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.csproj.AssemblyReference.cache
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.AssemblyInfoInputs.cache
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.AssemblyInfo.cs
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.sourcelink.json

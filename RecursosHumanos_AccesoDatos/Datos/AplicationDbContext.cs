@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using RecursosHumanos_Models;
+using RecursosHumanos_AccesoDatos;
 
 namespace RecursosHumanos_AccesoDatos
 {

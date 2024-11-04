@@ -11,3 +11,16 @@ C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_Models
 C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\refint\RecursosHumanos_Models.dll
 C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\RecursosHumanos_Models.pdb
 C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\ref\RecursosHumanos_Models.dll
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\bin\Debug\net6.0\RecursosHumanos_Models.deps.json
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\bin\Debug\net6.0\RecursosHumanos_Models.dll
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\bin\Debug\net6.0\RecursosHumanos_Models.pdb
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\RecursosHumanos_Models.csproj.AssemblyReference.cache
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\RecursosHumanos_Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\RecursosHumanos_Models.AssemblyInfoInputs.cache
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\RecursosHumanos_Models.AssemblyInfo.cs
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\RecursosHumanos_Models.csproj.CoreCompileInputs.cache
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\RecursosHumanos_Models.sourcelink.json
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\RecursosHumanos_Models.dll
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\refint\RecursosHumanos_Models.dll
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\RecursosHumanos_Models.pdb
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\ref\RecursosHumanos_Models.dll
