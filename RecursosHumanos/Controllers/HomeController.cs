@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RecursosHumanos.Models;
+using RecursosHumanos_Models;
 using System.Diagnostics;
 
 namespace RecursosHumanos.Controllers

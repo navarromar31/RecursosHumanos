@@ -8,7 +8,7 @@ using RecursosHumanos_AccesoDatos;
 
 #nullable disable
 
-namespace RecursosHumanos_AccesoDatos.Migrations
+namespace RecursosHumanos_Migrations.Migrations
 {
     [DbContext(typeof(AplicationDbContext))]
     partial class AplicationDbContextModelSnapshot : ModelSnapshot

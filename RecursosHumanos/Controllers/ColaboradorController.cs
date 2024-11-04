@@ -2,9 +2,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using RecursosHumanos.Datos;
-using RecursosHumanos.Models;
-using RecursosHumanos.Models.ViewModels;
+using RecursosHumanos_Utilidades;
+using RecursosHumanos_AccesoDatos;
+using RecursosHumanos_Models;
+using RecursosHumanos_Models.ViewModels;
 using System.Collections.Generic;
 
 namespace RecursosHumanos.Controllers

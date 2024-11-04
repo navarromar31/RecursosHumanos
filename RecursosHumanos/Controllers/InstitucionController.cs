@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-
-using RecursosHumanos.Models;
-using RecursosHumanos.Datos;
+using RecursosHumanos_Models;
+using RecursosHumanos_AccesoDatos;
+using RecursosHumanos_Utilidades;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;

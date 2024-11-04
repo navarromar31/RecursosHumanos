@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace RecursosHumanos.Migrations
+namespace RecursosHumanos_Migrations.Migrations
 {
     /// <inheritdoc />
     public partial class Tablas : Migration

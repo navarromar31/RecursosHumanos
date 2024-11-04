@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using RecursosHumanos_AccesoDatos;
-using RecursosHumanos_AccesoDatos.Datos;
+using RecursosHumanos_AccesoDatos;
 using RecursosHumanos_Models;
 using RecursosHumanos_Models.ViewModels;
 using RecursosHumanos_Utilidades;

@@ -1,7 +1,7 @@
 
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using RecursosHumanos.Datos;
+using RecursosHumanos_AccesoDatos;
 
 var builder = WebApplication.CreateBuilder(args);
 
