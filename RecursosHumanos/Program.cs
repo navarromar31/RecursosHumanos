@@ -1,16 +1,50 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using RecursosHumanos.Datos;
+using RecursosHumanos_AccesoDatos;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<AplicationDbContext>(options =>
-                                                   options.UseSqlServer(
-                                                   builder.Configuration.GetConnectionString("DayraConnection")));
 
+builder.Services.AddDbContext<AplicationDbContext>(options =>
+                                                options.UseSqlServer(
+                                                builder.Configuration.GetConnectionString("DayraConnection")));
+
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<AplicationDbContext>();
+
+
+
+
+//Lo modificamos para agregar al servicio la asignacion de roles de usuario
+/*builder.Services.AddIdentity<IdentityUser, IdentityRole>().
+    AddDefaultTokenProviders().AddDefaultUI().
+    AddEntityFrameworkStores<AplicationDbContext>(); 
+ ESTO SE OCUPA CUANDO HAGAMOS EL EMAIL SENDER*/
 
 
 builder.Services.AddControllersWithViews();
+
+
+
+// A?ade el servicio HttpContextAccessor al contenedor de servicios
+builder.Services.AddHttpContextAccessor();
+
+// Configura el servicio de sesi?n-
+
+builder.Services.AddSession(Options =>
+{
+    // Establece el tiempo de inactividad antes de que la sesi?n expire
+    Options.IdleTimeout = TimeSpan.FromMinutes(10);
+
+    // Configura la cookie de sesi?n para que sea accesible solo a trav?s de HTTP
+    Options.Cookie.HttpOnly = true;
+
+    // Marca la cookie de sesi?n como esencial, lo que significa que no se ver? afectada por las pol?ticas de consentimiento de cookies
+    Options.Cookie.IsEssential = true;
+});
+
+
 
 var app = builder.Build();
 
@@ -21,13 +55,20 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
-
+//MIDLEWARE
 app.UseHttpsRedirection();
-app.UseStaticFiles();
+app.UseStaticFiles();//HOJAS DE STILO, JS , ETC
 
 app.UseRouting();
 
+app.UseAuthentication();
+
 app.UseAuthorization();
+
+app.UseSession();//este el pipeline para utlizar el servicio de sesiones 
+
+app.MapRazorPages();
+
 
 app.MapControllerRoute(
     name: "default",

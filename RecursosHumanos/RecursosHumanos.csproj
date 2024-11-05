@@ -7,12 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.33" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.33" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.33" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.20" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.20">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.17" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.18" />
+    <PackageReference Include="SendGrid" Version="9.24.4" />
+    <PackageReference Include="Syncfusion.EJ2.AspNet.Core" Version="27.1.56" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RecursosHumanos_AccesoDatos\RecursosHumanos_AccesoDatos.csproj" />
+    <ProjectReference Include="..\RecursosHumanos_Models\RecursosHumanos_Models.csproj" />
+    <ProjectReference Include="..\RecursosHumanos_Utilidades\RecursosHumanos_Utilidades.csproj" />
   </ItemGroup>
 
 </Project>

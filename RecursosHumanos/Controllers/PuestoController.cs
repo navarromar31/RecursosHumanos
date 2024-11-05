@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RecursosHumanos.Datos;
-using RecursosHumanos.Models;
+using RecursosHumanos_AccesoDatos;
+using RecursosHumanos_Models;
 
 namespace RecursosHumanos.Controllers
 {
