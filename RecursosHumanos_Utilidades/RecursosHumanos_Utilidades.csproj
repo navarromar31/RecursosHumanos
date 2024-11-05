@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Braintree" Version="5.27.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.33" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.33" />
     <PackageReference Include="SendGrid" Version="9.24.4" />
     <PackageReference Include="Syncfusion.EJ2.AspNet.Core" Version="27.1.56" />

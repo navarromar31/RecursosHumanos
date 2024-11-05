@@ -9,7 +9,7 @@ using RecursosHumanos_AccesoDatos;
 
 #nullable disable
 
-namespace RecursosHumanos.Migrations
+namespace RecursosHumanos_AccesoDatos.Migrations
 {
     [DbContext(typeof(AplicationDbContext))]
     [Migration("20241006044751_Tablas")]

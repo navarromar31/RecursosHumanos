@@ -1,9 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
-using RecursosHumanos_AccesoDatos;
 
 #nullable disable
 
-namespace RecursosHumanos_Migrations.Migrations
+namespace RecursosHumanos_AccesoDatos.Migrations
 {
     /// <inheritdoc />
     public partial class Tablas : Migration
