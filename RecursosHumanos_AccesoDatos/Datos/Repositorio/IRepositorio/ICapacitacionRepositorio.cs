@@ -1,4 +1,6 @@
 ﻿using RecursosHumanos_Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +13,6 @@ namespace RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio
     {
         void Actualizar(Capacitacion capacitacion);
 
-
         IEnumerable<SelectListItem> ObtenerTodosDropDownList(string obj);
-
     }
 }
-

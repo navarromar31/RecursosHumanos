@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -11,6 +11,10 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.33" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.33" />
     <PackageReference Include="Syncfusion.EJ2.AspNet.Core" Version="27.1.56" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RecursosHumanos_Utilidades\RecursosHumanos_Utilidades.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,5 @@
 ﻿using RecursosHumanos_Models;
+using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
