@@ -14,9 +14,5 @@
 		<ProjectReference Include="..\RecursosHumanos_Models\RecursosHumanos_Models.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Folder Include="Datos\Repositorio\IRepositorio\" />
-	</ItemGroup>
-
 
 </Project>

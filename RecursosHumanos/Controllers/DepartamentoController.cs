@@ -1,116 +1,143 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
+﻿using RecursosHumanos_AccesoDatos;
+using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
 using RecursosHumanos_Models;
-using RecursosHumanos_AccesoDatos;
-
+using RecursosHumanos_Utilidades;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace RecursosHumanos.Controllers
 {
+    [Authorize(Roles = WC.AdminRole)]
     public class DepartamentoController : Controller
     {
-        //Instancia del db context
-        private readonly AplicationDbContext _db;
 
-        //Metodo constructor que recibe parametros de la clase DBContext
-        public DepartamentoController(AplicationDbContext db)
+        //private readonly ApplicationDbContext _db;
+
+
+        //public CategoriaController(ApplicationDbContext db)
+        //{
+        //    _db = db;  
+        //}
+
+
+        private readonly IDepartamentoRepositorio _departametoRepo;
+
+        public DepartamentoController(IDepartamentoRepositorio departamentoRepo)//recibe nuestro contexto de BD
         {
-            _db = db;
+            //    _db = db;
+            _departametoRepo = departamentoRepo;
 
         }
 
-        //Metodos que se ejecutan desde la vista 
+
         public IActionResult Index()
         {
-            IEnumerable<Departamento> lista = _db.departamentos.Where(x => x.EstadoDepartamento == true); //Accede a las categorias por medio del _db y trae a todos los objetos del modelo categoria y los almacena en la lista
-
+            IEnumerable<Departamento> lista = _departametoRepo.ObtenerTodos();
 
             return View(lista);
         }
 
-        //Get del action crear
+        //Get
         public IActionResult Crear()
         {
+
+
             return View();
         }
 
-        //Post Envia informacion
+
+
         [HttpPost]
-        [ValidateAntiForgeryToken] //Datos encriptados
+        [ValidateAntiForgeryToken]
         public IActionResult Crear(Departamento departamento)
         {
+
             if (ModelState.IsValid)
             {
-                _db.departamentos.Add(departamento);//Guarde los datos en la BD
-                _db.SaveChanges();//Se salven los datos
-                return RedirectToAction(nameof(Index));//Una vez los datos fueron insertados, muestre el index con la categoria insertada
+                _departametoRepo.Agregar(departamento);
+                _departametoRepo.Grabar();
+                TempData[WC.Exitosa] = "Departamento creado exitosamente";
+                return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
             }
+            TempData[WC.Error] = "Error al crear un nuevo departamento";
             return View(departamento);
         }
 
 
-
-        //Get del action EDITAR
-        public IActionResult Editar(int? Id) //Recibe el id de la categoria a editar, puede ser que venga nuelo, por eso el ?
+        //GET EDITAR QUE RECIBE DE LA VISTA EL ID DE LA CAT A EDITAR
+        public IActionResult Editar(int? Id)
         {
-            if (Id == null || Id == 0)
-            { return View(); }
 
-            var obj = _db.departamentos.Find(Id); //Busque la categoria con el id y traiga el objeto de ese id
-            if (obj == null)
+            if (Id == null || Id == 0)
+            {
+                return NotFound();
+
+            }
+            var objDep = _departametoRepo.Obtener(Id.GetValueOrDefault());
+
+            if (objDep == null)
             {
                 return NotFound();
             }
-            return View(obj);
-
+            return View(objDep);
         }
 
-        //Post Envia informacion
+
+
+
         [HttpPost]
-        [ValidateAntiForgeryToken] //Datos encriptados
+        [ValidateAntiForgeryToken]
         public IActionResult Editar(Departamento departamento)
         {
+
             if (ModelState.IsValid)
             {
-                _db.departamentos.Update(departamento);//Actualiza los datos en la BD
-                _db.SaveChanges();//Se salven los datos
-                return RedirectToAction(nameof(Index));//Una vez los datos fueron insertados, muestre el index con la categoria insertada
+                _departametoRepo.Actualizar(departamento);
+                _departametoRepo.Grabar();
+                return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
             }
-
             return View(departamento);
         }
 
 
-        //Get del action Eliminar
-        public IActionResult Eliminar(int? Id) //Recibe el id de la categoria a eliminar, puede ser que venga nuelo, por eso el ?
-        {
-            if (Id == null || Id == 0)
-            { return View(); }
 
-            var obj = _db.departamentos.Find(Id); //Busque la categoria con el id y traiga el objeto de ese id
-            if (obj == null)
+        //GET ELIMINAR
+        public IActionResult Eliminar(int? Id)
+        {
+
+            if (Id == null || Id == 0)
+            {
+                return NotFound();
+
+            }
+            var objDep = _departametoRepo.Obtener(Id.GetValueOrDefault());
+
+            if (objDep == null)
             {
                 return NotFound();
             }
-            return View(obj);
-
+            return View(objDep);
         }
 
-        //Post Envia informacion
+        //POST ELIMINAR
+
+
         [HttpPost]
-        [ValidateAntiForgeryToken] //Datos encriptados
+        [ValidateAntiForgeryToken]
         public IActionResult Eliminar(Departamento departamento)
         {
-            if (ModelState.IsValid)
+
+            if (departamento == null)
             {
                 return NotFound();
             }
-
-            departamento.EstadoDepartamento = false;
-            _db.departamentos.Update(departamento);//Actualiza los datos en la BD
-            _db.SaveChanges();//Se salven los datos
-            return RedirectToAction(nameof(Index));//Una vez los datos fueron insertados, muestre el index con la categoria insertada
+            _departametoRepo.Remover(departamento);
+            _departametoRepo.Grabar();
+            return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
 
         }
+
+
 
     }
 }
