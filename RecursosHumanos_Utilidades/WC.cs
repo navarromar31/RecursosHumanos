@@ -11,6 +11,7 @@
         public const string PreguntaNo = "Pregunta";
         public const string RespuestaNo = "Respuesta";
         public const string EvaluacionNombre = "Evaluacion";
+        public const string CapacitacionNombre = "Capacitacion";
 
     }
 }

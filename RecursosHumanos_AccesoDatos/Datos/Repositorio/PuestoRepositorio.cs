@@ -9,18 +9,18 @@ using System.Threading.Tasks; // Importamos para manejar tareas asíncronas.
 
 namespace RecursosHumanos_AccesoDatos.Datos
 {
-    public class EvaluacionRepositorio : Repositorio<Evaluacion>, IEvaluacionRepositorio
+    public class PuestoRepositorio : Repositorio<Puesto>, IPuestoRepositorio
     {
         private readonly AplicationDbContext _db;
 
-        public EvaluacionRepositorio(AplicationDbContext db) : base(db)
+        public PuestoRepositorio(AplicationDbContext db) : base(db)
         {
             _db = db;
         }
 
-        public void Actualizar(Evaluacion evaluacion)
+        public void Actualizar(Puesto puesto)
         {
-            _db.Update(evaluacion);
+            _db.Update(puesto);
         }
     }
 }
