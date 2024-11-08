@@ -8,54 +8,82 @@ using Microsoft.EntityFrameworkCore;
 using NuGet.Packaging.Signing;
 using System.Collections.Generic;
 using System.Net.Http.Headers;
+using Microsoft.AspNetCore.Authorization;
+using RecursosHumanos_Utilidades;
+using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
 
 
 namespace RecursosHumanos.Controllers
 {
+    [Authorize(Roles = WC.AdminRole)]
     public class EvaluacionController : Controller
     {
-        private readonly AplicationDbContext _db;
 
-        /*se utiliza para declarar una variable de solo lectura que almacena una instancia 
-         * de IWebHostEnvironment. Esta interfaz proporciona información sobre el entorno 
-         * de hospedaje web en el que se está ejecutando la aplicación, como el nombre del 
-         * entorno (desarrollo, producción, etc.), la ruta del contenido web y otros detalles 
-         * específicos del entorno.*/
-      
-        public EvaluacionController(AplicationDbContext db)
+        //private readonly ApplicationDbContext _db;
+
+
+        //public  EvaluacionController(ApplicationDbContext db)
+        //{
+        //    _db = db;  
+        //}
+
+       
+
+        private readonly IEvaluacionRepositorio _evaluacionRepo;
+
+        public EvaluacionController(IEvaluacionRepositorio evaluacionRepo)//recibe nuestro contexto de BD
         {
-            _db = db;
+            //    _db = db;
+            _evaluacionRepo = evaluacionRepo;
 
         }
-        public IActionResult Index ()
+
+
+        public IActionResult Index()
         {
-            IEnumerable<Evaluacion> lista = _db.evaluacion.Where(x => x.EstadoEvaluacion == true);
+            IEnumerable<Evaluacion> lista = _evaluacionRepo.ObtenerTodos();
 
             return View(lista);
         }
+
+        //Get
+        public IActionResult Crear()
+        {
+
+
+            return View();
+        }
+
+
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Crear(Evaluacion evaluacion)
         {
+
             if (ModelState.IsValid)
             {
-                _db.evaluacion.Add(evaluacion);
-                _db.SaveChanges();
-                return RedirectToAction(nameof(Index));
-
+                _evaluacionRepo.Agregar(evaluacion);
+                _evaluacionRepo.Grabar();
+                TempData[WC.Exitosa] = "Evaluacion creada exitosamente";
+                return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
             }
+            TempData[WC.Error] = "Error al crear nueva evaluacion";
             return View(evaluacion);
         }
 
+
+        //GET EDITAR QUE RECIBE DE LA VISTA EL ID DE LA CAT A EDITAR
         public IActionResult Editar(int? Id)
         {
+
             if (Id == null || Id == 0)
             {
                 return NotFound();
 
             }
+            var obj = _evaluacionRepo.Obtener(Id.GetValueOrDefault());
 
-            var obj = _db.evaluacion.Find(Id);
             if (obj == null)
             {
                 return NotFound();
@@ -63,30 +91,36 @@ namespace RecursosHumanos.Controllers
             return View(obj);
         }
 
-        //post
+
+
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Editar(Evaluacion evaluacion)
         {
+
             if (ModelState.IsValid)
             {
-                _db.evaluacion.Update(evaluacion);
-                _db.SaveChanges();
-                return RedirectToAction(nameof(Index));
-
+                _evaluacionRepo.Actualizar(evaluacion);
+                _evaluacionRepo.Grabar();
+                return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
             }
             return View(evaluacion);
         }
 
+
+
+        //GET ELIMINAR
         public IActionResult Eliminar(int? Id)
         {
+
             if (Id == null || Id == 0)
             {
                 return NotFound();
 
             }
+            var obj = _evaluacionRepo.Obtener(Id.GetValueOrDefault());
 
-            var obj = _db.evaluacion    .Find(Id);
             if (obj == null)
             {
                 return NotFound();
@@ -94,21 +128,25 @@ namespace RecursosHumanos.Controllers
             return View(obj);
         }
 
-        //post
+        //POST ELIMINAR
+
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Eliminar(Evaluacion evaluacion)
         {
-            if (ModelState.IsValid)
-            {
-                evaluacion.EstadoEvaluacion = false;
-                _db.evaluacion.Update(evaluacion);
-                _db.SaveChanges();
-                return RedirectToAction(nameof(Index));
 
+            if (evaluacion == null)
+            {
+                return NotFound();
             }
-            //Meter control de errores
-            return View(evaluacion);
+            _evaluacionRepo.Remover(evaluacion);
+            _evaluacionRepo.Grabar();
+            return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
+
         }
+
+
+
     }
 }
