@@ -1,56 +1,47 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\",
+  "WorkspaceRootPath": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\controllers\\puestocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\puestocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos\\controllers\\evaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\evaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos\\controllers\\institucioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\institucioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5947BBC-57AB-4B64-B9B4-0E8A2E971F87}|..\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos_models\\viewmodels\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5947BBC-57AB-4B64-B9B4-0E8A2E971F87}|..\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos_models\\evaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5947BBC-57AB-4B64-B9B4-0E8A2E971F87}|..\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos_models\\colaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5947BBC-57AB-4B64-B9B4-0E8A2E971F87}|..\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos_models\\capacitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5947BBC-57AB-4B64-B9B4-0E8A2E971F87}|..\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos_models\\viewmodels\\preguntavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5947BBC-57AB-4B64-B9B4-0E8A2E971F87}|..\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos_models\\viewmodels\\colaboradorvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5947BBC-57AB-4B64-B9B4-0E8A2E971F87}|..\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos_models\\viewmodels\\capacitacionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23D54F3D-79DD-4669-B549-CED4A41579C7}|..\\RecursosHumanos_AccesoDatos\\RecursosHumanos_AccesoDatos.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos_accesodatos\\datos\\repositorio\\irepositorio\\ievaluacionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23D54F3D-79DD-4669-B549-CED4A41579C7}|..\\RecursosHumanos_AccesoDatos\\RecursosHumanos_AccesoDatos.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos_accesodatos\\datos\\repositorio\\irepositorio\\idepartamentorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos\\controllers\\departamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\controllers\\departamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\departamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos\\controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\controllers\\respuestacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\respuestacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5947BBC-57AB-4B64-B9B4-0E8A2E971F87}|..\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos_models\\viewmodels\\respuestavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3764307-5D78-44D5-8BCF-6EE287AC9F9C}|..\\RecursosHumanos_Utilidades\\RecursosHumanos_Utilidades.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos_utilidades\\wc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\controllers\\preguntacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\preguntacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos\\controllers\\capacitacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\controllers\\evaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\evaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\controllers\\institucioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\institucioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\controllers\\capacitacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\capacitacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -136,6 +127,33 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Colaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Evaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Capacitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\HomeVM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\PreguntaVM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\ColaboradorVM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\CapacitacionVM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IDepartamentoRepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -145,217 +163,276 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 27,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Colaborador.cs",
-              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Colaborador.cs",
-              "RelativeDocumentMoniker": "..\\RecursosHumanos_Models\\Colaborador.cs",
-              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Colaborador.cs",
-              "RelativeToolTip": "..\\RecursosHumanos_Models\\Colaborador.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "PuestoController.cs",
+              "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\PuestoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PuestoController.cs",
+              "ToolTip": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\PuestoController.cs",
+              "RelativeToolTip": "Controllers\\PuestoController.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAkwIYAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T03:27:15.105Z",
+              "WhenOpened": "2024-11-09T03:39:03.202Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Evaluacion.cs",
-              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Evaluacion.cs",
-              "RelativeDocumentMoniker": "..\\RecursosHumanos_Models\\Evaluacion.cs",
-              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Evaluacion.cs",
-              "RelativeToolTip": "..\\RecursosHumanos_Models\\Evaluacion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "WC.cs",
+              "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\WC.cs",
+              "RelativeDocumentMoniker": "..\\RecursosHumanos_Utilidades\\WC.cs",
+              "ToolTip": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\WC.cs",
+              "RelativeToolTip": "..\\RecursosHumanos_Utilidades\\WC.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T03:27:11.374Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Capacitacion.cs",
-              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Capacitacion.cs",
-              "RelativeDocumentMoniker": "..\\RecursosHumanos_Models\\Capacitacion.cs",
-              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Capacitacion.cs",
-              "RelativeToolTip": "..\\RecursosHumanos_Models\\Capacitacion.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T03:26:54.62Z",
+              "WhenOpened": "2024-11-09T03:34:59.632Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "HomeVM.cs",
-              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\HomeVM.cs",
-              "RelativeDocumentMoniker": "..\\RecursosHumanos_Models\\ViewModels\\HomeVM.cs",
-              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\HomeVM.cs",
-              "RelativeToolTip": "..\\RecursosHumanos_Models\\ViewModels\\HomeVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Title": "RespuestaVM.cs",
+              "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\RespuestaVM.cs",
+              "RelativeDocumentMoniker": "..\\RecursosHumanos_Models\\ViewModels\\RespuestaVM.cs",
+              "ToolTip": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\RespuestaVM.cs",
+              "RelativeToolTip": "..\\RecursosHumanos_Models\\ViewModels\\RespuestaVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T03:11:25.569Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PreguntaVM.cs",
-              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\PreguntaVM.cs",
-              "RelativeDocumentMoniker": "..\\RecursosHumanos_Models\\ViewModels\\PreguntaVM.cs",
-              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\PreguntaVM.cs",
-              "RelativeToolTip": "..\\RecursosHumanos_Models\\ViewModels\\PreguntaVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T03:09:10.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ColaboradorVM.cs",
-              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\ColaboradorVM.cs",
-              "RelativeDocumentMoniker": "..\\RecursosHumanos_Models\\ViewModels\\ColaboradorVM.cs",
-              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\ColaboradorVM.cs",
-              "RelativeToolTip": "..\\RecursosHumanos_Models\\ViewModels\\ColaboradorVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T03:09:08.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CapacitacionVM.cs",
-              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\CapacitacionVM.cs",
-              "RelativeDocumentMoniker": "..\\RecursosHumanos_Models\\ViewModels\\CapacitacionVM.cs",
-              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\CapacitacionVM.cs",
-              "RelativeToolTip": "..\\RecursosHumanos_Models\\ViewModels\\CapacitacionVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T02:50:03.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IEvaluacionRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs",
-              "RelativeDocumentMoniker": "..\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs",
-              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs",
-              "RelativeToolTip": "..\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T01:57:10.283Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IDepartamentoRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IDepartamentoRepositorio.cs",
-              "RelativeDocumentMoniker": "..\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IDepartamentoRepositorio.cs",
-              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IDepartamentoRepositorio.cs",
-              "RelativeToolTip": "..\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IDepartamentoRepositorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T01:57:42.791Z",
+              "WhenOpened": "2024-11-09T03:32:04.872Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "InstitucionController.cs",
-              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Controllers\\InstitucionController.cs",
-              "RelativeDocumentMoniker": "Controllers\\InstitucionController.cs",
-              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Controllers\\InstitucionController.cs",
-              "RelativeToolTip": "Controllers\\InstitucionController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEsAAAA7AAAAAAAAAA==",
+              "Title": "RespuestaController.cs",
+              "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\RespuestaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RespuestaController.cs",
+              "ToolTip": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\RespuestaController.cs",
+              "RelativeToolTip": "Controllers\\RespuestaController.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAYwNgAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T01:44:19.361Z",
+              "WhenOpened": "2024-11-09T03:30:30.117Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PreguntaController.cs",
+              "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\PreguntaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PreguntaController.cs",
+              "ToolTip": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\PreguntaController.cs",
+              "RelativeToolTip": "Controllers\\PreguntaController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T03:18:41.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "CapacitacionVM.cs",
+              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\CapacitacionVM.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\CapacitacionVM.cs",
+              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\CapacitacionVM.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\CapacitacionVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T02:50:03.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "IEvaluacionRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs",
+              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T01:57:10.283Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EvaluacionController.cs",
-              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Controllers\\EvaluacionController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EvaluacionController.cs",
-              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Controllers\\EvaluacionController.cs",
-              "RelativeToolTip": "Controllers\\EvaluacionController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI4AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T01:44:09.322Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "DepartamentoController.cs",
-              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Controllers\\DepartamentoController.cs",
+              "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\DepartamentoController.cs",
               "RelativeDocumentMoniker": "Controllers\\DepartamentoController.cs",
-              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Controllers\\DepartamentoController.cs",
+              "ToolTip": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\DepartamentoController.cs",
               "RelativeToolTip": "Controllers\\DepartamentoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAgwI0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T20:43:11.231Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CapacitacionController.cs",
-              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Controllers\\CapacitacionController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CapacitacionController.cs",
-              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Controllers\\CapacitacionController.cs",
-              "RelativeToolTip": "Controllers\\CapacitacionController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 44,
+              "Title": "ColaboradorVM.cs",
+              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\ColaboradorVM.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\ColaboradorVM.cs",
+              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\ColaboradorVM.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\ColaboradorVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T23:42:01.664Z",
+              "WhenOpened": "2024-11-08T03:09:08.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "IDepartamentoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IDepartamentoRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IDepartamentoRepositorio.cs",
+              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IDepartamentoRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IDepartamentoRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T01:57:42.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InstitucionController.cs",
+              "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\InstitucionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InstitucionController.cs",
+              "ToolTip": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\InstitucionController.cs",
+              "RelativeToolTip": "Controllers\\InstitucionController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEsAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T01:44:19.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T01:49:48.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 6,
+              "Title": "ColaboradorController.cs",
+              "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\ColaboradorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ColaboradorController.cs",
+              "ToolTip": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\ColaboradorController.cs",
+              "RelativeToolTip": "Controllers\\ColaboradorController.cs",
+              "ViewState": "AQIAAMsAAAAAAAAAAAAUwN4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T23:42:06.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "PreguntaVM.cs",
+              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\PreguntaVM.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\PreguntaVM.cs",
+              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\PreguntaVM.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\PreguntaVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T03:09:10.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "HomeVM.cs",
+              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\HomeVM.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\HomeVM.cs",
+              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\HomeVM.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\HomeVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T03:11:25.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Capacitacion.cs",
+              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Capacitacion.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Capacitacion.cs",
+              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Capacitacion.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Capacitacion.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T03:26:54.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Evaluacion.cs",
+              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Evaluacion.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Evaluacion.cs",
+              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Evaluacion.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Evaluacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T03:27:11.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Colaborador.cs",
+              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Colaborador.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Colaborador.cs",
+              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Colaborador.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Colaborador.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T03:27:15.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EvaluacionController.cs",
+              "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\EvaluacionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EvaluacionController.cs",
+              "ToolTip": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\EvaluacionController.cs",
+              "RelativeToolTip": "Controllers\\EvaluacionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T01:44:09.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CapacitacionController.cs",
+              "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\CapacitacionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CapacitacionController.cs",
+              "ToolTip": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\CapacitacionController.cs",
+              "RelativeToolTip": "Controllers\\CapacitacionController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T23:42:01.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "WC.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\WC.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\WC.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\WC.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\WC.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\WC.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\WC.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T03:11:00.219Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 12,
               "Title": "RecursosHumanos_Utilidades.csproj",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\RecursosHumanos_Utilidades.csproj",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\RecursosHumanos_Utilidades.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\RecursosHumanos_Utilidades.csproj",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\RecursosHumanos_Utilidades.csproj",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\RecursosHumanos_Utilidades.csproj",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\RecursosHumanos_Utilidades.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-11-07T20:46:15.755Z"
@@ -363,350 +440,314 @@
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "ColaboradorController.cs",
-              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Controllers\\ColaboradorController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ColaboradorController.cs",
-              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Controllers\\ColaboradorController.cs",
-              "RelativeToolTip": "Controllers\\ColaboradorController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T23:42:06.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
               "Title": "IColaboradorRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IColaboradorRepositorio.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IColaboradorRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IColaboradorRepositorio.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IColaboradorRepositorio.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IColaboradorRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IColaboradorRepositorio.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T02:56:36.027Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 14,
               "Title": "Colaborador.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Colaborador.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Colaborador.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Colaborador.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Colaborador.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Colaborador.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Colaborador.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T20:20:25.769Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 15,
               "Title": "ColaboradorVM.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\ColaboradorVM.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\ColaboradorVM.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\ColaboradorVM.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\ColaboradorVM.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\ColaboradorVM.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\ColaboradorVM.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T02:56:36.16Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 16,
               "Title": "IRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IRepositorio.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IRepositorio.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IRepositorio.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IRepositorio.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T02:56:35.671Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 17,
               "Title": "ColaboradorRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\ColaboradorRepositorio.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\ColaboradorRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\ColaboradorRepositorio.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\ColaboradorRepositorio.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\ColaboradorRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\ColaboradorRepositorio.cs",
               "ViewState": "AQIAABoAAAAAAAAAAAA3wBkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T03:03:11.218Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 18,
               "Title": "Capacitacion.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Capacitacion.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Capacitacion.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Capacitacion.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Capacitacion.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Capacitacion.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Capacitacion.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T20:15:53.805Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T01:49:48.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 19,
               "Title": "Pregunta.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Pregunta.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Pregunta.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Pregunta.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Pregunta.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Pregunta.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Pregunta.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T23:40:50.781Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 20,
               "Title": "RespuestaRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\RespuestaRepositorio.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\RespuestaRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\RespuestaRepositorio.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\RespuestaRepositorio.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\RespuestaRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\RespuestaRepositorio.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T23:37:30.55Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 21,
               "Title": "PreguntaRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\PreguntaRepositorio.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\PreguntaRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\PreguntaRepositorio.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\PreguntaRepositorio.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\PreguntaRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\PreguntaRepositorio.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T23:32:00.783Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 22,
               "Title": "RespuestaVM.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\RespuestaVM.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\RespuestaVM.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\RespuestaVM.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\RespuestaVM.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\RespuestaVM.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\RespuestaVM.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T02:56:36.147Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 23,
               "Title": "PuestoRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\PuestoRepositorio.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\PuestoRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\PuestoRepositorio.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\PuestoRepositorio.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\PuestoRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\PuestoRepositorio.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T23:29:16.772Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 24,
               "Title": "PreguntaVM.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\PreguntaVM.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\PreguntaVM.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\PreguntaVM.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\PreguntaVM.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\PreguntaVM.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\PreguntaVM.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T02:56:36.154Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 25,
               "Title": "IPreguntaRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IPreguntaRepositorio.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IPreguntaRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IPreguntaRepositorio.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IPreguntaRepositorio.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IPreguntaRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IPreguntaRepositorio.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T02:56:36.011Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 26,
               "Title": "InstitucionRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\InstitucionRepositorio.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\InstitucionRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\InstitucionRepositorio.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\InstitucionRepositorio.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\InstitucionRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\InstitucionRepositorio.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T23:27:42.731Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 27,
               "Title": "EvaluacionRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\EvaluacionRepositorio.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\EvaluacionRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\EvaluacionRepositorio.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\EvaluacionRepositorio.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\EvaluacionRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\EvaluacionRepositorio.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T03:21:11.542Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 28,
               "Title": "DepartamendoRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\DepartamendoRepositorio.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\DepartamendoRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\DepartamendoRepositorio.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\DepartamendoRepositorio.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\DepartamendoRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\DepartamendoRepositorio.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T23:18:13.795Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 29,
               "Title": "CapacitacionRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\CapacitacionRepositorio.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\CapacitacionRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\CapacitacionRepositorio.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\CapacitacionRepositorio.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\CapacitacionRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\CapacitacionRepositorio.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T03:16:24.678Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 30,
               "Title": "IRespuestaRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IRespuestaRepositorio.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IRespuestaRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IRespuestaRepositorio.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IRespuestaRepositorio.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IRespuestaRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IRespuestaRepositorio.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T02:56:35.997Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 31,
               "Title": "IPuestoRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IPuestoRepositorio.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IPuestoRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IPuestoRepositorio.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IPuestoRepositorio.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IPuestoRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IPuestoRepositorio.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T02:56:36.005Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 32,
               "Title": "ICapacitacionRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\ICapacitacionRepositorio.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\ICapacitacionRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\ICapacitacionRepositorio.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\ICapacitacionRepositorio.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\ICapacitacionRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\ICapacitacionRepositorio.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T02:56:36.033Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 33,
               "Title": "CapacitacionVM.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\CapacitacionVM.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\CapacitacionVM.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\CapacitacionVM.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\CapacitacionVM.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\CapacitacionVM.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\CapacitacionVM.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T02:56:36.167Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 34,
               "Title": "Repositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\Repositorio.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\Repositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\Repositorio.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\Repositorio.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\Repositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\Repositorio.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T02:59:37.001Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 35,
               "Title": "RecursosHumanos_Models.csproj",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-11-06T02:56:36.098Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 36,
               "Title": "AplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\AplicationDbContext.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\AplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\AplicationDbContext.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\AplicationDbContext.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\AplicationDbContext.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\AplicationDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T02:56:36.075Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 37,
               "Title": "IDepartamentoRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IDepartamentoRepositorio.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IDepartamentoRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IDepartamentoRepositorio.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IDepartamentoRepositorio.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IDepartamentoRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IDepartamentoRepositorio.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T02:56:36.039Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 38,
               "Title": "IEvaluacionRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T02:56:36.022Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 58,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         }

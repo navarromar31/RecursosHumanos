@@ -9,140 +9,219 @@ using NuGet.Packaging.Signing;
 using System.Collections.Generic;
 using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Hosting;
+using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
+using RecursosHumanos_Utilidades;
 
 namespace RecursosHumanos.Controllers
 {
     public class PreguntaController : Controller
     {
-        private readonly AplicationDbContext _db;
 
-        /*se utiliza para declarar una variable de solo lectura que almacena una instancia 
-         * de IWebHostEnvironment. Esta interfaz proporciona información sobre el entorno 
-         * de hospedaje web en el que se está ejecutando la aplicación, como el nombre del 
-         * entorno (desarrollo, producción, etc.), la ruta del contenido web y otros detalles 
-         * específicos del entorno.*/
+        // vamos a invocar  a nuestro dbcontext 
 
-        public PreguntaController(AplicationDbContext db, IWebHostEnvironment webhHostEnvironment)
+
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly IPreguntaRepositorio _preguntaRepo;
+        public PreguntaController(IPreguntaRepositorio preguntaRepo, IWebHostEnvironment webHostEnvironment)//recibe nuestro contexto de BD
         {
-            _db = db;
-          
+            // _db = db;
+            _preguntaRepo = preguntaRepo;
+            _webHostEnvironment = webHostEnvironment;
+
         }
+
+
+
         public IActionResult Index()
         {
-            IEnumerable<Pregunta> lista = _db.pregunta
-                .Include(evaluacion=> evaluacion.Evaluacion)
-                .Include(capacitacion=> capacitacion.Capacitacion).Where(pregunta => pregunta.EstadoPregunta == true);
+            /* IEnumerable<Producto> lista = _db.Producto.Include(c => c.Categoria)
+                                                       .Include(t => t.TipoAplicacion);*/
+
+
+            IEnumerable<Pregunta> lista = _preguntaRepo.ObtenerTodos(incluirPropiedades: "Pregunta,Evaluacion,Capacitacion");
 
             return View(lista);
         }
+
+
+
+        //GET
+
         public IActionResult Upsert(int? Id)
         {
-            IEnumerable<SelectListItem> evaluacionDropDown = _db.evaluacion.Select(Evaluacion=> new SelectListItem
-            {
-                Text = Evaluacion.Titulo,
-                Value = Evaluacion.Id.ToString()
-            });
-            ViewBag.evaluacionDropDown= evaluacionDropDown;
-            IEnumerable<SelectListItem> capacitacionDropDown = _db.capacitacion.Select(capacitacion => new SelectListItem
-            {
-                Text = capacitacion.NombreCapacitacion,
-                Value = capacitacion.Id.ToString()
-            });
-            ViewBag.capacitacionDropDown=capacitacionDropDown;
 
-            Pregunta pregunta= new Pregunta();
-            PreguntaVM preguntavm= new PreguntaVM();
+            PreguntaVM preguntaVM = new PreguntaVM()
             {
-                preguntavm.Pregunta = new Pregunta();
-                preguntavm.EvaluacionLista = _db.evaluacion.Select(Evaluacion => new SelectListItem
-                {
-                    Text = Evaluacion.Titulo,
-                    Value = Evaluacion.Id.ToString(),
-                });
-                preguntavm.CapacitacionLista = _db.capacitacion.Select(capacitacion => new SelectListItem
-                {
-                    Text = capacitacion.NombreCapacitacion,
-                    Value = capacitacion.Id.ToString(),
-                });
-                if (Id == null)
-                {
-                    return View(preguntavm);
-                }
-                else
-                {
-                    preguntavm.Pregunta = _db.pregunta.Find(Id);
-                    if (preguntavm == null)
-                    {
-                        return NotFound();
-                    }
-                    return View(preguntavm);
-                }
+                Pregunta = new Pregunta(),
+
+                EvaluacionLista = _preguntaRepo.ObtenerTodosDropDownList(WC.EvaluacionNombre),
+                CapacitacionLista = _preguntaRepo.ObtenerTodosDropDownList(WC.CapacitacionNombre),
                 
-            }
 
-        }//cierreupsert
-         //post
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Upsert(PreguntaVM preguntaVM)
-        {
-            if (ModelState.IsValid)
+            };
+
+
+            if (Id == null)
             {
-              
-                if (preguntaVM.Pregunta.Id == 0)// id es 0, no hay objeto , hay que crear uno nuevo 
-                {
-                   
-                    _db.pregunta.Add(preguntaVM.Pregunta);
-                }
-                else
-                {
-                    // si hay un producto ya creado y hay que actualizar 
-                    //ACTULIZAR PRODUCTO }
-                    var objProducto = _db.pregunta.AsNoTracking().FirstOrDefault(p => p.Id == preguntaVM.Pregunta.Id);
+                //crearemos un nuevo producto cuando no recibamos un ID
 
-                    
-                    _db.pregunta.Update(preguntaVM.Pregunta);
+                return View(preguntaVM);
+
+            }
+            else
+            {
+                preguntaVM.Pregunta = _preguntaRepo.Obtener(Id.GetValueOrDefault());
+                if (preguntaVM.Pregunta == null)
+                {
+                    return NotFound();
                 }
-                _db.SaveChanges();
-                return RedirectToAction("Index");
-            }//cierre modelo no valido 
-            return View(preguntaVM);
+                return View(preguntaVM);
+
+            }
 
         }
 
-        //GET ELIMINAR 
-        public IActionResult Eliminar(int? Id)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [HttpPost]
+        public IActionResult Upsert(PreguntaVM preguntaVM)
         {
-            if (Id == null || Id == 0)
+            //validamos el modelo
+            /*if (ModelState.IsValid)
             {
-                return NotFound();
+                //esto para poder obtener la imagen que nos envia la vista
+                var files = HttpContext.Request.Form.Files;
+                string webRootPath = _webHostEnvironment.WebRootPath;
+                //ahora validamos si es o no un nuevo ingreso o si se trata de una actualizacion 
+                if (colaboradorVM.Colaborador.Id == 0)
+                {
+                    //toda esta logica es para lograr grabar un colaborador y una imagen
+                    //crear si el ID es cero
+                    string upload = webRootPath + WC.ImagenRuta;//LA PRIPIEDAD DE WC ES LA QUE TIENE LA RUTA DE DONDE GUARDAR LA IMAGEN
+                    string fileName = Guid.NewGuid().ToString(); //esto es para que se le asigne un ID a la iamgen que se va a guardar
+                    string extension = Path.GetExtension(files[0].FileName);
 
+                    using (var fileStream = new FileStream(Path.Combine(upload, fileName + extension), FileMode.Create))
+                    {
+                        files[0].CopyTo(fileStream);
+                    }
+                    //finalmente grabanos la imagen y los datos del colaborador en los campos correspondientes
+
+                    colaboradorVM.Colaborador.ImagenUrlCol = fileName + extension;
+                    _colaboradorRepo.Agregar(colaboradorVM.Colaborador);
+                }
+                else
+                {
+                    //se actualiza si el ID es mayor a cero
+                    var objColaborador = _colaboradorRepo.ObtenerPrimero(p => p.Id == colaboradorVM.Colaborador.Id, isTracking: false);   //Obtenemos el producto que queremos editar 
+
+                    if (files.Count > 0)//validamos con este si existe una imagen y si es asi el usuario lo que va hacer es cambiar la imagen actual por otra 
+                    {
+                        string upload = webRootPath + WC.ImagenRuta;//LA PRIPIEDAD DE WC ES LA QUE TIENE LA RUTA DE DONDE GUARDAR LA IMAGEN
+                        string fileName = Guid.NewGuid().ToString(); //esto es para que se le asigne un ID a la iamgen que se va a guardar
+                        string extension = Path.GetExtension(files[0].FileName);
+                        //pero tendriamos que borrar la img anterior
+
+                        var anteriorFile = Path.Combine(upload, objColaborador.ImagenUrlCol); //con esto obtnemos la anterior
+                        if (System.IO.File.Exists(anteriorFile))//VERIFICAMOS SI LA IMG ANTERIOR EXISTE
+                        {
+                            System.IO.File.Delete(anteriorFile);    // SI EXISTE LA BORRAMOS
+                        }  //FIN DE BORRAR LA IMG ANTERIOR                                                        //
+
+                        //PROCEDEMOS A CARGAR LA NUEVA IMAGEN
+                        using (var fileStream = new FileStream(Path.Combine(upload, fileName + extension), FileMode.Create))
+                        {
+                            files[0].CopyTo(fileStream);
+                        }
+
+                        //PROCEDEMOS ACTUALIZAR EL PRODUCTO CON SU NUEVA IMG
+
+                        colaboradorVM.Colaborador.ImagenUrlCol = fileName + extension;
+
+                    }//CASO CONTRARIO SI NO SE CARGA UNA NUEVA IMG , ES DECIR ACTUALIZA OTROS DATOS PERO LA IMG NO
+                    else
+                    {
+                        //en ese caso se mantiene la misma img
+
+                        colaboradorVM.Colaborador.ImagenUrlCol = objColaborador.ImagenUrlCol;
+
+                    }
+                    //ya luego actualizamos el producto
+
+                    _colaboradorRepo.Actualizar(colaboradorVM.Colaborador);
+
+                }
+
+                _colaboradorRepo.Grabar();
+                return RedirectToAction("Index");
+            }//ESTA LLAVE PERTENCE AL IF DEL ModelIsValidate
+            */
+
+            preguntaVM.EvaluacionLista = _preguntaRepo.ObtenerTodosDropDownList(WC.EvaluacionNombre);
+            preguntaVM.CapacitacionLista = _preguntaRepo.ObtenerTodosDropDownList(WC.CapacitacionNombre);
+
+            return View(preguntaVM);//si el modelo no es validado o sea no es correcto retornamos a la vista el objeto
+
+        }
+
+        // ACA NO SOLAMENTE ELIMINAMOS EL PRODUCTO , SINO TBM LA IMG ASOCIADA A ESTE
+        //GET
+
+
+        public IActionResult Eliminar(int? id)
+        {
+
+            if (id == null || id == 0)
+            {
+
+                return NotFound();
             }
-            Pregunta pregunta = _db.pregunta
-                .Include(evaluacion => evaluacion.Evaluacion)
-                .Include(capacitacion => capacitacion.Capacitacion).FirstOrDefault(p=>p.Id==0);
+
+            Pregunta pregunta = _preguntaRepo.ObtenerPrimero(p => p.Id == id);    //aca traemos los datos del producto de
+                                                                                           //acuerdo con el ID que recibimos de la vista
+
+
+            if (pregunta == null)
+            {
+                //en caso de que no exista 
+                return NotFound();
+            }
+
+            return View(pregunta); //le retornamos a la vista aliminar los datos del producto a eliminar 
+
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Eliminar(Pregunta pregunta)
+        {
             if (pregunta == null)
             {
                 return NotFound();
 
             }
-            return View(pregunta);
-        }// CIERRE ELIMINAR
-        //METODO POST
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Eliminar(Pregunta pregunta)
-        {
-            if (ModelState.IsValid)
+
+            //ahora lo primero es proceder a eliminar la imagen de nuestro server 
+
+
+            //string upload = _webHostEnvironment.WebRootPath + WC.ImagenRuta;//LA PRoPIEDAD DE WC ES LA QUE TIENE LA RUTA DE DONDE esta  GUARDAda LA IMAGEN
+
+
+            /*var anteriorFile = Path.Combine(upload, colaborador.ImagenUrlCol);
+            if (System.IO.File.Exists(anteriorFile))//VERIFICAMOS SI LA IMG ANTERIOR EXISTE
             {
-                pregunta.EstadoPregunta = false;
-                _db.pregunta.Update(pregunta);
-                _db.SaveChanges();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(pregunta);
+                System.IO.File.Delete(anteriorFile);    // SI EXISTE LA BORRAMOS
+            }*/
+
+            _preguntaRepo.Remover(pregunta);  //Ahora eliminamos el producto
+            _preguntaRepo.Grabar();
+            return RedirectToAction(nameof(Index));
+
 
         }
+
+
 
     }
 }
