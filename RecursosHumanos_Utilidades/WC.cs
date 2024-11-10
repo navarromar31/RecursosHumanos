@@ -4,6 +4,7 @@
     {
         //RUTA DE LAS IMAGENES
         public static string ImagenRuta = @"\dondesea\dondesea\";
+
         public const string ColaboradorNombre = "Colaborador";
         public const string DeartamentoNombre = "Departamento";
         public const string InstitucionNombre = "Institucion";

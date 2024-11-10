@@ -1684,3 +1684,4 @@ C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug
 C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\RecursosHumanos_AccesoDatos.pdb
 C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\RecursosHumanos_Models.pdb
 C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\RecursosHumanos_Utilidades.pdb
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos\obj\Debug\net6.0\RecursosHumanos.MvcApplicationPartsAssemblyInfo.cs

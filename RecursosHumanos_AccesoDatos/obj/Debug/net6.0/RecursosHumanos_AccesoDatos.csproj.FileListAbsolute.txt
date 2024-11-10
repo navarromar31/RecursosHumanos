@@ -20,3 +20,5 @@ C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDat
 C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\refint\RecursosHumanos_AccesoDatos.dll
 C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.pdb
 C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\ref\RecursosHumanos_AccesoDatos.dll
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\bin\Debug\net6.0\RecursosHumanos_Utilidades.dll
+C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\bin\Debug\net6.0\RecursosHumanos_Utilidades.pdb
