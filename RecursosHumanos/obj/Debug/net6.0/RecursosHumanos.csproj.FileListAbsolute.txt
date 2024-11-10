@@ -1332,7 +1332,6 @@ C:\Users\sasar\Documents\GitHub\RecursosHumanos\RecursosHumanos\obj\Debug\net6.0
 C:\Users\sasar\Documents\GitHub\RecursosHumanos\RecursosHumanos\obj\Debug\net6.0\RecursosHumanos.pdb
 C:\Users\sasar\Documents\GitHub\RecursosHumanos\RecursosHumanos\obj\Debug\net6.0\RecursosHumanos.genruntimeconfig.cache
 C:\Users\sasar\Documents\GitHub\RecursosHumanos\RecursosHumanos\obj\Debug\net6.0\ref\RecursosHumanos.dll
-C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\appsettings.json
 C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\RecursosHumanos.staticwebassets.runtime.json
 C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\RecursosHumanos.exe
@@ -1685,3 +1684,17 @@ C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug
 C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\RecursosHumanos_Models.pdb
 C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\RecursosHumanos_Utilidades.pdb
 C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos\obj\Debug\net6.0\RecursosHumanos.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\Braintree.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\SendGrid.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\StarkbankEcdsa.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\Syncfusion.EJ2.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\Syncfusion.Licensing.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\System.Xml.XPath.XmlDocument.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\RecursosHumanos_AccesoDatos.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\RecursosHumanos_Models.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\RecursosHumanos_Utilidades.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\RecursosHumanos_AccesoDatos.pdb
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\RecursosHumanos_Models.pdb
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos\bin\Debug\net6.0\RecursosHumanos_Utilidades.pdb

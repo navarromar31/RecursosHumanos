@@ -27,3 +27,19 @@ C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\ob
 C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\bin\Debug\net6.0\RecursosHumanos_Utilidades.dll
 C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\bin\Debug\net6.0\RecursosHumanos_Utilidades.pdb
 C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\Recursos.E52BE64F.Up2Date
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\bin\Debug\net6.0\RecursosHumanos_Models.deps.json
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\bin\Debug\net6.0\RecursosHumanos_Models.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\bin\Debug\net6.0\RecursosHumanos_Models.pdb
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\bin\Debug\net6.0\RecursosHumanos_Utilidades.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\bin\Debug\net6.0\RecursosHumanos_Utilidades.pdb
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\RecursosHumanos_Models.csproj.AssemblyReference.cache
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\RecursosHumanos_Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\RecursosHumanos_Models.AssemblyInfoInputs.cache
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\RecursosHumanos_Models.AssemblyInfo.cs
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\RecursosHumanos_Models.csproj.CoreCompileInputs.cache
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\RecursosHumanos_Models.sourcelink.json
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\Recursos.E52BE64F.Up2Date
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\RecursosHumanos_Models.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\refint\RecursosHumanos_Models.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\RecursosHumanos_Models.pdb
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Models\obj\Debug\net6.0\ref\RecursosHumanos_Models.dll

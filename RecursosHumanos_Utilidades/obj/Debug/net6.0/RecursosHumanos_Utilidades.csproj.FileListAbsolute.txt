@@ -24,3 +24,16 @@ C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Utilidade
 C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Utilidades\obj\Debug\net6.0\refint\RecursosHumanos_Utilidades.dll
 C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Utilidades\obj\Debug\net6.0\RecursosHumanos_Utilidades.pdb
 C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_Utilidades\obj\Debug\net6.0\ref\RecursosHumanos_Utilidades.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Utilidades\bin\Debug\net6.0\RecursosHumanos_Utilidades.deps.json
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Utilidades\bin\Debug\net6.0\RecursosHumanos_Utilidades.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Utilidades\bin\Debug\net6.0\RecursosHumanos_Utilidades.pdb
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Utilidades\obj\Debug\net6.0\RecursosHumanos_Utilidades.csproj.AssemblyReference.cache
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Utilidades\obj\Debug\net6.0\RecursosHumanos_Utilidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Utilidades\obj\Debug\net6.0\RecursosHumanos_Utilidades.AssemblyInfoInputs.cache
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Utilidades\obj\Debug\net6.0\RecursosHumanos_Utilidades.AssemblyInfo.cs
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Utilidades\obj\Debug\net6.0\RecursosHumanos_Utilidades.csproj.CoreCompileInputs.cache
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Utilidades\obj\Debug\net6.0\RecursosHumanos_Utilidades.sourcelink.json
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Utilidades\obj\Debug\net6.0\RecursosHumanos_Utilidades.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Utilidades\obj\Debug\net6.0\refint\RecursosHumanos_Utilidades.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Utilidades\obj\Debug\net6.0\RecursosHumanos_Utilidades.pdb
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_Utilidades\obj\Debug\net6.0\ref\RecursosHumanos_Utilidades.dll

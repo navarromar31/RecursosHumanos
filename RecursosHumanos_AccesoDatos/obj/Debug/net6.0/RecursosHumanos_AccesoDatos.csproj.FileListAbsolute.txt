@@ -22,3 +22,21 @@ C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDat
 C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\ref\RecursosHumanos_AccesoDatos.dll
 C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\bin\Debug\net6.0\RecursosHumanos_Utilidades.dll
 C:\Users\Dayra Solano\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\bin\Debug\net6.0\RecursosHumanos_Utilidades.pdb
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\bin\Debug\net6.0\RecursosHumanos_AccesoDatos.deps.json
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\bin\Debug\net6.0\RecursosHumanos_AccesoDatos.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\bin\Debug\net6.0\RecursosHumanos_AccesoDatos.pdb
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\bin\Debug\net6.0\RecursosHumanos_Models.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\bin\Debug\net6.0\RecursosHumanos_Utilidades.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\bin\Debug\net6.0\RecursosHumanos_Models.pdb
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\bin\Debug\net6.0\RecursosHumanos_Utilidades.pdb
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.csproj.AssemblyReference.cache
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.AssemblyInfoInputs.cache
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.AssemblyInfo.cs
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.sourcelink.json
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\Recursos.B0048B09.Up2Date
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\refint\RecursosHumanos_AccesoDatos.dll
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.pdb
+C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\ref\RecursosHumanos_AccesoDatos.dll
