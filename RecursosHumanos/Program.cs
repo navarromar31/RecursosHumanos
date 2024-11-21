@@ -1,6 +1,10 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RecursosHumanos_AccesoDatos;
+using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
+using RecursosHumanos_AccesoDatos.Datos.Repositorio;
+using RecursosHumanos_AccesoDatos.Migrations;
+using RecursosHumanos_AccesoDatos.Datos;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +28,11 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 
 
 builder.Services.AddControllersWithViews();
+
+
+builder.Services.AddScoped<ICapacitacionRepositorio, CapacitacionRepositorio>();
+builder.Services.AddScoped<IColaboradorRepositorio, ColaboradorRepositorio>();
+builder.Services.AddScoped<IEvaluacionRepositorio, EvaluacionRepositorio>();
 
 
 

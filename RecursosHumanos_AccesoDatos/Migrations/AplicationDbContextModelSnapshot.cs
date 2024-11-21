@@ -5,10 +5,12 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RecursosHumanos_AccesoDatos;
+using RecursosHumanos_AccesoDatos.Datos;
+
 
 #nullable disable
 
-namespace RecursosHumanos_Migrations.Migrations
+namespace RecursosHumanos_AccesoDatos.Migrations
 {
     [DbContext(typeof(AplicationDbContext))]
     partial class AplicationDbContextModelSnapshot : ModelSnapshot

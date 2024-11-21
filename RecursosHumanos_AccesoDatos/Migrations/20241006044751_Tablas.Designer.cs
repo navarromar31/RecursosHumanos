@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RecursosHumanos_AccesoDatos;
+using RecursosHumanos_AccesoDatos.Datos;
 
 #nullable disable
 

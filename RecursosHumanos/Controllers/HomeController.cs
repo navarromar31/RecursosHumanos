@@ -33,14 +33,9 @@ namespace RecursosHumanos.Controllers
         {
             HomeVM homeVM = new HomeVM()
             {
-                // Producto = _db.Producto.Include(c => c.Categoria).Include(t => t.TipoAplicacion),
-                //Categoria = _db.Categoria
-
-                Capacitacion = _capacitacionRepo.ObtenerTodos(incluirPropiedades: "IdCapacitacion"),
-                Colaborador = _colaboradorRepo.ObtenerTodos(incluirPropiedades: "Puesto,Institucion, Departamento"),
+                Capacitacion = _capacitacionRepo.ObtenerTodos(incluirPropiedades: "Colaborador"),
+                Colaborador = _colaboradorRepo.ObtenerTodos(incluirPropiedades: "Puesto,Institucion,Departamento"),
                 Evaluacion = _evaluacionRepo.ObtenerTodos()
-
-
             };
 
             return View(homeVM);

@@ -7,7 +7,7 @@ using System.Linq; // Importamos LINQ para consultas.
 using System.Text; // Importamos el espacio de nombres para manejo de texto.
 using System.Threading.Tasks; // Importamos para manejar tareas asíncronas.
 
-namespace RecursosHumanos_AccesoDatos.Datos
+namespace RecursosHumanos_AccesoDatos.Datos.Repositorio
 {
     public class PuestoRepositorio : Repositorio<Puesto>, IPuestoRepositorio
     {

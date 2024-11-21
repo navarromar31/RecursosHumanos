@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using RecursosHumanos_Models;
-
-namespace RecursosHumanos_AccesoDatos
+using RecursosHumanos_AccesoDatos;
+using RecursosHumanos_AccesoDatos.Migrations;
+namespace RecursosHumanos_AccesoDatos.Datos
 {
     public class AplicationDbContext : IdentityDbContext
     {
