@@ -936,7 +936,10 @@
           "Syncfusion.EJ2.AspNet.Core": "27.1.56"
         },
         "runtime": {
-          "RecursosHumanos_Models.dll": {}
+          "RecursosHumanos_Models.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "RecursosHumanos_Utilidades/1.0.0": {
@@ -948,7 +951,10 @@
           "Syncfusion.EJ2.AspNet.Core": "27.1.56"
         },
         "runtime": {
-          "RecursosHumanos_Utilidades.dll": {}
+          "RecursosHumanos_Utilidades.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
