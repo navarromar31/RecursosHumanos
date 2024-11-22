@@ -323,21 +323,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Capacitacion\\index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Capacitacion\\index.cshtml",
-              "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Capacitacion\\index.cshtml",
-              "RelativeToolTip": "Views\\Capacitacion\\index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T23:13:53.086Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
@@ -348,8 +335,7 @@
               "RelativeToolTip": "..\\RecursosHumanos_Models\\ViewModels\\HomeVM.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T21:49:30.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T21:49:30.376Z"
             },
             {
               "$type": "Document",
@@ -361,8 +347,7 @@
               "RelativeToolTip": "..\\RecursosHumanos_Models\\Departamento.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T22:06:35.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T22:06:35.809Z"
             },
             {
               "$type": "Document",
@@ -372,10 +357,22 @@
               "RelativeDocumentMoniker": "..\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\Repositorio.cs",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\Repositorio.cs",
               "RelativeToolTip": "..\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\Repositorio.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAjwF4AAAAvAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T03:07:43.454Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Capacitacion\\index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Capacitacion\\index.cshtml",
+              "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Capacitacion\\index.cshtml",
+              "RelativeToolTip": "Views\\Capacitacion\\index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-21T23:13:53.086Z"
             },
             {
               "$type": "Document",
@@ -387,8 +384,7 @@
               "RelativeToolTip": "..\\RecursosHumanos_Models\\ViewModels\\ColaboradorVM.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T22:06:51.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T22:06:51.351Z"
             },
             {
               "$type": "Document",
@@ -400,8 +396,7 @@
               "RelativeToolTip": "..\\RecursosHumanos_Models\\Colaborador.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAuwA0AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T22:06:27.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T22:06:27.211Z"
             },
             {
               "$type": "Document",
@@ -413,8 +408,7 @@
               "RelativeToolTip": "..\\RecursosHumanos_Models\\Evaluacion.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T22:06:40.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T22:06:40.954Z"
             },
             {
               "$type": "Document",
@@ -426,8 +420,7 @@
               "RelativeToolTip": "..\\RecursosHumanos_Models\\Institucion.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T22:06:37.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T22:06:37.142Z"
             },
             {
               "$type": "Document",
@@ -439,8 +432,7 @@
               "RelativeToolTip": "..\\RecursosHumanos_Models\\Puesto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T22:54:55.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T22:54:55.346Z"
             },
             {
               "$type": "Document",
@@ -452,8 +444,7 @@
               "RelativeToolTip": "..\\RecursosHumanos_Models\\EvaluacionColaborador.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T03:12:48.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T03:12:48.5Z"
             },
             {
               "$type": "Document",
@@ -465,8 +456,7 @@
               "RelativeToolTip": "..\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\ColaboradorRepositorio.cs",
               "ViewState": "AQIAACkAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T22:01:58.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T22:01:58.185Z"
             },
             {
               "$type": "Document",
@@ -478,8 +468,7 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T02:52:57.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T02:52:57.458Z"
             },
             {
               "$type": "Document",
@@ -491,8 +480,7 @@
               "RelativeToolTip": "..\\RecursosHumanos_Models\\Capacitacion.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T22:05:26.754Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T22:05:26.754Z"
             },
             {
               "$type": "Document",
