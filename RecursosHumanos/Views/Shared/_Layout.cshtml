@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@*   DIRECTIVAS PARA UTILIZAR LAS SESIONES *@
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+@using RecursosHumanos_Utilidades
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -7,32 +11,72 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/RecursosHumanos.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">RecursosHumanos</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+
+                    <img src="~/imagenes/tile.png" width="40%" />
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-<<<<<<< Updated upstream
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <!--AQUI-->
-=======
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between flwx-row-reverse">
-                    <!--AQUI-->
-                    <partial name="_LoginPartial"/>
->>>>>>> Stashed changes
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between flex-row-reverse">
+                    @*Aca hacemos la mofificacion para el Login y el register*@
+
+                    <partial name="_LoginPartial" />
+
+
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            @* ACA empieza EL DROPDOWN DE BOOTSRAP *@
+                            @* solo los usurio ADMIN podran tener acceso  *@
+
+                            @if (User.IsInRole(WC.AdminRole))
+                            {
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Administrar contenido
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" asp-area="" asp-controller="Categoria" asp-action="Index">Categoria</a></li>
+                                        <li><a class="dropdown-item" asp-area="" asp-controller="TipoAplicacion" asp-action="Index">Tipo de Aplicación</a></li>
+                                        <li><a class="dropdown-item" asp-area="" asp-controller="Producto" asp-action="Index">Productos</a></li>
+                                        <li><a class="dropdown-item" asp-area="Identity" asp-page="/Account/Register">Gestión Usuarios</a></li>
+
+                                    </ul>
+                                </li>
+                                @*   ACA TERMINA EL DROPDOWN DE BOOTSRAP *@
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Administrar contenido ordenes
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" asp-area="" asp-controller="Orden" asp-action="Index">Ordenes</a></li>
+                                    </ul>
+                                </li>
+                                @*   ACA TERMINA EL DROPDOWN DE BOOTSRAP *@
+
+
+
+
+
+                            }
+                            <li>
+                        </ul>
                 </div>
             </div>
         </nav>
@@ -51,6 +95,14 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "> </script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

@@ -1,5 +1,72 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model IEnumerable<RecursosHumanos_Models.Capacitacion>
+
 @{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Lista de capacitacion</h2>
+        </div>
+
+        <div class="col-6 text-end">
+            <a asp-controller="Capacitacion" asp-action="Upsert" class="btn btn-primary">
+                <i class="fa-solid fa-plus"></i> Nuevo Producto
+            </a>
+        </div>
+    </div>
+
+    <br />
+
+    @if (Model.Any())
+    {
+        <table class="table table-bordered table-striped w-100">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Duracion</th>
+                    <th>MinPersonas</th>
+                    <th>MaxPersonas</th>
+                    <th>Modalidad</th>
+                    <th>Colaborador</th>
+
+
+                    <th class="text-center">Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th>@item.NombreCapacitacion</th>
+                        <th>@item.Duracion</th>
+                        <th>@item.MinPersonas</th>
+                        <th>@item.MaxPersonas</th>
+                        <th>@item.Modalidad</th>
+                        <th>@item.Colaborador.NombreColaborador</th>
+
+
+
+                        <td class="text-center">
+                            <div class="btn-group" role="group">
+                                <a asp-controller="Producto" asp-action="Upsert" asp-route-id="@item.Id" class="btn btn-primary mx-2">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </a>
+                                <a asp-controller="Producto" asp-action="Eliminar" asp-route-id="@item.Id" class="btn btn-danger mx-2">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No hay registro de Productos</p>
+    }
+</div>
