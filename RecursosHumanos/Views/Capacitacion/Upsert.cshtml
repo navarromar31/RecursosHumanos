@@ -1,0 +1,160 @@
+﻿@using RecursosHumanos_Utilidades
+@model RecursosHumanos_Models.Capacitacion
+
+@{
+    var titulo = "Crear nuevo capacitacion";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-action="Upsert" method="post" enctype="multipart/form-data">
+    <div class="modal fade show d-block" id="AgregarCapacitacionModal" tabindex="-1" aria-labelledby="CapacitacionModalLabel" aria-hidden="true" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="CapacitacionModalLabel">
+                        @if (Model.Id != 0)
+                        {
+                            @:Editar Capacitación
+                        }
+                        else
+                        {
+                            @:Nueva Capacitación
+                        }
+                    </h1>
+                </div>
+
+                <div class="modal-body">
+                    <!-- Validaciones -->
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    
+                    <!-- Campo para la imagen -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label asp-for="ImagenUrlCap" class="form-label">Imagen</label>
+                            <input type="file" name="files" id="imagenId" class="form-control" />
+                        </div>
+                    </div>
+
+                    <!-- Nombre de la capacitación -->
+                    <div class="mb-3">
+                        <label asp-for="NombreCapacitacion" class="form-label">Nombre de la capacitación:</label>
+                        <input asp-for="NombreCapacitacion" class="form-control" required />
+                        <span asp-validation-for="NombreCapacitacion" class="text-danger"></span>
+                    </div>
+
+                    <!-- Duración -->
+                    <div class="mb-3">
+                        <label asp-for="Duracion" class="form-label">Duración:</label>
+                        <input asp-for="Duracion" class="form-control" required />
+                        <span asp-validation-for="Duracion" class="text-danger"></span>
+                    </div>
+
+                    <!-- Mínimo de colaboradores -->
+                    <div class="mb-3">
+                        <label class="form-label">Mínimo de Colaboradores:</label>
+                        <div class="input-group">
+                            <button type="button" class="btn btn-outline-warning" id="MinColabDecrement">-</button>
+                            <input type="number" asp-for="MinPersonas" class="form-control text-center" id="MinColab" readonly />
+                            <button type="button" class="btn btn-outline-warning" id="MinColabIncrement">+</button>
+                        </div>
+                    </div>
+
+                    <!-- Máximo de colaboradores -->
+                    <div class="mb-3">
+                        <label class="form-label">Máximo de Colaboradores:</label>
+                        <div class="input-group">
+                            <button type="button" class="btn btn-outline-warning" id="MaxColabDecrement">-</button>
+                            <input type="number" asp-for="MaxPersonas" class="form-control text-center" id="MaxColab" readonly />
+                            <button type="button" class="btn btn-outline-warning" id="MaxColabIncrement">+</button>
+                        </div>
+                    </div>
+
+                    <!-- Modalidad -->
+                    <div class="mb-3">
+                        <label asp-for="Modalidad" class="form-label">Modalidad:</label>
+                        <select asp-for="Modalidad" class="form-select">
+                            <option value="Presencial">Presencial</option>
+                            <option value="Virtual">Virtual</option>
+                            <option value="Mixta">Mixta</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Botones de acción -->
+                <div class="modal-footer">
+                    @if (Model.Id != 0)
+                    {
+                        <button type="submit" class="btn btn-primary">Actualizar</button>
+                    }
+                    else
+                    {
+                        <button type="submit" class="btn btn-primary">Crear Nuevo</button>
+                    }
+                    <a asp-controller="Capacitacion" asp-action="Index" class="btn btn-success">Regresar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imagen previa (solo si existe) -->
+        @if (!string.IsNullOrEmpty(Model.ImagenUrlCap))
+        {
+            <div class="col-4">
+                <img src="@($"{WC.ImagenRuta}{Model.ImagenUrlCap}")" width="100%" style="border-radius:5px; border:1px solid #bbb" />
+            </div>
+        }
+    </div>
+</form>
+
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        document.getElementById('MinColabIncrement').onclick = () => {
+            let input = document.getElementById('MinColab');
+            input.value = parseInt(input.value || 0) + 1;
+        };
+        document.getElementById('MinColabDecrement').onclick = () => {
+            let input = document.getElementById('MinColab');
+            if (parseInt(input.value || 0) > 0) {
+                input.value = parseInt(input.value || 0) - 1;
+            }
+        };
+        document.getElementById('MaxColabIncrement').onclick = () => {
+            let input = document.getElementById('MaxColab');
+            input.value = parseInt(input.value || 0) + 1;
+        };
+        document.getElementById('MaxColabDecrement').onclick = () => {
+            let input = document.getElementById('MaxColab');
+            if (parseInt(input.value || 0) > 0) {
+                input.value = parseInt(input.value || 0) - 1;
+            }
+        };
+    </script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('.summernote').summernote({
+                height: 250
+            });
+
+        });
+
+
+        function validarImagen() {
+            if (document.getElementById("imagenId").value == "") {
+                swal("Error", "Sewleccione una imagen!", "error")
+                return false;
+
+            }
+            return true;
+
+
+        }
+
+    </script>
+
+}

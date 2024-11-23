@@ -22,9 +22,6 @@ namespace RecursosHumanos_Models
 
         public bool EstadoCapacitacion { get; set; }
 
-        public int ColaboradorId    { get; set; }
-        [ForeignKey("ColaboradorId")]
-        public virtual Colaborador? Colaborador { get; set; }
       
 
     }

@@ -30,11 +30,7 @@ namespace RecursosHumanos.Controllers
 
         public IActionResult Index()
         {
-            /* IEnumerable<Producto> lista = _db.Producto.Include(c => c.Categoria)
-                                                       .Include(t => t.TipoAplicacion);*/
-
-
-            IEnumerable<Capacitacion> lista = _capacitacionRepo.ObtenerTodos(incluirPropiedades: "Colaborador");
+            IEnumerable<Capacitacion> lista = _capacitacionRepo.ObtenerTodos();
 
             return View(lista);
         }
@@ -43,118 +39,91 @@ namespace RecursosHumanos.Controllers
 
         //GET
 
-        public IActionResult Upsert(int? Id)
+        public IActionResult Upsert(int? id)
         {
+            // Si no se recibe un ID, se crea un nuevo objeto Capacitacion
+            var capacitacion = id == null ? new Capacitacion() : _capacitacionRepo.Obtener(id.GetValueOrDefault());
 
-            CapacitacionVM capacitacionVM = new CapacitacionVM()
+            if (capacitacion == null && id.HasValue)
             {
-                Capacitacion = new Capacitacion(),
-
-                ColaboradorLista = _capacitacionRepo.ObtenerTodosDropDownList(WC.ColaboradorNombre),
-            };
-
-
-            if (Id == null)
-            {
-                //crearemos un nuevo producto cuando no recibamos un ID
-
-                return View(capacitacionVM);
-
-            }
-            else
-            {
-                capacitacionVM.Capacitacion  = _capacitacionRepo.Obtener(Id.GetValueOrDefault());
-                if (capacitacionVM.Capacitacion == null)
-                {
-                    return NotFound();
-                }
-                return View(capacitacionVM);
-
+                return NotFound();
             }
 
+            return View(capacitacion); // Pasar el modelo Capacitacion directamente a la vista
         }
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         [HttpPost]
-        public IActionResult Upsert(CapacitacionVM capacitacionVM)
+  
+        public IActionResult Upsert(Capacitacion capacitacion)
         {
-            //validamos el modelo
             if (ModelState.IsValid)
             {
-                //esto para poder obtener la imagen que nos envia la vista
                 var files = HttpContext.Request.Form.Files;
                 string webRootPath = _webHostEnvironment.WebRootPath;
-                //ahora validamos si es o no un nuevo ingreso o si se trata de una actualizacion 
-                if (capacitacionVM.Capacitacion.Id == 0)
+
+                if (capacitacion.Id == 0)
                 {
-                    //toda esta logica es para lograr grabar un producto y una imagen
-                    //crear si el ID es cero
-                    string upload = webRootPath + WC.ImagenRuta;//LA PRIPIEDAD DE WC ES LA QUE TIENE LA RUTA DE DONDE GUARDAR LA IMAGEN
-                    string fileName = Guid.NewGuid().ToString(); //esto es para que se le asigne un ID a la iamgen que se va a guardar
-                    string extension = Path.GetExtension(files[0].FileName);
-
-                    using (var fileStream = new FileStream(Path.Combine(upload, fileName + extension), FileMode.Create))
+                    // Crear un nuevo registro
+                    if (files.Count > 0)
                     {
-                        files[0].CopyTo(fileStream);
-                    }
-                    //finalmente grabanos la imagen y los datos de producto en los campos correspondientes
-
-                    capacitacionVM.Capacitacion.ImagenUrlCap = fileName + extension;
-                    _capacitacionRepo.Agregar(capacitacionVM.Capacitacion);
-                }
-                else
-                {
-                    //se actualiza si el ID es mayor a cero
-                    var objCapacitacion = _capacitacionRepo.ObtenerPrimero(p => p.Id == capacitacionVM.Capacitacion.Id, isTracking: false);   //Obtenemos el producto que queremos editar 
-
-                    if (files.Count > 0)//validamos con este si existe una imagen y si es asi el usuario lo que va hacer es cambiar la imagen actual por otra 
-                    {
-                        string upload = webRootPath + WC.ImagenRuta;//LA PRIPIEDAD DE WC ES LA QUE TIENE LA RUTA DE DONDE GUARDAR LA IMAGEN
-                        string fileName = Guid.NewGuid().ToString(); //esto es para que se le asigne un ID a la iamgen que se va a guardar
+                        string upload = Path.Combine(webRootPath, WC.ImagenRuta);
+                        string fileName = Guid.NewGuid().ToString();
                         string extension = Path.GetExtension(files[0].FileName);
-                        //pero tendriamos que borrar la img anterior
 
-                        var anteriorFile = Path.Combine(upload, objCapacitacion.ImagenUrlCap); //con esto obtnemos la anterior
-                        if (System.IO.File.Exists(anteriorFile))//VERIFICAMOS SI LA IMG ANTERIOR EXISTE
-                        {
-                            System.IO.File.Delete(anteriorFile);    // SI EXISTE LA BORRAMOS
-                        }  //FIN DE BORRAR LA IMG ANTERIOR                                                        //
-
-                        //PROCEDEMOS A CARGAR LA NUEVA IMAGEN
                         using (var fileStream = new FileStream(Path.Combine(upload, fileName + extension), FileMode.Create))
                         {
                             files[0].CopyTo(fileStream);
                         }
 
-                        //PROCEDEMOS ACTUALIZAR EL PRODUCTO CON SU NUEVA IMG
+                        capacitacion.ImagenUrlCap = fileName + extension;
+                    }
 
-                        capacitacionVM.Capacitacion.ImagenUrlCap = fileName + extension;
+                    _capacitacionRepo.Agregar(capacitacion);
+                }
+                else
+                {
+                    // Actualizar un registro existente
+                    var objCapacitacion = _capacitacionRepo.ObtenerPrimero(p => p.Id == capacitacion.Id, isTracking: false);
 
-                    }//CASO CONTRARIO SI NO SE CARGA UNA NUEVA IMG , ES DECIR ACTUALIZA OTROS DATOS PERO LA IMG NO
+                    if (files.Count > 0)
+                    {
+                        string upload = Path.Combine(webRootPath, WC.ImagenRuta);
+                        string fileName = Guid.NewGuid().ToString();
+                        string extension = Path.GetExtension(files[0].FileName);
+
+                        // Eliminar imagen anterior si existe
+                        var anteriorFile = Path.Combine(upload, objCapacitacion.ImagenUrlCap ?? "");
+                        if (System.IO.File.Exists(anteriorFile))
+                        {
+                            System.IO.File.Delete(anteriorFile);
+                        }
+
+                        using (var fileStream = new FileStream(Path.Combine(upload, fileName + extension), FileMode.Create))
+                        {
+                            files[0].CopyTo(fileStream);
+                        }
+
+                        capacitacion.ImagenUrlCap = fileName + extension;
+                    }
                     else
                     {
-                        //en ese caso se mantiene la misma img
-
-                        capacitacionVM.Capacitacion.ImagenUrlCap = objCapacitacion.ImagenUrlCap;
-
+                        // Mantener imagen existente
+                        capacitacion.ImagenUrlCap = objCapacitacion.ImagenUrlCap;
                     }
-                    //ya luego actualizamos el producto
 
-                    _capacitacionRepo.Actualizar(capacitacionVM.Capacitacion);
-
+                    _capacitacionRepo.Actualizar(capacitacion);
                 }
 
                 _capacitacionRepo.Grabar();
                 return RedirectToAction("Index");
-            }//ESTA LLAVE PERTENCE AL IF DEL ModelIsValidate
+            }
 
-
-            capacitacionVM.ColaboradorLista = _capacitacionRepo.ObtenerTodosDropDownList(WC.ColaboradorNombre);
-
-            return View(capacitacionVM);//si el modelo no es validado o sea no es correcto retornamos a la vista el objeto
-
+            return View(capacitacion); // Volver a la vista con el modelo Capacitacion
         }
+
 
         // ACA NO SOLAMENTE ELIMINAMOS EL PRODUCTO , SINO TBM LA IMG ASOCIADA A ESTE
         //GET

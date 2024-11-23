@@ -5,68 +5,43 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container p-3">
-    <div class="row pt-4">
-        <div class="col-6">
-            <h2 class="text-primary">Lista de capacitacion</h2>
-        </div>
-
-        <div class="col-6 text-end">
-            <a asp-controller="Capacitacion" asp-action="Upsert" class="btn btn-primary">
-                <i class="fa-solid fa-plus"></i> Nuevo Producto
-            </a>
+<div class="container" id="BarraBusqueda">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2">
+            <form asp-action="Index" method="get">
+                <div class="input-group mb-3">
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        name="searchTerm" 
+                        placeholder="Buscar Capacitación..." 
+                        aria-label="Buscar Capacitación..." 
+                        aria-describedby="button-addon2" 
+                        value="@ViewData["searchTerm"]" />
+                    <button class="btn btn-outline-secondary" type="submit" id="button-buscarCap">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
+</div>
 
-    <br />
-
-    @if (Model.Any())
-    {
-        <table class="table table-bordered table-striped w-100">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Duracion</th>
-                    <th>MinPersonas</th>
-                    <th>MaxPersonas</th>
-                    <th>Modalidad</th>
-                    <th>Colaborador</th>
-
-
-                    <th class="text-center">Acciones</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <th>@item.NombreCapacitacion</th>
-                        <th>@item.Duracion</th>
-                        <th>@item.MinPersonas</th>
-                        <th>@item.MaxPersonas</th>
-                        <th>@item.Modalidad</th>
-                        <th>@item.Colaborador.NombreColaborador</th>
-
-
-
-                        <td class="text-center">
-                            <div class="btn-group" role="group">
-                                <a asp-controller="Producto" asp-action="Upsert" asp-route-id="@item.Id" class="btn btn-primary mx-2">
-                                    <i class="fa-solid fa-pen-to-square"></i>
-                                </a>
-                                <a asp-controller="Producto" asp-action="Eliminar" asp-route-id="@item.Id" class="btn btn-danger mx-2">
-                                    <i class="fa-solid fa-trash"></i>
-                                </a>
-                            </div>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    }
-    else
-    {
-        <p>No hay registro de Productos</p>
-    }
+<div class="container" id="MostrarCapacitaciones">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card text-center shadow-sm" style="border-radius: 10px;">
+                <div class="card-body">
+                    <h4 class="card-title mb-3" style="font-weight: 600;">Agregar una Nueva Capacitación</h4>
+                    <hr class="my-3" />
+                    <div>
+                        <!-- Enlace que redirige a la vista Upsert -->
+                        <a asp-controller="Capacitacion" asp-action="Upsert" class="btn btn-outline-warning rounded-circle" style="width: 80px; height: 80px; font-size: 2rem;">
+                            <i class="bi bi-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

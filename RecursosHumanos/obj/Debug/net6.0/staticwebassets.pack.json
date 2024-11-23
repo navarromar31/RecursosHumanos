@@ -5,12 +5,24 @@
       "PackagePath": "staticwebassets\\RecursosHumanos.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\cssc.css",
+      "PackagePath": "staticwebassets\\css\\cssc.css"
+    },
+    {
       "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\capacitacion\\5d4abde4-362d-450f-93ba-0c3c74304a9c.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\capacitacion\\5d4abde4-362d-450f-93ba-0c3c74304a9c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\capacitacion\\away-2438367_640.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\capacitacion\\away-2438367_640.jpg"
     },
     {
       "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\site.js",

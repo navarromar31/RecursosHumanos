@@ -3,7 +3,7 @@
     public class WC
     {
         //RUTA DE LAS IMAGENES
-        public static string ImagenRuta = @"\dondesea\dondesea\";
+        public static string ImagenRuta = @"\imagenes\capacitacion\";
 
         public const string ColaboradorNombre = "Colaborador";
         public const string DeartamentoNombre = "Departamento";
