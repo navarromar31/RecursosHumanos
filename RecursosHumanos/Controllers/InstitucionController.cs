@@ -13,141 +13,161 @@ using System.Collections;
 using Microsoft.AspNetCore.Authorization;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
 
-
 namespace RecursosHumanos.Controllers
 {
     [Authorize(Roles = WC.AdminRole)]
     public class InstitucionController : Controller
     {
-
-        //private readonly ApplicationDbContext _db;
-
-
-        //public InstitucionController(ApplicationDbContext db)
-        //{
-        //    _db = db;  
-        //}
-
-
         private readonly IInstitucionRepositorio _institucionRepo;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public InstitucionController(IInstitucionRepositorio institucionRepo)//recibe nuestro contexto de BD
+        public InstitucionController(IInstitucionRepositorio institucionRepo, IWebHostEnvironment webHostEnvironment)
         {
-            //    _db = db;
             _institucionRepo = institucionRepo;
-
+            _webHostEnvironment = webHostEnvironment;
         }
-
 
         public IActionResult Index()
         {
             IEnumerable<Institucion> lista = _institucionRepo.ObtenerTodos();
-
             return View(lista);
         }
 
-        //Get
+        // GET Crear
         public IActionResult Crear()
         {
-
-
             return View();
         }
 
-
-
+        // POST Crear
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Crear(Institucion institucion)
+        public IActionResult Crear(Institucion institucion, IFormFile? file)
         {
-
             if (ModelState.IsValid)
             {
+                if (file != null)
+                {
+                    string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "imagenes/institucion");
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+
+                    using (var fileStream = new FileStream(Path.Combine(uploadPath, fileName), FileMode.Create))
+                    {
+                        file.CopyTo(fileStream);
+                    }
+
+                    institucion.ImagenUrlInstitucion = $"imagenes/institucion{fileName}";
+                }
+
                 _institucionRepo.Agregar(institucion);
                 _institucionRepo.Grabar();
-                TempData[WC.Exitosa] = "Institucion creada exitosamente";
-                return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
+                TempData["Exitosa"] = "Institución creada exitosamente";
+                return RedirectToAction(nameof(Index));
             }
-            TempData[WC.Error] = "Error al crear nueva institucion";
+
+            TempData["Error"] = "Error al crear nueva institución";
             return View(institucion);
         }
 
-
-        //GET EDITAR QUE RECIBE DE LA VISTA EL ID DE LA int A EDITAR
-        public IActionResult Editar(int? Id)
+        // GET Editar
+        public IActionResult Editar(int? id)
         {
-
-            if (Id == null || Id == 0)
+            if (id == null || id == 0)
             {
                 return NotFound();
-
             }
-            var obj = _institucionRepo.Obtener(Id.GetValueOrDefault());
 
+            var obj = _institucionRepo.Obtener(id.GetValueOrDefault());
             if (obj == null)
             {
                 return NotFound();
             }
+
             return View(obj);
         }
 
-
-
-
+        // POST Editar
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Editar(Institucion institucion)
+        public IActionResult Editar(Institucion institucion, IFormFile? file)
         {
-
             if (ModelState.IsValid)
             {
+                if (file != null)
+                {
+                    string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "imagenes/institucion");
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+
+                    // Borrar la imagen anterior
+                    if (!string.IsNullOrEmpty(institucion.ImagenUrlInstitucion))
+                    {
+                        var previousFile = Path.Combine(_webHostEnvironment.WebRootPath, institucion.ImagenUrlInstitucion);
+                        if (System.IO.File.Exists(previousFile))
+                        {
+                            System.IO.File.Delete(previousFile);
+                        }
+                    }
+
+                    // Guardar la nueva imagen
+                    using (var fileStream = new FileStream(Path.Combine(uploadPath, fileName), FileMode.Create))
+                    {
+                        file.CopyTo(fileStream);
+                    }
+
+                    institucion.ImagenUrlInstitucion = $"imagenes/institucion{fileName}";
+                }
+
                 _institucionRepo.Actualizar(institucion);
                 _institucionRepo.Grabar();
-                return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
+                TempData["Exitosa"] = "Institución actualizada exitosamente";
+                return RedirectToAction(nameof(Index));
             }
+
             return View(institucion);
         }
 
-
-
-        //GET ELIMINAR
-        public IActionResult Eliminar(int? Id)
+        // GET Eliminar
+        public IActionResult Eliminar(int? id)
         {
-
-            if (Id == null || Id == 0)
+            if (id == null || id == 0)
             {
                 return NotFound();
-
             }
-            var obj = _institucionRepo.Obtener(Id.GetValueOrDefault());
 
+            var obj = _institucionRepo.Obtener(id.GetValueOrDefault());
             if (obj == null)
             {
                 return NotFound();
             }
+
             return View(obj);
         }
 
-        //POST ELIMINAR
-
-
+        // POST Eliminar
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Eliminar(Institucion institucion)
         {
-
             if (institucion == null)
             {
                 return NotFound();
             }
+
+            // Borrar la imagen asociada
+            if (!string.IsNullOrEmpty(institucion.ImagenUrlInstitucion))
+            {
+                var fileToDelete = Path.Combine(_webHostEnvironment.WebRootPath, institucion.ImagenUrlInstitucion);
+                if (System.IO.File.Exists(fileToDelete))
+                {
+                    System.IO.File.Delete(fileToDelete);
+                }
+            }
+
             _institucionRepo.Remover(institucion);
             _institucionRepo.Grabar();
-            return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
-
+            TempData["Exitosa"] = "Institución eliminada exitosamente";
+            return RedirectToAction(nameof(Index));
         }
-
-
-
     }
 }
 
