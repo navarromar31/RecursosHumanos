@@ -6,27 +6,12 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<form asp-action="Upsert" method="post" enctype="multipart/form-data">
-    <div class="modal fade show d-block" id="AgregarCapacitacionModal" tabindex="-1" aria-labelledby="CapacitacionModalLabel" aria-hidden="true" style="background-color: rgba(0,0,0,0.5);">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="CapacitacionModalLabel">
-                        @if (Model.Id != 0)
-                        {
-                            @:Editar Capacitación
-                        }
-                        else
-                        {
-                            @:Nueva Capacitación
-                        }
-                    </h1>
-                </div>
+<form asp-action="Crear" method="post" enctype="multipart/form-data">
 
                 <div class="modal-body">
                     <!-- Validaciones -->
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                    
+
                     <!-- Campo para la imagen -->
                     <div class="row">
                         <div class="col-md-6">
@@ -80,29 +65,15 @@
                     </div>
                 </div>
 
-                <!-- Botones de acción -->
-                <div class="modal-footer">
-                    @if (Model.Id != 0)
-                    {
-                        <button type="submit" class="btn btn-primary">Actualizar</button>
-                    }
-                    else
-                    {
-                        <button type="submit" class="btn btn-primary">Crear Nuevo</button>
-                    }
-                    <a asp-controller="Capacitacion" asp-action="Index" class="btn btn-success">Regresar</a>
-                </div>
-            </div>
+    <div class="row">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="submit" class="btn btn-primary me-md-2">Crear Nueva</button>
+            <a asp-controller="Categoria" asp-action="Index" class="btn btn-success">Regresar</a>
         </div>
-
-        <!-- Imagen previa (solo si existe) -->
-        @if (!string.IsNullOrEmpty(Model.ImagenUrlCap))
-        {
-            <div class="col-4">
-                <img src="@($"{WC.ImagenRuta}{Model.ImagenUrlCap}")" width="100%" style="border-radius:5px; border:1px solid #bbb" />
-            </div>
-        }
     </div>
+    </div>
+    </div>
+    
 </form>
 
 

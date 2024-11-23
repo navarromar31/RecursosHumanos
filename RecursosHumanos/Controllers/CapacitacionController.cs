@@ -18,135 +18,155 @@ namespace RecursosHumanos.Controllers
 {
     public class CapacitacionController : Controller
     {
-
-        //private readonly ApplicationDbContext _db;
-
-
-        //public InstitucionController(ApplicationDbContext db)
-        //{
-        //    _db = db;  
-        //}
-
-
         private readonly ICapacitacionRepositorio _capacitacionRepo;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public CapacitacionController(ICapacitacionRepositorio capacitacionRepo)//recibe nuestro contexto de BD
+        public CapacitacionController(ICapacitacionRepositorio capacitacionRepo, IWebHostEnvironment webHostEnvironment)
         {
-            //    _db = db;
             _capacitacionRepo = capacitacionRepo;
-
+            _webHostEnvironment = webHostEnvironment;
         }
-
 
         public IActionResult Index()
         {
             IEnumerable<Capacitacion> lista = _capacitacionRepo.ObtenerTodos();
-
             return View(lista);
         }
 
-        //Get
+        // GET Crear
         public IActionResult Crear()
         {
-
-
             return View();
         }
 
-
-
+        // POST Crear
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Crear(Institucion institucion)
+        public IActionResult Crear(Capacitacion capacitacion, IFormFile? file)
         {
-
             if (ModelState.IsValid)
             {
-                _institucionRepo.Agregar(institucion);
-                _institucionRepo.Grabar();
-                TempData[WC.Exitosa] = "Institucion creada exitosamente";
-                return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
+                if (file != null)
+                {
+                    string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "imagenes/capacitacion");
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+
+                    using (var fileStream = new FileStream(Path.Combine(uploadPath, fileName), FileMode.Create))
+                    {
+                        file.CopyTo(fileStream);
+                    }
+
+                    capacitacion.ImagenUrlCap = $"imagenes/capacitacion{fileName}";
+                }
+
+                _capacitacionRepo.Agregar(capacitacion);
+                _capacitacionRepo.Grabar();
+                TempData["Exitosa"] = "Capacitación creada exitosamente";
+                return RedirectToAction(nameof(Index));
             }
-            TempData[WC.Error] = "Error al crear nueva institucion";
-            return View(institucion);
+
+            TempData["Error"] = "Error al crear nueva capacitación";
+            return View(capacitacion);
         }
 
-
-        //GET EDITAR QUE RECIBE DE LA VISTA EL ID DE LA int A EDITAR
-        public IActionResult Editar(int? Id)
+        // GET Editar
+        public IActionResult Editar(int? id)
         {
-
-            if (Id == null || Id == 0)
+            if (id == null || id == 0)
             {
                 return NotFound();
-
             }
-            var obj = _institucionRepo.Obtener(Id.GetValueOrDefault());
 
+            var obj = _capacitacionRepo.Obtener(id.GetValueOrDefault());
             if (obj == null)
             {
                 return NotFound();
             }
+
             return View(obj);
         }
 
-
-
-
+        // POST Editar
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Editar(Institucion institucion)
+        public IActionResult Editar(Capacitacion capacitacion, IFormFile? file)
         {
-
             if (ModelState.IsValid)
             {
-                _institucionRepo.Actualizar(institucion);
-                _institucionRepo.Grabar();
-                return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
+                if (file != null)
+                {
+                    string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "imagenes/capacitacion");
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+
+                    // Borrar la imagen anterior
+                    if (!string.IsNullOrEmpty(capacitacion.ImagenUrlCap))
+                    {
+                        var previousFile = Path.Combine(_webHostEnvironment.WebRootPath, capacitacion.ImagenUrlCap);
+                        if (System.IO.File.Exists(previousFile))
+                        {
+                            System.IO.File.Delete(previousFile);
+                        }
+                    }
+
+                    // Guardar la nueva imagen
+                    using (var fileStream = new FileStream(Path.Combine(uploadPath, fileName), FileMode.Create))
+                    {
+                        file.CopyTo(fileStream);
+                    }
+
+                    capacitacion.ImagenUrlCap = $"imagenes/capacitacion{fileName}";
+                }
+
+                _capacitacionRepo.Actualizar(capacitacion);
+                _capacitacionRepo.Grabar();
+                TempData["Exitosa"] = "Capacitación actualizada exitosamente";
+                return RedirectToAction(nameof(Index));
             }
-            return View(institucion);
+
+            return View(capacitacion);
         }
 
-
-
-        //GET ELIMINAR
-        public IActionResult Eliminar(int? Id)
+        // GET Eliminar
+        public IActionResult Eliminar(int? id)
         {
-
-            if (Id == null || Id == 0)
+            if (id == null || id == 0)
             {
                 return NotFound();
-
             }
-            var obj = _institucionRepo.Obtener(Id.GetValueOrDefault());
 
+            var obj = _capacitacionRepo.Obtener(id.GetValueOrDefault());
             if (obj == null)
             {
                 return NotFound();
             }
+
             return View(obj);
         }
 
-        //POST ELIMINAR
-
-
+        // POST Eliminar
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Eliminar(Institucion institucion)
+        public IActionResult Eliminar(Capacitacion capacitacion)
         {
-
-            if (institucion == null)
+            if (capacitacion == null)
             {
                 return NotFound();
             }
-            _institucionRepo.Remover(institucion);
-            _institucionRepo.Grabar();
-            return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
 
+            // Borrar la imagen asociada
+            if (!string.IsNullOrEmpty(capacitacion.ImagenUrlCap))
+            {
+                var fileToDelete = Path.Combine(_webHostEnvironment.WebRootPath, capacitacion.ImagenUrlCap);
+                if (System.IO.File.Exists(fileToDelete))
+                {
+                    System.IO.File.Delete(fileToDelete);
+                }
+            }
+
+            _capacitacionRepo.Remover(capacitacion);
+            _capacitacionRepo.Grabar();
+            TempData["Exitosa"] = "Capacitación eliminada exitosamente";
+            return RedirectToAction(nameof(Index));
         }
-
-
-
     }
 }
-
