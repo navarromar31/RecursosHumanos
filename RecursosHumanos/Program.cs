@@ -14,7 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<AplicationDbContext>(options =>
                                                 options.UseSqlServer(
-                                                builder.Configuration.GetConnectionString("DayraConnection")));
+                                                builder.Configuration.GetConnectionString("NayleaConnection")));
 /*
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<AplicationDbContext>();
@@ -35,6 +35,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ICapacitacionRepositorio, CapacitacionRepositorio>();
 builder.Services.AddScoped<IColaboradorRepositorio, ColaboradorRepositorio>();
 builder.Services.AddScoped<IEvaluacionRepositorio, EvaluacionRepositorio>();
+builder.Services.AddScoped<IPuestoRepositorio, PuestoRepositorio>();
 
 
 
@@ -82,6 +83,6 @@ app.MapRazorPages();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Puesto}/{action=Index}/{id?}");
 
 app.Run();
