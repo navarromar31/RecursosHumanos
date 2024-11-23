@@ -16,7 +16,7 @@ using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
 
 namespace RecursosHumanos.Controllers
 {
-    [Authorize(Roles = WC.AdminRole)]
+    //[Authorize(Roles = WC.AdminRole)]
     public class InstitucionController : Controller
     {
 
