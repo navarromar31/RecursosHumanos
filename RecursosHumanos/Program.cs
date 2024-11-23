@@ -35,7 +35,11 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ICapacitacionRepositorio, CapacitacionRepositorio>();
 builder.Services.AddScoped<IColaboradorRepositorio, ColaboradorRepositorio>();
 builder.Services.AddScoped<IEvaluacionRepositorio, EvaluacionRepositorio>();
-
+builder.Services.AddScoped<IInstitucionRepositorio, InstitucionRepositorio>();
+builder.Services.AddScoped<IDepartamentoRepositorio, DepartamentoRepositorio>();
+builder.Services.AddScoped<IPreguntaRepositorio,PreguntaRepositorio>();
+builder.Services.AddScoped<IPuestoRepositorio, PuestoRepositorio>();
+builder.Services.AddScoped<IRespuestaRepositorio,RespuestaRepositorio>();
 
 
 // A?ade el servicio HttpContextAccessor al contenedor de servicios
