@@ -15,10 +15,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AplicationDbContext>(options =>
                                                 options.UseSqlServer(
                                                 builder.Configuration.GetConnectionString("DayraConnection")));
-
+/*
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<AplicationDbContext>();
-
+*/
 
 
 
@@ -73,7 +73,6 @@ app.UseStaticFiles();//HOJAS DE STILO, JS , ETC
 app.UseRouting();
 
 app.UseAuthentication();
-
 app.UseAuthorization();
 
 app.UseSession();//este el pipeline para utlizar el servicio de sesiones 
