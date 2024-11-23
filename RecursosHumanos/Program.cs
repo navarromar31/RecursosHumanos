@@ -1,12 +1,12 @@
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using RecursosHumanos_AccesoDatos;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
-using RecursosHumanos_AccesoDatos.Datos.Repositorio;
-using RecursosHumanos_AccesoDatos.Migrations;
 using RecursosHumanos_AccesoDatos.Datos;
+using Ferretero_Utilidades;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
-using RecursosHumanos_Utilidades;
+using Microsoft.EntityFrameworkCore;
+using RecursosHumanos_AccesoDatos.Datos.Repositorio;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
