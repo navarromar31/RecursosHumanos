@@ -81,6 +81,6 @@ app.MapRazorPages();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Puesto}/{action=Index}/{id?}");
 
 app.Run();
