@@ -20,11 +20,11 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 
 
 
-//Lo modificamos para agregar al servicio la asignacion de roles de usuario
-/*builder.Services.AddIdentity<IdentityUser, IdentityRole>().
+/*//Lo modificamos para agregar al servicio la asignacion de roles de usuario
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().
     AddDefaultTokenProviders().AddDefaultUI().
     AddEntityFrameworkStores<AplicationDbContext>(); 
- ESTO SE OCUPA CUANDO HAGAMOS EL EMAIL SENDER*/
+ //ESTO SE OCUPA CUANDO HAGAMOS EL EMAIL SENDER*/
 
 
 builder.Services.AddControllersWithViews();
