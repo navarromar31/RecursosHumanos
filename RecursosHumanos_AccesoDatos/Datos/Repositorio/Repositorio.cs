@@ -31,7 +31,7 @@ namespace RecursosHumanos_AccesoDatos.Datos.Repositorio
         // Método para guardar los cambios en la base de datos.
         public void Grabar()
         {
-            _db.SaveChanges();
+              _db.SaveChanges();
         }
 
         // Método para obtener una entidad por su ID.
