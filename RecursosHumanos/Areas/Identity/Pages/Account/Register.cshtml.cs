@@ -18,6 +18,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using RecursosHumanos_Models;
+using RecursosHumanos_Utilidades;
+using Syncfusion.EJ2.FileManager;
 
 namespace RecursosHumanos.Areas.Identity.Pages.Account
 {
@@ -25,6 +28,7 @@ namespace RecursosHumanos.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IUserStore<IdentityUser> _userStore;
         private readonly IUserEmailStore<IdentityUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
@@ -35,7 +39,8 @@ namespace RecursosHumanos.Areas.Identity.Pages.Account
             IUserStore<IdentityUser> userStore,
             SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+             RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _userStore = userStore;
@@ -43,6 +48,7 @@ namespace RecursosHumanos.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _roleManager = roleManager;
         }
 
         /// <summary>
@@ -97,29 +103,67 @@ namespace RecursosHumanos.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+            public string NombreCompleto { get; set; }
         }
-
+        //TODO IGUAL HASTA ACA
 
         public async Task OnGetAsync(string returnUrl = null)
         {
+            if (!await _roleManager.RoleExistsAsync(WC.AdminRole))
+            {
+                await _roleManager.CreateAsync(new IdentityRole(WC.AdminRole));
+                await _roleManager.CreateAsync(new IdentityRole(WC.ClienteRole));
+
+            }
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
-
+        //igual hasta aca
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
             returnUrl ??= Url.Content("~/");
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = CreateUser();
+                //  var user = CreateUser(); vamos a usar nuestra UsuarioAplicacion
+                var user = new UsuarioAplicacion
+                {
+                    UserName = Input.Email,
+                    Email = Input.Email,
+                    NombreCompleto = Input.NombreCompleto
+
+                };// esta la que usaremos
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
-                if (result.Succeeded)
+                if (result.Succeeded)//esto quiere decir que el usuario se creo correctamente
                 {
+
+                    // Verificar si hay algún usuario con el rol de administrador
+                    var adminRoleExists = await _userManager.GetUsersInRoleAsync(WC.AdminRole);
+
+                    // Si no hay ningún usuario con el rol de administrador
+                    if (adminRoleExists.Count == 0)
+                    {
+                        // Asignar el rol de administrador al usuario actual
+                        await _userManager.AddToRoleAsync(user, WC.AdminRole);
+                    }
+                    // Si el usuario actual ya tiene el rol de administrador
+                    else if (User.IsInRole(WC.AdminRole))
+                    {
+                        // Asegurarse de que el usuario actual tenga el rol de administrador
+                        await _userManager.AddToRoleAsync(user, WC.AdminRole);
+                    }
+                    // Si hay otros administradores y el usuario actual no es administrador
+                    else
+                    {
+                        // Asignar el rol de cliente al usuario actual
+                        await _userManager.AddToRoleAsync(user, WC.ClienteRole);
+                    }
+
+
                     _logger.LogInformation("User created a new account with password.");
 
                     var userId = await _userManager.GetUserIdAsync(user);
@@ -140,7 +184,21 @@ namespace RecursosHumanos.Areas.Identity.Pages.Account
                     }
                     else
                     {
-                        await _signInManager.SignInAsync(user, isPersistent: false);
+                        if (!User.IsInRole(WC.AdminRole))
+                        {
+
+                            await _signInManager.SignInAsync(user, isPersistent: false);
+                        }
+                        else
+                        {
+
+                            return RedirectToAction("Index");
+
+                        }
+
+
+
+
                         return LocalRedirect(returnUrl);
                     }
                 }

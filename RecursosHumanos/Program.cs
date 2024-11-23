@@ -5,6 +5,8 @@ using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio;
 using RecursosHumanos_AccesoDatos.Migrations;
 using RecursosHumanos_AccesoDatos.Datos;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using RecursosHumanos_Utilidades;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,10 +23,10 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 
 
 //Lo modificamos para agregar al servicio la asignacion de roles de usuario
-/*builder.Services.AddIdentity<IdentityUser, IdentityRole>().
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().
     AddDefaultTokenProviders().AddDefaultUI().
     AddEntityFrameworkStores<AplicationDbContext>(); 
- ESTO SE OCUPA CUANDO HAGAMOS EL EMAIL SENDER*/
+// ESTO SE OCUPA CUANDO HAGAMOS EL EMAIL SENDER
 
 
 builder.Services.AddControllersWithViews();

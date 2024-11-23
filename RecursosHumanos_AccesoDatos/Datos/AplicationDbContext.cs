@@ -22,6 +22,6 @@ namespace RecursosHumanos_AccesoDatos.Datos
         public DbSet<Respuesta> respuesta { get; set; }
         public DbSet<Pregunta> pregunta { get; set; }
         public DbSet<EvaluacionColaborador> evaluacionColaborador { get; set; }
-
+        public DbSet<UsuarioAplicacion>UsuarioAplicacion { get; set; }
     }
 }

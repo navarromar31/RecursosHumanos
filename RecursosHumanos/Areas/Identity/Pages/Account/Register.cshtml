@@ -3,7 +3,16 @@
 @{
     ViewData["Title"] = "Register";
 }
+@if (User.IsInRole(RecursosHumanos_Utilidades.WC.AdminRole))
+{
 
+    <h1>Registrar un nuevo usuario  administrador</h1>
+}
+else
+{
+    <h1>Registrar </h1>
+
+}
 <h1>@ViewData["Title"]</h1>
 
 <div class="row">
@@ -27,7 +36,15 @@
                 <label asp-for="Input.ConfirmPassword"></label>
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
-            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+            @if (User.IsInRole(RecursosHumanos_Utilidades.WC.AdminRole))
+            {
+                <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-warning">Registra Admin</button>
+
+            }
+            else
+            {
+                <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Registrar</button>
+            }
         </form>
     </div>
     <div class="col-md-6 col-md-offset-2">
