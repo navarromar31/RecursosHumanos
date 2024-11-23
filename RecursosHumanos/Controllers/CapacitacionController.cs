@@ -1,31 +1,41 @@
-﻿using RecursosHumanos_AccesoDatos;
+﻿using Microsoft.AspNetCore.Mvc;
 using RecursosHumanos_Models;
-using RecursosHumanos_Models.ViewModels;
+using RecursosHumanos_AccesoDatos;
 using RecursosHumanos_Utilidades;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using NuGet.Packaging.Signing;
+using System.Collections;
+using Microsoft.AspNetCore.Authorization;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
-using RecursosHumanos_AccesoDatos.Datos.Repositorio;
+
 
 namespace RecursosHumanos.Controllers
 {
     public class CapacitacionController : Controller
     {
 
-        // vamos a invocar  a nuestro dbcontext 
+        //private readonly ApplicationDbContext _db;
 
 
-        private readonly IWebHostEnvironment _webHostEnvironment;
+        //public InstitucionController(ApplicationDbContext db)
+        //{
+        //    _db = db;  
+        //}
+
+
         private readonly ICapacitacionRepositorio _capacitacionRepo;
-        public CapacitacionController(ICapacitacionRepositorio capacitacionRepo, IWebHostEnvironment webHostEnvironment)//recibe nuestro contexto de BD
+
+        public CapacitacionController(ICapacitacionRepositorio capacitacionRepo)//recibe nuestro contexto de BD
         {
-            // _db = db;
+            //    _db = db;
             _capacitacionRepo = capacitacionRepo;
-            _webHostEnvironment = webHostEnvironment;
 
         }
-
 
 
         public IActionResult Index()
@@ -35,157 +45,108 @@ namespace RecursosHumanos.Controllers
             return View(lista);
         }
 
-
-
-        //GET
-
-        public IActionResult Upsert(int? id)
+        //Get
+        public IActionResult Crear()
         {
-            // Si no se recibe un ID, se crea un nuevo objeto Capacitacion
-            var capacitacion = id == null ? new Capacitacion() : _capacitacionRepo.Obtener(id.GetValueOrDefault());
 
-            if (capacitacion == null && id.HasValue)
-            {
-                return NotFound();
-            }
 
-            return View(capacitacion); // Pasar el modelo Capacitacion directamente a la vista
+            return View();
         }
+
 
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [HttpPost]
-  
-        public IActionResult Upsert(Capacitacion capacitacion)
+        public IActionResult Crear(Institucion institucion)
         {
+
             if (ModelState.IsValid)
             {
-                var files = HttpContext.Request.Form.Files;
-                string webRootPath = _webHostEnvironment.WebRootPath;
-
-                if (capacitacion.Id == 0)
-                {
-                    // Crear un nuevo registro
-                    if (files.Count > 0)
-                    {
-                        string upload = Path.Combine(webRootPath, WC.ImagenRuta);
-                        string fileName = Guid.NewGuid().ToString();
-                        string extension = Path.GetExtension(files[0].FileName);
-
-                        using (var fileStream = new FileStream(Path.Combine(upload, fileName + extension), FileMode.Create))
-                        {
-                            files[0].CopyTo(fileStream);
-                        }
-
-                        capacitacion.ImagenUrlCap = fileName + extension;
-                    }
-
-                    _capacitacionRepo.Agregar(capacitacion);
-                }
-                else
-                {
-                    // Actualizar un registro existente
-                    var objCapacitacion = _capacitacionRepo.ObtenerPrimero(p => p.Id == capacitacion.Id, isTracking: false);
-
-                    if (files.Count > 0)
-                    {
-                        string upload = Path.Combine(webRootPath, WC.ImagenRuta);
-                        string fileName = Guid.NewGuid().ToString();
-                        string extension = Path.GetExtension(files[0].FileName);
-
-                        // Eliminar imagen anterior si existe
-                        var anteriorFile = Path.Combine(upload, objCapacitacion.ImagenUrlCap ?? "");
-                        if (System.IO.File.Exists(anteriorFile))
-                        {
-                            System.IO.File.Delete(anteriorFile);
-                        }
-
-                        using (var fileStream = new FileStream(Path.Combine(upload, fileName + extension), FileMode.Create))
-                        {
-                            files[0].CopyTo(fileStream);
-                        }
-
-                        capacitacion.ImagenUrlCap = fileName + extension;
-                    }
-                    else
-                    {
-                        // Mantener imagen existente
-                        capacitacion.ImagenUrlCap = objCapacitacion.ImagenUrlCap;
-                    }
-
-                    _capacitacionRepo.Actualizar(capacitacion);
-                }
-
-                _capacitacionRepo.Grabar();
-                return RedirectToAction("Index");
+                _institucionRepo.Agregar(institucion);
+                _institucionRepo.Grabar();
+                TempData[WC.Exitosa] = "Institucion creada exitosamente";
+                return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
             }
-
-            return View(capacitacion); // Volver a la vista con el modelo Capacitacion
+            TempData[WC.Error] = "Error al crear nueva institucion";
+            return View(institucion);
         }
 
 
-        // ACA NO SOLAMENTE ELIMINAMOS EL PRODUCTO , SINO TBM LA IMG ASOCIADA A ESTE
-        //GET
-
-
-        public IActionResult Eliminar(int? id)
+        //GET EDITAR QUE RECIBE DE LA VISTA EL ID DE LA int A EDITAR
+        public IActionResult Editar(int? Id)
         {
 
-            if (id == null || id == 0)
+            if (Id == null || Id == 0)
             {
+                return NotFound();
 
+            }
+            var obj = _institucionRepo.Obtener(Id.GetValueOrDefault());
+
+            if (obj == null)
+            {
                 return NotFound();
             }
-
-            Capacitacion capacitacion = _capacitacionRepo.ObtenerPrimero(p => p.Id == id);    //aca traemos los datos del producto de
-                                                                                  //acuerdo con el ID que recibimos de la vista
-
-
-            if (capacitacion == null)
-            {
-                //en caso de que no exista 
-                return NotFound();
-            }
-
-            return View(capacitacion); //le retornamos a la vista aliminar los datos del producto a eliminar 
-
+            return View(obj);
         }
+
+
 
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Eliminar(Capacitacion capacitacion)
+        public IActionResult Editar(Institucion institucion)
         {
-            if (capacitacion == null)
+
+            if (ModelState.IsValid)
+            {
+                _institucionRepo.Actualizar(institucion);
+                _institucionRepo.Grabar();
+                return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
+            }
+            return View(institucion);
+        }
+
+
+
+        //GET ELIMINAR
+        public IActionResult Eliminar(int? Id)
+        {
+
+            if (Id == null || Id == 0)
             {
                 return NotFound();
 
             }
+            var obj = _institucionRepo.Obtener(Id.GetValueOrDefault());
 
-            //ahora lo primero es proceder a eliminar la imagen de nuestro server 
-
-
-            string upload = _webHostEnvironment.WebRootPath + WC.ImagenRuta;//LA PRoPIEDAD DE WC ES LA QUE TIENE LA RUTA DE DONDE esta  GUARDAda LA IMAGEN
-
-
-            var anteriorFile = Path.Combine(upload, capacitacion.ImagenUrlCap);
-            if (System.IO.File.Exists(anteriorFile))//VERIFICAMOS SI LA IMG ANTERIOR EXISTE
+            if (obj == null)
             {
-                System.IO.File.Delete(anteriorFile);    // SI EXISTE LA BORRAMOS
+                return NotFound();
             }
+            return View(obj);
+        }
 
-            _capacitacionRepo.Remover(capacitacion);  //Ahora eliminamos el producto
-            _capacitacionRepo.Grabar();
-            return RedirectToAction(nameof(Index));
+        //POST ELIMINAR
 
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Eliminar(Institucion institucion)
+        {
+
+            if (institucion == null)
+            {
+                return NotFound();
+            }
+            _institucionRepo.Remover(institucion);
+            _institucionRepo.Grabar();
+            return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
 
         }
 
 
 
     }
-
-
-
 }
+
