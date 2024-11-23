@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecursosHumanos_AccesoDatos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aeda6b42a4a323c63d7f52d064033befcf99a8d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95035df0ce72faf57b275942f1ba9fca9fe30724")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecursosHumanos_AccesoDatos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecursosHumanos_AccesoDatos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

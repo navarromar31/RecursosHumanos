@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using RecursosHumanos_AccesoDatos;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio;
-using RecursosHumanos_AccesoDatos.Migrations;
+using RecursosHumanos_AccesoDatos;
 using RecursosHumanos_AccesoDatos.Datos;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -81,6 +81,6 @@ app.MapRazorPages();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Institucion}/{action=Index}/{id?}");
 
 app.Run();
