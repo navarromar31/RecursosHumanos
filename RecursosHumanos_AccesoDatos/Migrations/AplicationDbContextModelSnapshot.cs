@@ -4,9 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using RecursosHumanos_AccesoDatos;
 using RecursosHumanos_AccesoDatos.Datos;
-
 
 #nullable disable
 
@@ -24,7 +22,213 @@ namespace RecursosHumanos_AccesoDatos.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("RecursosHumanos.Models.Capacitacion", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RoleId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasDatabaseName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasDatabaseName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUser");
+
+                    b.UseTphMappingStrategy();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderKey")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderDisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("RoleId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("RecursosHumanos_Models.Capacitacion", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -66,7 +270,7 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                     b.ToTable("capacitacion");
                 });
 
-            modelBuilder.Entity("RecursosHumanos.Models.Colaborador", b =>
+            modelBuilder.Entity("RecursosHumanos_Models.Colaborador", b =>
                 {
                     b.Property<int?>("Id")
                         .ValueGeneratedOnAdd()
@@ -129,7 +333,7 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                     b.ToTable("colaborador");
                 });
 
-            modelBuilder.Entity("RecursosHumanos.Models.Departamento", b =>
+            modelBuilder.Entity("RecursosHumanos_Models.Departamento", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -153,7 +357,7 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                     b.ToTable("departamentos");
                 });
 
-            modelBuilder.Entity("RecursosHumanos.Models.Evaluacion", b =>
+            modelBuilder.Entity("RecursosHumanos_Models.Evaluacion", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -181,7 +385,7 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                     b.ToTable("evaluacion");
                 });
 
-            modelBuilder.Entity("RecursosHumanos.Models.EvaluacionColaborador", b =>
+            modelBuilder.Entity("RecursosHumanos_Models.EvaluacionColaborador", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -205,7 +409,7 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                     b.ToTable("evaluacionColaborador");
                 });
 
-            modelBuilder.Entity("RecursosHumanos.Models.Institucion", b =>
+            modelBuilder.Entity("RecursosHumanos_Models.Institucion", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -232,7 +436,7 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                     b.ToTable("instituciones");
                 });
 
-            modelBuilder.Entity("RecursosHumanos.Models.Pregunta", b =>
+            modelBuilder.Entity("RecursosHumanos_Models.Pregunta", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -268,7 +472,7 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                     b.ToTable("pregunta");
                 });
 
-            modelBuilder.Entity("RecursosHumanos.Models.Puesto", b =>
+            modelBuilder.Entity("RecursosHumanos_Models.Puesto", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -292,7 +496,7 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                     b.ToTable("puesto");
                 });
 
-            modelBuilder.Entity("RecursosHumanos.Models.Respuesta", b =>
+            modelBuilder.Entity("RecursosHumanos_Models.Respuesta", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -320,9 +524,71 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                     b.ToTable("respuesta");
                 });
 
-            modelBuilder.Entity("RecursosHumanos.Models.Capacitacion", b =>
+            modelBuilder.Entity("RecursosHumanos_Models.UsuarioAplicacion", b =>
                 {
-                    b.HasOne("RecursosHumanos.Models.Colaborador", "Colaborador")
+                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
+
+                    b.Property<string>("NombreCompleto")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasDiscriminator().HasValue("UsuarioAplicacion");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("RecursosHumanos_Models.Capacitacion", b =>
+                {
+                    b.HasOne("RecursosHumanos_Models.Colaborador", "Colaborador")
                         .WithMany()
                         .HasForeignKey("ColaboradorId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -331,17 +597,17 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                     b.Navigation("Colaborador");
                 });
 
-            modelBuilder.Entity("RecursosHumanos.Models.Colaborador", b =>
+            modelBuilder.Entity("RecursosHumanos_Models.Colaborador", b =>
                 {
-                    b.HasOne("RecursosHumanos.Models.Departamento", "Departamento")
+                    b.HasOne("RecursosHumanos_Models.Departamento", "Departamento")
                         .WithMany()
                         .HasForeignKey("DepartamentoId");
 
-                    b.HasOne("RecursosHumanos.Models.Institucion", "Institucion")
+                    b.HasOne("RecursosHumanos_Models.Institucion", "Institucion")
                         .WithMany()
                         .HasForeignKey("InstitucionId");
 
-                    b.HasOne("RecursosHumanos.Models.Puesto", "Puesto")
+                    b.HasOne("RecursosHumanos_Models.Puesto", "Puesto")
                         .WithMany()
                         .HasForeignKey("PuestoId");
 
@@ -352,9 +618,9 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                     b.Navigation("Puesto");
                 });
 
-            modelBuilder.Entity("RecursosHumanos.Models.EvaluacionColaborador", b =>
+            modelBuilder.Entity("RecursosHumanos_Models.EvaluacionColaborador", b =>
                 {
-                    b.HasOne("RecursosHumanos.Models.Evaluacion", "Evaluacion")
+                    b.HasOne("RecursosHumanos_Models.Evaluacion", "Evaluacion")
                         .WithMany()
                         .HasForeignKey("EvaluacionId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -363,15 +629,15 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                     b.Navigation("Evaluacion");
                 });
 
-            modelBuilder.Entity("RecursosHumanos.Models.Pregunta", b =>
+            modelBuilder.Entity("RecursosHumanos_Models.Pregunta", b =>
                 {
-                    b.HasOne("RecursosHumanos.Models.Capacitacion", "Capacitacion")
+                    b.HasOne("RecursosHumanos_Models.Capacitacion", "Capacitacion")
                         .WithMany()
                         .HasForeignKey("IdCapacitacion")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("RecursosHumanos.Models.Evaluacion", "Evaluacion")
+                    b.HasOne("RecursosHumanos_Models.Evaluacion", "Evaluacion")
                         .WithMany("Preguntas")
                         .HasForeignKey("IdEvaluacion")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -382,7 +648,7 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                     b.Navigation("Evaluacion");
                 });
 
-            modelBuilder.Entity("RecursosHumanos.Models.Evaluacion", b =>
+            modelBuilder.Entity("RecursosHumanos_Models.Evaluacion", b =>
                 {
                     b.Navigation("Preguntas");
                 });
