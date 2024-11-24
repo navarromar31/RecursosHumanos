@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\img\\HHCLogo.png",
+      "PackagePath": "staticwebassets\\img\\HHCLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\img\\RRHHLogo.png",
+      "PackagePath": "staticwebassets\\img\\RRHHLogo.png"
+    },
+    {
       "Id": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\Layout.js",
       "PackagePath": "staticwebassets\\js\\Layout.js"
     },
