@@ -1,0 +1,195 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+#fondo2 {
+    min-height: 100vh;
+    max-height: none;
+    overflow: hidden;
+    background-image: url(./img/fondo2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#lineaNaranja {
+    height: 2.5px;
+    background-color: rgb(235,130,35);
+}
+
+#DivFooter {
+    background-color: #505050;
+}
+
+#DivHeader {
+    background: rgb(50,50,50);
+    background: radial-gradient(circle, rgba(50,50,50,1) 50%, rgba(60,60,60,1) 67%, rgba(80,80,80,1) 90%);
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#imgHeader1 {
+    max-width: 150px;
+    height: auto;
+}
+
+#imgHeader2 {
+    max-width: 100px;
+    height: auto;
+}
+
+.linea-vertical {
+    border-left: 1.5px solid #ffffff;
+    height: 70px;
+    margin: 0 12px;
+}
+
+#footerText {
+    color: #FFF;
+}
+
+#a-menu {
+    text-decoration: none;
+}
+
+#li-menu {
+    list-style: none;
+}
+
+body {
+    font-family: "Open Sans", Sans-serif;
+    text-decoration: none;
+}
+
+#wrapper-menu {
+    display: flex;
+}
+
+#main-menu {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    background-color: #ffffff;
+}
+
+#sidebar {
+    width: 70px;
+    min-width: 70px;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    background-color: #505050;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar.expand {
+    width: 200px;
+    min-width: 200px;
+}
+
+#icon-menu {
+    font-size: 1.50rem;
+}
+
+#icon2 {
+    font-size: 2rem;
+}
+
+#iconMenu {
+    font-size: 2rem;
+}
+
+.toggle-btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 1rem 1.25rem;
+}
+
+.toggle-btn i {
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+.sidebar-logo {
+    margin: auto 0;
+}
+
+.sidebar-logo a {
+    color: #FFF;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span {
+    display: none;
+}
+
+.sidebar-nav {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+a.sidebar-link {
+    padding: .625rem 1.30rem;
+    color: #FFF;
+    display: block;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-link i {
+    font-size: 1.1rem;
+    margin-right: .75rem;
+}
+
+a.sidebar-link:hover {
+    background-color: rgba(255, 255, 255, .075);
+    border-left: 4px solid rgb(235,130,35);
+}
+
+.sidebar-item {
+    position: relative;
+}
+
+#sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    background-color: #505050;
+    padding: 0;
+    min-width: 15rem;
+    display: none;
+}
+
+#sidebar:not(.expand) .sidebar-item:hover .has-dropdown + .sidebar-dropdown {
+    display: block;
+    max-height: 15em;
+    width: 100%;
+    opacity: 1;
+}
+
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"]::after {
+    border: solid;
+    border-width: 0 .075rem .075rem 0;
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+    transform: rotate(-135deg);
+    transition: all .2s ease-out;
+}
+
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+    transform: rotate(45deg);
+    transition: all .2s ease-out;
+}
+
+
+
