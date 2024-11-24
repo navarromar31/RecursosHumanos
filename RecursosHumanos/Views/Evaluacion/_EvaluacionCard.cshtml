@@ -1,0 +1,20 @@
+﻿@using RecursosHumanos_Utilidades
+@model RecursosHumanos_Models.Evaluacion
+
+@if (Model != null)
+{
+    <div class="card mb-2" id="cartaEva">
+        <div id="card-body-Eva" class="card-body d-flex justify-content-between align-items-center">
+            <span id="titulo-evaluacion-2">@Model.Titulo</span>
+            <div>
+                <a asp-controller="Evaluacion" asp-action="Eliminar" asp-route-id="@Model.Id" class="btn btn-eliminar" id="btn-eliminar-Eva">
+                    Eliminar Evaluacion
+                </a>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <p>No hay datos disponibles.</p>
+}

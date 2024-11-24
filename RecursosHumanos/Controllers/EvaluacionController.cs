@@ -44,6 +44,8 @@ namespace RecursosHumanos.Controllers
             IEnumerable<Evaluacion> lista = _evaluacionRepo.ObtenerTodos();
 
             return View(lista);
+            // Obtener datos (simulación)
+
         }
 
         //Get
