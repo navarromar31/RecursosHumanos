@@ -1,0 +1,33 @@
+﻿@using RecursosHumanos_Utilidades
+@model RecursosHumanos_Models.Puesto
+
+@{
+    var titulo = "Crear nuevo Puesto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-action="Crear" method="post" enctype="multipart/form-data" class="p-3">
+    
+
+        <!-- Título del Puesto -->
+        <div class="mb-3">
+            <label asp-for="NombrePuesto" class="form-label">Nombre del Puesto:</label>
+            <input asp-for="NombrePuesto" class="form-control" placeholder="Escribe el nombre del puesto" required />
+            <span asp-validation-for="NombrePuesto" class="text-danger"></span>
+        </div>
+
+        <!-- Descripción -->
+        <div class="mb-3">
+            <label asp-for="DescripcionPuesto" class="form-label">Descripción:</label>
+            <textarea asp-for="DescripcionPuesto" class="form-control" rows="3" placeholder="Escribe la descripción del puesto" required></textarea>
+            <span asp-validation-for="DescripcionPuesto" class="text-danger"></span>
+        </div>
+
+        <!-- Botones -->
+        <div class="d-flex justify-content-between">
+            <button type="button" class="btn btn-secondary" onclick="history.back()">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+    </div>
+</form>
+

@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos\\views\\capacitacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:views\\capacitacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos\\views\\puesto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:views\\puesto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos\\views\\puesto\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:views\\puesto\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos\\controllers\\puestocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\puestocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos\\views\\capacitacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:views\\capacitacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E5947BBC-57AB-4B64-B9B4-0E8A2E971F87}|..\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos_models\\puesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -19,10 +27,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos\\controllers\\puestocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\puestocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\arias\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\recursoshumanos\\wwwroot\\js\\puesto.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -166,7 +170,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -190,20 +194,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Views\\Puesto\\Crear.cshtml",
+              "RelativeDocumentMoniker": "Views\\Puesto\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Views\\Puesto\\Crear.cshtml",
+              "RelativeToolTip": "Views\\Puesto\\Crear.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAACUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T21:18:20.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "index.cshtml",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Views\\Capacitacion\\index.cshtml",
               "RelativeDocumentMoniker": "Views\\Capacitacion\\index.cshtml",
               "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Views\\Capacitacion\\index.cshtml",
               "RelativeToolTip": "Views\\Capacitacion\\index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-24T20:51:22.873Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Puesto.cs",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Puesto.cs",
               "RelativeDocumentMoniker": "..\\RecursosHumanos_Models\\Puesto.cs",
@@ -211,12 +228,11 @@
               "RelativeToolTip": "..\\RecursosHumanos_Models\\Puesto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T20:40:10.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-24T20:40:10.985Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
@@ -224,12 +240,11 @@
               "RelativeToolTip": "wwwroot\\js\\site.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-24T19:54:35.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-24T19:54:35.659Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -237,12 +252,11 @@
               "RelativeToolTip": "wwwroot\\css\\site.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-24T19:54:30.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-24T19:54:30.064Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "RecursosHumanos.csproj",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj",
               "RelativeDocumentMoniker": "RecursosHumanos.csproj",
@@ -250,12 +264,11 @@
               "RelativeToolTip": "RecursosHumanos.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-24T02:21:34.679Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-24T02:21:34.679Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "PuestoRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\PuestoRepositorio.cs",
               "RelativeDocumentMoniker": "..\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\PuestoRepositorio.cs",
@@ -267,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "RecursosHumanos_Models.csproj",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj",
               "RelativeDocumentMoniker": "..\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj",
@@ -275,12 +288,11 @@
               "RelativeToolTip": "..\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-24T01:12:09.594Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-24T01:12:09.594Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "puesto.js",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\puesto.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\puesto.js",
@@ -288,12 +300,11 @@
               "RelativeToolTip": "wwwroot\\js\\puesto.js",
               "ViewState": "AgIAAAsAAAAAAAAAAAA5wG4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-23T23:48:17.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T23:48:17.291Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "puesto.css",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\puesto.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\puesto.css",
@@ -301,38 +312,37 @@
               "RelativeToolTip": "wwwroot\\css\\puesto.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAALQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-23T23:47:25.934Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T23:47:25.934Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Views\\Puesto\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Puesto\\Index.cshtml",
               "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Views\\Puesto\\Index.cshtml",
               "RelativeToolTip": "Views\\Puesto\\Index.cshtml",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAAAFwAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwDUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-23T23:44:22.355Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "PuestoController.cs",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Controllers\\PuestoController.cs",
               "RelativeDocumentMoniker": "Controllers\\PuestoController.cs",
               "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Controllers\\PuestoController.cs",
               "RelativeToolTip": "Controllers\\PuestoController.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAI8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T23:43:49.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "20241123200010_TablasNuevas.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Migrations\\20241123200010_TablasNuevas.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Migrations\\20241123200010_TablasNuevas.cs",
@@ -344,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "IRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IRepositorio.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IRepositorio.cs",
@@ -356,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "CapacitacionRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\CapacitacionRepositorio.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\CapacitacionRepositorio.cs",
@@ -368,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "Repositorio.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\Repositorio.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\Repositorio.cs",
@@ -380,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "AplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\AplicationDbContext.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\AplicationDbContext.cs",
@@ -391,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
@@ -403,7 +413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -411,12 +421,11 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-23T19:55:47.604Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T19:55:47.604Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -424,12 +433,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAEIAAAAAAAAAAAAAABAAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T18:11:29.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T18:11:29.66Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "RespuestaController.cs",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Controllers\\RespuestaController.cs",
               "RelativeDocumentMoniker": "Controllers\\RespuestaController.cs",
@@ -441,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "IPreguntaRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IPreguntaRepositorio.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IPreguntaRepositorio.cs",
@@ -453,7 +461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "IEvaluacionRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs",
               "RelativeDocumentMoniker": "..\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs",
@@ -464,7 +472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "CapacitacionVM.cs",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\CapacitacionVM.cs",
               "RelativeDocumentMoniker": "..\\RecursosHumanos_Models\\ViewModels\\CapacitacionVM.cs",
@@ -475,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "RespuestaVM.cs",
               "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\RespuestaVM.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\RespuestaVM.cs",
@@ -486,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "WC.cs",
               "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\WC.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\WC.cs",
@@ -497,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "ColaboradorVM.cs",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\ColaboradorVM.cs",
               "RelativeDocumentMoniker": "..\\RecursosHumanos_Models\\ViewModels\\ColaboradorVM.cs",
@@ -508,7 +516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "IDepartamentoRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IDepartamentoRepositorio.cs",
               "RelativeDocumentMoniker": "..\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IDepartamentoRepositorio.cs",
@@ -519,7 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "PreguntaVM.cs",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\PreguntaVM.cs",
               "RelativeDocumentMoniker": "..\\RecursosHumanos_Models\\ViewModels\\PreguntaVM.cs",
@@ -530,7 +538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "HomeVM.cs",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\HomeVM.cs",
               "RelativeDocumentMoniker": "..\\RecursosHumanos_Models\\ViewModels\\HomeVM.cs",
@@ -541,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "Capacitacion.cs",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Capacitacion.cs",
               "RelativeDocumentMoniker": "..\\RecursosHumanos_Models\\Capacitacion.cs",
@@ -552,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "Evaluacion.cs",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Evaluacion.cs",
               "RelativeDocumentMoniker": "..\\RecursosHumanos_Models\\Evaluacion.cs",
@@ -563,7 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "Colaborador.cs",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos_Models\\Colaborador.cs",
               "RelativeDocumentMoniker": "..\\RecursosHumanos_Models\\Colaborador.cs",
@@ -574,7 +582,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "IColaboradorRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IColaboradorRepositorio.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IColaboradorRepositorio.cs",
@@ -586,7 +594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Colaborador.cs",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Colaborador.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Colaborador.cs",
@@ -598,7 +606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "ColaboradorRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\ColaboradorRepositorio.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\ColaboradorRepositorio.cs",
@@ -610,7 +618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Capacitacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Capacitacion.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Capacitacion.cs",
@@ -622,7 +630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Pregunta.cs",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Pregunta.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Pregunta.cs",
@@ -634,7 +642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "RespuestaRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\RespuestaRepositorio.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\RespuestaRepositorio.cs",
@@ -646,7 +654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "PreguntaRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\PreguntaRepositorio.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\PreguntaRepositorio.cs",
@@ -658,7 +666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "RespuestaVM.cs",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\RespuestaVM.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\RespuestaVM.cs",
@@ -670,7 +678,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "PuestoRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\PuestoRepositorio.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\PuestoRepositorio.cs",
@@ -682,7 +690,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "InstitucionRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\InstitucionRepositorio.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\InstitucionRepositorio.cs",
@@ -694,7 +702,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "EvaluacionRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\EvaluacionRepositorio.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\EvaluacionRepositorio.cs",
@@ -706,7 +714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "DepartamendoRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\DepartamendoRepositorio.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\DepartamendoRepositorio.cs",
@@ -718,7 +726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "IRespuestaRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IRespuestaRepositorio.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IRespuestaRepositorio.cs",
@@ -730,7 +738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "IPuestoRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IPuestoRepositorio.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IPuestoRepositorio.cs",
@@ -742,7 +750,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "ICapacitacionRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\ICapacitacionRepositorio.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\ICapacitacionRepositorio.cs",
@@ -754,7 +762,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "IEvaluacionRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IEvaluacionRepositorio.cs",
