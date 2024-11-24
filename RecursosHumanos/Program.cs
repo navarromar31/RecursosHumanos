@@ -5,6 +5,7 @@ using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio;
 using RecursosHumanos_AccesoDatos.Migrations;
 using RecursosHumanos_AccesoDatos.Datos;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,13 +13,18 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<AplicationDbContext>(options =>
                                                 options.UseSqlServer(
-                                                builder.Configuration.GetConnectionString("DayraConnection")));
+                                                builder.Configuration.GetConnectionString("MarianaConnection")));
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<AplicationDbContext>();
 
 
-
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Identify/Account/Login"; //Ruta del Login
+        options.AccessDeniedPath = "/Identity/Account/AccessDenied"; //Pagina de acceso denegada
+    });
 
 //Lo modificamos para agregar al servicio la asignacion de roles de usuario
 /*builder.Services.AddIdentity<IdentityUser, IdentityRole>().
@@ -77,6 +83,19 @@ app.UseAuthorization();
 app.UseSession();//este el pipeline para utlizar el servicio de sesiones 
 
 app.MapRazorPages();
+
+app.MapGet("/", async context =>
+{
+    //Si el usuario no esta registrado, redirige al login
+    if (!context.User.Identity.IsAuthenticated)
+    {
+        context.Response.Redirect("/Identity/Account/Login");
+        return;
+    }
+
+    //Si esta atenticado, envia a la pagina de inicio
+    context.Response.Redirect("/Home/Index");
+});
 
 
 app.MapControllerRoute(
