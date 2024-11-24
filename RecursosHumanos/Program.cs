@@ -1,10 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using RecursosHumanos_AccesoDatos;
-using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
-using RecursosHumanos_AccesoDatos.Datos.Repositorio;
-using RecursosHumanos_AccesoDatos.Migrations;
 using RecursosHumanos_AccesoDatos.Datos;
+using RecursosHumanos_AccesoDatos.Datos.Repositorio;
+using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
 
 var builder = WebApplication.CreateBuilder(args);
 
