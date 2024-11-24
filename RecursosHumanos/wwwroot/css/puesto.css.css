@@ -1,2 +1,180 @@
-﻿body {
+﻿
+body {
+    font-family: "Open Sans", Sans-serif;
+    text-decoration: none;
+}
+
+#toggleButton-Puesto {
+    border-radius: 25px;
+    background-color: rgb(235,130,35);
+    border-color: rgb(235,130,35);
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    #toggleButton-Puesto:hover {
+        background-color: rgb(216, 106, 10);
+    }
+
+#listaPuesto {
+    margin-top: 20px;
+}
+
+.itemPuesto {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .itemPuesto:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .itemPuesto .btn-info {
+        background-color: rgb(235,130,35);
+        color: white;
+        padding: 8px 15px;
+        border-radius: 25px;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+    }
+
+        .itemPuesto .btn-info:hover {
+            background-color: rgb(216, 106, 10);
+        }
+
+#modal-content-Puesto {
+    border-radius: 10px;
+}
+
+#modal-header-Puesto {
+    background-color: rgb(235,130,35);
+    color: white;
+    font-size: 20px;
+}
+
+#modal-body-Puesto {
+    padding: 20px;
+}
+
+#modal-footer-Puesto .btn {
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+#editDepartmentForm input, #editDepartmentForm textarea {
+    border-radius: 8px;
+}
+
+#editDepartmentForm button {
+    width: 100%;
+}
+
+#imagenPuesto {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#d-flex-Puesto .btn {
+    width: 48%;
+}
+
+#addDepartmentForm input, #addDepartmentForm textarea {
+    border-radius: 8px;
+}
+
+#addDepartmentForm button {
+    width: 100%;
+}
+
+
+#addDepartmentBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(235,130,35);
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+
+#addDepartmentBtn2 {
+    background-color: #505050;
+    color: white;
+    border-radius: 100px;
+}
+
+#addDepartmentBtn:hover {
+    background-color: rgb(216, 106, 10);
+}
+
+#buscarPuesto {
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+
+    #buscarPuesto:focus {
+        border-color: rgb(235,130,35);
+        box-shadow: 0 0 5px rgb(216, 106, 10);
+    }
+
+#input-container-Puesto {
+    position: relative;
+    width: 60%;
+}
+
+#searchInputPuesto {
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+}
+
+#boton-Puesto {
+    background-color: rgb(235,130,35);
+    border-color: rgb(235,130,35);
+    color: white;
+}
+
+#searchIcon-Puesto {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(235,130,35);
+    font-size: 18px;
+}
+
+#naranja-Puesto {
+    background-color: rgb(235,130,35);
+}
+
+#botonGris-Puesto {
+    background-color: #505050;
+    border-color: #505050;
+    color: #ffffff;
 }
