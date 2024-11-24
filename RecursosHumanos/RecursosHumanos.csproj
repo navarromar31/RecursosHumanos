@@ -26,4 +26,8 @@
     <ProjectReference Include="..\RecursosHumanos_Utilidades\RecursosHumanos_Utilidades.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+
 </Project>

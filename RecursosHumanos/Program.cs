@@ -14,7 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<AplicationDbContext>(options =>
                                                 options.UseSqlServer(
-                                                builder.Configuration.GetConnectionString("DayraConnection")));
+                                                builder.Configuration.GetConnectionString("MarianaConnection")));
 /*
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<AplicationDbContext>();
@@ -82,6 +82,20 @@ app.UseAuthorization();
 app.UseSession();//este el pipeline para utlizar el servicio de sesiones 
 
 app.MapRazorPages();
+
+
+app.MapGet("/", async context =>
+{
+    //Si el usuario no esta registrado, redirige al login
+    if (!context.User.Identity.IsAuthenticated)
+    {
+        context.Response.Redirect("/Identity/Account/Login");
+        return;
+    }
+
+    //Si esta atenticado, envia a la pagina de inicio
+    context.Response.Redirect("/Home/Index");
+});
 
 
 app.MapControllerRoute(
