@@ -1,0 +1,90 @@
+﻿@using RecursosHumanos_Utilidades
+@model Institucion
+
+@{
+    var titulo = Model.Id != 0 ? "Editar Institución" : "Crear Nueva Institución";
+    Layout = null;
+}
+
+<form method="post" asp-action="Upsert" enctype="multipart/form-data">
+
+    @if (Model.Id != 0)
+    {
+        <input asp-for="Id" hidden />
+    }
+
+    <div class="border p-3">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="row">
+            <h2 class="text-info">@titulo</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label asp-for="NombreInstitucion" class="form-label">Nombre de la institución</label>
+                            <input asp-for="NombreInstitucion" class="form-control" />
+                            <span asp-validation-for="NombreInstitucion" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label asp-for="DescripcionInstitucion" class="form-label">Descripción</label>
+                            <textarea asp-for="DescripcionInstitucion" class="form-control"></textarea>
+                            <span asp-validation-for="DescripcionInstitucion" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label asp-for="ImagenUrlInstitucion" class="form-label">Imagen de la institución</label>
+                            <input type="file" name="files" id="imagenId" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label asp-for="EstadoInstitucion" class="form-label">¿Institución activa?</label>
+                            <input asp-for="EstadoInstitucion" class="form-check-input" type="checkbox" />
+                            <span asp-validation-for="EstadoInstitucion" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="d-grid gap-2 d-md-block">
+                        @if (Model.Id != 0)
+                        {
+                            <button type="submit" class="btn btn-primary">Actualizar</button>
+                        }
+                        else
+                        {
+                            <button type="submit" onclick="javascript:validarImagen();" class="btn btn-primary">Crear Nueva</button>
+                        }
+                        <a asp-controller="Institucion" asp-action="Index" class="btn btn-success">Regresar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                @if (Model.Id != 0)
+                {
+                    <img src="@WC.ImagenRuta@Model.ImagenUrlInstitucion" width="100%" style="border-radius:5px; border:1px solid #bbb" />
+                }
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function validarImagen() {
+            if (document.getElementById("imagenId").value == "") {
+                swal("Error", "¡Seleccione una imagen!", "error");
+                return false;
+            }
+            return true;
+        }
+    </script>
+}
