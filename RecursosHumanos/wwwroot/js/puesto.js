@@ -87,7 +87,24 @@ document.getElementById('addDepartmentForm').addEventListener('submit', function
 
     const modal = bootstrap.Modal.getInstance(document.getElementById('addDepartmentModal'));
     modal.hide();
+
+
+
+
 });
 
 
 
+        // JavaScript para llenar los datos del modal de edición con los valores del puesto
+    var editDepartmentModal = document.getElementById('editDepartmentModal')
+    editDepartmentModal.addEventListener('show.bs.modal', function (event) {
+            var button = event.relatedTarget; // Botón que abrió el modal
+    var id = button.getAttribute('data-id');
+    var nombre = button.getAttribute('data-nombre');
+    var descripcion = button.getAttribute('data-descripcion');
+
+    // Llenamos los campos del modal con los valores correspondientes
+    document.getElementById('editName').value = nombre;
+    document.getElementById('editDescription').value = descripcion;
+            // Si es necesario, puedes pasar otros datos como el id
+        })

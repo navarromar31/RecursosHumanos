@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "C+ZGm4V/e/2SKX5de7DpxPH4nrN/54zeyzOF1SlobHE=",
+  "Hash": "F8GTnSIGg+xATuk9zenZ++7iOff2YfiQmEgrcAiQv2Y=",
   "Source": "RecursosHumanos",
   "BasePath": "_content/RecursosHumanos",
   "Mode": "Default",
@@ -1195,12 +1195,12 @@
       "OriginalItemSpec": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RecursosHumanos.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\puesto.css.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\puesto.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
-      "RelativePath": "css/puesto.css.css",
+      "RelativePath": "css/puesto.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1211,7 +1211,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\puesto.css.css"
+      "OriginalItemSpec": "wwwroot\\css\\puesto.css"
     },
     {
       "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\site.css",
@@ -1252,12 +1252,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\puesto.js.js",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\puesto.js",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
-      "RelativePath": "js/puesto.js.js",
+      "RelativePath": "js/puesto.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1268,7 +1268,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\puesto.js.js"
+      "OriginalItemSpec": "wwwroot\\js\\puesto.js"
     },
     {
       "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\site.js",
