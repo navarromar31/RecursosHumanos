@@ -176,15 +176,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "RecursosHumanos",
+              "Title": "RecursosHumanos.csproj",
               "DocumentMoniker": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj",
               "RelativeDocumentMoniker": "RecursosHumanos.csproj",
               "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos.csproj",
               "RelativeToolTip": "RecursosHumanos.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-24T02:21:34.679Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-24T02:21:34.679Z"
             },
             {
               "$type": "Document",
@@ -196,8 +195,7 @@
               "RelativeToolTip": "..\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\PuestoRepositorio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T01:13:36.94Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-24T01:13:36.94Z"
             },
             {
               "$type": "Document",
@@ -209,8 +207,7 @@
               "RelativeToolTip": "..\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-24T01:12:09.594Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-24T01:12:09.594Z"
             },
             {
               "$type": "Document",
@@ -234,8 +231,7 @@
               "RelativeToolTip": "wwwroot\\css\\puesto.css.css",
               "ViewState": "AgIAAI0AAAAAAAAAAADwv7QAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-23T23:47:25.934Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T23:47:25.934Z"
             },
             {
               "$type": "Document",
@@ -245,7 +241,7 @@
               "RelativeDocumentMoniker": "Views\\Puesto\\Index.cshtml",
               "ToolTip": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\Views\\Puesto\\Index.cshtml",
               "RelativeToolTip": "Views\\Puesto\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAADcAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-23T23:44:22.355Z",
               "EditorCaption": ""
@@ -343,8 +339,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-23T19:55:47.604Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T19:55:47.604Z"
             },
             {
               "$type": "Document",
@@ -356,8 +351,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T18:11:29.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T18:11:29.66Z"
             },
             {
               "$type": "Document",
