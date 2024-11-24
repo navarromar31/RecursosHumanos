@@ -20,13 +20,13 @@ namespace RecursosHumanos.Controllers
         // vamos a invocar  a nuestro dbcontext 
 
 
-        private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly ILogger<EvaluacionController> _logger;
+        private readonly IEvaluacionRepositorio _evaluacionRepo;
         private readonly IPreguntaRepositorio _preguntaRepo;
         public PreguntaController(IPreguntaRepositorio preguntaRepo, IWebHostEnvironment webHostEnvironment)//recibe nuestro contexto de BD
         {
             // _db = db;
             _preguntaRepo = preguntaRepo;
-            _webHostEnvironment = webHostEnvironment;
 
         }
 
@@ -34,13 +34,14 @@ namespace RecursosHumanos.Controllers
 
         public IActionResult Index()
         {
-            /* IEnumerable<Producto> lista = _db.Producto.Include(c => c.Categoria)
-                                                       .Include(t => t.TipoAplicacion);*/
 
+            PreguntaVM preguntaVM = new PreguntaVM()
+            {
+                Pregunta = _preguntaRepo.ObtenerTodos()
 
-            IEnumerable<Pregunta> lista = _preguntaRepo.ObtenerTodos(incluirPropiedades: "Pregunta,Evaluacion,Capacitacion");
+            };
 
-            return View(lista);
+            return View(preguntaVM);
         }
 
 

@@ -14,7 +14,7 @@
         public const string EvaluacionNombre = "Evaluacion";
         public const string CapacitacionNombre = "Capacitacion";
         public const string AdminRole = "Admin";
-        public static string ClienteRole = "Cliente";
+        public const string ClienteRole = "Cliente";
         public const string Exitosa = "Exitosa";
         public const string Error = "Error";
 

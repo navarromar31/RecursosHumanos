@@ -11,11 +11,14 @@ using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Authorization;
 using RecursosHumanos_Utilidades;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
+using RecursosHumanos_Models.ViewModels.RecursosHumanos_Models.ViewModels;
+using System.Collections;
 
 
 namespace RecursosHumanos.Controllers
 {
     [Authorize(Roles = WC.AdminRole)]
+    [Authorize(Roles = WC.ClienteRole)]
     public class EvaluacionController : Controller
     {
 
@@ -27,25 +30,28 @@ namespace RecursosHumanos.Controllers
         //    _db = db;  
         //}
 
-       
 
+        private readonly ILogger<EvaluacionController> _logger;
         private readonly IEvaluacionRepositorio _evaluacionRepo;
 
-        public EvaluacionController(IEvaluacionRepositorio evaluacionRepo)//recibe nuestro contexto de BD
+        public EvaluacionController(ILogger<EvaluacionController> logger, IEvaluacionRepositorio evaluacionRepo)//recibe nuestro contexto de BD
         {
             //    _db = db;
             _evaluacionRepo = evaluacionRepo;
-
+            _logger = logger;
         }
 
 
         public IActionResult Index()
         {
-            IEnumerable<Evaluacion> lista = _evaluacionRepo.ObtenerTodos();
 
-            return View(lista);
-            // Obtener datos (simulación)
+            EvaluacionVM evaluacionVM = new EvaluacionVM()
+            {
+               Evaluacion=_evaluacionRepo.ObtenerTodos()
 
+            };
+
+            return View(evaluacionVM);
         }
 
         //Get
