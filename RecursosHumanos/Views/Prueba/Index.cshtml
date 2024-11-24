@@ -1,0 +1,66 @@
+﻿
+    <header id="heroInstitucion" class="hero">
+        <div class="hero-contentInstitucion">
+            <h1>Instituciones Asociadas a HHC</h1>
+            <p>Juntos construimos un futuro brillante para Costa Rica</p>
+            <a href="#" id="btn-cta-Institucion" class="btn btn-cta">¡Conócenos!</a>
+        </div>
+    </header>
+
+    <section id="instituciones" class="container my-5">
+        <h2 class="text-center mb-4">Nuestras Instituciones</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            @foreach (var institucion in Model) // Esto itera sobre las instituciones
+            {
+                <div class="col">
+                    <div class="glass-card shadow-lg border-0">
+                        <div id="overlay-Institucion" class="overlay"></div>
+                        <div id="card-content-Institucion" class="card-content">
+                            <h5 id="card-title-Institucion" class="card-title">@institucion.Nombre</h5>
+                            <p>@institucion.Descripcion</p>
+                            <a href="@institucion.Url" target="_blank" id="btn-primary-Institucion" class="btn btn-primary">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+            }
+            <!-- Agregar el modal para nueva institución -->
+            <div class="col">
+                <div class="glass-card shadow-lg border-0">
+                    <div id="overlay-Institucion" class="overlay"></div>
+                    <div id="card-content-Institucion" class="card-content">
+                        <h5 id="card-title-Institucion" class="card-title">Añadir Institución</h5>
+                        <a href="#" target="_blank" type="button" id="btn-primary-Institucion" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i id="iconInstitucion" class="bi bi-building-fill-add"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div id="naranjaInstitucion" class="modal-header">
+                    <h5 class="modal-title" id="addDepartmentModalLabel">Agregar Institución</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addDepartmentForm">
+                        <div class="mb-3">
+                            <label for="newName" class="form-label">Nombre de la institución</label>
+                            <input type="text" class="form-control" id="newName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newDescription" class="form-label">Descripción</label>
+                            <textarea class="form-control" id="newDescription" rows="4" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newImage" class="form-label">Imagen de la intitución</label>
+                            <input type="file" class="form-control" id="newImage" required>
+                        </div>
+                        <button type="submit" class="btn" id="addDepartmentBtn2">Agregar institución</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

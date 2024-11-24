@@ -1,142 +1,76 @@
-﻿@{
+﻿@using RecursosHumanos_Utilidades
+@model RecursosHumanos_Models.Institucion
+
+@{
     ViewData["Title"] = "Inicio Page";
 }
 
 @{
-    Layout = "_LayoutColaborador";
+    Layout = "_LayoutRRHH";
 }
 
-<link rel="stylesheet" href="~/css/Home.css">
+<header id="heroInstitucion" class="hero">
+    <div class="hero-contentInstitucion">
+        <h1>Instituciones Asociadas a HHC</h1>
+        <p>Juntos construimos un futuro brillante para Costa Rica</p>
+        <a href="#" id="btn-cta-Institucion" class="btn btn-cta">¡Conócenos!</a>
+    </div>
+</header>
 
-<div class="main">
-    <div id="fondo2" class="container-fluid p-0 align-items-center">
-        <div class="row align-items-center">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade pe-5" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="container-xxl">
-                            <div class="row text-dark p-5 align-items-center">
-                                <div class="card border-0 p-3 shadow-lg">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-lg-6 mt-4">
-                                                <h2 class="display-7 font-weight-bold mb-3">
-                                                    ¿Tienes capacitaciones pendientes? <br> ¡Es hora de aumentar tus conocimientos!
-                                                </h2>
-                                                <p class="lead mb-3">
-                                                    "En RRHH nos tomamos el tiempo de evaluarte para que <br> sigas creciendo y mejorando tus habilidades"
-                                                </p>
-                                                <p>
-                                                    Hospicio de Huérfanos de Cartago | Costa Rica
-                                                </p>
-                                                <a href="https://mail.google.com/mail/u/0/?hl=es#inbox" class="btn btn-custom-color btn-lg fw-bold text-uppercase promo-btn mt-2 mb-4">
-                                                    ¡Ver mis Capacitaciones!
-                                                </a>
-                                            </div>
-                                            <div class="col-lg-6 mt-4 align-items-start">
-                                                <img src="~/img/Carruselimg1.png" alt="image" class="img-fluid" id="imgCarrusel2">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="container-xxl">
-                            <div class="row text-dark p-5 align-items-center">
-                                <div class="card border-0 p-2 shadow-lg">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <img src="~/img/Carruselimg3.png" alt="image" class="img-fluid" id="imgCarrusel3">
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <h2 class="display-6 font-weight-bold text-center">
-                                                    ¿Necesitas asistencia?
-                                                </h2>
-                                                <p class="lead mb-3">
-                                                    Puedes comunicarte con nosotros enviando un correo detallando tu situación.
-                                                </p>
-                                                <div class="container-fluid p-0">
-                                                    <div class="row">
-                                                        <div class="col-6">
-                                                            <a href="https://hhc.co.cr/#:~:text=Instituci%C3%B3n%20pionera%20del%20sistema%20de%20liceos%20experimentales%20biling%C3%BCes%20del%20pa%C3%ADs." class="btn btn-custom-color btn-lg fw-bold text-uppercase promo-btn">
-                                                                <i id="icon2" class="bi bi-envelope-fill"></i>
-                                                            </a>
-                                                            <p class="lead mt-3">
-                                                                Correo Talento Humano
-                                                            </p>
-                                                            <p>
-                                                                Estamos aquí para apoyarte en todo momento.
-                                                                No dudes en enviarnos un correo cuando requieras asistencia.
-                                                            </p>
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <a href="https://hhc.co.cr/#:~:text=Instituci%C3%B3n%20pionera%20del%20sistema%20de%20liceos%20experimentales%20biling%C3%BCes%20del%20pa%C3%ADs." class="btn btn-custom-color btn-lg fw-bold text-uppercase promo-btn">
-                                                                <i id="icon2" class="bi bi-telephone-fill"></i>
-                                                            </a>
-                                                            <p class="lead mt-3">
-                                                                Teléfono Talento Humano
-                                                            </p>
-                                                            <p>
-                                                                Estamos aquí para apoyarte en todo momento.
-                                                                Llámanos cuando requieras asistencia.
-                                                            </p>
-                                                        </div>
-                                                        <p class="lead mt-3 text-center mt-3">
-                                                            ¡Tu bienestar es nuestra prioridad!
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="container-xxl">
-                            <div class="row text-dark p-5 align-items-center">
-                                <div class="card border-0 p-2 shadow-lg">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-lg-6 mt-4">
-                                                <h2 class="display-7 font-weight-bold mb-3">
-                                                    ¡Las evaluaciones son la mejor forma de medir tus conocimientos!
-                                                </h2>
-                                                <p class="lead mb-3">
-                                                    "En Talento Humano no solo buscamos que mejores, <br> sino que tú mismo puedas darte cuenta de tus avances"
-                                                </p>
-                                                <p>
-                                                    Hospicio de Huérfanos de Cartago | Costa Rica
-                                                </p>
-                                                <a href="https://mail.google.com/mail/u/0/?hl=es#inbox" class="btn btn-custom-color btn-lg fw-bold text-uppercase promo-btn mt-2 mb-4">
-                                                    ¡Ver mis Evaluaciones!
-                                                </a>
-                                            </div>
-                                            <div class="col-lg-6 align-items-start">
-                                                <img src="~/img/Carruselimg2.png" alt="image" class="img-fluid" id="imgCarrusel1">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+<section id="instituciones" class="container my-5">
+    <h2 class="text-center mb-4">Nuestras Instituciones</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var institucion in Model) // Esto itera sobre las instituciones
+        {
+            <div class="col">
+                <div class="glass-card shadow-lg border-0">
+                    <div id="overlay-Institucion" class="overlay"></div>
+                    <div id="card-content-Institucion" class="card-content">
+                        <h5 id="card-title-Institucion" class="card-title">@institucion.Nombre</h5>
+                        <p>@institucion.Descripcion</p>
+                        <a href="@institucion.Url" target="_blank" id="btn-primary-Institucion" class="btn btn-primary">Saber más</a>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            </div>
+        }
+        <!-- Agregar el modal para nueva institución -->
+        <div class="col">
+            <div class="glass-card shadow-lg border-0">
+                <div id="overlay-Institucion" class="overlay"></div>
+                <div id="card-content-Institucion" class="card-content">
+                    <h5 id="card-title-Institucion" class="card-title">Añadir Institución</h5>
+                    <a href="#" target="_blank" type="button" id="btn-primary-Institucion" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i id="iconInstitucion" class="bi bi-building-fill-add"></i></a>
+                </div>
             </div>
         </div>
-        <br>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div id="naranjaInstitucion" class="modal-header">
+                <h5 class="modal-title" id="addDepartmentModalLabel">Agregar Institución</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addDepartmentForm">
+                    <div class="mb-3">
+                        <label for="newName" class="form-label">Nombre de la institución</label>
+                        <input type="text" class="form-control" id="newName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="newDescription" class="form-label">Descripción</label>
+                        <textarea class="form-control" id="newDescription" rows="4" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="newImage" class="form-label">Imagen de la intitución</label>
+                        <input type="file" class="form-control" id="newImage" required>
+                    </div>
+                    <button type="submit" class="btn" id="addDepartmentBtn2">Agregar institución</button>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
