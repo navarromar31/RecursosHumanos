@@ -35,7 +35,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ICapacitacionRepositorio, CapacitacionRepositorio>();
 builder.Services.AddScoped<IColaboradorRepositorio, ColaboradorRepositorio>();
 builder.Services.AddScoped<IEvaluacionRepositorio, EvaluacionRepositorio>();
-
+builder.Services.AddScoped<IInstitucionRepositorio, InstitucionRepositorio>();
 
 
 // A?ade el servicio HttpContextAccessor al contenedor de servicios
@@ -82,6 +82,6 @@ app.MapRazorPages();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Institucion}/{action=Index}/{id?}");
 
 app.Run();
