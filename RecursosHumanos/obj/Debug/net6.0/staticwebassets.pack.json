@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\Home.css",
+      "PackagePath": "staticwebassets\\css\\Home.css"
+    },
+    {
       "Id": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\Loyout.css",
       "PackagePath": "staticwebassets\\css\\Loyout.css"
     },
@@ -13,12 +17,28 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\img\\Carruselimg1.png",
+      "PackagePath": "staticwebassets\\img\\Carruselimg1.png"
+    },
+    {
+      "Id": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\img\\Carruselimg2.png",
+      "PackagePath": "staticwebassets\\img\\Carruselimg2.png"
+    },
+    {
+      "Id": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\img\\Carruselimg3.png",
+      "PackagePath": "staticwebassets\\img\\Carruselimg3.png"
+    },
+    {
       "Id": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\img\\HHCLogo.png",
       "PackagePath": "staticwebassets\\img\\HHCLogo.png"
     },
     {
       "Id": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\img\\RRHHLogo.png",
       "PackagePath": "staticwebassets\\img\\RRHHLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\img\\fondo2.jpeg",
+      "PackagePath": "staticwebassets\\img\\fondo2.jpeg"
     },
     {
       "Id": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\Layout.js",

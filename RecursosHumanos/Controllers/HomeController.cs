@@ -8,17 +8,14 @@ using RecursosHumanos_AccesoDatos;
 using RecursosHumanos_Utilidades;
 using RecursosHumanos_Models.ViewModels.RecursosHumanos_Models.ViewModels;
 
-
 namespace RecursosHumanos.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        // private readonly ApplicationDbContext _db;
-
-        private readonly ICapacitacionRepositorio _capacitacionRepo;// Capacitacion capacitacion
-        private readonly IColaboradorRepositorio _colaboradorRepo;//Colaborador colaborador
-        private readonly IEvaluacionRepositorio _evaluacionRepo;// Evaluacion evaluacion
+        private readonly ICapacitacionRepositorio _capacitacionRepo;
+        private readonly IColaboradorRepositorio _colaboradorRepo;
+        private readonly IEvaluacionRepositorio _evaluacionRepo;
 
         public HomeController(ILogger<HomeController> logger, ICapacitacionRepositorio capacitacionRepo,
             IColaboradorRepositorio colaboradorRepo, IEvaluacionRepositorio evaluacionRepo)
@@ -31,6 +28,21 @@ namespace RecursosHumanos.Controllers
 
         public IActionResult Index()
         {
+            // Verificar el rol del usuario y asignar el Layout correspondiente
+            if (User.IsInRole("userManager"))
+            {
+                ViewData["Layout"] = "_LayoutUserManager"; // Layout para el rol userManager
+            }
+            else if (User.IsInRole("userStore"))
+            {
+                ViewData["Layout"] = "_LayoutUserStore"; // Layout para el rol userStore
+            }
+            else
+            {
+                ViewData["Layout"] = "_Layout"; // Layout predeterminado
+            }
+
+            // Crear el ViewModel y cargar los datos
             HomeVM homeVM = new HomeVM()
             {
                 Capacitacion = _capacitacionRepo.ObtenerTodos(incluirPropiedades: "Colaborador"),
@@ -51,6 +63,5 @@ namespace RecursosHumanos.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
     }
 }

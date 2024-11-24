@@ -5,11 +5,11 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursosHumanos", "RecursosHumanos.csproj", "{39F70D82-E10B-40DC-A83B-A04CE49021B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursosHumanos_Utilidades", "..\RecursosHumanos_Utilidades\RecursosHumanos_Utilidades.csproj", "{C3764307-5D78-44D5-8BCF-6EE287AC9F9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursosHumanos_Utilidades", "..\RecursosHumanos_Utilidades\RecursosHumanos_Utilidades.csproj", "{C3764307-5D78-44D5-8BCF-6EE287AC9F9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursosHumanos_Models", "..\RecursosHumanos_Models\RecursosHumanos_Models.csproj", "{E5947BBC-57AB-4B64-B9B4-0E8A2E971F87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursosHumanos_Models", "..\RecursosHumanos_Models\RecursosHumanos_Models.csproj", "{E5947BBC-57AB-4B64-B9B4-0E8A2E971F87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursosHumanos_AccesoDatos", "..\RecursosHumanos_AccesoDatos\RecursosHumanos_AccesoDatos.csproj", "{23D54F3D-79DD-4669-B549-CED4A41579C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursosHumanos_AccesoDatos", "..\RecursosHumanos_AccesoDatos\RecursosHumanos_AccesoDatos.csproj", "{23D54F3D-79DD-4669-B549-CED4A41579C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
