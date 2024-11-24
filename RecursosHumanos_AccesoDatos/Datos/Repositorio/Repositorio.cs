@@ -88,6 +88,8 @@ namespace RecursosHumanos_AccesoDatos.Datos.Repositorio
             if (!isTracking)
             {
                 query = query.AsNoTracking(); // Deshabilitamos el seguimiento de cambios si isTracking es false.
+            
+            
             }
             return query.ToList(); // Devolvemos la lista de resultados.
         }
