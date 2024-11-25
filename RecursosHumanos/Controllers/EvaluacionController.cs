@@ -178,7 +178,5 @@ namespace RecursosHumanos.Controllers
 
         }
 
-
-
     }
 }

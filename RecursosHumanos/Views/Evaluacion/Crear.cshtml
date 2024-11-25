@@ -90,10 +90,11 @@
 
                 <div class="mb-4">
 
-                        @if (Model.Preguntas != null && Model.Preguntas.Any())
+                    @if (Model.Preguntas != null && Model.Preguntas.Any())
                         {
-                            foreach (var pregunta in Model.Preguntas)
+                        foreach (var pregunta in Model.Preguntas)
                             {
+
                                 <partial name="_PreguntaCard" model="pregunta" />
                             }
                         }

@@ -5,6 +5,13 @@
     var titulo = "Crear una nueva pregunta";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+<div id="Evaluacion-container" class="container mt-5">
+
+        <h2>Ingresar pregunta </h2>
+
+        <div id="linea-Formulario"></div>
+
 <form method="post" asp-controller="Evaluacion" asp-action="UpsertPregunta" enctype="multipart/form-data">
 
     <div class="row mb-4">
@@ -14,14 +21,32 @@
 
                 <div class="card-body">
 
+                    <label asp-for="Pregunta.Texto" class="form-label">Introduce tu preguntaa</label>
                     <input id="TextoPregunta" asp-for="Pregunta.Texto" class="form-control mb-2" placeholder="Introduce tu pregunta" type="input" />
                     
                 </div>
+                <div class="row">
+                        <div class="col-md-6 mb-2 mt-2">
+                            <!--     card-->
+                             <div class="card-body">
+                              <label asp-for="Pregunta.IdCapacitacion" class="form-label">Capacacitacion a la que pertenece esta pregunta</label>
+                            <select asp-for="Pregunta.IdCapacitacion"  asp-items="@Model.CapacitacionLista" class="form-select">
+                                <option disabled selected>--Seleccione Capacacitacion </option>
+                            </select>
+                  
+                    
+                            </div>
+                            <!--     card-->
+                           
 
-                <div class="d-grid gap-2 d-md-block">
+                        </div>
+                </div>
+               <div class="d-flex justify-content-end mb-4 mr-2">
 
-                    <button type="submit" class="btn btn-primary">Actualizar</button>
-                   
+                    <a asp-controller="Evaluacion" asp-action="Crear" class="btn btn-primary btn-nueva-capacitacion" id="btn-Eva"  >
+                        Guardar pregunta
+                    </a>
+
                 </div>
             </div>
 
@@ -29,4 +54,5 @@
 
     </div>
 
-</form>
+    </form>
+</div>

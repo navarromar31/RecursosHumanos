@@ -44,10 +44,13 @@
 
                 </div>
 
-
-                <a asp-controller="Pregunta" asp-action="Eliminar" asp-route-id="@Model.Id" class="btn btn-eliminar" id="btn-eliminar-Eva">
-                    Eliminar pregunta
-                </a>
+                <div class="card mb-2" id="cartaEva">
+                    <div id="card-body-Eva" class="card-body d-flex justify-content-between align-items-center">
+                    <a asp-controller="Pregunta" asp-action="Eliminar" asp-route-id="@Model.Id" class="btn btn-eliminar" id="btn-eliminar-Eva">
+                        Eliminar pregunta
+                    </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
