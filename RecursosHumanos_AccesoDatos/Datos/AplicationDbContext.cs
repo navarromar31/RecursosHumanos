@@ -8,7 +8,7 @@ namespace RecursosHumanos_AccesoDatos.Datos
     public class AplicationDbContext : IdentityDbContext
     {
         public AplicationDbContext(DbContextOptions<AplicationDbContext> options) : base(options)
-        {
+        {   
 
         }
         //Aca iremos Creando basados en el modelo las respectivas tablas en la bd 

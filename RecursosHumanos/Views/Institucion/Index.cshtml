@@ -1,131 +1,143 @@
-﻿@using RecursosHumanos_Utilidades
-@model RecursosHumanos_Models
+﻿@*
+@model RecursosHumanos_Models.ViewModels.InstitucionVM
 
 @{
-    var titulo = "Crear nueva institución";
+    ViewData["Title"] = "Instituciones";
+    Layout = null;
+}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+
+<link href="~/css/instituciones.css" rel="stylesheet" />
+
+<h2>@ViewData["Title"]</h2>
+
+<!-- Botón para crear nueva institución -->
+<div class="mb-3">
+    <a href="@Url.Action("Upsert", "Institucion", new { id = 0 })" class="btn btn-primary">
+        Crear nueva institución
+    </a>
+</div>
+
+<div class="row">
+    @foreach (var institucion in Model.Institucion)
+    {
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <!-- Imagen de la institución -->
+                <img src="@institucion.ImagenUrlInstitucion" class="card-img-top" alt="Imagen de @institucion.NombreInstitucion" style="height: 200px; object-fit: cover;" />
+
+                <div class="card-body">
+                    <!-- Nombre de la institución -->
+                    <h5 class="card-title">@institucion.NombreInstitucion</h5>
+
+                    <!-- Descripción de la institución -->
+                    <p class="card-text">@institucion.DescripcionInstitucion</p>
+
+                    <!-- Botones de editar y eliminar -->
+                    <div class="d-flex justify-content-between">
+                        <a href="@Url.Action("Upsert", new { id = institucion.Id })" class="btn btn-info btn-sm" title="Editar">
+                            Editar
+                        </a>
+                        <a href="@Url.Action("Eliminar", new { id = institucion.Id })" class="btn btn-danger btn-sm" title="Eliminar">
+                            Eliminar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/instituciones.js"></script>
+*@
+
+@{
+    ViewData["Title"] = "Instituciones";
     Layout = null;
 }
 
-<form method="post" asp-action="Upsert" enctype="multipart/form-data">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="~/css/instituciones.css" rel="stylesheet" />
 
-    @if (Model.Institucion.Id != 0)
-
-    {
-
-        titulo = "Editar Institución";
-        <input asp-for="Institucion.Id" hidden>
-        //si es editar tengo que enviar el id de la institución que vamos a editar
-
-    }
-
-    <div class="border p-3">
-
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
-        <div class="row">
-            <h2 class="text-info">@titulo</h2> @*aca llamaremos a nuestra variable titulo de acuerdo a lo que hay que hacer*@
+<body>
+    <!-- Encabezado hero con título y llamada a la acción -->
+    <header id="heroInstitucion" class="hero">
+        <div class="hero-contentInstitucion">
+            <h1>Instituciones Asociadas a HHC</h1>
+            <p>Juntos construimos un futuro brillante para Costa Rica</p>
+            <a href="#" id="btn-cta-Institucion" class="btn btn-cta">¡Conócenos!</a>
         </div>
+    </header>
 
-        <div class="row">
-            <div class="col-8">
-                @*  Aca es donde esta todo el formulario de editar institución *@
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label asp-for="Institucion.NombreInstitucion" class="form-label">Nombre de la institución</label>
-                            <input asp-for="Institucion.NombreInstitucion" class="form-control" />
-                            <span asp-validation-for="Institucion.NombreInstitucion" class="text-danger"></span>
+    <!-- Sección para mostrar las instituciones -->
+    <section id="instituciones" class="container my-5">
+        <h2 class="text-center mb-4">@ViewData["Title"]</h2>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            @foreach (var institucion in Model.Institucion)
+            {
+                <div class="col">
+                    <a href="@Url.Action("Upsert", new { id = institucion.Id })" class="text-decoration-none">
+                        <div class="glass-card shadow-lg border-0 position-relative" style="height: 300px;">
+                            <!-- Imagen de la institución con difuminado -->
+                            <div class="image-container" style="height: 100%;">
+                                <img src="@institucion.ImagenUrlInstitucion" class="card-img-top image-blur" alt="Imagen de @institucion.NombreInstitucion" style="object-fit: cover; height: 100%; width: 100%;" />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+
+            <!-- Tarjeta para agregar nueva institución -->
+            <div class="col">
+                <a href="@Url.Action("Crear", "Institucion")" class="text-decoration-none">
+                    <div class="glass-card shadow-lg border-0" style="height: 300px;">
+                        <div id="overlay-Institucion" class="overlay"></div>
+                        <div id="card-content-Institucion" class="card-content">
+                            <h5 id="card-title-Institucion" class="card-title">Añadir Institución</h5>
+                            <!-- Icono para agregar nueva institución -->
+                            <i id="iconInstitucion" class="bi bi-building-fill-add"></i> Añadir
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label asp-for="Institucion.DescripcionInstitucion" class="form-label">Descripción</label>
-                            <input asp-for="Institucion.DescripcionInstitucion" class="form-control" />
-                            <span asp-validation-for="Institucion.DescripcionInstitucion" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label asp-for="Institucion.DescripcionCorta" class="form-label">Descripción corta</label>
-                            <input asp-for="Institucion.DescripcionCorta" class="form-control" />
-                            <span asp-validation-for="Institucion.DescripcionCorta" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label asp-for="Institucion.ImagenUrlInstitucion" class="form-label">Imagen</label>
-                            <input type="file" name="files" id="imagenId" class="form-control" />
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label asp-for="Institucion.CategoriaId" class="form-label">Categoría</label>
-                            <select asp-for="Institucion.CategoriaId" asp-items="@Model.CategoriaLista" class="form-select">
-                                <option disabled selected>--Seleccione Categoría</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label asp-for="Institucion.TipoAplicacionId" class="form-label">Tipo de Aplicación</label>
-                            <select asp-for="Institucion.TipoAplicacionId" asp-items="@Model.TipoAplicacionLista" class="form-select">
-                                <option disabled selected>--Seleccione un Tipo</option>
-                            </select>
-                        </div>
-                    </div>
-                    <br />
-
-                    <div class="d-grid gap-2 d-md-block">
-
-                        @if (Model.Institucion.Id != 0)
-
-                        {
-                            <button type="submit" class="btn btn-primary">Actualizar</button>
-                        }
-
-                        else
-
-                        {
-                            <button type="submit" onclick="javascript:validarImagen();" class="btn btn-primary">Crear Nuevo</button>
-                        }
-                        <a asp-controller="Institucion" asp-action="Index" class="btn btn-success">Regresar</a>
-                    </div>
-                </div> @* aca termina el col 8 *@
+                </a>
             </div>
+        </div>
+    </section>
 
-            @*aca agregamos el DIV PARA INCLUIR LA IMAGEN CUANDO EDITEMOS LA INSTITUCIÓN *@
-            <div class="col-4">
-                @*esta validación es para que la imagen se presente solo si la institución ya existe, o sea no es nueva*@
-                @if (Model.Institucion.Id != 0)
-                {
-                    <img src="@WC.ImagenRuta@Model.Institucion.ImagenUrlInstitucion" width="100%" style="border-radius:5px; border:1px solid #bbb" />
-                }
-                
+    <!-- Modal para agregar una nueva institución -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div id="naranjaInstitucion" class="modal-header">
+                    <h5 class="modal-title" id="addDepartmentModalLabel">Agregar Institución</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addDepartmentForm" enctype="multipart/form-data" method="post">
+                        <div class="mb-3">
+                            <label for="newName" class="form-label">Nombre de la institución</label>
+                            <input type="text" class="form-control" id="newName" name="NombreInstitucion" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newDescription" class="form-label">Descripción</label>
+                            <textarea class="form-control" id="newDescription" name="DescripcionInstitucion" rows="4" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newImage" class="form-label">Imagen de la institución</label>
+                            <input type="file" class="form-control" id="newImage" name="imagenInstitucion" required>
+                        </div>
+                        <button type="submit" class="btn btn-success" id="addDepartmentBtn2">Agregar institución</button>
+                    </form>
+                </div>
             </div>
-
         </div>
     </div>
 
-</form>
-
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-
-    <script>
-        $(document).ready(function () {
-            $('.summernote').summernote({
-                height: 250
-            });
-        });
-
-        function validarImagen() {
-            if (document.getElementById("imagenId").value == "") {
-                swal("Error", "Seleccione una imagen!", "error");
-                return false;
-            }
-            return true;
-        }
-    </script>
-}
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/instituciones.js"></script>
+</body>
