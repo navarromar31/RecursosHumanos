@@ -1,95 +1,57 @@
-﻿@{
-    Layout = null;
+﻿@model IEnumerable<RecursosHumanos_Models.Institucion>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instituciones - HHC</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="instituciones.css">
-</head>
-<body>
-    <header id="heroInstitucion" class="hero">
-        <div class="hero-contentInstitucion">
-            <h1>Instituciones Asociadas a HHC</h1>
-            <p>Juntos construimos un futuro brillante para Costa Rica</p>
-            <a href="#" id="btn-cta-Institucion" class="btn btn-cta">¡Conócenos!</a>
-        </div>
-    </header>
-
-    <section id="instituciones" class="container my-5">
-        <h2 class="text-center mb-4">Nuestras Instituciones</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            @foreach (var institucion in Model.Instituciones)
-            {
-                <div class="col">
-                    <div id="@institucion.Id" class="glass-card shadow-lg border-0">
-                        <div id="overlay-Institucion" class="overlay"></div>
-                        <div id="card-content-Institucion" class="card-content">
-                            <h5 id="card-title-Institucion" class="card-title">@institucion.NombreInstitucion</h5>
-                            <p>@institucion.DescripcionInstitucion</p>
-                            @if (!string.IsNullOrEmpty(institucion.ImagenUrlInstitucion))
-                            {
-                                <img src="@institucion.ImagenUrlInstitucion" alt="@institucion.NombreInstitucion" class="img-fluid mb-3" />
-                            }
-                            <a href="#" id="btn-primary-Institucion" class="btn btn-primary">Saber más</a>
-                        </div>
-                    </div>
-                </div>
-            }
-
-            <div class="col">
-                <div class="glass-card shadow-lg border-0">
-                    <div id="overlay-Institucion" class="overlay"></div>
-                    <div id="card-content-Institucion" class="card-content">
-                        <h5 id="card-title-Institucion" class="card-title">Añadir Institución</h5>
-                        <a href="#" target="_blank" type="button" id="btn-primary-Institucion" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                            <i id="iconInstitucion" class="bi bi-building-fill-add"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Lista de Categorías</h2>
         </div>
 
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div id="naranjaInstitucion" class="modal-header">
-                        <h5 class="modal-title" id="addDepartmentModalLabel">Agregar Institución</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="addDepartmentForm" method="post" enctype="multipart/form-data">
-                            <div class="mb-3">
-                                <label for="newName" class="form-label">Nombre de la institución</label>
-                                <input type="text" class="form-control" id="newName" name="NombreInstitucion" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="newDescription" class="form-label">Descripción</label>
-                                <textarea class="form-control" id="newDescription" name="DescripcionInstitucion" rows="4" required></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <label for="newImage" class="form-label">Imagen de la institución</label>
-                                <input type="file" class="form-control" id="newImage" name="ImagenUrlInstitucion" required>
-                            </div>
-                            <div class="form-check mb-3">
-                                <input type="checkbox" class="form-check-input" id="estadoInstitucion" name="EstadoInstitucion">
-                                <label class="form-check-label" for="estadoInstitucion">¿Institución activa?</label>
-                            </div>
-                            <button type="submit" class="btn" id="addDepartmentBtn2">Agregar institución</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Categoria" asp-action="Crear" class="btn btn-primary">
+                <i class="fa-solid fa-plus"></i> Nueva Categoría
+            </a>
         </div>
-    </section>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="instituciones.js"></script>
-</body>
-</html>
+    <br />
+
+    @if (Model.Any())
+    {
+        <table class="table table-bordered table-striped w-100">
+            <thead>
+                <tr>
+                    <th>Nombre Categoría</th>
+                    <th>Orden</th>
+                    <th class="text-center">Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td width="50%">@item.NombreInstitucion</td>
+                        <td class="text-center">
+                            <div class="btn-group" role="group">
+                                <a asp-controller="Categoria" asp-action="Editar" asp-route-id="@item.Id" class="btn btn-primary mx-2">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </a>
+                                <a asp-controller="Categoria" asp-action="Eliminar" asp-route-id="@item.Id" class="btn btn-primary mx-2">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No hay registro de categorías</p>
+    }
+</div>
