@@ -3,6 +3,13 @@
   "WorkspaceRootPath": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\controllers\\institucioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\institucioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23D54F3D-79DD-4669-B549-CED4A41579C7}|..\\RecursosHumanos_AccesoDatos\\RecursosHumanos_AccesoDatos.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos_accesodatos\\datos\\repositorio\\irepositorio\\iinstitucionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\views\\institucion\\upsert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:views\\institucion\\upsert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -21,13 +28,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\views\\institucion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:views\\institucion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\controllers\\institucioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\institucioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23D54F3D-79DD-4669-B549-CED4A41579C7}|..\\RecursosHumanos_AccesoDatos\\RecursosHumanos_AccesoDatos.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos_accesodatos\\datos\\repositorio\\irepositorio\\iinstitucionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23D54F3D-79DD-4669-B549-CED4A41579C7}|..\\RecursosHumanos_AccesoDatos\\RecursosHumanos_AccesoDatos.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos_accesodatos\\datos\\repositorio\\institucionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -181,10 +181,10 @@
       "AbsoluteMoniker": "D:0:0:{E5947BBC-57AB-4B64-B9B4-0E8A2E971F87}|..\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos_models\\viewmodels\\respuestavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\ViewModels\\InstitucionVM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E5947BBC-57AB-4B64-B9B4-0E8A2E971F87}|..\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos_models\\viewmodels\\institucionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Migrations\\20241125183320_Eliminada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{23D54F3D-79DD-4669-B549-CED4A41579C7}|..\\RecursosHumanos_AccesoDatos\\RecursosHumanos_AccesoDatos.csproj|c:\\users\\chale\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos_accesodatos\\migrations\\20241125183320_eliminada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -194,7 +194,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -210,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Institucion\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Institucion\\Index.cshtml",
@@ -222,19 +222,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "InstitucionController.cs",
               "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\InstitucionController.cs",
               "RelativeDocumentMoniker": "Controllers\\InstitucionController.cs",
               "ToolTip": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\InstitucionController.cs",
               "RelativeToolTip": "Controllers\\InstitucionController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAcwH8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T02:49:56.152Z"
+              "WhenOpened": "2024-11-24T02:49:56.152Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "IInstitucionRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IInstitucionRepositorio.cs",
               "RelativeDocumentMoniker": "..\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IInstitucionRepositorio.cs",
@@ -242,7 +243,8 @@
               "RelativeToolTip": "..\\RecursosHumanos_AccesoDatos\\Datos\\Repositorio\\IRepositorio\\IInstitucionRepositorio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T03:51:08.137Z"
+              "WhenOpened": "2024-11-24T03:51:08.137Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -282,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Papelera.cshtml",
               "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Institucion\\Papelera.cshtml",
               "RelativeDocumentMoniker": "Views\\Institucion\\Papelera.cshtml",
@@ -306,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Eliminar.cshtml",
               "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Institucion\\Eliminar.cshtml",
               "RelativeDocumentMoniker": "Views\\Institucion\\Eliminar.cshtml",
@@ -318,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Crear.cshtml",
               "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Institucion\\Crear.cshtml",
               "RelativeDocumentMoniker": "Views\\Institucion\\Crear.cshtml",
@@ -330,13 +332,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "upsert.cshtml",
               "DocumentMoniker": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Institucion\\upsert.cshtml",
               "RelativeDocumentMoniker": "Views\\Institucion\\upsert.cshtml",
               "ToolTip": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Institucion\\upsert.cshtml",
               "RelativeToolTip": "Views\\Institucion\\upsert.cshtml",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAqwD8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAewCEAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-25T02:37:43.462Z",
               "EditorCaption": ""

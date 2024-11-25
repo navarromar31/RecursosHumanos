@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "E5e+Dvx0FhJDYCvY6rw6/IINcyXmHCxdYo0ysdJ/RLI=",
+  "Hash": "4petSskKSdWopsgOw39HG5eIsWU1nePeyfynFvHhTA0=",
   "Source": "RecursosHumanos",
   "BasePath": "_content/RecursosHumanos",
   "Mode": "Default",
@@ -2181,6 +2181,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\c1dc4534-4be9-429e-8e3b-82b1522c7778.png"
+    },
+    {
+      "Identity": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\dbbdc70b-57c9-4474-8d6b-6aff71a93847.png",
+      "SourceId": "RecursosHumanos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "BasePath": "_content/RecursosHumanos",
+      "RelativePath": "imagenes/instituciones/dbbdc70b-57c9-4474-8d6b-6aff71a93847.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\dbbdc70b-57c9-4474-8d6b-6aff71a93847.png"
     },
     {
       "Identity": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\dc4c6478-e22c-459e-a05f-c47b5873be69.jpeg",

@@ -28,6 +28,29 @@ public class InstitucionController : Controller
         return View(model); // Pasar el modelo a la vista
     }
 
+    private string GuardarImagen(IFormFile imagenInstitucion)
+    {
+        string rutaPrincipal = _hostEnvironment.WebRootPath;
+        string subCarpeta = @"imagenes\instituciones";
+        string nombreArchivo = Guid.NewGuid().ToString() + Path.GetExtension(imagenInstitucion.FileName);
+        string rutaCompleta = Path.Combine(rutaPrincipal, subCarpeta);
+
+        if (!Directory.Exists(rutaCompleta))
+        {
+            Directory.CreateDirectory(rutaCompleta);
+        }
+
+        string rutaArchivo = Path.Combine(rutaCompleta, nombreArchivo);
+
+        using (var fileStream = new FileStream(rutaArchivo, FileMode.Create))
+        {
+            imagenInstitucion.CopyTo(fileStream);
+        }
+
+        // Devolver la ruta relativa para almacenarla en la base de datos
+        return Path.Combine(subCarpeta, nombreArchivo).Replace("\\", "/");
+    }
+
     // Acción GET para ver la Papelera de Instituciones (instituciones eliminadas)
     public IActionResult Papelera()
     {
@@ -69,27 +92,19 @@ public class InstitucionController : Controller
     {
         if (ModelState.IsValid)
         {
-            string rutaPrincipal = _hostEnvironment.WebRootPath;
-            string subCarpeta = @"imagenes\instituciones";
-
             if (imagenInstitucion != null)
             {
-                string nombreArchivo = Guid.NewGuid().ToString() + Path.GetExtension(imagenInstitucion.FileName);
-                string rutaCompleta = Path.Combine(rutaPrincipal, subCarpeta);
-
-                if (!Directory.Exists(rutaCompleta))
+                // Usar el método GuardarImagen para almacenar la nueva imagen
+                model.ImagenUrlInstitucion = GuardarImagen(imagenInstitucion);
+            }
+            else if (model.Id != 0)
+            {
+                // Mantener la imagen existente si no se subió una nueva
+                var institucionExistente = _institucionRepo.Obtener(model.Id);
+                if (institucionExistente != null)
                 {
-                    Directory.CreateDirectory(rutaCompleta);
+                    model.ImagenUrlInstitucion = institucionExistente.ImagenUrlInstitucion;
                 }
-
-                // Guardar imagen
-                using (var fileStream = new FileStream(Path.Combine(rutaCompleta, nombreArchivo), FileMode.Create))
-                {
-                    imagenInstitucion.CopyTo(fileStream);
-                }
-
-                // Actualizar ruta de imagen
-                model.ImagenUrlInstitucion = @"\imagenes\instituciones\" + nombreArchivo;
             }
 
             if (model.Id == 0)
@@ -110,6 +125,7 @@ public class InstitucionController : Controller
 
         return View(model);
     }
+
 
     // Acción GET para restaurar una institución eliminada
     public IActionResult Restaurar(int? id)
