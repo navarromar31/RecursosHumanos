@@ -1,0 +1,66 @@
+﻿@using RecursosHumanos_Utilidades
+@model RecursosHumanos_Models.Pregunta
+
+@if (Model != null)
+{
+    <div class="card mb-2" id="cartaEva">
+        <div id="card-body-Eva" class="card-body d-flex justify-content-between align-items-center">
+            <span id="titulo-evaluacion-2">@Model.Texto</span>
+            <div>
+
+                <div class="form-check mt-2">
+
+                    <input class="form-check-input" name="question2" type="radio" id="option1">
+
+                    <label class="form-check-label" for="option1">1</label>
+
+                </div>
+                <div class="form-check mt-2">
+
+                    <input class="form-check-input" name="question2" type="radio" id="option2">
+
+                    <label class="form-check-label" for="option2">2</label>
+
+                </div>
+                <div class="form-check mt-2">
+
+                    <input class="form-check-input" name="question2" type="radio" id="option3">
+
+                    <label class="form-check-label" for="option3">3</label>
+
+                </div>
+                <div class="form-check mt-2">
+
+                    <input class="form-check-input" name="question2" type="radio" id="option4">
+
+                    <label class="form-check-label" for="option4">4</label>
+
+                </div>
+                <div class="form-check">
+
+                    <input class="form-check-input" name="question2" type="radio" id="option5">
+
+                    <label class="form-check-label" for="option5">5</label>
+
+                </div>
+
+
+                <a asp-controller="Pregunta" asp-action="Eliminar" asp-route-id="@Model.Id" class="btn btn-eliminar" id="btn-eliminar-Eva">
+                    Eliminar pregunta
+                </a>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <p>No hay datos disponibles.</p>
+}
+
+
+
+
+
+
+
+

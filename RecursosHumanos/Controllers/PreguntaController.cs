@@ -17,17 +17,18 @@ namespace RecursosHumanos.Controllers
     public class PreguntaController : Controller
     {
 
-        // vamos a invocar  a nuestro dbcontext 
-
-
-        private readonly ILogger<EvaluacionController> _logger;
+        private readonly ILogger<PreguntaController> _logger;
         private readonly IEvaluacionRepositorio _evaluacionRepo;
         private readonly IPreguntaRepositorio _preguntaRepo;
-        public PreguntaController(IPreguntaRepositorio preguntaRepo, IWebHostEnvironment webHostEnvironment)//recibe nuestro contexto de BD
-        {
-            // _db = db;
-            _preguntaRepo = preguntaRepo;
 
+
+
+        public PreguntaController(ILogger<PreguntaController> logger, IEvaluacionRepositorio evaluacionRepo, IPreguntaRepositorio preguntaRepo)//recibe nuestro contexto de BD
+        {
+            //    _db = db;
+            _evaluacionRepo = evaluacionRepo;
+            _logger = logger;
+            _preguntaRepo = preguntaRepo;
         }
 
 
@@ -37,7 +38,7 @@ namespace RecursosHumanos.Controllers
 
             PreguntaVM preguntaVM = new PreguntaVM()
             {
-                Pregunta = _preguntaRepo.ObtenerTodos()
+                Pregunta = (Pregunta)_preguntaRepo.ObtenerTodos()
 
             };
 
@@ -55,7 +56,7 @@ namespace RecursosHumanos.Controllers
             {
                 Pregunta = new Pregunta(),
 
-                EvaluacionLista = _preguntaRepo.ObtenerTodosDropDownList(WC.EvaluacionNombre),
+               // EvaluacionLista = _preguntaRepo.ObtenerTodosDropDownList(WC.EvaluacionNombre),
                 CapacitacionLista = _preguntaRepo.ObtenerTodosDropDownList(WC.CapacitacionNombre),
                 
 
@@ -82,18 +83,7 @@ namespace RecursosHumanos.Controllers
 
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        [HttpPost]
-        public IActionResult Upsert(PreguntaVM preguntaVM)
-        {
-  
-            preguntaVM.EvaluacionLista = _preguntaRepo.ObtenerTodosDropDownList(WC.EvaluacionNombre);
-            preguntaVM.CapacitacionLista = _preguntaRepo.ObtenerTodosDropDownList(WC.CapacitacionNombre);
-
-            return View(preguntaVM);//si el modelo no es validado o sea no es correcto retornamos a la vista el objeto
-
-        }
+      
 
         //GET
 

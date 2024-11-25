@@ -1,0 +1,32 @@
+﻿@model RecursosHumanos_Models.ViewModels.PreguntaVM
+
+
+@{
+    var titulo = "Crear una nueva pregunta";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form method="post" asp-controller="Evaluacion" asp-action="UpsertPregunta" enctype="multipart/form-data">
+
+    <div class="row mb-4">
+        <div class="col-md-12">
+
+            <div class="card">
+
+                <div class="card-body">
+
+                    <input id="TextoPregunta" asp-for="Pregunta.Texto" class="form-control mb-2" placeholder="Introduce tu pregunta" type="input" />
+                    
+                </div>
+
+                <div class="d-grid gap-2 d-md-block">
+
+                    <button type="submit" class="btn btn-primary">Actualizar</button>
+                   
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</form>

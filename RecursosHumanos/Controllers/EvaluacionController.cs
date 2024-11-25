@@ -17,27 +17,22 @@ using System.Collections;
 
 namespace RecursosHumanos.Controllers
 {
+
     [Authorize(Roles = WC.AdminRole)]
-    [Authorize(Roles = WC.ClienteRole)]
     public class EvaluacionController : Controller
     {
 
-        //private readonly ApplicationDbContext _db;
-
-
-        //public  EvaluacionController(ApplicationDbContext db)
-        //{
-        //    _db = db;  
-        //}
-
-
         private readonly ILogger<EvaluacionController> _logger;
         private readonly IEvaluacionRepositorio _evaluacionRepo;
+        private readonly IPreguntaRepositorio _preguntaRepo;
 
-        public EvaluacionController(ILogger<EvaluacionController> logger, IEvaluacionRepositorio evaluacionRepo)//recibe nuestro contexto de BD
+        private List<Pregunta> listaPreguntas = new List<Pregunta>();
+
+        public EvaluacionController(ILogger<EvaluacionController> logger, IEvaluacionRepositorio evaluacionRepo, IPreguntaRepositorio preguntaRepo)//recibe nuestro contexto de BD
         {
             //    _db = db;
             _evaluacionRepo = evaluacionRepo;
+            _preguntaRepo = preguntaRepo;
             _logger = logger;
         }
 
@@ -57,9 +52,37 @@ namespace RecursosHumanos.Controllers
         //Get
         public IActionResult Crear()
         {
+            PreguntaVM preguntaVM = new PreguntaVM()
+            {
+                Preguntas = _preguntaRepo.ObtenerTodos()
 
+            };
 
-            return View();
+            return View(preguntaVM);
+        }
+
+        [HttpGet]
+        public IActionResult UpsertPregunta()
+        {
+            PreguntaVM preguntaVM = new PreguntaVM()
+            {
+                CapacitacionLista = _preguntaRepo.ObtenerTodosDropDownList(WC.CapacitacionNombre)
+
+            };
+           
+            return View(preguntaVM);
+
+        }
+
+        [HttpPost]
+        public IActionResult UpsertPregunta(PreguntaVM preguntaVM)
+        {
+            // Guarda cada producto en una lista interna del controlador
+          
+            listaPreguntas.Add(preguntaVM.Pregunta);
+
+            return View(preguntaVM);
+
         }
 
 
@@ -68,6 +91,7 @@ namespace RecursosHumanos.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Crear(Evaluacion evaluacion)
         {
+            evaluacion.Preguntas = listaPreguntas;
 
             if (ModelState.IsValid)
             {
