@@ -132,7 +132,7 @@ namespace RecursosHumanos.Controllers
         public IActionResult Index()
         {
             var lista = _capacitacionRepo.ObtenerTodos();
-            Capacitacion model = new Capacitacion
+            CapacitacionVM model = new CapacitacionVM
             {
                 Capacitacion = lista.ToList() // Pasar la lista de instituciones
             };

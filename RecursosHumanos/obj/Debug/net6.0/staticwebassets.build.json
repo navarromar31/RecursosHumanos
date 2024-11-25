@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HOkLr/6XxWBmw4mRGWAIcu/rbSRaP/I0VbBZBTDzABc=",
+  "Hash": "sZvSK5qoNFgGR96jBO+vKWICHP+Z4vpyF62kFUwFP3k=",
   "Source": "RecursosHumanos",
   "BasePath": "_content/RecursosHumanos",
   "Mode": "Default",
@@ -1288,6 +1288,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagenes\\capacitacion\\away-2438367_640.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\capacitacion.js",
+      "SourceId": "RecursosHumanos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "BasePath": "_content/RecursosHumanos",
+      "RelativePath": "js/capacitacion.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\capacitacion.js"
     },
     {
       "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\site.js",
