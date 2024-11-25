@@ -1,34 +1,4 @@
-﻿@*
-@model RecursosHumanos_Models.Institucion
-
-@{
-    ViewData["Title"] = Model.Id == 0 ? "Crear Nueva Institución" : "Editar Institución";
-}
-
-<h2>@ViewData["Title"]</h2>
-
-<form asp-action="Upsert" method="post" enctype="multipart/form-data">
-    <div class="form-group">
-        <label for="NombreInstitucion">Nombre de la Institución</label>
-        <input type="text" class="form-control" id="NombreInstitucion" name="NombreInstitucion" value="@Model.NombreInstitucion" required />
-    </div>
-
-    <div class="form-group">
-        <label for="DescripcionInstitucion">Descripción</label>
-        <textarea class="form-control" id="DescripcionInstitucion" name="DescripcionInstitucion" required>@Model.DescripcionInstitucion</textarea>
-    </div>
-
-    <div class="form-group">
-        <label for="ImagenInstitucion">Imagen de la Institución</label>
-        <input type="file" class="form-control" id="ImagenInstitucion" name="imagenInstitucion" />
-    </div>
-
-    <button type="submit" class="btn btn-success">Guardar</button>
-    <a href="@Url.Action("Index", "Institucion")" class="btn btn-secondary">Cancelar</a>
-</form>
-*@
-
-@model RecursosHumanos_Models.Institucion
+﻿@model RecursosHumanos_Models.Institucion
 
 @{
     ViewData["Title"] = Model.Id == 0 ? "Crear Nueva Institución" : "Editar Institución";
