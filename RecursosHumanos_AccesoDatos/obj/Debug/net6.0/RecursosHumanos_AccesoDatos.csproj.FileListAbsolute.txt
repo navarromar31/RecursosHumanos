@@ -40,3 +40,15 @@ C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\
 C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\refint\RecursosHumanos_AccesoDatos.dll
 C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.pdb
 C:\Users\Usuario01\Documents\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\ref\RecursosHumanos_AccesoDatos.dll
+C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\bin\Debug\net6.0\RecursosHumanos_AccesoDatos.deps.json
+C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\bin\Debug\net6.0\RecursosHumanos_AccesoDatos.dll
+C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\bin\Debug\net6.0\RecursosHumanos_AccesoDatos.pdb
+C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\bin\Debug\net6.0\RecursosHumanos_Models.dll
+C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\bin\Debug\net6.0\RecursosHumanos_Utilidades.dll
+C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\bin\Debug\net6.0\RecursosHumanos_Models.pdb
+C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\bin\Debug\net6.0\RecursosHumanos_Utilidades.pdb
+C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\Recursos.B0048B09.Up2Date
+C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.dll
+C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\refint\RecursosHumanos_AccesoDatos.dll
+C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\RecursosHumanos_AccesoDatos.pdb
+C:\Users\chale\OneDrive\Documentos\GitHub\RecursosHumanos\RecursosHumanos_AccesoDatos\obj\Debug\net6.0\ref\RecursosHumanos_AccesoDatos.dll

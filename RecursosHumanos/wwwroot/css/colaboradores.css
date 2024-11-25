@@ -1,0 +1,123 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+#btn-primary-Colaboradores {
+    background-color: #EB8223;
+    border-color: #EB8223;
+    color: white;
+}
+
+#btn-primary-Colaboradores:hover {
+    background-color: #EB8223; 
+}
+
+#btn-info-Colaboradores {
+    background-color: #EB8223;
+    border-color: #EB8223;
+    color: white;
+}
+
+#btn-info-Colaboradores:hover {
+    background-color: #e46c04; 
+}
+
+#input-group-Colaboradores #form-control-Colaboradores {
+    border-radius: 15px 0px 0px 15px;
+}
+
+#card-header-Colaboradores {
+    background-color: #006BA6;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fas {
+    margin-right: 5px;
+}
+
+#list-group-item-Colaboradores {
+    border: none;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+#list-group-item-Colaboradores:last-child {
+    border-bottom: none;
+}
+
+#list-group-item-Colaboradores.rounded-circle {
+    margin-right: 10px;
+}
+
+
+#modal-header-Colaborador {
+    background-color: #EB8223;
+    color: white;
+}
+
+#modal-footer-Colaboradores .btn {
+    border-radius: 15px;
+}
+
+
+#profile-section .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#profile-section .card-body img {
+    border: 2px solid #EB8223;
+}
+
+#profile-name {
+    color: #006BA6;
+    font-weight: bold;
+}
+
+#profile-section .btn {
+    background-color: #EB8223;
+    border-color: #EB8223;
+    color: white;
+}
+
+#profile-section .btn:hover {
+    background-color: #EB8223;
+}
+
+#container-Colaboradores {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#img-Colaboradores {
+    width: 40px; 
+    height: 40px;
+    border: 2px solid #EB8223;
+}
+
+#modal-header-Colaboradores {
+    background-color: #EB8223;
+}
+
+#addCollaboratorModalLabel {
+    color: #ffffff;
+}
+
+#btn-Colaboradores {
+    background-color: #EB8223; 
+    border-color: #EB8223;
+    color: #ffffff;
+}
+
+#btn-agregar-Colaboradores {
+    background-color: #EB8223; 
+    border-radius: 25px;
+    color: #ffffff;
+}
