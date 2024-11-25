@@ -41,12 +41,12 @@ namespace RecursosHumanos.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Upsert(Capacitacion capacitacion, IFormFile imagenInstitucion)
+        public IActionResult Upsert(Capacitacion capacitacion, IFormFile imagenCapacitacion)
         {
             if (ModelState.IsValid)
             {
                 // Si se ha subido una imagen, guardarla en el servidor
-                if (imagenInstitucion != null)
+                if (imagenCapacitacion != null)
                 {
                     // Obtener la ruta de almacenamiento
                     string folderPath = Path.Combine(_hostEnvironment.WebRootPath, "imagenes");
@@ -56,41 +56,41 @@ namespace RecursosHumanos.Controllers
                     }
 
                     // Generar un nombre único para la imagen
-                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(imagenInstitucion.FileName);
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(imagenCapacitacion.FileName);
                     string filePath = Path.Combine(folderPath, fileName);
 
                     // Guardar la imagen en el directorio
                     using (var stream = new FileStream(filePath, FileMode.Create))
                     {
-                        imagenInstitucion.CopyTo(stream);
+                        imagenCapacitacion.CopyTo(stream);
                     }
 
                     // Asignar la ruta de la imagen a la propiedad del modelo
-                    institucion.ImagenUrlInstitucion = "/imagenes/" + fileName;
+                    capacitacion.ImagenUrlCap = "/imagenes/capacitacion/" + fileName;
                 }
 
                 // Si el Id es 0, estamos creando una nueva institución
-                if (institucion.Id == 0)
+                if (capacitacion.Id == 0)
                 {
-                    _institucionRepo.Agregar(institucion);
+                    _capacitacionRepo.Agregar(capacitacion);
                 }
                 else
                 {
                     // Si el Id no es 0, estamos editando una institución existente
-                    _institucionRepo.Actualizar(institucion);
+                    _capacitacionRepo.Actualizar(capacitacion);
                 }
 
                 // Guardar cambios en la base de datos
-                _institucionRepo.Grabar();
+                _capacitacionRepo.Grabar();
 
                 // Mostrar mensaje de éxito
-                TempData["Exitosa"] = institucion.Id == 0 ? "Institución creada exitosamente" : "Institución actualizada exitosamente";
+                TempData["Exitosa"] = capacitacion.Id == 0 ? "Capacitacion creada exitosamente" : "Capacitacion actualizada exitosamente";
                 return RedirectToAction(nameof(Index)); // Redirigir a la vista de listado
             }
 
             // Si ocurre algún error en el modelo
             TempData["Error"] = "Error al guardar la institución";
-            return View(institucion);
+            return View(capacitacion);
         }
 
 
@@ -103,7 +103,7 @@ namespace RecursosHumanos.Controllers
                 return NotFound();
             }
 
-            var obj = _institucionRepo.Obtener(Id.GetValueOrDefault());
+            var obj = _capacitacionRepo.Obtener(Id.GetValueOrDefault());
             if (obj == null)
             {
                 return NotFound();
@@ -115,30 +115,29 @@ namespace RecursosHumanos.Controllers
         // POST: Eliminar
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Eliminar(Institucion institucion)
+        public IActionResult Eliminar(Capacitacion capacitacion)
         {
-            if (institucion == null)
+            if (capacitacion == null)
             {
                 return NotFound();
             }
 
-            _institucionRepo.Remover(institucion);
-            _institucionRepo.Grabar();
-            TempData[WC.Exitosa] = "Institución eliminada exitosamente";
+            _capacitacionRepo.Remover(capacitacion);
+            _capacitacionRepo.Grabar();
+            TempData[WC.Exitosa] = "Capacitacion eliminada exitosamente";
             return RedirectToAction(nameof(Index)); // Redirige a la vista de listado
         }
 
         // GET: Index (Lista de instituciones)
         public IActionResult Index()
         {
-            var lista = _institucionRepo.ObtenerTodos();
-            InstitucionVM model = new InstitucionVM
+            var lista = _capacitacionRepo.ObtenerTodos();
+            Capacitacion model = new Capacitacion
             {
-                Institucion = lista.ToList() // Pasar la lista de instituciones
+                Capacitacion = lista.ToList() // Pasar la lista de instituciones
             };
 
             return View(model); // Pasar el modelo a la vista
         }
     }
 }
-*
