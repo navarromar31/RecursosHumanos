@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\imagenes\\01a021ad-9a33-4654-8d17-8b4b5290cef2.png"
     },
     {
+      "Id": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\0478f2c0-9fdf-4c52-85a5-941ad89f2baa.png",
+      "PackagePath": "staticwebassets\\imagenes\\0478f2c0-9fdf-4c52-85a5-941ad89f2baa.png"
+    },
+    {
       "Id": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\07c5f759-d104-4ed6-b8c9-fa2e2a132891.jpeg",
       "PackagePath": "staticwebassets\\imagenes\\07c5f759-d104-4ed6-b8c9-fa2e2a132891.jpeg"
     },
@@ -171,6 +175,10 @@
     {
       "Id": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\e986da7b-8931-43fc-b5c5-9213cc2c22a1.png",
       "PackagePath": "staticwebassets\\imagenes\\e986da7b-8931-43fc-b5c5-9213cc2c22a1.png"
+    },
+    {
+      "Id": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\83cfca5f-901c-4e2b-991d-5b8e0e52e7e3.png",
+      "PackagePath": "staticwebassets\\imagenes\\instituciones\\83cfca5f-901c-4e2b-991d-5b8e0e52e7e3.png"
     },
     {
       "Id": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\instituciones.js",

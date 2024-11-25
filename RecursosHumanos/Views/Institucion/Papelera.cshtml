@@ -1,27 +1,35 @@
 ﻿@model IEnumerable<RecursosHumanos_Models.Institucion>
 
-<h2>Instituciones en la Papelera</h2>
+<div class="container">
+    <!-- Botón Regresar en la parte superior izquierda -->
+    <div class="d-flex justify-content-start mb-3">
+        <a href="@Url.Action("Index", "Institucion")" class="btn" style="background-color: #ff6600; color: white;">
+            <i class="bi bi-arrow-left"></i> Regresar
+        </a>
+    </div>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Nombre</th>
-            <th>Descripción</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var institucion in Model)
-        {
+    <h2>Instituciones en la Papelera</h2>
+
+    <table class="table">
+        <thead>
             <tr>
-                <td>@institucion.NombreInstitucion</td>
-                <td>@institucion.DescripcionInstitucion</td>
-                <td>
-                    <a href="@Url.Action("Restaurar", new { id = institucion.Id })" class="btn btn-success">Restaurar</a>
-                    <a href="@Url.Action("EliminarPermanente", new { id = institucion.Id })" class="btn btn-danger">Eliminar Permanentemente</a>
-                </td>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Acciones</th>
             </tr>
-        }
-    </tbody>
-</table>
-
+        </thead>
+        <tbody>
+            @foreach (var institucion in Model)
+            {
+                <tr>
+                    <td>@institucion.NombreInstitucion</td>
+                    <td>@institucion.DescripcionInstitucion</td>
+                    <td>
+                        <a href="@Url.Action("Restaurar", new { id = institucion.Id })" class="btn btn-success">Restaurar</a>
+                        <a href="@Url.Action("EliminarPermanente", new { id = institucion.Id })" class="btn btn-danger">Eliminar Permanentemente</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

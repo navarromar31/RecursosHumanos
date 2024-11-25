@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9t+tlC2Ox1MIldhCkALVlY1HUV9LuTZI07mqTlOHjU0=",
+  "Hash": "YJqxsD2ZYDDJgwAoezbm6Z3H+eKtLOaxvj5sHImYbHg=",
   "Source": "RecursosHumanos",
   "BasePath": "_content/RecursosHumanos",
   "Mode": "Default",
@@ -1309,6 +1309,25 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\01a021ad-9a33-4654-8d17-8b4b5290cef2.png"
     },
     {
+      "Identity": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\0478f2c0-9fdf-4c52-85a5-941ad89f2baa.png",
+      "SourceId": "RecursosHumanos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "BasePath": "_content/RecursosHumanos",
+      "RelativePath": "imagenes/0478f2c0-9fdf-4c52-85a5-941ad89f2baa.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\0478f2c0-9fdf-4c52-85a5-941ad89f2baa.png"
+    },
+    {
       "Identity": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\07c5f759-d104-4ed6-b8c9-fa2e2a132891.jpeg",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
@@ -1991,6 +2010,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagenes\\e986da7b-8931-43fc-b5c5-9213cc2c22a1.png"
+    },
+    {
+      "Identity": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\83cfca5f-901c-4e2b-991d-5b8e0e52e7e3.png",
+      "SourceId": "RecursosHumanos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "BasePath": "_content/RecursosHumanos",
+      "RelativePath": "imagenes/instituciones/83cfca5f-901c-4e2b-991d-5b8e0e52e7e3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\83cfca5f-901c-4e2b-991d-5b8e0e52e7e3.png"
     },
     {
       "Identity": "C:\\Users\\chale\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\instituciones.js",
