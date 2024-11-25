@@ -60,16 +60,17 @@
                     <input type="file" class="form-control" id="ImagenInstitucion" name="imagenInstitucion" />
                 </div>
 
-                <button type="submit" class="btn btn-success">Guardar</button>
+                <!-- Botón de guardar (naranja) -->
+                <button type="submit" class="btn" style="background-color: #ff6600; color: white;">Guardar</button>
                 <a href="@Url.Action("Index", "Institucion")" class="btn btn-secondary">Cancelar</a>
             </form>
         </div>
 
-        <!-- Botón de eliminar en la columna derecha -->
+        <!-- Botón de eliminar (naranja) en la columna derecha -->
         <div class="col-md-4">
             <h3>Eliminar Institución</h3>
             <p>Si deseas eliminar esta institución, haz clic en el botón de abajo.</p>
-            <a href="@Url.Action("Eliminar", new { id = Model.Id })" class="btn btn-danger btn-lg">
+            <a href="@Url.Action("Eliminar", new { id = Model.Id })" class="btn" style="background-color: #ff6600; color: white;">
                 <i class="bi bi-trash"></i> Eliminar
             </a>
         </div>
