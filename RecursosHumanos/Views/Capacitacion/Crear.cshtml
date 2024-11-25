@@ -9,10 +9,15 @@
 <form asp-action="Crear" method="post" enctype="multipart/form-data" class="p-3">
     <!-- Imagen -->
     <div class="text-center mb-4">
-        <img src="https://via.placeholder.com/150" id="previewImage" class="rounded img-thumbnail mb-2" style="max-height: 150px; object-fit: cover;">
+        <!-- Vista previa de la imagen -->
+        <img src="@Model?.ImagenUrlCap ?? " https: //via.placeholder.com/150"" id="previewImage"
+             class="rounded img-thumbnail mb-2" style="max-height: 150px; object-fit: cover;" alt="Vista previa">
+
+        <!-- Botón para seleccionar archivo -->
         <div>
             <label for="imagenId" class="btn btn-outline-secondary">
-                Seleccionar archivo <input type="file" name="files" id="imagenId" class="d-none" />
+                Seleccionar archivo
+                <input type="file" name="ImagenFile" id="imagenId" class="d-none" accept="image/*" />
             </label>
         </div>
     </div>
@@ -70,13 +75,20 @@
 
 @section Scripts {
     <script>
-        document.getElementById('imagenId').onchange = function (event) {
-            const [file] = this.files;
+        document.getElementById('imagenId').addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            const previewImage = document.getElementById('previewImage');
+
             if (file) {
-                const preview = document.getElementById('previewImage');
-                preview.src = URL.createObjectURL(file);
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    previewImage.src = e.target.result; // Actualiza la vista previa con la imagen seleccionada
+                };
+
+                reader.readAsDataURL(file); // Convierte la imagen a base64 para la vista previa
             }
-        };
+        });
 
         document.getElementById('MinColabIncrement').onclick = () => {
             let input = document.getElementById('MinColab');
