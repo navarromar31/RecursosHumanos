@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using RecursosHumanos_AccesoDatos;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio;
-using RecursosHumanos_AccesoDatos.Migrations;
+using RecursosHumanos_AccesoDatos;
 using RecursosHumanos_AccesoDatos.Datos;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,11 +20,11 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 
 
 
-//Lo modificamos para agregar al servicio la asignacion de roles de usuario
-/*builder.Services.AddIdentity<IdentityUser, IdentityRole>().
+/*//Lo modificamos para agregar al servicio la asignacion de roles de usuario
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().
     AddDefaultTokenProviders().AddDefaultUI().
     AddEntityFrameworkStores<AplicationDbContext>(); 
- ESTO SE OCUPA CUANDO HAGAMOS EL EMAIL SENDER*/
+ //ESTO SE OCUPA CUANDO HAGAMOS EL EMAIL SENDER*/
 
 
 builder.Services.AddControllersWithViews();
@@ -81,6 +81,6 @@ app.MapRazorPages();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Institucion}/{action=Index}/{id?}");
 
 app.Run();

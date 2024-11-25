@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio;
+using Microsoft.AspNetCore.Components.Routing;
+using NuGet.Protocol.Plugins;
+using Syncfusion.EJ2.Notifications;
 
 namespace RecursosHumanos.Controllers
 {

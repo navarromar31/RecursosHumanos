@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using RecursosHumanos_Models;
 using RecursosHumanos_AccesoDatos;
-using RecursosHumanos_AccesoDatos.Migrations;
 namespace RecursosHumanos_AccesoDatos.Datos
 {
     public class AplicationDbContext : IdentityDbContext
