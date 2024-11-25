@@ -8,41 +8,53 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="~/css/instituciones.css" rel="stylesheet" />
 
-<h2>@ViewData["Title"]</h2>
+<h2 class="text-center">@ViewData["Title"]</h2> <!-- Centrado de título -->
 
-<div class="container">
-    <div class="row">
+<div class="container min-vh-75 d-flex justify-content-center align-items-center">
+    <!-- Ajustamos la altura mínima -->
+    <div class="row w-100 justify-content-center">
+        <!-- Asegurar que el contenido esté centrado -->
         <!-- Formulario de edición de institución -->
         <div class="col-md-8">
+            <!-- Esta columna está centrada con justify-content-center en el row -->
             <form asp-action="Upsert" method="post" enctype="multipart/form-data">
-                <div class="form-group">
+                <div class="form-group mb-3">
+                    <!-- Reducimos el margen inferior -->
                     <label for="NombreInstitucion">Nombre de la Institución</label>
                     <input type="text" class="form-control" id="NombreInstitucion" name="NombreInstitucion" value="@Model.NombreInstitucion" required />
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mb-3">
+                    <!-- Reducimos el margen inferior -->
                     <label for="DescripcionInstitucion">Descripción</label>
                     <textarea class="form-control" id="DescripcionInstitucion" name="DescripcionInstitucion" required>@Model.DescripcionInstitucion</textarea>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mb-3">
+                    <!-- Reducimos el margen inferior -->
                     <label for="ImagenInstitucion">Imagen de la Institución</label>
                     <input type="file" class="form-control" id="ImagenInstitucion" name="imagenInstitucion" />
                 </div>
 
-                <!-- Botón de guardar (naranja) -->
-                <button type="submit" class="btn" style="background-color: #ff6600; color: white;">Guardar</button>
-                <a href="@Url.Action("Index", "Institucion")" class="btn btn-secondary">Cancelar</a>
+                <!-- Espacio entre los botones y el formulario -->
+                <div class="mt-3">
+                    <!-- Ajustamos el margen superior -->
+                    <button type="submit" class="btn" style="background-color: #ff6600; color: white;">Guardar</button>
+                    <a href="@Url.Action("Index", "Institucion")" class="btn btn-secondary">Cancelar</a>
+                </div>
             </form>
         </div>
 
         <!-- Botón de eliminar (naranja) en la columna derecha -->
-        <div class="col-md-4">
-            <h3>Eliminar Institución</h3>
-            <p>Si deseas eliminar esta institución, haz clic en el botón de abajo.</p>
-            <a href="@Url.Action("Eliminar", new { id = Model.Id })" class="btn" style="background-color: #ff6600; color: white;">
-                <i class="bi bi-trash"></i> Eliminar
-            </a>
+        <div class="col-md-4 mt-3">
+            <!-- Reducimos el margen superior -->
+            <h3 class="text-center">Eliminar Institución</h3>
+            <p class="text-center">Si deseas eliminar esta institución, haz clic en el botón de abajo.</p>
+            <div class="text-center">
+                <a href="@Url.Action("Eliminar", new { id = Model.Id })" class="btn" style="background-color: #ff6600; color: white;">
+                    <i class="bi bi-trash"></i> Eliminar
+                </a>
+            </div>
         </div>
     </div>
 </div>
