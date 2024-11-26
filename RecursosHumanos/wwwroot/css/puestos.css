@@ -1,0 +1,77 @@
+﻿body {
+    font-family: "Open Sans", Sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #505050;
+}
+
+#heroInstitucion {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    background-color: #252525;
+}
+
+#hero-contentInstitucion {
+    z-index: 1;
+}
+
+.btn-cta-Institucion {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-cta-Institucion:hover {
+        background-color: #cc5200;
+    }
+
+.glass-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #505050;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #505050;
+}
+
+    .glass-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        background-color: rgba(50, 50, 50, 0.7);
+    }
+
+#overlay-Institucion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.27);
+    z-index: 1;
+}
+
+#card-content-Institucion {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}

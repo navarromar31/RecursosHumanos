@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace RecursosHumanos_AccesoDatos.Migrations
 {
     /// <inheritdoc />
-    public partial class TablasNuevas : Migration
+    public partial class nuevastablas : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -92,7 +92,8 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                     NombreInstitucion = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DescripcionInstitucion = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ImagenUrlInstitucion = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    EstadoInstitucion = table.Column<bool>(type: "bit", nullable: false)
+                    EstadoInstitucion = table.Column<bool>(type: "bit", nullable: false),
+                    Eliminada = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -107,7 +108,8 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NombrePuesto = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DescripcionPuesto = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    EstadoPuesto = table.Column<bool>(type: "bit", nullable: false)
+                    EstadoPuesto = table.Column<bool>(type: "bit", nullable: false),
+                    Eliminada = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {

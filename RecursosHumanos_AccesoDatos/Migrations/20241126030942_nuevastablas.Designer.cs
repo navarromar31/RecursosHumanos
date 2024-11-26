@@ -12,8 +12,8 @@ using RecursosHumanos_AccesoDatos.Datos;
 namespace RecursosHumanos_AccesoDatos.Migrations
 {
     [DbContext(typeof(AplicationDbContext))]
-    [Migration("20241125183320_Eliminada")]
-    partial class Eliminada
+    [Migration("20241126030942_nuevastablas")]
+    partial class nuevastablas
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -489,6 +489,9 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                     b.Property<string>("DescripcionPuesto")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Eliminada")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("EstadoPuesto")
                         .HasColumnType("bit");

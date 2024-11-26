@@ -487,6 +487,9 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("Eliminada")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("EstadoPuesto")
                         .HasColumnType("bit");
 

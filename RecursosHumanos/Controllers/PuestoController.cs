@@ -1,143 +1,115 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using RecursosHumanos_AccesoDatos;
-using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
+﻿using Microsoft.AspNetCore.Mvc;
 using RecursosHumanos_Models;
+using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Hosting;
+using System.IO;
+using System;
+using System.Linq;
+using RecursosHumanos_Models.ViewModels;
 using RecursosHumanos_Utilidades;
 
 namespace RecursosHumanos.Controllers
 {
-    [Authorize(Roles = WC.AdminRole)]
     public class PuestoController : Controller
     {
-
-        //private readonly ApplicationDbContext _db;
-
-
-        //public CategoriaController(ApplicationDbContext db)
-        //{
-        //    _db = db;  
-        //}
-
-
         private readonly IPuestoRepositorio _puestoRepo;
 
-        public PuestoController(IPuestoRepositorio puestoRepo)//recibe nuestro contexto de BD
+        public PuestoController(IPuestoRepositorio puestoRepo)
         {
-            //    _db = db;
             _puestoRepo = puestoRepo;
-
         }
-
 
         public IActionResult Index()
         {
-            IEnumerable<Puesto> lista = _puestoRepo.ObtenerTodos();
-
+            var lista = _puestoRepo.ObtenerTodos(); // Obtener todos los puestos
             return View(lista);
         }
 
-        //Get
-        public IActionResult Crear()
+        public IActionResult Upsert(int? id)
         {
+            Puesto model = new Puesto();
 
+            if (id.HasValue)
+            {
+                // Obtener puesto por ID si se especifica
+                model = _puestoRepo.Obtener(id.GetValueOrDefault());
+            }
 
-            return View();
+            return View(model);
         }
 
-
-
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Crear(Puesto puesto)
+        public IActionResult Upsert(Puesto model)
         {
-
             if (ModelState.IsValid)
             {
-                _puestoRepo.Agregar(puesto);
-                _puestoRepo.Grabar();
-                TempData[WC.Exitosa] = "Puesto creado exitosamente";
-                return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
+                if (model.Id == 0)
+                {
+                    _puestoRepo.Agregar(model); // Agregar nuevo puesto
+                }
+                else
+                {
+                    _puestoRepo.Actualizar(model); // Actualizar puesto existente
+                }
+
+                _puestoRepo.Grabar(); // Guardar cambios en la base de datos
+                return RedirectToAction(nameof(Index));
             }
-            TempData[WC.Error] = "Error al crear un nuevo puesto";
-            return View(puesto);
+
+            return View(model); // Si hay un error de validación, vuelve a mostrar el formulario
         }
 
+        // Otras acciones del controlador (e.g. Eliminar, etc.)
+    
 
-        //GET EDITAR QUE RECIBE DE LA VISTA EL ID DE LA CAT A EDITAR
-        public IActionResult Editar(int? Id)
+
+
+// Acción GET para eliminar un puesto (moverlo a eliminados)
+public IActionResult Eliminar(int? id)
+    {
+        if (id == null || id == 0)
         {
-
-            if (Id == null || Id == 0)
-            {
-                return NotFound();
-
-            }
-            var objDep = _puestoRepo.Obtener(Id.GetValueOrDefault());
-
-            if (objDep == null)
-            {
-                return NotFound();
-            }
-            return View(objDep);
+            return NotFound();
         }
 
-
-
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Editar(Puesto puesto)
+        var obj = _puestoRepo.Obtener(id.GetValueOrDefault());
+        if (obj == null)
         {
-
-            if (ModelState.IsValid)
-            {
-                _puestoRepo.Actualizar(puesto);
-                _puestoRepo.Grabar();
-                return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
-            }
-            return View(puesto);
+            return NotFound();
         }
 
+        // Cambiar el estado de Eliminado a true (mover a eliminados)
+        obj.Eliminada = true;
+        _puestoRepo.Actualizar(obj);
+        _puestoRepo.Grabar();
 
-
-        //GET ELIMINAR
-        public IActionResult Eliminar(int? Id)
-        {
-
-            if (Id == null || Id == 0)
-            {
-                return NotFound();
-
-            }
-            var objDep = _puestoRepo.Obtener(Id.GetValueOrDefault());
-
-            if (objDep == null)
-            {
-                return NotFound();
-            }
-            return View(objDep);
-        }
-
-        //POST ELIMINAR
-
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Eliminar(Puesto puesto)
-        {
-
-            if (puesto == null)
-            {
-                return NotFound();
-            }
-            _puestoRepo.Remover(puesto);
-            _puestoRepo.Grabar();
-            return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
-
-        }
-
-
-
+        TempData["Exitosa"] = "Puesto movido a eliminados";
+        return RedirectToAction(nameof(Index));
     }
+
+    // Acción GET para restaurar un puesto eliminado
+    public IActionResult Restaurar(int? id)
+    {
+        if (id == null || id == 0)
+        {
+            return NotFound();
+        }
+
+        var puesto = _puestoRepo.Obtener(id.GetValueOrDefault());
+        if (puesto == null)
+        {
+            return NotFound();
+        }
+
+        // Restaurar el puesto cambiando su estado de eliminado a falso
+        puesto.Eliminada = false;
+        _puestoRepo.Actualizar(puesto);
+        _puestoRepo.Grabar();
+
+        TempData["Exitosa"] = "Puesto restaurado exitosamente";
+        return RedirectToAction(nameof(Index));
+}
+}
+
 }

@@ -1,11 +1,13 @@
-﻿using RecursosHumanos_AccesoDatos.Datos.Repositorio;
-using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio; // Importamos la interfaz del repositorio.
-using RecursosHumanos_Models; // Importamos los modelos.
-using System; // Importamos System para las clases básicas del .NET Framework.
-using System.Collections.Generic; // Importamos colecciones genéricas.
-using System.Linq; // Importamos LINQ para consultas.
-using System.Text; // Importamos el espacio de nombres para manejo de texto.
-using System.Threading.Tasks; // Importamos para manejar tareas asíncronas.
+﻿using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
+using RecursosHumanos_Models;
+using RecursosHumanos_Utilidades;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using RecursosHumanos_AccesoDatos.Datos.Repositorio;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace RecursosHumanos_AccesoDatos.Datos.Repositorio
 {
@@ -22,5 +24,7 @@ namespace RecursosHumanos_AccesoDatos.Datos.Repositorio
         {
             _db.Update(puesto);
         }
+
+       
     }
 }
