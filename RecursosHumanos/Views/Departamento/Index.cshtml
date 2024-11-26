@@ -1,0 +1,55 @@
+﻿@model IEnumerable<RecursosHumanos_Models.Departamento>
+
+@{
+    ViewData["Title"] = "Departamentos";
+}
+
+<div class="container mt-5">
+    <h1>Gestión de Departamentos</h1>
+
+    <!-- Campo de búsqueda -->
+    <div id="input-container-departamento" class="mb-3">
+        <input type="text" id="buscarDepartamento" placeholder="Buscar departamento..." class="form-control" />
+        <button id="boton-departamento" class="btn btn-primary mt-2">Buscar</button>
+    </div>
+
+    <a href="@Url.Action("Crear")" class="btn btn-primary">Agregar Departamento</a>
+
+    @if (TempData["Exitosa"] != null)
+    {
+        <div class="alert alert-success mt-3">@TempData["Exitosa"]</div>
+    }
+    if (TempData["Error"] != null)
+    {
+    <div class="alert alert-danger mt-3">@TempData["Error"]</div>
+    }
+
+    <table class="table table-striped mt-3" id="tablaDepartamentos">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="listaDepartamento">
+            @foreach (var departamento in Model)
+            {
+                <tr>
+                    <td>@departamento.Id</td>
+                    <td>@departamento.NombreDepartamento</td>
+                    <td>@departamento.DescripcionDepartamento</td>
+                    <td>@(departamento.EstadoDepartamento ? "Activo" : "Inactivo")</td>
+                    <td>
+                        <a href="@Url.Action("Editar", new { Id = departamento.Id })" class="btn btn-warning">Editar</a>
+                        <a href="@Url.Action("Eliminar", new { Id = departamento.Id })" class="btn btn-danger">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script src="~/js/departamentos.js"></script>

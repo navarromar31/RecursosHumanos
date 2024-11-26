@@ -1,0 +1,26 @@
+﻿@model RecursosHumanos_Models.Departamento
+
+@{
+    ViewData["Title"] = "Eliminar Departamento";
+}
+
+<link href="~/css/departamentos.css" rel="stylesheet" />
+
+<div class="container mt-5">
+    <h1>Eliminar Departamento</h1>
+    <h4>¿Está seguro de que desea eliminar el departamento "@Model.NombreDepartamento"?</h4>
+
+    <form asp-action="Eliminar" method="post">
+        <input type="hidden" asp-for="Id" />
+        <div class="mb-3">
+            <label>Nombre:</label>
+            <p>@Model.NombreDepartamento</p>
+        </div>
+        <div class="mb-3">
+            <label>Descripción:</label>
+            <p>@Model.DescripcionDepartamento</p>
+        </div>
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        <a href="@Url.Action("Index")" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
