@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace RecursosHumanos_AccesoDatos.Migrations
 {
     /// <inheritdoc />
-    public partial class TablasNuevas : Migration
+    public partial class TablasFinales : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -53,6 +53,25 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "capacitacion",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NombreCapacitacion = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Duracion = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MinPersonas = table.Column<int>(type: "int", nullable: false),
+                    MaxPersonas = table.Column<int>(type: "int", nullable: false),
+                    Modalidad = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImagenUrlCap = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    EstadoCapacitacion = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_capacitacion", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "departamentos",
                 columns: table => new
                 {
@@ -92,7 +111,8 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                     NombreInstitucion = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DescripcionInstitucion = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ImagenUrlInstitucion = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    EstadoInstitucion = table.Column<bool>(type: "bit", nullable: false)
+                    EstadoInstitucion = table.Column<bool>(type: "bit", nullable: false),
+                    Eliminada = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -107,7 +127,8 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NombrePuesto = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DescripcionPuesto = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    EstadoPuesto = table.Column<bool>(type: "bit", nullable: false)
+                    EstadoPuesto = table.Column<bool>(type: "bit", nullable: false),
+                    Eliminada = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -259,6 +280,36 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "pregunta",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    IdCapacitacion = table.Column<int>(type: "int", nullable: false),
+                    IdEvaluacion = table.Column<int>(type: "int", nullable: false),
+                    Texto = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    InicioEscala = table.Column<int>(type: "int", nullable: false),
+                    FinalEscala = table.Column<int>(type: "int", nullable: false),
+                    EstadoPregunta = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_pregunta", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_pregunta_capacitacion_IdCapacitacion",
+                        column: x => x.IdCapacitacion,
+                        principalTable: "capacitacion",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_pregunta_evaluacion_IdEvaluacion",
+                        column: x => x.IdEvaluacion,
+                        principalTable: "evaluacion",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "colaborador",
                 columns: table => new
                 {
@@ -296,62 +347,6 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                         column: x => x.PuestoId,
                         principalTable: "puesto",
                         principalColumn: "Id");
-                });
-
-            migrationBuilder.CreateTable(
-                name: "capacitacion",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    NombreCapacitacion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Duracion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    MinPersonas = table.Column<int>(type: "int", nullable: false),
-                    MaxPersonas = table.Column<int>(type: "int", nullable: false),
-                    Modalidad = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ImagenUrlCap = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    EstadoCapacitacion = table.Column<bool>(type: "bit", nullable: false),
-                    ColaboradorId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_capacitacion", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_capacitacion_colaborador_ColaboradorId",
-                        column: x => x.ColaboradorId,
-                        principalTable: "colaborador",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "pregunta",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    IdCapacitacion = table.Column<int>(type: "int", nullable: false),
-                    IdEvaluacion = table.Column<int>(type: "int", nullable: false),
-                    Texto = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    InicioEscala = table.Column<int>(type: "int", nullable: false),
-                    FinalEscala = table.Column<int>(type: "int", nullable: false),
-                    EstadoPregunta = table.Column<bool>(type: "bit", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_pregunta", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_pregunta_capacitacion_IdCapacitacion",
-                        column: x => x.IdCapacitacion,
-                        principalTable: "capacitacion",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_pregunta_evaluacion_IdEvaluacion",
-                        column: x => x.IdEvaluacion,
-                        principalTable: "evaluacion",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
@@ -392,11 +387,6 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_capacitacion_ColaboradorId",
-                table: "capacitacion",
-                column: "ColaboradorId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_colaborador_DepartamentoId",
@@ -448,6 +438,9 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "colaborador");
+
+            migrationBuilder.DropTable(
                 name: "evaluacionColaborador");
 
             migrationBuilder.DropTable(
@@ -463,15 +456,6 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "capacitacion");
-
-            migrationBuilder.DropTable(
-                name: "evaluacion");
-
-            migrationBuilder.DropTable(
-                name: "colaborador");
-
-            migrationBuilder.DropTable(
                 name: "departamentos");
 
             migrationBuilder.DropTable(
@@ -479,6 +463,12 @@ namespace RecursosHumanos_AccesoDatos.Migrations
 
             migrationBuilder.DropTable(
                 name: "puesto");
+
+            migrationBuilder.DropTable(
+                name: "capacitacion");
+
+            migrationBuilder.DropTable(
+                name: "evaluacion");
         }
     }
 }

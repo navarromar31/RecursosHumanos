@@ -14,7 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<AplicationDbContext>(options =>
                                                 options.UseSqlServer(
-                                                builder.Configuration.GetConnectionString("SaraConnection")));
+                                                builder.Configuration.GetConnectionString("DayraConnection")));
 /*
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<AplicationDbContext>();
@@ -86,6 +86,6 @@ app.MapRazorPages();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Evaluacion}/{action=Index}/{id?}");
+    pattern: "{controller=Puesto}/{action=Index}/{id?}");
 
 app.Run();

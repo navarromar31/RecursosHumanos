@@ -12,8 +12,8 @@ using RecursosHumanos_AccesoDatos.Datos;
 namespace RecursosHumanos_AccesoDatos.Migrations
 {
     [DbContext(typeof(AplicationDbContext))]
-    [Migration("20241123200010_TablasNuevas")]
-    partial class TablasNuevas
+    [Migration("20241126190257_TablasFinales")]
+    partial class TablasFinales
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -239,9 +239,6 @@ namespace RecursosHumanos_AccesoDatos.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("ColaboradorId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Duracion")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -267,8 +264,6 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ColaboradorId");
 
                     b.ToTable("capacitacion");
                 });
@@ -424,6 +419,9 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("Eliminada")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("EstadoInstitucion")
                         .HasColumnType("bit");
 
@@ -486,6 +484,9 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                     b.Property<string>("DescripcionPuesto")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Eliminada")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("EstadoPuesto")
                         .HasColumnType("bit");
@@ -587,17 +588,6 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("RecursosHumanos_Models.Capacitacion", b =>
-                {
-                    b.HasOne("RecursosHumanos_Models.Colaborador", "Colaborador")
-                        .WithMany()
-                        .HasForeignKey("ColaboradorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Colaborador");
                 });
 
             modelBuilder.Entity("RecursosHumanos_Models.Colaborador", b =>
