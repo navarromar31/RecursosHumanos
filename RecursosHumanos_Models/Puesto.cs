@@ -13,7 +13,5 @@ namespace RecursosHumanos_Models
         public string DescripcionPuesto { get; set; }
 
         public bool EstadoPuesto { get; set; }
-
-        public bool Eliminada { get; set; }
     }
 }

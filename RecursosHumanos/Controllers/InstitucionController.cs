@@ -1,197 +1,153 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
-using RecursosHumanos_Models.ViewModels;
 using RecursosHumanos_Models;
+using RecursosHumanos_AccesoDatos;
 using RecursosHumanos_Utilidades;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using NuGet.Packaging.Signing;
+using System.Collections;
+using Microsoft.AspNetCore.Authorization;
+using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
 
-public class InstitucionController : Controller
+
+namespace RecursosHumanos.Controllers
 {
-    private readonly IInstitucionRepositorio _institucionRepo;
-    private readonly IWebHostEnvironment _hostEnvironment;
-
-    public InstitucionController(IInstitucionRepositorio institucionRepo, IWebHostEnvironment hostEnvironment)
+    [Authorize(Roles = WC.AdminRole)]
+    public class InstitucionController : Controller
     {
-        _institucionRepo = institucionRepo;
-        _hostEnvironment = hostEnvironment;
-    }
 
-    // GET: Index (Lista de instituciones no eliminadas)
-    public IActionResult Index()
-    {
-        var lista = _institucionRepo.ObtenerTodos()
-            .Where(i => !i.Eliminada); // Filtrar instituciones no eliminadas
-        InstitucionVM model = new InstitucionVM
+        //private readonly ApplicationDbContext _db;
+
+
+        //public InstitucionController(ApplicationDbContext db)
+        //{
+        //    _db = db;  
+        //}
+
+
+        private readonly IInstitucionRepositorio _institucionRepo;
+
+        public InstitucionController(IInstitucionRepositorio institucionRepo)//recibe nuestro contexto de BD
         {
-            Institucion = lista.ToList() // Pasar la lista filtrada
-        };
+            //    _db = db;
+            _institucionRepo = institucionRepo;
 
-        return View(model); // Pasar el modelo a la vista
-    }
-
-    private string GuardarImagen(IFormFile imagenInstitucion)
-    {
-        string rutaPrincipal = _hostEnvironment.WebRootPath;
-        string subCarpeta = @"imagenes\instituciones";
-        string nombreArchivo = Guid.NewGuid().ToString() + Path.GetExtension(imagenInstitucion.FileName);
-        string rutaCompleta = Path.Combine(rutaPrincipal, subCarpeta);
-
-        if (!Directory.Exists(rutaCompleta))
-        {
-            Directory.CreateDirectory(rutaCompleta);
         }
 
-        string rutaArchivo = Path.Combine(rutaCompleta, nombreArchivo);
 
-        using (var fileStream = new FileStream(rutaArchivo, FileMode.Create))
+        public IActionResult Index()
         {
-            imagenInstitucion.CopyTo(fileStream);
+            IEnumerable<Institucion> lista = _institucionRepo.ObtenerTodos();
+
+            return View(lista);
         }
 
-        // Devolver la ruta relativa para almacenarla en la base de datos
-        return Path.Combine(subCarpeta, nombreArchivo).Replace("\\", "/");
-    }
-
-    // Acción GET para ver la Papelera de Instituciones (instituciones eliminadas)
-    public IActionResult Papelera()
-    {
-        var listaEliminada = _institucionRepo.ObtenerInstitucionesEliminadas();  // Aquí debes obtener las instituciones eliminadas
-        InstitucionVM model = new InstitucionVM
+        //Get
+        public IActionResult Crear()
         {
-            Institucion = listaEliminada.ToList()  // Pasar la lista de instituciones eliminadas a la vista
-        };
-
-        return View(model); // Pasar el modelo a la vista de la papelera
-    }
 
 
-    public IActionResult Upsert(int? id)
-    {
-        Institucion model = new Institucion();
-
-        if (id == null || id == 0)
-        {
-            // Crear una nueva institución
-            return View(model);
+            return View();
         }
-        else
+
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Crear(Institucion institucion)
         {
-            // Editar una institución existente
-            model = _institucionRepo.Obtener(id.GetValueOrDefault());
-            if (model == null)
+
+            if (ModelState.IsValid)
+            {
+                _institucionRepo.Agregar(institucion);
+                _institucionRepo.Grabar();
+                TempData[WC.Exitosa] = "Institucion creada exitosamente";
+                return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
+            }
+            TempData[WC.Error] = "Error al crear nueva institucion";
+            return View(institucion);
+        }
+
+
+        //GET EDITAR QUE RECIBE DE LA VISTA EL ID DE LA int A EDITAR
+        public IActionResult Editar(int? Id)
+        {
+
+            if (Id == null || Id == 0)
+            {
+                return NotFound();
+
+            }
+            var obj = _institucionRepo.Obtener(Id.GetValueOrDefault());
+
+            if (obj == null)
             {
                 return NotFound();
             }
-            return View(model);
+            return View(obj);
         }
-    }
 
-    // Acción POST para guardar los cambios
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public IActionResult Upsert(Institucion model, IFormFile imagenInstitucion)
-    {
-        if (ModelState.IsValid)
+
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Editar(Institucion institucion)
         {
-            if (imagenInstitucion != null)
-            {
-                // Usar el método GuardarImagen para almacenar la nueva imagen
-                model.ImagenUrlInstitucion = GuardarImagen(imagenInstitucion);
-            }
-            else if (model.Id != 0)
-            {
-                // Mantener la imagen existente si no se subió una nueva
-                var institucionExistente = _institucionRepo.Obtener(model.Id);
-                if (institucionExistente != null)
-                {
-                    model.ImagenUrlInstitucion = institucionExistente.ImagenUrlInstitucion;
-                }
-            }
 
-            if (model.Id == 0)
+            if (ModelState.IsValid)
             {
-                // Crear una nueva institución
-                _institucionRepo.Agregar(model);
+                _institucionRepo.Actualizar(institucion);
+                _institucionRepo.Grabar();
+                return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
             }
-            else
-            {
-                // Actualizar una institución existente
-                _institucionRepo.Actualizar(model);
-            }
+            return View(institucion);
+        }
 
+
+
+        //GET ELIMINAR
+        public IActionResult Eliminar(int? Id)
+        {
+
+            if (Id == null || Id == 0)
+            {
+                return NotFound();
+
+            }
+            var obj = _institucionRepo.Obtener(Id.GetValueOrDefault());
+
+            if (obj == null)
+            {
+                return NotFound();
+            }
+            return View(obj);
+        }
+
+        //POST ELIMINAR
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Eliminar(Institucion institucion)
+        {
+
+            if (institucion == null)
+            {
+                return NotFound();
+            }
+            _institucionRepo.Remover(institucion);
             _institucionRepo.Grabar();
-            TempData["Exitosa"] = "Institución guardada exitosamente.";
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
+
         }
 
-        return View(model);
-    }
 
 
-    // Acción GET para restaurar una institución eliminada
-    public IActionResult Restaurar(int? id)
-    {
-        if (id == null || id == 0)
-        {
-            return NotFound();
-        }
-
-        var institucion = _institucionRepo.Obtener(id.GetValueOrDefault());
-        if (institucion == null)
-        {
-            return NotFound();
-        }
-
-        // Restaurar la institución cambiando su estado de eliminada a falso
-        institucion.Eliminada = false;
-        _institucionRepo.Actualizar(institucion);
-        _institucionRepo.Grabar();
-
-        TempData["Exitosa"] = "Institución restaurada exitosamente";
-        return RedirectToAction(nameof(Papelera));
-    }
-
-    // Acción GET para eliminar permanentemente una institución
-    public IActionResult EliminarPermanente(int? id)
-    {
-        if (id == null || id == 0)
-        {
-            return NotFound();
-        }
-
-        var institucion = _institucionRepo.Obtener(id.GetValueOrDefault());
-        if (institucion == null)
-        {
-            return NotFound();
-        }
-
-        // Eliminar permanentemente la institución de la base de datos
-        _institucionRepo.Remover(institucion);
-        _institucionRepo.Grabar();
-
-        TempData["Exitosa"] = "Institución eliminada permanentemente";
-        return RedirectToAction(nameof(Papelera));
-    }
-
-    // GET: Eliminar (Mover a papelera)
-    public IActionResult Eliminar(int? id)
-    {
-        if (id == null || id == 0)
-        {
-            return NotFound();
-        }
-
-        var obj = _institucionRepo.Obtener(id.GetValueOrDefault());
-        if (obj == null)
-        {
-            return NotFound();
-        }
-
-        // Cambiar el estado de Eliminada a true (mover a la papelera)
-        obj.Eliminada = true;
-        _institucionRepo.Actualizar(obj);
-        _institucionRepo.Grabar();
-
-        TempData["Exitosa"] = "Institución movida a la papelera";
-        return RedirectToAction(nameof(Index));
     }
 }
+

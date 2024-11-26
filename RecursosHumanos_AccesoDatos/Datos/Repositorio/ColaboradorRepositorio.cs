@@ -51,7 +51,7 @@ namespace RecursosHumanos_AccesoDatos.Datos.Repositorio
             }
             if (obj == WC.PuestoNombre)
             {
-                return _db.puestos.Select(t => new SelectListItem
+                return _db.puesto.Select(t => new SelectListItem
                 {
                     Text = t.NombrePuesto,
                     Value = t.Id.ToString()

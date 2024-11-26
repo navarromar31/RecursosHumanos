@@ -190,42 +190,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/arias/OneDrive/Documentos/GitHub/RecursosHumanos/RecursosHumanos/RecursosHumanos/Views/Institucion/Crear.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dWNpb25cQ3JlYXIuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/arias/OneDrive/Documentos/GitHub/RecursosHumanos/RecursosHumanos/RecursosHumanos/Views/Institucion/Eliminar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dWNpb25cRWxpbWluYXIuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/arias/OneDrive/Documentos/GitHub/RecursosHumanos/RecursosHumanos/RecursosHumanos/Views/Institucion/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dWNpb25cSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/arias/OneDrive/Documentos/GitHub/RecursosHumanos/RecursosHumanos/RecursosHumanos/Views/Institucion/Papelera.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dWNpb25cUGFwZWxlcmEuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/arias/OneDrive/Documentos/GitHub/RecursosHumanos/RecursosHumanos/RecursosHumanos/Views/Institucion/upsert.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dWNpb25cdXBzZXJ0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/arias/OneDrive/Documentos/GitHub/RecursosHumanos/RecursosHumanos/RecursosHumanos/Views/Puesto/Crear.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3RvXENyZWFyLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/arias/OneDrive/Documentos/GitHub/RecursosHumanos/RecursosHumanos/RecursosHumanos/Views/Puesto/Eliminar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3RvXEVsaW1pbmFyLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/arias/OneDrive/Documentos/GitHub/RecursosHumanos/RecursosHumanos/RecursosHumanos/Views/Puesto/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3RvXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/arias/OneDrive/Documentos/GitHub/RecursosHumanos/RecursosHumanos/RecursosHumanos/Views/Puesto/Upsert.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3RvXFVwc2VydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/arias/OneDrive/Documentos/GitHub/RecursosHumanos/RecursosHumanos/RecursosHumanos/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

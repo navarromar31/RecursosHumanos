@@ -11,7 +11,5 @@ namespace RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio
     {
         void Actualizar(Puesto puesto);
 
-        IEnumerable<Puesto> ObtenerPuestosEliminados();
-
     }
 }

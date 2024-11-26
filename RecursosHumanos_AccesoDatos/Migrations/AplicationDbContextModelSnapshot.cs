@@ -421,9 +421,6 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("Eliminada")
-                        .HasColumnType("bit");
-
                     b.Property<bool>("EstadoInstitucion")
                         .HasColumnType("bit");
 
@@ -487,9 +484,6 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("Eliminada")
-                        .HasColumnType("bit");
-
                     b.Property<bool>("EstadoPuesto")
                         .HasColumnType("bit");
 
@@ -499,7 +493,7 @@ namespace RecursosHumanos_AccesoDatos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("puestos");
+                    b.ToTable("puesto");
                 });
 
             modelBuilder.Entity("RecursosHumanos_Models.Respuesta", b =>

@@ -22,10 +22,5 @@ namespace RecursosHumanos_AccesoDatos.Datos.Repositorio
         {
             _db.Update(institucion);
         }
-
-        public IEnumerable<Institucion> ObtenerInstitucionesEliminadas()
-        {
-            return dbSet.Where(i => i.Eliminada).ToList();
-        }
     }
 }
