@@ -1,5 +1,6 @@
 {
   "Version": 1,
+
   "WorkspaceRootPath": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\",
   "Documents": [
     {
@@ -33,6 +34,7 @@
     {
       "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\usuario01\\documents\\github\\recursoshumanos\\recursoshumanos\\views\\evaluacion\\_evaluacioncard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:views\\evaluacion\\_evaluacioncard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+
     }
   ],
   "DocumentGroupContainers": [
@@ -45,6 +47,7 @@
           "SelectedChildIndex": 5,
           "Children": [
             {
+
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Index.cshtml",
@@ -108,10 +111,12 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-26T02:19:58.894Z",
               "EditorCaption": ""
+
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+
               "Title": "_PreguntaCard.cshtml",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\_PreguntaCard.cshtml",
               "RelativeDocumentMoniker": "Views\\Evaluacion\\_PreguntaCard.cshtml",
@@ -147,6 +152,7 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-26T02:19:49.817Z",
               "EditorCaption": ""
+
             }
           ]
         }

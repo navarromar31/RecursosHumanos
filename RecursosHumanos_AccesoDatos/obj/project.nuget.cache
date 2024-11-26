@@ -1,5 +1,6 @@
 {
   "version": 2,
+
   "dgSpecHash": "ZeIPXhjZGBo=",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_AccesoDatos\\RecursosHumanos_AccesoDatos.csproj",
@@ -95,6 +96,7 @@
     "C:\\Users\\Usuario01\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Usuario01\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\Usuario01\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
+
   ],
   "logs": []
 }
