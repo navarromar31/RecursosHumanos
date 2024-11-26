@@ -84,7 +84,6 @@ namespace RecursosHumanos.Controllers
 
             }
 
-        
                 _evaluacionRepo.Agregar(evaluacionVM.Evaluacion);
                 _evaluacionRepo.Grabar();
                 TempData[WC.Exitosa] = "Evaluacion creada exitosamente";

@@ -22,9 +22,6 @@
       @if (User.IsInRole(WC.AdminRole))
     {
 
-        @if(Model.Evaluacion.Id==0 && Model.Evaluacion.Id == null)
-        {
-
             <form method="post" asp-controller="Evaluacion" asp-action="Crear" enctype="multipart/form-data">
 
                 <div id="Evaluacion-container" class="container mt-5">
@@ -133,7 +130,6 @@
 
             </form>
 
-        }
 
     }
 </body>
