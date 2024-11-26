@@ -29,9 +29,9 @@
         </div>
 
         <div id="evaluaciones-pasadas" class="mb-4">
-                @if (Model.Evaluacion != null && Model.Evaluacion.Any())
+                @if (Model.EvaluacionListaDB != null && Model.EvaluacionListaDB.Any())
                 {
-                    foreach (var evalu in Model.Evaluacion)
+                    foreach (var evalu in Model.EvaluacionListaDB)
                     {
                         <partial name="_EvaluacionCard" model="evalu" />
                     }

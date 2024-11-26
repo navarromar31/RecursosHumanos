@@ -4,15 +4,17 @@
 @{
     var titulo = "Crear una nueva pregunta";
     Layout = "~/Views/Shared/_Layout.cshtml";
+  
 }
 
 <div id="Evaluacion-container" class="container mt-5">
 
-        <h2>Ingresar pregunta </h2>
+       <h5>@titulo</h5>
 
         <div id="linea-Formulario"></div>
 
 <form method="post" asp-controller="Evaluacion" asp-action="UpsertPregunta" enctype="multipart/form-data">
+      
 
     <div class="row mb-4">
         <div class="col-md-12">
@@ -21,9 +23,12 @@
 
                 <div class="card-body">
 
-                    <label asp-for="Pregunta.Texto" class="form-label">Introduce tu preguntaa</label>
+                    <label asp-for="Pregunta.Texto" class="form-label">Introduce tu pregunta</label>
                     <input id="TextoPregunta" asp-for="Pregunta.Texto" class="form-control mb-2" placeholder="Introduce tu pregunta" type="input" />
-                    
+                        <div hidden>
+                            Pregunta.Id=contador;
+                          
+                        </div>
                 </div>
                 <div class="row">
                         <div class="col-md-6 mb-2 mt-2">
@@ -43,9 +48,9 @@
                 </div>
                <div class="d-flex justify-content-end mb-4 mr-2">
 
-                    <a asp-controller="Evaluacion" asp-action="Crear" class="btn btn-primary btn-nueva-capacitacion" id="btn-Eva"  >
+                    <button type="submit" asp-controller="Evaluacion" asp-action="UpsertPregunta" class="btn btn-primary btn-nueva-capacitacion" id="btn-Eva"  >
                         Guardar pregunta
-                    </a>
+                    </button>
 
                 </div>
             </div>

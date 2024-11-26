@@ -194,6 +194,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZhbHVhY2lvblxFbGltaW5hci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Usuario01/Documents/GitHub/RecursosHumanos/RecursosHumanos/Views/Evaluacion/EliminarPregunta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZhbHVhY2lvblxFbGltaW5hclByZWd1bnRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Usuario01/Documents/GitHub/RecursosHumanos/RecursosHumanos/Views/Evaluacion/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZhbHVhY2lvblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -206,16 +210,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZhbHVhY2lvblxfRXZhbHVhY2lvbkNhcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Usuario01/Documents/GitHub/RecursosHumanos/RecursosHumanos/Views/Evaluacion/_PreguntaCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZhbHVhY2lvblxfUHJlZ3VudGFDYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Usuario01/Documents/GitHub/RecursosHumanos/RecursosHumanos/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Usuario01/Documents/GitHub/RecursosHumanos/RecursosHumanos/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Usuario01/Documents/GitHub/RecursosHumanos/RecursosHumanos/Views/Pregunta/_PreguntaCard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlZ3VudGFcX1ByZWd1bnRhQ2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Usuario01/Documents/GitHub/RecursosHumanos/RecursosHumanos/Views/Shared/Error.cshtml]

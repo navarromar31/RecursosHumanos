@@ -46,9 +46,9 @@
 
                 <div class="card mb-2" id="cartaEva">
                     <div id="card-body-Eva" class="card-body d-flex justify-content-between align-items-center">
-                    <a asp-controller="Pregunta" asp-action="Eliminar" asp-route-id="@Model.Id" class="btn btn-eliminar" id="btn-eliminar-Eva">
+                       <a type="submit" asp-controller="Evaluacion" asp-action="EliminarPregunta" asp-route-id="@Model.Id" class="btn btn-eliminar" id="btn-eliminar-Eva" method="post">
                         Eliminar pregunta
-                    </a>
+                        </a>
                     </div>
                 </div>
             </div>

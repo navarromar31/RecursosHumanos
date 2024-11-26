@@ -8,7 +8,7 @@ namespace RecursosHumanos_Models.ViewModels
 {
     public class EvaluacionVM
     {
-        public IEnumerable<Evaluacion> Evaluacion{ get; set; }
-        public List<Evaluacion> EvaluacionLista { get; set; }
+        public Evaluacion Evaluacion { get; set; }
+        public IEnumerable<Evaluacion> EvaluacionListaDB{ get; set; }
     }
 }

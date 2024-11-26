@@ -1,10 +1,10 @@
-﻿@model RecursosHumanos_Models.ViewModels.PreguntaVM
+﻿@model RecursosHumanos_Models.ViewModels.EvaluacionVM
 @using RecursosHumanos_Utilidades
 @using RecursosHumanos_Models
 
 
 @{
-    ViewData["Title"] = "Evaluacion";
+    ViewData["Title"] = " Crear Evaluacion";
 }
 <html lang="es">
 
@@ -18,52 +18,108 @@
 </head>
 
 <body>
+
       @if (User.IsInRole(WC.AdminRole))
     {
-    
-    <div id="Evaluacion-container" class="container mt-5">
 
-        <h2>Ingresar evaluación</h2>
+        @if(Model.Evaluacion.Id==0 && Model.Evaluacion.Id == null)
+        {
 
-        <div id="linea-Formulario"></div>
+            <form method="post" asp-controller="Evaluacion" asp-action="Crear" enctype="multipart/form-data">
 
-        <div class="row mb-4 mt-5">
-            <div class="col-md-6 mb-4">
+                <div id="Evaluacion-container" class="container mt-5">
 
-                <div  class="card mb-4">
+                    <h2>Ingresar evaluación</h2>
 
-                    <div class="card-body">
+                    <div id="linea-Formulario"></div>
 
-                        <input id="input-Evaluacion" class="form-control" placeholder="Introduce el nombre de la evaluación" type="text" />
+                    <div class="row mb-4 mt-5">
+                        <div class="col-md-6 mb-4">
+
+                            <div class="card mb-4">
+
+                                <div class="card-body">
+
+                                    <input asp-for="Evaluacion.Titulo" id="input-Evaluacion" class="form-control" placeholder="Introduce el nombre de la evaluación" type="text" />
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 mb-4">
+
+                            <div class="card mb-4">
+
+                                <div class="card-body">
+
+                                    <input asp-for="Evaluacion.TipoEvaluacion" id="input-Evaluacion" class="form-control mb-2" placeholder="Introduce el tipo de evaluación" type="text" />
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+
+                            <div class="card">
+
+                                <div class="card-body">
+
+                                    <input asp-for="Evaluacion.Descripcion" id="input-Evaluacion" class="form-control mb-2" placeholder="Introduce una descripción breve" type="text" />
+
+                                </div>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
-                </div>
+                    <div class="col-md-6">
+                        <div class="mb-4">
 
-            </div>
-            <div class="col-md-6 mb-4">
+                            <div class="box" id="box-Evaluacion">
 
-                <div  class="card mb-4">
+                                <a asp-controller="Evaluacion" asp-action="UpsertPregunta" class="btn btn-primary" style="width:150px">Insertar nueva pregunta</a>
 
-                    <div class="card-body">
+                            </div>
 
-                        <input id="input-Evaluacion" class="form-control mb-2" placeholder="Introduce el tipo de evaluación" type="text" />
+                        </div>
+
+                        <!-- Empieza el desplazamiento de preguntas-->
+
+
+                        <div class="mb-4">
+
+                            @if (Model != null && Model.Evaluacion != null && Model.Evaluacion.Preguntas != null && Model.Evaluacion.Preguntas.Any())
+                            {
+                                foreach (var pregunta in Model.Evaluacion.Preguntas)
+                                {
+
+                                    <partial name="_PreguntaCard" model="pregunta" />
+                                }
+                            }
+                            else
+                            {
+                                <p>No tiene preguntas creadas.</p>
+                            }
+
+                        </div>
+
+
 
                     </div>
+                    <div class="d-flex justify-content-end">
 
-                </div>
+                        <div type="submit" class="box" id="box-Evaluacion">
 
-            </div>
-
-        </div>
-        <div class="row mb-4">
-                <div class="col-md-12">
-
-                    <div class="card">
-
-                        <div class="card-body">
-
-                            <input id="input-Evaluacion" class="form-control mb-2" placeholder="Introduce una descripción breve" type="text" />
+                            <button type="submit" class="btn btn-eliminar" id="btn-eliminar-Eva" method="post">
+                                Crear evaluación
+                            </button>
 
                         </div>
 
@@ -71,69 +127,15 @@
 
                 </div>
 
-        </div>
-
-            <div class="col-md-6">
-                <div class="mb-4">
-
-                    <div class="box" id="box-Evaluacion">
-
-                        <form>
-                            <button asp-controller="Evaluacion" asp-action="UpsertPregunta" type="submit" class="btn btn-primary" style="width:150px">Insertar nueva pregunta</button>
-                        </form>
-                     </div>
-
-                </div>
-                
-                <!-- Empieza el desplazamiento de preguntas-->
 
 
-                <div class="mb-4">
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
-                    @if (Model.Preguntas != null && Model.Preguntas.Any())
-                        {
-                        foreach (var pregunta in Model.Preguntas)
-                            {
+            </form>
 
-                                <partial name="_PreguntaCard" model="pregunta" />
-                            }
-                        }
-                        else
-                        {
-                            <p>No tiene preguntas creadas.</p>
-                        }
-                   
-                </div>
+        }
 
-
-
-            </div>
-
-
-          
-        
-
-      
-
-        
-        <div class="d-flex justify-content-end">
-
-            <div type="submit" class="box" id="box-Evaluacion">
-                <a asp-controller="Evaluacion" asp-action="Index" id="bot" class="btn">
-                    Crear
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-       
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-  }
+    }
 </body>
 
 </html>

@@ -87,7 +87,7 @@ namespace RecursosHumanos.Controllers
 
         //GET
 
-
+/*
         public IActionResult Eliminar(int? id)
         {
 
@@ -111,7 +111,7 @@ namespace RecursosHumanos.Controllers
 
         }
 
-
+*/
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Eliminar(Pregunta pregunta)
