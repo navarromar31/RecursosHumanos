@@ -1,11 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
-using RecursosHumanos_ViewModels.ViewModels.RecursosHumanos_Models.ViewModels;
 using RecursosHumanos_ViewModels.ViewModels.RecursosHumanos_Models;
-using RecursosHumanos_Utilidades;
-using RecursosHumanos_ViewModels.ViewModels;
+using RecursosHumanos_Utilidades; 
 using RecursosHumanos_ViewModels;
-
+using RecursosHumanos_ViewModels.ViewModels;
 public class PuestoController : Controller
 {
     private readonly IPuestoRepositorio _puestoRepo;
