@@ -1,0 +1,201 @@
+﻿/*/////////////////////////////BARRA BUSQUEDA///////////////////////////////////////////*/
+#BarraBusqueda {
+    padding: 30px;
+}
+
+#button-buscarCap {
+    background-color: #EB8223;
+    color: #ffff;
+}
+
+
+/*/////////////////////////////Agergar Nueva Capacitacion////////////////////////////////*/
+#AgregarNuevaCap {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+}
+
+#Titulo-Cap {
+    text-align: center;
+    padding: 30px;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    color: #505050;
+}
+
+#Icono-Cap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#Button-NuevaCap i {
+    font-size: 90px;
+    color: #EB8223;
+}
+
+
+#CardBodyNuevaCap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    #CardBodyNuevaCap hr {
+        width: 100%;
+        border: 1px solid #505050;
+        margin: 25px;
+    }
+
+
+/*//////////////////////////////////Capacitacion/////////////////////////////////////*/
+#MostrarCapacitacion {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#MostrarCard p {
+    font-size: 17px;
+}
+
+#MostrarCard {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #505050;
+}
+
+    #MostrarCard hr {
+        width: 100%;
+        border: 1px solid #505050;
+        margin: 20px 0;
+    }
+
+    #MostrarCard h5 {
+        align-items: start !important;
+        color: #505050;
+        justify-content: left;
+        padding-bottom: 10px;
+    }
+
+#MostrarCapacitacion #BtnMasInfoCap {
+    background-color: #505050;
+    color: #fff;
+    font-size: 15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+/*////////////////////////////////////////////MODAL/////////////////////////////////////////////*/
+#CapacitacionModalLabel {
+    justify-content: center;
+    align-items: center;
+}
+
+
+#modalidad-select {
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+#guardar-btn-Cap {
+    background-color: #505050;
+    border: none;
+}
+
+#cancelar-btn-Cap {
+    background-color: #505050;
+    border: none;
+    color: #fff;
+}
+
+#modal-header-capacitacion {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#imagen-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagen-placeholder-Cap {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#seleccionar-imagen-Cap .form-control {
+    max-width: 70%;
+}
+
+#btn-subir-imagen-Cap {
+    background-color: #EB8223;
+    border: none;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////*/
+#modal-header-capacitacion {
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#CapacitacionModalLabel {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#imagen-capacitacion {
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+#btn-editar-imagen {
+    font-size: 0.9rem;
+}
+
+#descripcion-capacitacion {
+    font-size: 1rem;
+    line-height: 1.5;
+    justify-content: left;
+}
+
+#btn-editar-VerCap,
+#btn-eliminar-VerCap,
+#btn-cancelar-VerCap {
+    min-width: 100px;
+    background-color: #505050;
+    color: #fff;
+}
+
+
+/*////////////////////////////MINIMO Y MAXIMO CAPACITACION///////////////////////////////////*/
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#Menos-Maximo, #Mas-Maximo, #Menos-Minimo, #Mas-Minimo {
+    background-color: #EB8223;
+}
+
+#linea-inferior, #linea-superior {
+    border-top: 7px solid #505050;
+    border-bottom: 7px solid #505050;
+}

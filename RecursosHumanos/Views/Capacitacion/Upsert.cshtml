@@ -1,0 +1,112 @@
+﻿@using RecursosHumanos_Utilidades
+@model RecursosHumanos_Models.Capacitacion
+
+@{
+    var titulo = Model.Id > 0 ? "Editar Capacitación" : "Crear Nueva Capacitación";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@titulo</h2>
+
+<form asp-action="Upsert" method="post" enctype="multipart/form-data" class="p-1">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label for="ImagenCapacitacion" class="form-label">Imagen de la capacitación</label>
+        <div class="input-group">
+            <label class="input-group-text btn btn-warning" for="ImagenCapacitacion">Seleccionar archivo</label>
+            <input type="file" class="form-control d-none" id="ImagenCapacitacion" name="imagenCapacitacion" />
+            <input type="text" class="form-control" id="imagenNombre" placeholder="Ningún archivo seleccionado" readonly />
+        </div>
+        @if (!string.IsNullOrEmpty(Model.ImagenUrlCap))
+        {
+            <div class="mt-2">
+                <img src="@Model.ImagenUrlCap" alt="Imagen de capacitación" class="img-thumbnail" style="max-height: 150px;" />
+                <p class="text-muted">Imagen actual</p>
+            </div>
+        }
+    </div>
+
+    <!-- Título de la capacitación -->
+    <div class="mb-3">
+        <label asp-for="NombreCapacitacion" class="form-label">Título de la Capacitación:</label>
+        <input asp-for="NombreCapacitacion" class="form-control" placeholder="Escribe el título" required />
+        <span asp-validation-for="NombreCapacitacion" class="text-danger"></span>
+    </div>
+
+    <!-- Descripción -->
+    <div class="mb-3">
+        <label asp-for="Duracion" class="form-label">Duración:</label>
+        <input asp-for="Duracion" class="form-control" rows="3" placeholder="Escribe la duración de la capacitación"></input>
+        <span asp-validation-for="Duracion" class="text-danger"></span>
+    </div>
+
+    <!-- Mínimo de colaboradores -->
+    <div class="mb-3">
+        <label class="form-label">Mínimo de Colaboradores:</label>
+        <div class="input-group">
+            <button type="button" class="btn btn-outline-warning" id="MinColabDecrement">-</button>
+            <input type="number" asp-for="MinPersonas" class="form-control text-center" id="MinColab" readonly />
+            <button type="button" class="btn btn-outline-warning" id="MinColabIncrement">+</button>
+        </div>
+    </div>
+
+    <!-- Máximo de colaboradores -->
+    <div class="mb-3">
+        <label class="form-label">Máximo de Colaboradores:</label>
+        <div class="input-group">
+            <button type="button" class="btn btn-outline-warning" id="MaxColabDecrement">-</button>
+            <input type="number" asp-for="MaxPersonas" class="form-control text-center" id="MaxColab" readonly />
+            <button type="button" class="btn btn-outline-warning" id="MaxColabIncrement">+</button>
+        </div>
+    </div>
+
+    <!-- Modalidad -->
+    <div class="mb-3">
+        <label asp-for="Modalidad" class="form-label">Modalidad:</label>
+        <select asp-for="Modalidad" class="form-select">
+            <option value="Presencial" selected="@Model.Modalidad == " Presencial"">Presencial</option>
+            <option value="Virtual" selected="@Model.Modalidad == " Virtual"">Virtual</option>
+            <option value="Mixta" selected="@Model.Modalidad == " Mixta"">Mixta</option>
+        </select>
+    </div>
+
+    <!-- Botones -->
+    <div class="d-flex justify-content-between">
+        <button type="button" class="btn btn-secondary" onclick="history.back()">Cancelar</button>
+        <button type="submit" class="btn btn-primary btn-warning ">Guardar</button>
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        document.getElementById('ImagenCapacitacion').addEventListener('change', function () {
+            const fileName = this.files[0] ? this.files[0].name : 'Ningún archivo seleccionado';
+            document.getElementById('imagenNombre').value = fileName;
+        });
+
+        document.getElementById('MinColabIncrement').onclick = () => {
+            let input = document.getElementById('MinColab');
+            input.value = parseInt(input.value || 0) + 1;
+        };
+
+        document.getElementById('MinColabDecrement').onclick = () => {
+            let input = document.getElementById('MinColab');
+            if (parseInt(input.value || 0) > 0) {
+                input.value = parseInt(input.value || 0) - 1;
+            }
+        };
+
+        document.getElementById('MaxColabIncrement').onclick = () => {
+            let input = document.getElementById('MaxColab');
+            input.value = parseInt(input.value || 0) + 1;
+        };
+
+        document.getElementById('MaxColabDecrement').onclick = () => {
+            let input = document.getElementById('MaxColab');
+            if (parseInt(input.value || 0) > 0) {
+                input.value = parseInt(input.value || 0) - 1;
+            }
+        };
+    </script>
+}

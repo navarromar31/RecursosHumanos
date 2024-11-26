@@ -1,189 +1,115 @@
-﻿using RecursosHumanos_AccesoDatos;
+﻿using Microsoft.AspNetCore.Mvc;
 using RecursosHumanos_Models;
+using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Hosting;
+using System.IO;
+using System;
+using System.Linq;
 using RecursosHumanos_Models.ViewModels;
 using RecursosHumanos_Utilidades;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
-using RecursosHumanos_AccesoDatos.Datos.Repositorio;
 
 namespace RecursosHumanos.Controllers
 {
     public class CapacitacionController : Controller
     {
-
-        // vamos a invocar  a nuestro dbcontext 
-
-
-        private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly ICapacitacionRepositorio _capacitacionRepo;
-        public CapacitacionController(ICapacitacionRepositorio capacitacionRepo, IWebHostEnvironment webHostEnvironment)//recibe nuestro contexto de BD
+        private readonly IWebHostEnvironment _hostEnvironment;
+
+        public CapacitacionController(ICapacitacionRepositorio capacitacionRepo, IWebHostEnvironment hostEnvironment)
         {
-            // _db = db;
             _capacitacionRepo = capacitacionRepo;
-            _webHostEnvironment = webHostEnvironment;
-
+            _hostEnvironment = hostEnvironment;
         }
 
-
-
-        public IActionResult Index()
+        // GET: Upsert (Crear o Editar)
+        public IActionResult Upsert(int? id)
         {
-            /* IEnumerable<Producto> lista = _db.Producto.Include(c => c.Categoria)
-                                                       .Include(t => t.TipoAplicacion);*/
+            Capacitacion capacitacion = new Capacitacion();
 
-
-            IEnumerable<Capacitacion> lista = _capacitacionRepo.ObtenerTodos(incluirPropiedades: "Colaborador");
-
-            return View(lista);
-        }
-
-
-
-        //GET
-
-        public IActionResult Upsert(int? Id)
-        {
-
-            CapacitacionVM capacitacionVM = new CapacitacionVM()
+            if (id != null && id != 0)
             {
-                Capacitacion = new Capacitacion(),
-
-                ColaboradorLista = _capacitacionRepo.ObtenerTodosDropDownList(WC.ColaboradorNombre),
-            };
-
-
-            if (Id == null)
-            {
-                //crearemos un nuevo producto cuando no recibamos un ID
-
-                return View(capacitacionVM);
-
-            }
-            else
-            {
-                capacitacionVM.Capacitacion  = _capacitacionRepo.Obtener(Id.GetValueOrDefault());
-                if (capacitacionVM.Capacitacion == null)
+                capacitacion = _capacitacionRepo.Obtener(id.GetValueOrDefault());
+                if (capacitacion == null)
                 {
                     return NotFound();
                 }
-                return View(capacitacionVM);
-
             }
 
+            return View(capacitacion);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [HttpPost]
-        public IActionResult Upsert(CapacitacionVM capacitacionVM)
+        public IActionResult Upsert(Capacitacion capacitacion, IFormFile imagenCapacitacion)
         {
-            //validamos el modelo
             if (ModelState.IsValid)
             {
-                //esto para poder obtener la imagen que nos envia la vista
-                var files = HttpContext.Request.Form.Files;
-                string webRootPath = _webHostEnvironment.WebRootPath;
-                //ahora validamos si es o no un nuevo ingreso o si se trata de una actualizacion 
-                if (capacitacionVM.Capacitacion.Id == 0)
+                // Manejo de imagen (solo si se sube una nueva)
+                if (imagenCapacitacion != null)
                 {
-                    //toda esta logica es para lograr grabar un producto y una imagen
-                    //crear si el ID es cero
-                    string upload = webRootPath + WC.ImagenRuta;//LA PRIPIEDAD DE WC ES LA QUE TIENE LA RUTA DE DONDE GUARDAR LA IMAGEN
-                    string fileName = Guid.NewGuid().ToString(); //esto es para que se le asigne un ID a la iamgen que se va a guardar
-                    string extension = Path.GetExtension(files[0].FileName);
-
-                    using (var fileStream = new FileStream(Path.Combine(upload, fileName + extension), FileMode.Create))
+                    string folderPath = Path.Combine(_hostEnvironment.WebRootPath, "imagenes");
+                    if (!Directory.Exists(folderPath))
                     {
-                        files[0].CopyTo(fileStream);
+                        Directory.CreateDirectory(folderPath);
                     }
-                    //finalmente grabanos la imagen y los datos de producto en los campos correspondientes
 
-                    capacitacionVM.Capacitacion.ImagenUrlCap = fileName + extension;
-                    _capacitacionRepo.Agregar(capacitacionVM.Capacitacion);
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(imagenCapacitacion.FileName);
+                    string filePath = Path.Combine(folderPath, fileName);
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        imagenCapacitacion.CopyTo(stream);
+                    }
+
+                    capacitacion.ImagenUrlCap = "/imagenes/" + fileName;
+                }
+                else if (capacitacion.Id != 0) // Conservar la imagen actual al editar
+                {
+                    var capacitacionEnDb = _capacitacionRepo.Obtener(capacitacion.Id);
+                    capacitacion.ImagenUrlCap = capacitacionEnDb.ImagenUrlCap;
+                }
+
+                // Lógica para agregar o actualizar
+                if (capacitacion.Id == 0)
+                {
+                    _capacitacionRepo.Agregar(capacitacion);
                 }
                 else
                 {
-                    //se actualiza si el ID es mayor a cero
-                    var objCapacitacion = _capacitacionRepo.ObtenerPrimero(p => p.Id == capacitacionVM.Capacitacion.Id, isTracking: false);   //Obtenemos el producto que queremos editar 
-
-                    if (files.Count > 0)//validamos con este si existe una imagen y si es asi el usuario lo que va hacer es cambiar la imagen actual por otra 
-                    {
-                        string upload = webRootPath + WC.ImagenRuta;//LA PRIPIEDAD DE WC ES LA QUE TIENE LA RUTA DE DONDE GUARDAR LA IMAGEN
-                        string fileName = Guid.NewGuid().ToString(); //esto es para que se le asigne un ID a la iamgen que se va a guardar
-                        string extension = Path.GetExtension(files[0].FileName);
-                        //pero tendriamos que borrar la img anterior
-
-                        var anteriorFile = Path.Combine(upload, objCapacitacion.ImagenUrlCap); //con esto obtnemos la anterior
-                        if (System.IO.File.Exists(anteriorFile))//VERIFICAMOS SI LA IMG ANTERIOR EXISTE
-                        {
-                            System.IO.File.Delete(anteriorFile);    // SI EXISTE LA BORRAMOS
-                        }  //FIN DE BORRAR LA IMG ANTERIOR                                                        //
-
-                        //PROCEDEMOS A CARGAR LA NUEVA IMAGEN
-                        using (var fileStream = new FileStream(Path.Combine(upload, fileName + extension), FileMode.Create))
-                        {
-                            files[0].CopyTo(fileStream);
-                        }
-
-                        //PROCEDEMOS ACTUALIZAR EL PRODUCTO CON SU NUEVA IMG
-
-                        capacitacionVM.Capacitacion.ImagenUrlCap = fileName + extension;
-
-                    }//CASO CONTRARIO SI NO SE CARGA UNA NUEVA IMG , ES DECIR ACTUALIZA OTROS DATOS PERO LA IMG NO
-                    else
-                    {
-                        //en ese caso se mantiene la misma img
-
-                        capacitacionVM.Capacitacion.ImagenUrlCap = objCapacitacion.ImagenUrlCap;
-
-                    }
-                    //ya luego actualizamos el producto
-
-                    _capacitacionRepo.Actualizar(capacitacionVM.Capacitacion);
-
+                    _capacitacionRepo.Actualizar(capacitacion);
                 }
 
                 _capacitacionRepo.Grabar();
-                return RedirectToAction("Index");
-            }//ESTA LLAVE PERTENCE AL IF DEL ModelIsValidate
+                TempData["Exitosa"] = capacitacion.Id == 0 ? "Capacitación creada exitosamente" : "Capacitación actualizada exitosamente";
+                return RedirectToAction(nameof(Index));
+            }
 
-
-            capacitacionVM.ColaboradorLista = _capacitacionRepo.ObtenerTodosDropDownList(WC.ColaboradorNombre);
-
-            return View(capacitacionVM);//si el modelo no es validado o sea no es correcto retornamos a la vista el objeto
-
+            TempData["Error"] = "Error al guardar la capacitación";
+            return View(capacitacion);
         }
 
-        // ACA NO SOLAMENTE ELIMINAMOS EL PRODUCTO , SINO TBM LA IMG ASOCIADA A ESTE
-        //GET
 
 
-        public IActionResult Eliminar(int? id)
+
+        // GET: Eliminar
+        public IActionResult Eliminar(int? Id)
         {
-
-            if (id == null || id == 0)
+            if (Id == null || Id == 0)
             {
-
                 return NotFound();
             }
 
-            Capacitacion capacitacion = _capacitacionRepo.ObtenerPrimero(p => p.Id == id);    //aca traemos los datos del producto de
-                                                                                  //acuerdo con el ID que recibimos de la vista
-
-
-            if (capacitacion == null)
+            var obj = _capacitacionRepo.Obtener(Id.GetValueOrDefault());
+            if (obj == null)
             {
-                //en caso de que no exista 
                 return NotFound();
             }
 
-            return View(capacitacion); //le retornamos a la vista aliminar los datos del producto a eliminar 
-
+            return View(obj);
         }
 
-
+        // POST: Eliminar
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Eliminar(Capacitacion capacitacion)
@@ -191,32 +117,26 @@ namespace RecursosHumanos.Controllers
             if (capacitacion == null)
             {
                 return NotFound();
-
             }
 
-            //ahora lo primero es proceder a eliminar la imagen de nuestro server 
-
-
-            string upload = _webHostEnvironment.WebRootPath + WC.ImagenRuta;//LA PRoPIEDAD DE WC ES LA QUE TIENE LA RUTA DE DONDE esta  GUARDAda LA IMAGEN
-
-
-            var anteriorFile = Path.Combine(upload, capacitacion.ImagenUrlCap);
-            if (System.IO.File.Exists(anteriorFile))//VERIFICAMOS SI LA IMG ANTERIOR EXISTE
-            {
-                System.IO.File.Delete(anteriorFile);    // SI EXISTE LA BORRAMOS
-            }
-
-            _capacitacionRepo.Remover(capacitacion);  //Ahora eliminamos el producto
+            _capacitacionRepo.Remover(capacitacion);
             _capacitacionRepo.Grabar();
-            return RedirectToAction(nameof(Index));
+            TempData[WC.Exitosa] = "Capacitacion eliminada exitosamente";
+            return RedirectToAction(nameof(Index)); // Redirige a la vista de listado
+        }
+
+        // GET: Index (Lista de instituciones)
+        public IActionResult Index()
+        {
+            var lista = _capacitacionRepo.ObtenerTodos();
+            CapacitacionVM model = new CapacitacionVM
+            {
+                Capacitacion = lista.ToList() // Pasar la lista de instituciones
+            };
+
+            return View(model); // Pasar el modelo a la vista
 
 
         }
-
-
-
     }
-
-
-
 }

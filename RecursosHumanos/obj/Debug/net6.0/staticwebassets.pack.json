@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\EvaluacionHoja.css"
     },
     {
+      "Id": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\cssc.css",
+      "PackagePath": "staticwebassets\\css\\cssc.css"
+    },
+    {
       "Id": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\departamentos.css",
       "PackagePath": "staticwebassets\\css\\departamentos.css"
     },
@@ -35,6 +39,10 @@
     {
       "Id": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\capacitacion.js",
+      "PackagePath": "staticwebassets\\js\\capacitacion.js"
     },
     {
       "Id": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\departamentos.js",

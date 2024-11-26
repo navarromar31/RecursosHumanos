@@ -1,12 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using RecursosHumanos_Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace RecursosHumanos_Models.ViewModels
 {
     public class CapacitacionVM
     {
-        public Capacitacion Capacitacion { get; set; }
+        public IEnumerable<Capacitacion> Capacitacion { get; set; }
 
-        public IEnumerable<SelectListItem>? ColaboradorLista { get; set; }
+        public IEnumerable<SelectListItem> CapacitacionLista { get; set; }
+
     }
 }

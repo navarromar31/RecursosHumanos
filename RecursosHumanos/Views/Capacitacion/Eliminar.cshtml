@@ -1,0 +1,75 @@
+﻿@using RecursosHumanos_Models.ViewModels
+@model RecursosHumanos_Models.Capacitacion
+@{
+    ViewData["Title"] = "Eliminar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<form asp-action="Eliminar" method="post" class="p-3">
+            <!-- Imagen -->
+            <div class="text-center mb-4">
+                <img src="https://via.placeholder.com/150" id="previewImage" class="rounded img-thumbnail mb-2" style="max-height: 150px; object-fit: cover;" />
+            </div>
+
+            <!-- Título de la capacitación -->
+            <div class="mb-3">
+                <label asp-for="NombreCapacitacion" class="form-label">Título de la Capacitación:</label>
+                <input asp-for="NombreCapacitacion" class="form-control" readonly />
+            </div>
+
+            <!-- Descripción -->
+            <div class="mb-3">
+                <label asp-for="Duracion" class="form-label">Duración:</label>
+                <input asp-for="Duracion" class="form-control" readonly />
+            </div>
+
+            <!-- Mínimo de colaboradores -->
+            <div class="mb-3">
+                <label class="form-label">Mínimo de Colaboradores:</label>
+                <input type="number" asp-for="MinPersonas" class="form-control text-center" readonly />
+            </div>
+
+            <!-- Máximo de colaboradores -->
+            <div class="mb-3">
+                <label class="form-label">Máximo de Colaboradores:</label>
+                <input type="number" asp-for="MaxPersonas" class="form-control text-center" readonly />
+            </div>
+
+            <!-- Modalidad -->
+            <div class="mb-3">
+                <label asp-for="Modalidad" class="form-label">Modalidad:</label>
+                <select asp-for="Modalidad" class="form-select" disabled>
+                    <option value="Presencial">Presencial</option>
+                    <option value="Virtual">Virtual</option>
+                    <option value="Mixta">Mixta</option>
+                </select>
+            </div>
+
+            <!-- Confirmación -->
+            <div class="alert alert-warning">
+                <strong>¿Estás seguro de que deseas eliminar esta capacitación?</strong>
+                Esta acción no se puede deshacer.
+            </div>
+
+            <!-- Botones -->
+            <div class="d-flex justify-content-between">
+                <a asp-controller="Capacitacion" asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                <button type="submit" class="btn btn-danger">Eliminar</button>
+            </div>
+        </form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        // Previsualización de la imagen (en caso de que se necesite mostrar una imagen cargada desde el servidor)
+        document.addEventListener('DOMContentLoaded', () => {
+            const preview = document.getElementById('previewImage');
+            const imageUrl = '@Model.ImagenUrlCap'; // Asegúrate de que el modelo contenga la URL de la imagen
+            if (imageUrl) {
+                preview.src = imageUrl;
+            }
+        });
+    </script>
+}

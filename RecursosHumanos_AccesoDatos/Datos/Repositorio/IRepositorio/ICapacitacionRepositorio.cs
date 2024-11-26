@@ -13,9 +13,6 @@ namespace RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio
     {
         void Actualizar(Capacitacion capacitacion);
 
-
-        IEnumerable<SelectListItem> ObtenerTodosDropDownList(string obj);
-
     }
 }
 
