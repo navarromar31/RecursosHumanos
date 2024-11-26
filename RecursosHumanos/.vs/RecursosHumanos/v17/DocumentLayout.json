@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "Views\\Capacitacion\\index.cshtml",
               "ToolTip": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Capacitacion\\index.cshtml",
               "RelativeToolTip": "Views\\Capacitacion\\index.cshtml",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAACkAAAAAAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAEoAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-25T21:44:27.068Z",
               "EditorCaption": ""
@@ -75,8 +75,7 @@
               "RelativeToolTip": "Controllers\\CapacitacionController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T21:44:38.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T21:44:38.347Z"
             },
             {
               "$type": "Document",
