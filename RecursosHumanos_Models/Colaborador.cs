@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-namespace RecursosHumanos_Models
+namespace RecursosHumanos_ViewModels
 {
     public class Colaborador
     {

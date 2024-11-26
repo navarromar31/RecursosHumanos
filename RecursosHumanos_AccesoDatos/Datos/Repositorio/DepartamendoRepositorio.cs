@@ -1,6 +1,6 @@
 ﻿using RecursosHumanos_AccesoDatos.Datos.Repositorio;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio; // Importamos la interfaz del repositorio.
-using RecursosHumanos_Models; // Importamos los modelos.
+using RecursosHumanos_ViewModels; // Importamos los modelos.
 using System; // Importamos System para las clases básicas del .NET Framework.
 using System.Collections.Generic; // Importamos colecciones genéricas.
 using System.Linq; // Importamos LINQ para consultas.

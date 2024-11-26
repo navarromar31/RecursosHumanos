@@ -1,4 +1,4 @@
-﻿using RecursosHumanos_Models;
+﻿using RecursosHumanos_ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;

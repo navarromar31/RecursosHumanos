@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecursosHumanos_Models.ViewModels
+namespace RecursosHumanos_ViewModels.ViewModels
 {
     namespace RecursosHumanos_Models.ViewModels
     {

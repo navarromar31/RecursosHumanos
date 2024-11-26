@@ -1,6 +1,6 @@
 ﻿using RecursosHumanos_AccesoDatos;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
-using RecursosHumanos_Models;
+using RecursosHumanos_ViewModels;
 using RecursosHumanos_Utilidades;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

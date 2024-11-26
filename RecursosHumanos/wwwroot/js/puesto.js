@@ -1,43 +1,50 @@
 ﻿
-let departments = [
-    { name: 'Gerente Regional', description: 'Descripcion del gerente', image: 'marketing.jpg' },
-    { name: 'Colaborador Interno', description: 'Descripcion del lider', image: 'rrhh.jpg' },
-    { name: 'Analista de Datos', description: 'Descripcion del Analista', image: 'dev.jpg' }
-];
-
-const searchInputPuesto = document.getElementById('buscarPuesto');
-const listaPuesto = document.getElementById('listaPuesto');
-const toggleButton = document.getElementById('toggleButton-Puesto');
-
-searchInputPuesto.addEventListener('input', function () {
-    const query = searchInputPuesto.value.toLowerCase();
-    const filteredDepartments = departments.filter(department =>
-        department.name.toLowerCase().includes(query)
-    );
-    renderlistaPuesto(filteredDepartments);
+document.querySelectorAll('a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        if (this.hash) {
+            e.preventDefault();
+            document.querySelector(this.hash).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
 });
 
-toggleButton.addEventListener('click', function () {
-    renderlistaPuesto(departments);
-});
+document.addEventListener('DOMContentLoaded', function () {
+    const cards = document.querySelectorAll('.glass-card');
 
-function renderlistaPuesto(departments) {
-    listaPuesto.innerHTML = '';
-    if (departments.length === 0) {
-        listaPuesto.innerHTML = '<p class="text-center text-muted">No hay Puestos</p>';
-    } else {
-        departments.forEach(department => {
-            const div = document.createElement('div');
-            div.classList.add('itemPuesto');
-            div.innerHTML = `
-                <span>${department.name}</span>
-                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#departmentModal" onclick="showDepartmentDetails('${department.name}')" style="background-color: #505050; border-color: #505050; color: white;">Más Información</button>
-            `;
-            listaPuesto.appendChild(div);
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
         });
-    }
-}
+    });
 
+    cards.forEach(card => observer.observe(card));
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const heroText = document.querySelector('.hero-contentInstitucion');
+    heroText.style.opacity = '0';
+    heroText.style.transform = 'translateY(30px)';
+    setTimeout(() => {
+        heroText.style.transition = 'all 1s ease';
+        heroText.style.opacity = '1';
+        heroText.style.transform = 'translateY(0)';
+    }, 500);
+});
+
+document.querySelectorAll('.btn').forEach(button => {
+    button.addEventListener('mousedown', function () {
+        this.style.transform = 'scale(0.95)';
+    });
+    button.addEventListener('mouseup', function () {
+        this.style.transform = 'scale(1)';
+    });
+});
 
 let currentDepartment = null;
 

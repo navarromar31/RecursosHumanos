@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RecursosHumanos_AccesoDatos;
-using RecursosHumanos_Models;
-using RecursosHumanos_Models.ViewModels;
+using RecursosHumanos_ViewModels;
+using RecursosHumanos_ViewModels.ViewModels;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;

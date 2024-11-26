@@ -18,7 +18,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
-using RecursosHumanos_Models;
+using RecursosHumanos_ViewModels;
 using RecursosHumanos_Utilidades;
 using Syncfusion.EJ2.FileManager;
 

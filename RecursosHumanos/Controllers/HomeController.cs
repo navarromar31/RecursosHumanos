@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
-using RecursosHumanos_Models;
+using RecursosHumanos_ViewModels;
 using System.Diagnostics;
-using RecursosHumanos_Models.ViewModels;
+using RecursosHumanos_ViewModels.ViewModels;
 using Microsoft.EntityFrameworkCore;
 using RecursosHumanos_AccesoDatos;
 using RecursosHumanos_Utilidades;
-using RecursosHumanos_Models.ViewModels.RecursosHumanos_Models.ViewModels;
+using RecursosHumanos_ViewModels.ViewModels.RecursosHumanos_Models.ViewModels;
 
 
 namespace RecursosHumanos.Controllers

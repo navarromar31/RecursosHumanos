@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RecursosHumanos_Models;
+using RecursosHumanos_ViewModels;
 using RecursosHumanos_AccesoDatos;
 using RecursosHumanos_Utilidades;
 using Microsoft.AspNetCore.Hosting;

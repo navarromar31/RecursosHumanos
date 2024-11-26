@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace RecursosHumanos_Models
+namespace RecursosHumanos_ViewModels
 {
     public class Institucion
     {

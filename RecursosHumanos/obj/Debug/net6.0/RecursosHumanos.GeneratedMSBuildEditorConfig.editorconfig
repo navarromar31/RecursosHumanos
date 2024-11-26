@@ -194,12 +194,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3RvXENyZWFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/arias/OneDrive/Documentos/GitHub/RecursosHumanos/RecursosHumanos/RecursosHumanos/Views/Puesto/Editar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3RvXEVkaXRhci5jc2h0bWw=
+[C:/Users/arias/OneDrive/Documentos/GitHub/RecursosHumanos/RecursosHumanos/RecursosHumanos/Views/Puesto/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3RvXEVsaW1pbmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/arias/OneDrive/Documentos/GitHub/RecursosHumanos/RecursosHumanos/RecursosHumanos/Views/Puesto/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3RvXEluZGV4LmNzaHRtbA==
+[C:/Users/arias/OneDrive/Documentos/GitHub/RecursosHumanos/RecursosHumanos/RecursosHumanos/Views/Puesto/Index1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3RvXEluZGV4MS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/arias/OneDrive/Documentos/GitHub/RecursosHumanos/RecursosHumanos/RecursosHumanos/Views/Puesto/Upsert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3RvXFVwc2VydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/arias/OneDrive/Documentos/GitHub/RecursosHumanos/RecursosHumanos/RecursosHumanos/Views/Shared/Error.cshtml]

@@ -1,5 +1,5 @@
 ﻿using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
-using RecursosHumanos_Models;
+using RecursosHumanos_ViewModels;
 using RecursosHumanos_Utilidades;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio;

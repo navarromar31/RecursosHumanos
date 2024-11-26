@@ -1,6 +1,6 @@
 ﻿using RecursosHumanos_AccesoDatos;
-using RecursosHumanos_Models;
-using RecursosHumanos_Models.ViewModels;
+using RecursosHumanos_ViewModels;
+using RecursosHumanos_ViewModels.ViewModels;
 using RecursosHumanos_Utilidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;

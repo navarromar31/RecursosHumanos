@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewData["Title"] = "Puestos";
+    Layout = null;
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="~/css/puestos.css" rel="stylesheet" />
+
+<body>
+    <!-- Encabezado hero con título y llamada a la acción -->
+    <header id="heroPuesto" class="hero">
+        <div class="hero-contentPuesto">
+            <h1>Puestos Asociados a HHC</h1>
+            <p>Juntos construimos un futuro brillante para Costa Rica</p>
+            <a href="#" id="btn-cta-Puesto" class="btn btn-cta">¡Conócenos!</a>
+        </div>
+    </header>
+
+    <!-- Sección para mostrar los puestos -->
+    <section id="puestos" class="container my-5">
+        <h2 class="text-center mb-4">@ViewData["Title"]</h2>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            @foreach (var puesto in Model.Puesto)
+            {
+                <div class="col">
+                    <a href="@Url.Action("Upsert", new { id = puesto.Id })" class="text-decoration-none">
+                        <div class="glass-card shadow-lg border-0 position-relative" style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                            <h4>@puesto.NombrePuesto</h4>
+                            <p>@puesto.DescripcionPuesto</p>
+                        </div>
+                    </a>
+                </div>
+            }
+
+            <!-- Tarjeta para agregar nuevo puesto -->
+            <div class="col">
+                <div class="glass-card shadow-lg border-0 position-relative" style="height: 200px; display: flex; justify-content: center; align-items: center;">
+                    <button class="btn" id="botonAgregarPuesto" data-bs-toggle="modal" data-bs-target="#crearPuestoModal" style="font-size: 1.7rem; padding: 10px 20px; background-color: transparent; border: 2px solid #555; color: white; font-weight: bold;">
+                        <i class="bi bi-person-plus-fill" style="font-size: 1.8rem; color: white;"></i> Añadir Puesto
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para agregar un nuevo puesto -->
+    <div class="modal fade" id="crearPuestoModal" tabindex="-1" aria-labelledby="crearPuestoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="crearPuestoModalLabel">Agregar Nuevo Puesto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Formulario de creación de puesto -->
+                    <form id="crearPuestoForm" method="post" asp-action="Upsert">
+                        <div class="mb-3">
+                            <label for="NombrePuesto" class="form-label">Nombre del Puesto</label>
+                            <input type="text" class="form-control" id="NombrePuesto" name="NombrePuesto" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="DescripcionPuesto" class="form-label">Descripción</label>
+                            <textarea class="form-control" id="DescripcionPuesto" name="DescripcionPuesto" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" id="botonAgregarPuesto" class="btn" style="background-color: #ff6600; color: white;">
+                            Agregar Puesto
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón flotante para ver la papelera -->
+    <a href="@Url.Action("Papelera")" class="btn btn-warning rounded-circle btn-lg position-fixed bottom-0 end-0 m-4 d-flex justify-content-center align-items-center" style="background-color: #ff6600; width: 60px; height: 60px;">
+        <i class="bi bi-trash" style="color: white; font-size: 1.5rem;"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/puestos.js"></script>
+</body>

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using RecursosHumanos_Models;
+using RecursosHumanos_ViewModels;
 
-namespace RecursosHumanos_Models.ViewModels
+namespace RecursosHumanos_ViewModels.ViewModels
 {
     public class CapacitacionVM
     {

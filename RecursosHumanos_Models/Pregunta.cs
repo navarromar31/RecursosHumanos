@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using RecursosHumanos_Models;
+using RecursosHumanos_ViewModels;
 
-namespace RecursosHumanos_Models
+namespace RecursosHumanos_ViewModels
 {
     public class Pregunta
     {

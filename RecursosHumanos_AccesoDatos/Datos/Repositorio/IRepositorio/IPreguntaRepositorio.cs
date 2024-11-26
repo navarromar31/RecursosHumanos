@@ -1,4 +1,4 @@
-﻿using RecursosHumanos_Models;
+﻿using RecursosHumanos_ViewModels;
 using System;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
