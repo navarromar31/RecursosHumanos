@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\usuario01\\documents\\github\\recursoshumanos\\recursoshumanos\\views\\evaluacion\\_preguntacard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:views\\evaluacion\\_preguntacard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\usuario01\\documents\\github\\recursoshumanos\\recursoshumanos\\views\\evaluacion\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:views\\evaluacion\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\usuario01\\documents\\github\\recursoshumanos\\recursoshumanos\\controllers\\evaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\evaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\usuario01\\documents\\github\\recursoshumanos\\recursoshumanos\\views\\evaluacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:views\\evaluacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\usuario01\\documents\\github\\recursoshumanos\\recursoshumanos\\views\\evaluacion\\_evaluacioncard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:views\\evaluacion\\_evaluacioncard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\usuario01\\documents\\github\\recursoshumanos\\recursoshumanos\\views\\evaluacion\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -27,7 +19,20 @@
       "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:views\\evaluacion\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5947BBC-57AB-4B64-B9B4-0E8A2E971F87}|..\\RecursosHumanos_Models\\RecursosHumanos_Models.csproj|c:\\users\\usuario01\\documents\\github\\recursoshumanos\\recursoshumanos_models\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\usuario01\\documents\\github\\recursoshumanos\\recursoshumanos\\views\\evaluacion\\eliminarpregunta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:views\\evaluacion\\eliminarpregunta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\usuario01\\documents\\github\\recursoshumanos\\recursoshumanos\\views\\evaluacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:views\\evaluacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\usuario01\\documents\\github\\recursoshumanos\\recursoshumanos\\views\\evaluacion\\upsertpregunta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:views\\evaluacion\\upsertpregunta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\usuario01\\documents\\github\\recursoshumanos\\recursoshumanos\\views\\evaluacion\\_evaluacioncard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:views\\evaluacion\\_evaluacioncard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,93 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Departamento.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Departamento.cs",
-              "RelativeDocumentMoniker": "..\\RecursosHumanos_Models\\Departamento.cs",
-              "ToolTip": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Models\\Departamento.cs",
-              "RelativeToolTip": "..\\RecursosHumanos_Models\\Departamento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T00:46:33.357Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Evaluacion\\Index.cshtml",
               "ToolTip": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\Index.cshtml",
               "RelativeToolTip": "Views\\Evaluacion\\Index.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAC4AAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T00:28:24.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_EvaluacionCard.cshtml",
-              "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\_EvaluacionCard.cshtml",
-              "RelativeDocumentMoniker": "Views\\Evaluacion\\_EvaluacionCard.cshtml",
-              "ToolTip": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\_EvaluacionCard.cshtml",
-              "RelativeToolTip": "Views\\Evaluacion\\_EvaluacionCard.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-25T23:08:57.562Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Crear.cshtml",
-              "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\Crear.cshtml",
-              "RelativeDocumentMoniker": "Views\\Evaluacion\\Crear.cshtml",
-              "ToolTip": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\Crear.cshtml",
-              "RelativeToolTip": "Views\\Evaluacion\\Crear.cshtml",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAAIMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T00:23:51.907Z",
+              "WhenOpened": "2024-11-26T02:20:06.367Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Editar.cshtml",
-              "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\Editar.cshtml",
-              "RelativeDocumentMoniker": "Views\\Evaluacion\\Editar.cshtml",
-              "ToolTip": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\Editar.cshtml",
-              "RelativeToolTip": "Views\\Evaluacion\\Editar.cshtml",
+              "Title": "EliminarPregunta.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\EliminarPregunta.cshtml",
+              "RelativeDocumentMoniker": "Views\\Evaluacion\\EliminarPregunta.cshtml",
+              "ToolTip": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\EliminarPregunta.cshtml",
+              "RelativeToolTip": "Views\\Evaluacion\\EliminarPregunta.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T00:51:53.586Z"
+              "WhenOpened": "2024-11-26T02:20:04.489Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Eliminar.cshtml",
               "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\Eliminar.cshtml",
               "RelativeDocumentMoniker": "Views\\Evaluacion\\Eliminar.cshtml",
               "ToolTip": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\Eliminar.cshtml",
               "RelativeToolTip": "Views\\Evaluacion\\Eliminar.cshtml",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAHkAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T01:45:28.532Z"
+              "WhenOpened": "2024-11-26T02:20:02.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\Editar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Evaluacion\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\Editar.cshtml",
+              "RelativeToolTip": "Views\\Evaluacion\\Editar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T02:20:00.441Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EvaluacionController.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\EvaluacionController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EvaluacionController.cs",
-              "ToolTip": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\EvaluacionController.cs",
-              "RelativeToolTip": "Controllers\\EvaluacionController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T00:01:41.719Z",
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\Crear.cshtml",
+              "RelativeDocumentMoniker": "Views\\Evaluacion\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\Crear.cshtml",
+              "RelativeToolTip": "Views\\Evaluacion\\Crear.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T02:19:58.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_PreguntaCard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\_PreguntaCard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Evaluacion\\_PreguntaCard.cshtml",
+              "ToolTip": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\_PreguntaCard.cshtml",
+              "RelativeToolTip": "Views\\Evaluacion\\_PreguntaCard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T02:19:56.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpsertPregunta.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\UpsertPregunta.cshtml",
+              "RelativeDocumentMoniker": "Views\\Evaluacion\\UpsertPregunta.cshtml",
+              "ToolTip": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\UpsertPregunta.cshtml",
+              "RelativeToolTip": "Views\\Evaluacion\\UpsertPregunta.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T02:20:10.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_EvaluacionCard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\_EvaluacionCard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Evaluacion\\_EvaluacionCard.cshtml",
+              "ToolTip": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\_EvaluacionCard.cshtml",
+              "RelativeToolTip": "Views\\Evaluacion\\_EvaluacionCard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T02:19:49.817Z",
               "EditorCaption": ""
             }
           ]
