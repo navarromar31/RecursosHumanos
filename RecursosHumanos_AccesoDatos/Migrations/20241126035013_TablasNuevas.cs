@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace RecursosHumanos_AccesoDatos.Migrations
 {
     /// <inheritdoc />
-    public partial class nuevastablas : Migration
+    public partial class TablasNuevas : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -101,7 +101,7 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "puesto",
+                name: "puestos",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -113,7 +113,7 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_puesto", x => x.Id);
+                    table.PrimaryKey("PK_puestos", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -294,9 +294,9 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                         principalTable: "instituciones",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_colaborador_puesto_PuestoId",
+                        name: "FK_colaborador_puestos_PuestoId",
                         column: x => x.PuestoId,
-                        principalTable: "puesto",
+                        principalTable: "puestos",
                         principalColumn: "Id");
                 });
 
@@ -480,7 +480,7 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                 name: "instituciones");
 
             migrationBuilder.DropTable(
-                name: "puesto");
+                name: "puestos");
         }
     }
 }

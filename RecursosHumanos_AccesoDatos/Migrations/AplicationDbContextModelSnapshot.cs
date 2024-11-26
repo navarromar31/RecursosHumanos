@@ -499,7 +499,7 @@ namespace RecursosHumanos_AccesoDatos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("puesto");
+                    b.ToTable("puestos");
                 });
 
             modelBuilder.Entity("RecursosHumanos_Models.Respuesta", b =>

@@ -12,8 +12,8 @@ using RecursosHumanos_AccesoDatos.Datos;
 namespace RecursosHumanos_AccesoDatos.Migrations
 {
     [DbContext(typeof(AplicationDbContext))]
-    [Migration("20241126030942_nuevastablas")]
-    partial class nuevastablas
+    [Migration("20241126035013_TablasNuevas")]
+    partial class TablasNuevas
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -502,7 +502,7 @@ namespace RecursosHumanos_AccesoDatos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("puesto");
+                    b.ToTable("puestos");
                 });
 
             modelBuilder.Entity("RecursosHumanos_Models.Respuesta", b =>

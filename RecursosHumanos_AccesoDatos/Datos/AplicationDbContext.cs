@@ -18,7 +18,7 @@ namespace RecursosHumanos_AccesoDatos.Datos
         public DbSet<Capacitacion> capacitacion { get; set; }
         public DbSet<Colaborador> colaborador { get; set; }
         public DbSet<Evaluacion> evaluacion { get; set; }
-        public DbSet<Puesto> puesto { get; set; }
+        public DbSet<Puesto> puestos { get; set; }
         public DbSet<Respuesta> respuesta { get; set; }
         public DbSet<Pregunta> pregunta { get; set; }
         public DbSet<EvaluacionColaborador> evaluacionColaborador { get; set; }

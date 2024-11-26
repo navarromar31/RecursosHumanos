@@ -36,6 +36,8 @@ builder.Services.AddScoped<ICapacitacionRepositorio, CapacitacionRepositorio>();
 builder.Services.AddScoped<IColaboradorRepositorio, ColaboradorRepositorio>();
 builder.Services.AddScoped<IEvaluacionRepositorio, EvaluacionRepositorio>();
 builder.Services.AddScoped<IInstitucionRepositorio, InstitucionRepositorio>();
+builder.Services.AddScoped<IPuestoRepositorio, PuestoRepositorio>();
+
 
 
 // A?ade el servicio HttpContextAccessor al contenedor de servicios
