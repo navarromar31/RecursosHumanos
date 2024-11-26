@@ -22,11 +22,8 @@ namespace RecursosHumanos_AccesoDatos.Datos.Repositorio
 
         public void Actualizar(Capacitacion capacitacion)
         {
-            var capAnterior = _db.capacitacion.FirstOrDefault(c => c.Id == capacitacion.Id); // Debería ser 'Categorias'.
-            if (capAnterior != null)
-            {
-                capAnterior.NombreCapacitacion = capacitacion.NombreCapacitacion;
-            }
+            _db.Update(capacitacion);
+
         }
     }
 }

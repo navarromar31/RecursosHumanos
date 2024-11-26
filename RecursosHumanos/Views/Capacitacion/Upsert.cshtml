@@ -1,22 +1,31 @@
-﻿@model RecursosHumanos_Models.Capacitacion
+﻿@using RecursosHumanos_Utilidades
+@model RecursosHumanos_Models.Capacitacion
+
 @{
-    ViewData["Title"] = "Editar";
+    var titulo = Model.Id > 0 ? "Editar Capacitación" : "Crear Nueva Capacitación";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="~/css/cssc.css" rel="stylesheet" />
 
-<form asp-action="Upsert" method="post" enctype="multipart/form-data" class="p-3">
-    <!-- Campo oculto para el ID -->
+<h2>@titulo</h2>
+
+<form asp-action="Upsert" method="post" enctype="multipart/form-data" class="p-1">
     <input type="hidden" asp-for="Id" />
 
-    <!-- Imagen -->
     <div class="form-group">
-        <label for="ImagenCapacitacion">Imagen de la Capacitacion</label>
-        <input type="file" class="form-control" id="ImagenCapacitacion" name="imagenCapacitacion" />
+        <label for="ImagenCapacitacion" class="form-label">Imagen de la capacitación</label>
+        <div class="input-group">
+            <label class="input-group-text btn btn-warning" for="ImagenCapacitacion">Seleccionar archivo</label>
+            <input type="file" class="form-control d-none" id="ImagenCapacitacion" name="imagenCapacitacion" />
+            <input type="text" class="form-control" id="imagenNombre" placeholder="Ningún archivo seleccionado" readonly />
+        </div>
+        @if (!string.IsNullOrEmpty(Model.ImagenUrlCap))
+        {
+            <div class="mt-2">
+                <img src="@Model.ImagenUrlCap" alt="Imagen de capacitación" class="img-thumbnail" style="max-height: 150px;" />
+                <p class="text-muted">Imagen actual</p>
+            </div>
+        }
     </div>
-
 
     <!-- Título de la capacitación -->
     <div class="mb-3">
@@ -28,7 +37,7 @@
     <!-- Descripción -->
     <div class="mb-3">
         <label asp-for="Duracion" class="form-label">Duración:</label>
-        <input asp-for="Duracion" class="form-control" placeholder="Escribe la duración de la capacitación" />
+        <input asp-for="Duracion" class="form-control" rows="3" placeholder="Escribe la duración de la capacitación"></input>
         <span asp-validation-for="Duracion" class="text-danger"></span>
     </div>
 
@@ -37,7 +46,7 @@
         <label class="form-label">Mínimo de Colaboradores:</label>
         <div class="input-group">
             <button type="button" class="btn btn-outline-warning" id="MinColabDecrement">-</button>
-            <input type="number" asp-for="MinPersonas" class="form-control text-center" id="MinColab" />
+            <input type="number" asp-for="MinPersonas" class="form-control text-center" id="MinColab" readonly />
             <button type="button" class="btn btn-outline-warning" id="MinColabIncrement">+</button>
         </div>
     </div>
@@ -47,7 +56,7 @@
         <label class="form-label">Máximo de Colaboradores:</label>
         <div class="input-group">
             <button type="button" class="btn btn-outline-warning" id="MaxColabDecrement">-</button>
-            <input type="number" asp-for="MaxPersonas" class="form-control text-center" id="MaxColab" />
+            <input type="number" asp-for="MaxPersonas" class="form-control text-center" id="MaxColab" readonly />
             <button type="button" class="btn btn-outline-warning" id="MaxColabIncrement">+</button>
         </div>
     </div>
@@ -56,37 +65,25 @@
     <div class="mb-3">
         <label asp-for="Modalidad" class="form-label">Modalidad:</label>
         <select asp-for="Modalidad" class="form-select">
-            <option value="Presencial">Presencial</option>
-            <option value="Virtual">Virtual</option>
-            <option value="Mixta">Mixta</option>
+            <option value="Presencial" selected="@Model.Modalidad == " Presencial"">Presencial</option>
+            <option value="Virtual" selected="@Model.Modalidad == " Virtual"">Virtual</option>
+            <option value="Mixta" selected="@Model.Modalidad == " Mixta"">Mixta</option>
         </select>
     </div>
 
-
     <!-- Botones -->
-    <div class="row">
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="submit" class="btn btn-primary me-md-2">Actualizar</button>
-            <a asp-controller="Categoria" asp-action="Index" class="btn btn-success">Regresar</a>
-        </div>
+    <div class="d-flex justify-content-between">
+        <button type="button" class="btn btn-secondary" onclick="history.back()">Cancelar</button>
+        <button type="submit" class="btn btn-primary btn-warning ">Guardar</button>
     </div>
-
 </form>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/capacitacion.js"></script>
-
 @section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-
     <script>
-        document.getElementById('imagenId').onchange = function (event) {
-            const [file] = this.files;
-            if (file) {
-                const preview = document.getElementById('previewImage');
-                preview.src = URL.createObjectURL(file);
-            }
-        };
+        document.getElementById('ImagenCapacitacion').addEventListener('change', function () {
+            const fileName = this.files[0] ? this.files[0].name : 'Ningún archivo seleccionado';
+            document.getElementById('imagenNombre').value = fileName;
+        });
 
         document.getElementById('MinColabIncrement').onclick = () => {
             let input = document.getElementById('MinColab');

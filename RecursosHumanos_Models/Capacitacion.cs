@@ -22,7 +22,5 @@ namespace RecursosHumanos_Models
 
         public bool EstadoCapacitacion { get; set; }
 
-      
-
     }
 }

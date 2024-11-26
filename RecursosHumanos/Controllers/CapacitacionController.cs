@@ -45,53 +45,50 @@ namespace RecursosHumanos.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Si se ha subido una imagen, guardarla en el servidor
+                // Manejo de imagen (solo si se sube una nueva)
                 if (imagenCapacitacion != null)
                 {
-                    // Obtener la ruta de almacenamiento
                     string folderPath = Path.Combine(_hostEnvironment.WebRootPath, "imagenes");
                     if (!Directory.Exists(folderPath))
                     {
-                        Directory.CreateDirectory(folderPath); // Crear la carpeta si no existe
+                        Directory.CreateDirectory(folderPath);
                     }
 
-                    // Generar un nombre único para la imagen
                     string fileName = Guid.NewGuid().ToString() + Path.GetExtension(imagenCapacitacion.FileName);
                     string filePath = Path.Combine(folderPath, fileName);
 
-                    // Guardar la imagen en el directorio
                     using (var stream = new FileStream(filePath, FileMode.Create))
                     {
                         imagenCapacitacion.CopyTo(stream);
                     }
 
-                    // Asignar la ruta de la imagen a la propiedad del modelo
-                    capacitacion.ImagenUrlCap = "/imagenes/capacitacion/" + fileName;
+                    capacitacion.ImagenUrlCap = "/imagenes/" + fileName;
+                }
+                else if (capacitacion.Id != 0) // Conservar la imagen actual al editar
+                {
+                    var capacitacionEnDb = _capacitacionRepo.Obtener(capacitacion.Id);
+                    capacitacion.ImagenUrlCap = capacitacionEnDb.ImagenUrlCap;
                 }
 
-                // Si el Id es 0, estamos creando una nueva institución
+                // Lógica para agregar o actualizar
                 if (capacitacion.Id == 0)
                 {
                     _capacitacionRepo.Agregar(capacitacion);
                 }
                 else
                 {
-                    // Si el Id no es 0, estamos editando una institución existente
                     _capacitacionRepo.Actualizar(capacitacion);
                 }
 
-                // Guardar cambios en la base de datos
                 _capacitacionRepo.Grabar();
-
-                // Mostrar mensaje de éxito
-                TempData["Exitosa"] = capacitacion.Id == 0 ? "Capacitacion creada exitosamente" : "Capacitacion actualizada exitosamente";
-                return RedirectToAction(nameof(Index)); // Redirigir a la vista de listado
+                TempData["Exitosa"] = capacitacion.Id == 0 ? "Capacitación creada exitosamente" : "Capacitación actualizada exitosamente";
+                return RedirectToAction(nameof(Index));
             }
 
-            // Si ocurre algún error en el modelo
-            TempData["Error"] = "Error al guardar la institución";
+            TempData["Error"] = "Error al guardar la capacitación";
             return View(capacitacion);
         }
+
 
 
 
@@ -138,6 +135,8 @@ namespace RecursosHumanos.Controllers
             };
 
             return View(model); // Pasar el modelo a la vista
+
+
         }
     }
 }
