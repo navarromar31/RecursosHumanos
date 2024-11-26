@@ -1,0 +1,122 @@
+﻿@model RecursosHumanos_Models.ViewModels.EvaluacionVM
+@using RecursosHumanos_Utilidades
+@using RecursosHumanos_Models
+@{
+    ViewData["Title"] = "Evaluaciones";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/EvaluacionHoja.css" rel="stylesheet">
+    <link href="~/css/EvaPrincipal.css" rel="stylesheet">
+   
+</head>
+<body>
+    @if (User.IsInRole(WC.AdminRole))
+    {
+    
+    <div class="container mt-5" id="contprincipal">
+
+        <h4 id="titulo-evaluaciones-pasadas">Evaluaciones Pasadas</h4>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Buscar Evaluación..." aria-label="Buscar Evaluación..." aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="btn-Eva">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+
+        <div id="evaluaciones-pasadas" class="mb-4">
+                @if (Model.EvaluacionListaDB != null && Model.EvaluacionListaDB.Any())
+                {
+                    foreach (var evalu in Model.EvaluacionListaDB)
+                    {
+                        <partial name="_EvaluacionCard" model="evalu" />
+                    }
+                }
+                else
+                {
+                    <p>No hay evaluaciones disponibles.</p>
+                }
+
+
+
+                <div class="d-flex justify-content-end mb-4">
+                    <a asp-controller="Evaluacion" asp-action="Crear" class="btn btn-primary btn-nueva-capacitacion" id="btn-Eva"  >
+                        Nueva Evaluacion
+                    </a>
+
+                </div>
+        </div>
+
+       
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Eliminar evaluación con confirmación
+        document.querySelectorAll('.btn-eliminar').forEach(function(button) {
+            button.addEventListener('click', function() {
+                var evaluacionId = this.getAttribute('data-id');
+                if (confirm('¿Estás seguro de que quieres eliminar esta evaluación?')) {
+                    // Lógica para eliminar la evaluación
+                    // Esto podría ser una solicitud AJAX o redirección al controlador para eliminar la evaluación
+                    window.location.href = '/Evaluaciones/EliminarEvaluacion/' + evaluacionId;
+                }
+            });
+        });
+    </script>
+
+
+
+    }
+    else
+    {
+        <div class="container mt-5" id="contenedor-secundario1">
+            <h4 id="titulo-evaluaciones-pendientes">Evaluaciones Pendientes</h4>
+            <div class="mb-4" id="contenedor-busqueda-pendientes">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Buscar Evaluación Pendiente..." aria-label="Buscar Evaluación Pendiente..." aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="btn-Eva">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="evaluaciones-pendientes" class="mb-4">
+
+                <div class="card mb-2" id="cartaEva">
+                    <div id="card-body-Eva" class="card-body d-flex justify-content-between align-items-center">
+                        <span id="titulo-evaluacion-pendiente-1">Evaluación Pendiente 1</span>
+                        <button class="btn btn-realizar-evaluacion" id="btn-Eva" aria-label="Realizar Evaluación Pendiente 1">Realizar evaluación</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container mt-5" id="contenedor-secundario1">
+            <h4 id="titulo-evaluaciones-completadas">Evaluaciones Completadas</h4>
+            <div class="mb-4" id="contenedor-busqueda-completadas">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Buscar Evaluación Completada..." aria-label="Buscar Evaluación Completada..." aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="btn-Eva">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="evaluaciones-completadas" class="mb-4">
+            </div>
+        </div>
+    }
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
