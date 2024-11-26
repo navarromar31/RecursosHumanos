@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\RecursosHumanos.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Daniel Romero\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\Crud.css",
+      "PackagePath": "staticwebassets\\css\\Crud.css"
+    },
+    {
       "Id": "C:\\Users\\Daniel Romero\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\departamentos.css",
       "PackagePath": "staticwebassets\\css\\departamentos.css"
     },

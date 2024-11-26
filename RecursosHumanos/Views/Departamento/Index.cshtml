@@ -4,6 +4,10 @@
     ViewData["Title"] = "Departamentos";
 }
 
+<head>
+    <link rel="stylesheet" href="~/css/departamentos.css" />
+</head>
+
 <div class="container mt-5">
     <h1>Gestión de Departamentos</h1>
 
@@ -14,15 +18,6 @@
     </div>
 
     <a href="@Url.Action("Crear")" class="btn btn-primary">Agregar Departamento</a>
-
-    @if (TempData["Exitosa"] != null)
-    {
-        <div class="alert alert-success mt-3">@TempData["Exitosa"]</div>
-    }
-    if (TempData["Error"] != null)
-    {
-    <div class="alert alert-danger mt-3">@TempData["Error"]</div>
-    }
 
     <table class="table table-striped mt-3" id="tablaDepartamentos">
         <thead>

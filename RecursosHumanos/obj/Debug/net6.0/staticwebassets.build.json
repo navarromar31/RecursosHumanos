@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "i8ME1dA1rlt8dbY2CDqDbL/t/DcUQDRwk7jIORttguk=",
+  "Hash": "XGuJ0S2aUTM/8hBFQMDt/rgX/2ud8L89M+1/w3RfpAc=",
   "Source": "RecursosHumanos",
   "BasePath": "_content/RecursosHumanos",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Daniel Romero\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RecursosHumanos.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Daniel Romero\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\Crud.css",
+      "SourceId": "RecursosHumanos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Daniel Romero\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "BasePath": "_content/RecursosHumanos",
+      "RelativePath": "css/Crud.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Crud.css"
     },
     {
       "Identity": "C:\\Users\\Daniel Romero\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\departamentos.css",
