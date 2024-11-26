@@ -182,6 +182,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FwYWNpdGFjaW9uXGluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Usuario01/Documents/GitHub/RecursosHumanos/RecursosHumanos/Views/Departamento/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0YW1lbnRvXENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario01/Documents/GitHub/RecursosHumanos/RecursosHumanos/Views/Departamento/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0YW1lbnRvXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario01/Documents/GitHub/RecursosHumanos/RecursosHumanos/Views/Departamento/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0YW1lbnRvXEVsaW1pbmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario01/Documents/GitHub/RecursosHumanos/RecursosHumanos/Views/Departamento/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0YW1lbnRvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Usuario01/Documents/GitHub/RecursosHumanos/RecursosHumanos/Views/Evaluacion/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZhbHVhY2lvblxDcmVhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,32 @@
+﻿@model RecursosHumanos_Models.Departamento
+
+@{
+    ViewData["Title"] = "Crear Departamento";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/Crud.css" />
+</head>
+
+<div class="container mt-5">
+    <h1>Crear Departamento</h1>
+
+    <form asp-action="Crear" method="post">
+        <div class="mb-3">
+            <label asp-for="NombreDepartamento" class="form-label"></label>
+            <input asp-for="NombreDepartamento" class="form-control" />
+            <span asp-validation-for="NombreDepartamento" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="DescripcionDepartamento" class="form-label"></label>
+            <textarea asp-for="DescripcionDepartamento" class="form-control"></textarea>
+            <span asp-validation-for="DescripcionDepartamento" class="text-danger"></span>
+        </div>
+        <div class="mb-3 form-check">
+            <input asp-for="EstadoDepartamento" class="form-check-input" type="checkbox" />
+            <label asp-for="EstadoDepartamento" class="form-check-label">Activo</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Crear</button>
+        <a href="@Url.Action("Index")" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
