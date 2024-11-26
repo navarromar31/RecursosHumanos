@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "h/NDWe9Z5BU2LZ9zN9DWHgDxQ8/xWqs3s7HyLIe/hFM=",
+  "Hash": "JALWxh8iWu7U6kvB1TI17Hgn5CA2Nz13of8mgSMVvOc=",
   "Source": "RecursosHumanos",
   "BasePath": "_content/RecursosHumanos",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "RecursosHumanos\\wwwroot",
       "Source": "RecursosHumanos",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\css\\site.css",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\css\\site.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\css\\site.css"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\favicon.ico",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\favicon.ico",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\favicon.ico"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\js\\site.js",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\js\\site.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\js\\site.js"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -90,13 +90,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -109,13 +109,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -128,13 +128,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -147,13 +147,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -166,13 +166,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -185,13 +185,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -204,13 +204,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -223,13 +223,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -242,13 +242,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -261,13 +261,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -280,13 +280,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -299,13 +299,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -318,13 +318,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -337,13 +337,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -356,13 +356,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -375,13 +375,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -394,13 +394,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -413,13 +413,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -432,13 +432,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -451,13 +451,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -470,13 +470,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -489,13 +489,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -508,13 +508,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -527,13 +527,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -546,13 +546,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -565,13 +565,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -584,13 +584,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -603,13 +603,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -622,13 +622,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -641,13 +641,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -660,13 +660,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -679,13 +679,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -698,13 +698,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -717,13 +717,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -736,13 +736,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -755,13 +755,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -774,13 +774,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -793,13 +793,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -812,13 +812,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -831,13 +831,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -850,13 +850,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -869,13 +869,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -888,13 +888,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -907,13 +907,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -926,13 +926,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -945,13 +945,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -964,13 +964,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -983,13 +983,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1002,13 +1002,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1021,13 +1021,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1040,13 +1040,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1059,13 +1059,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1078,13 +1078,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1097,13 +1097,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1116,13 +1116,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1135,13 +1135,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1154,13 +1154,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+      "OriginalItemSpec": "C:\\Users\\arias\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.33\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\obj\\Debug\\net6.0\\scopedcss\\bundle\\RecursosHumanos.styles.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\obj\\Debug\\net6.0\\scopedcss\\bundle\\RecursosHumanos.styles.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "RecursosHumanos.styles.css",
       "AssetKind": "All",
@@ -1173,13 +1173,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\obj\\Debug\\net6.0\\scopedcss\\bundle\\RecursosHumanos.styles.css"
+      "OriginalItemSpec": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\obj\\Debug\\net6.0\\scopedcss\\bundle\\RecursosHumanos.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RecursosHumanos.bundle.scp.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RecursosHumanos.bundle.scp.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "RecursosHumanos.bundle.scp.css",
       "AssetKind": "All",
@@ -1192,13 +1192,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RecursosHumanos.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RecursosHumanos.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\instituciones.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\instituciones.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "css/instituciones.css",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\css\\instituciones.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\puestos.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\puestos.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "css/puestos.css",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\css\\puestos.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\site.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\favicon.ico",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\00a82e50-639c-4ee2-b80e-93ce5e1e8640.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\00a82e50-639c-4ee2-b80e-93ce5e1e8640.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/00a82e50-639c-4ee2-b80e-93ce5e1e8640.png",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\00a82e50-639c-4ee2-b80e-93ce5e1e8640.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\01559315-e304-40d1-8d6f-dd0b0429d976.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\01559315-e304-40d1-8d6f-dd0b0429d976.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/01559315-e304-40d1-8d6f-dd0b0429d976.png",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\01559315-e304-40d1-8d6f-dd0b0429d976.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\01a021ad-9a33-4654-8d17-8b4b5290cef2.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\01a021ad-9a33-4654-8d17-8b4b5290cef2.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/01a021ad-9a33-4654-8d17-8b4b5290cef2.png",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\01a021ad-9a33-4654-8d17-8b4b5290cef2.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\0478f2c0-9fdf-4c52-85a5-941ad89f2baa.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\0478f2c0-9fdf-4c52-85a5-941ad89f2baa.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/0478f2c0-9fdf-4c52-85a5-941ad89f2baa.png",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\0478f2c0-9fdf-4c52-85a5-941ad89f2baa.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\07c5f759-d104-4ed6-b8c9-fa2e2a132891.jpeg",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\07c5f759-d104-4ed6-b8c9-fa2e2a132891.jpeg",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/07c5f759-d104-4ed6-b8c9-fa2e2a132891.jpeg",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\07c5f759-d104-4ed6-b8c9-fa2e2a132891.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\0ea44618-b181-49be-8139-aef374c87a48.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\0ea44618-b181-49be-8139-aef374c87a48.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/0ea44618-b181-49be-8139-aef374c87a48.png",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\0ea44618-b181-49be-8139-aef374c87a48.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\1616d027-027e-48cb-964d-feababc30650.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\1616d027-027e-48cb-964d-feababc30650.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/1616d027-027e-48cb-964d-feababc30650.png",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\1616d027-027e-48cb-964d-feababc30650.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\19b09040-6e08-44fb-bdbe-a743c4f257cd.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\19b09040-6e08-44fb-bdbe-a743c4f257cd.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/19b09040-6e08-44fb-bdbe-a743c4f257cd.png",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\19b09040-6e08-44fb-bdbe-a743c4f257cd.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\26bb52c4-b164-46ea-a3d8-f9c0e39b28ac.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\26bb52c4-b164-46ea-a3d8-f9c0e39b28ac.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/26bb52c4-b164-46ea-a3d8-f9c0e39b28ac.png",
       "AssetKind": "All",
@@ -1442,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\26bb52c4-b164-46ea-a3d8-f9c0e39b28ac.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\3223ffaf-dd0d-4d7d-badf-a735ba3a9069.exe",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\3223ffaf-dd0d-4d7d-badf-a735ba3a9069.exe",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/3223ffaf-dd0d-4d7d-badf-a735ba3a9069.exe",
       "AssetKind": "All",
@@ -1461,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\3223ffaf-dd0d-4d7d-badf-a735ba3a9069.exe"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\3940acd3-c59a-413a-b340-bf0f5dd0cc29.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\3940acd3-c59a-413a-b340-bf0f5dd0cc29.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/3940acd3-c59a-413a-b340-bf0f5dd0cc29.png",
       "AssetKind": "All",
@@ -1480,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\3940acd3-c59a-413a-b340-bf0f5dd0cc29.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\3bc1dda5-e25a-4e23-b38c-40cc0b61eaa5.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\3bc1dda5-e25a-4e23-b38c-40cc0b61eaa5.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/3bc1dda5-e25a-4e23-b38c-40cc0b61eaa5.png",
       "AssetKind": "All",
@@ -1499,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\3bc1dda5-e25a-4e23-b38c-40cc0b61eaa5.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\3eff60ee-5765-42ca-8b75-7ca8af26165e.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\3eff60ee-5765-42ca-8b75-7ca8af26165e.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/3eff60ee-5765-42ca-8b75-7ca8af26165e.png",
       "AssetKind": "All",
@@ -1518,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\3eff60ee-5765-42ca-8b75-7ca8af26165e.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\48d390ff-a236-4bdb-adeb-b00e2ba4c3de.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\48d390ff-a236-4bdb-adeb-b00e2ba4c3de.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/48d390ff-a236-4bdb-adeb-b00e2ba4c3de.png",
       "AssetKind": "All",
@@ -1537,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\48d390ff-a236-4bdb-adeb-b00e2ba4c3de.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\530f8e8e-0864-4ab5-80a2-0723161f0fd9.jpeg",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\530f8e8e-0864-4ab5-80a2-0723161f0fd9.jpeg",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/530f8e8e-0864-4ab5-80a2-0723161f0fd9.jpeg",
       "AssetKind": "All",
@@ -1556,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\530f8e8e-0864-4ab5-80a2-0723161f0fd9.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\54e1ae5c-b222-40ca-bcfd-e3f2886c48f8.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\54e1ae5c-b222-40ca-bcfd-e3f2886c48f8.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/54e1ae5c-b222-40ca-bcfd-e3f2886c48f8.png",
       "AssetKind": "All",
@@ -1575,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\54e1ae5c-b222-40ca-bcfd-e3f2886c48f8.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\5607e77c-8cb8-4917-ade9-e01a08ea2e8e.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\5607e77c-8cb8-4917-ade9-e01a08ea2e8e.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/5607e77c-8cb8-4917-ade9-e01a08ea2e8e.png",
       "AssetKind": "All",
@@ -1594,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\5607e77c-8cb8-4917-ade9-e01a08ea2e8e.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\58bda82f-1794-4f47-b467-2fce2d1fca68.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\58bda82f-1794-4f47-b467-2fce2d1fca68.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/58bda82f-1794-4f47-b467-2fce2d1fca68.png",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\58bda82f-1794-4f47-b467-2fce2d1fca68.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\59dfad1e-d7b7-4a80-8113-ab57a5863a59.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\59dfad1e-d7b7-4a80-8113-ab57a5863a59.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/59dfad1e-d7b7-4a80-8113-ab57a5863a59.png",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\59dfad1e-d7b7-4a80-8113-ab57a5863a59.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\5fa10962-ee91-4043-9bbf-9a29cffcdbe4.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\5fa10962-ee91-4043-9bbf-9a29cffcdbe4.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/5fa10962-ee91-4043-9bbf-9a29cffcdbe4.png",
       "AssetKind": "All",
@@ -1651,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\5fa10962-ee91-4043-9bbf-9a29cffcdbe4.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\63403d2a-c475-4093-a11b-15ef06c53d93.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\63403d2a-c475-4093-a11b-15ef06c53d93.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/63403d2a-c475-4093-a11b-15ef06c53d93.png",
       "AssetKind": "All",
@@ -1670,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\63403d2a-c475-4093-a11b-15ef06c53d93.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\686fa2ac-718b-4b30-87b0-37e731def967.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\686fa2ac-718b-4b30-87b0-37e731def967.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/686fa2ac-718b-4b30-87b0-37e731def967.png",
       "AssetKind": "All",
@@ -1689,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\686fa2ac-718b-4b30-87b0-37e731def967.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\6b6109a1-2b5f-4fa7-91aa-bfad3440d1c7.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\6b6109a1-2b5f-4fa7-91aa-bfad3440d1c7.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/6b6109a1-2b5f-4fa7-91aa-bfad3440d1c7.png",
       "AssetKind": "All",
@@ -1708,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\6b6109a1-2b5f-4fa7-91aa-bfad3440d1c7.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\71b80cca-5470-4058-a906-5db81655d0cf.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\71b80cca-5470-4058-a906-5db81655d0cf.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/71b80cca-5470-4058-a906-5db81655d0cf.png",
       "AssetKind": "All",
@@ -1727,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\71b80cca-5470-4058-a906-5db81655d0cf.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\762b1733-d8b2-4fe1-b833-117d5047a1cf.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\762b1733-d8b2-4fe1-b833-117d5047a1cf.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/762b1733-d8b2-4fe1-b833-117d5047a1cf.png",
       "AssetKind": "All",
@@ -1746,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\762b1733-d8b2-4fe1-b833-117d5047a1cf.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\7957ec12-77d7-42a5-b042-4c0fc563f3cf.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\7957ec12-77d7-42a5-b042-4c0fc563f3cf.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/7957ec12-77d7-42a5-b042-4c0fc563f3cf.png",
       "AssetKind": "All",
@@ -1765,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\7957ec12-77d7-42a5-b042-4c0fc563f3cf.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\7c681a41-9334-4e2b-80b5-c29207e098e0.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\7c681a41-9334-4e2b-80b5-c29207e098e0.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/7c681a41-9334-4e2b-80b5-c29207e098e0.png",
       "AssetKind": "All",
@@ -1784,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\7c681a41-9334-4e2b-80b5-c29207e098e0.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\7e2ef72c-2ee0-4db4-a3ff-39c5acc20bc8.jpeg",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\7e2ef72c-2ee0-4db4-a3ff-39c5acc20bc8.jpeg",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/7e2ef72c-2ee0-4db4-a3ff-39c5acc20bc8.jpeg",
       "AssetKind": "All",
@@ -1803,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\7e2ef72c-2ee0-4db4-a3ff-39c5acc20bc8.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\816a971b-1f51-48d7-8fc0-12fb9b9d57c1.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\816a971b-1f51-48d7-8fc0-12fb9b9d57c1.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/816a971b-1f51-48d7-8fc0-12fb9b9d57c1.png",
       "AssetKind": "All",
@@ -1822,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\816a971b-1f51-48d7-8fc0-12fb9b9d57c1.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\9b721c04-40db-4134-98de-f5e74f2aa1d1.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\9b721c04-40db-4134-98de-f5e74f2aa1d1.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/9b721c04-40db-4134-98de-f5e74f2aa1d1.png",
       "AssetKind": "All",
@@ -1841,10 +1841,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\9b721c04-40db-4134-98de-f5e74f2aa1d1.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\b2190d94-808b-4ece-b550-fc5d826007a4.url",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\b2190d94-808b-4ece-b550-fc5d826007a4.url",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/b2190d94-808b-4ece-b550-fc5d826007a4.url",
       "AssetKind": "All",
@@ -1860,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\b2190d94-808b-4ece-b550-fc5d826007a4.url"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\b72551f5-e3a5-4847-ab07-8b1720433609.jpeg",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\b72551f5-e3a5-4847-ab07-8b1720433609.jpeg",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/b72551f5-e3a5-4847-ab07-8b1720433609.jpeg",
       "AssetKind": "All",
@@ -1879,10 +1879,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\b72551f5-e3a5-4847-ab07-8b1720433609.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\ba119bb9-fe2b-4063-90ab-645fa367eb41.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\ba119bb9-fe2b-4063-90ab-645fa367eb41.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/ba119bb9-fe2b-4063-90ab-645fa367eb41.png",
       "AssetKind": "All",
@@ -1898,10 +1898,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\ba119bb9-fe2b-4063-90ab-645fa367eb41.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\c2669ec9-5ab5-4bbd-9fc5-aa154e1ab657.exe",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\c2669ec9-5ab5-4bbd-9fc5-aa154e1ab657.exe",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/c2669ec9-5ab5-4bbd-9fc5-aa154e1ab657.exe",
       "AssetKind": "All",
@@ -1917,10 +1917,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\c2669ec9-5ab5-4bbd-9fc5-aa154e1ab657.exe"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\c45c95cb-0347-4278-9157-0ae77afcf826.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\c45c95cb-0347-4278-9157-0ae77afcf826.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/c45c95cb-0347-4278-9157-0ae77afcf826.png",
       "AssetKind": "All",
@@ -1936,10 +1936,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\c45c95cb-0347-4278-9157-0ae77afcf826.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\cc230270-7bd8-4659-bc90-62ed56aa3cb2.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\cc230270-7bd8-4659-bc90-62ed56aa3cb2.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/cc230270-7bd8-4659-bc90-62ed56aa3cb2.png",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\cc230270-7bd8-4659-bc90-62ed56aa3cb2.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\d3050fa5-8ed8-4b81-939a-ca229a07588f.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\d3050fa5-8ed8-4b81-939a-ca229a07588f.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/d3050fa5-8ed8-4b81-939a-ca229a07588f.png",
       "AssetKind": "All",
@@ -1974,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\d3050fa5-8ed8-4b81-939a-ca229a07588f.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\d3a28c8a-01b1-49ed-81a3-a0b5e8f050e5.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\d3a28c8a-01b1-49ed-81a3-a0b5e8f050e5.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/d3a28c8a-01b1-49ed-81a3-a0b5e8f050e5.png",
       "AssetKind": "All",
@@ -1993,10 +1993,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\d3a28c8a-01b1-49ed-81a3-a0b5e8f050e5.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\d4366928-23a6-4e32-a145-90a8fa7f5fd9.url",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\d4366928-23a6-4e32-a145-90a8fa7f5fd9.url",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/d4366928-23a6-4e32-a145-90a8fa7f5fd9.url",
       "AssetKind": "All",
@@ -2012,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\d4366928-23a6-4e32-a145-90a8fa7f5fd9.url"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\e986da7b-8931-43fc-b5c5-9213cc2c22a1.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\e986da7b-8931-43fc-b5c5-9213cc2c22a1.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/e986da7b-8931-43fc-b5c5-9213cc2c22a1.png",
       "AssetKind": "All",
@@ -2031,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\e986da7b-8931-43fc-b5c5-9213cc2c22a1.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\056c2caf-6697-40f1-a53a-03a784acda02.jpeg",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\056c2caf-6697-40f1-a53a-03a784acda02.jpeg",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/instituciones/056c2caf-6697-40f1-a53a-03a784acda02.jpeg",
       "AssetKind": "All",
@@ -2050,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\056c2caf-6697-40f1-a53a-03a784acda02.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\1a4f68b0-e507-49bf-bb4c-72dc9887a7f9.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\1a4f68b0-e507-49bf-bb4c-72dc9887a7f9.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/instituciones/1a4f68b0-e507-49bf-bb4c-72dc9887a7f9.png",
       "AssetKind": "All",
@@ -2069,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\1a4f68b0-e507-49bf-bb4c-72dc9887a7f9.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\416f715a-c69d-472e-9ef6-e5691e2d5115.jpeg",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\416f715a-c69d-472e-9ef6-e5691e2d5115.jpeg",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/instituciones/416f715a-c69d-472e-9ef6-e5691e2d5115.jpeg",
       "AssetKind": "All",
@@ -2088,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\416f715a-c69d-472e-9ef6-e5691e2d5115.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\6ea74130-df04-4b97-83cb-341d1068a4fb.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\6ea74130-df04-4b97-83cb-341d1068a4fb.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/instituciones/6ea74130-df04-4b97-83cb-341d1068a4fb.png",
       "AssetKind": "All",
@@ -2107,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\6ea74130-df04-4b97-83cb-341d1068a4fb.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\83cfca5f-901c-4e2b-991d-5b8e0e52e7e3.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\83cfca5f-901c-4e2b-991d-5b8e0e52e7e3.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/instituciones/83cfca5f-901c-4e2b-991d-5b8e0e52e7e3.png",
       "AssetKind": "All",
@@ -2126,10 +2126,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\83cfca5f-901c-4e2b-991d-5b8e0e52e7e3.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\842c9b3b-64df-451a-8589-15f25c9934b1.jpeg",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\842c9b3b-64df-451a-8589-15f25c9934b1.jpeg",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/instituciones/842c9b3b-64df-451a-8589-15f25c9934b1.jpeg",
       "AssetKind": "All",
@@ -2145,10 +2145,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\842c9b3b-64df-451a-8589-15f25c9934b1.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\8e984c97-252e-4bb1-91b0-0faed3db7016.jpeg",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\8e984c97-252e-4bb1-91b0-0faed3db7016.jpeg",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/instituciones/8e984c97-252e-4bb1-91b0-0faed3db7016.jpeg",
       "AssetKind": "All",
@@ -2164,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\8e984c97-252e-4bb1-91b0-0faed3db7016.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\abe58298-ab81-4e52-906d-2b305e5d5ac8.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\abe58298-ab81-4e52-906d-2b305e5d5ac8.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/instituciones/abe58298-ab81-4e52-906d-2b305e5d5ac8.png",
       "AssetKind": "All",
@@ -2183,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\abe58298-ab81-4e52-906d-2b305e5d5ac8.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\b28204bf-1874-4acb-af10-3d096a89ac9d.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\b28204bf-1874-4acb-af10-3d096a89ac9d.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/instituciones/b28204bf-1874-4acb-af10-3d096a89ac9d.png",
       "AssetKind": "All",
@@ -2202,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\b28204bf-1874-4acb-af10-3d096a89ac9d.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\b774cf95-bc2d-4978-8ab8-0aca0eb7ec25.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\b774cf95-bc2d-4978-8ab8-0aca0eb7ec25.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/instituciones/b774cf95-bc2d-4978-8ab8-0aca0eb7ec25.png",
       "AssetKind": "All",
@@ -2221,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\b774cf95-bc2d-4978-8ab8-0aca0eb7ec25.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\c1dc4534-4be9-429e-8e3b-82b1522c7778.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\c1dc4534-4be9-429e-8e3b-82b1522c7778.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/instituciones/c1dc4534-4be9-429e-8e3b-82b1522c7778.png",
       "AssetKind": "All",
@@ -2240,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\c1dc4534-4be9-429e-8e3b-82b1522c7778.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\dbbdc70b-57c9-4474-8d6b-6aff71a93847.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\dbbdc70b-57c9-4474-8d6b-6aff71a93847.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/instituciones/dbbdc70b-57c9-4474-8d6b-6aff71a93847.png",
       "AssetKind": "All",
@@ -2259,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\dbbdc70b-57c9-4474-8d6b-6aff71a93847.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\dc4c6478-e22c-459e-a05f-c47b5873be69.jpeg",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\dc4c6478-e22c-459e-a05f-c47b5873be69.jpeg",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/instituciones/dc4c6478-e22c-459e-a05f-c47b5873be69.jpeg",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\dc4c6478-e22c-459e-a05f-c47b5873be69.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\e1793fb0-cad6-4457-b4a0-7fd24e40be61.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\e1793fb0-cad6-4457-b4a0-7fd24e40be61.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/instituciones/e1793fb0-cad6-4457-b4a0-7fd24e40be61.png",
       "AssetKind": "All",
@@ -2297,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\e1793fb0-cad6-4457-b4a0-7fd24e40be61.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\e9072c97-8e14-4b49-8297-450bfeaeeb73.jpeg",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\e9072c97-8e14-4b49-8297-450bfeaeeb73.jpeg",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/instituciones/e9072c97-8e14-4b49-8297-450bfeaeeb73.jpeg",
       "AssetKind": "All",
@@ -2316,10 +2316,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\e9072c97-8e14-4b49-8297-450bfeaeeb73.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\f9a36d0e-cd9a-4cd8-8e40-69f146dcf157.jpeg",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\f9a36d0e-cd9a-4cd8-8e40-69f146dcf157.jpeg",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/instituciones/f9a36d0e-cd9a-4cd8-8e40-69f146dcf157.jpeg",
       "AssetKind": "All",
@@ -2335,10 +2335,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\f9a36d0e-cd9a-4cd8-8e40-69f146dcf157.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\fb9abbef-8cbb-4ab7-8e74-82707ec2d4ab.png",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\fb9abbef-8cbb-4ab7-8e74-82707ec2d4ab.png",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "imagenes/instituciones/fb9abbef-8cbb-4ab7-8e74-82707ec2d4ab.png",
       "AssetKind": "All",
@@ -2354,10 +2354,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\instituciones\\fb9abbef-8cbb-4ab7-8e74-82707ec2d4ab.png"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\instituciones.js",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\instituciones.js",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "js/instituciones.js",
       "AssetKind": "All",
@@ -2373,10 +2373,10 @@
       "OriginalItemSpec": "wwwroot\\js\\instituciones.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\puestos.js",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\puestos.js",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "js/puestos.js",
       "AssetKind": "All",
@@ -2392,10 +2392,10 @@
       "OriginalItemSpec": "wwwroot\\js\\puestos.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\site.js",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -2411,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -2430,10 +2430,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -2449,10 +2449,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -2468,10 +2468,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2487,10 +2487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2506,10 +2506,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2525,10 +2525,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2544,10 +2544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2563,10 +2563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -2582,10 +2582,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -2601,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -2620,10 +2620,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -2639,10 +2639,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -2658,10 +2658,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -2677,10 +2677,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -2696,10 +2696,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -2715,10 +2715,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -2734,10 +2734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -2753,10 +2753,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2772,10 +2772,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2791,10 +2791,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2810,10 +2810,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2829,10 +2829,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2848,10 +2848,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2867,10 +2867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2886,10 +2886,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2905,10 +2905,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2924,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2943,10 +2943,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2962,10 +2962,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2981,10 +2981,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -3000,10 +3000,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -3019,10 +3019,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -3038,10 +3038,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -3057,10 +3057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -3076,10 +3076,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -3095,10 +3095,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -3114,10 +3114,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -3133,10 +3133,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -3152,10 +3152,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -3171,10 +3171,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -3190,10 +3190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -3209,10 +3209,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -3228,10 +3228,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -3247,10 +3247,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -3266,10 +3266,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -3285,10 +3285,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -3304,10 +3304,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -3323,10 +3323,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -3342,10 +3342,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -3361,10 +3361,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -3380,10 +3380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -3399,10 +3399,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -3418,10 +3418,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -3437,10 +3437,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -3456,10 +3456,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -3475,10 +3475,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "RecursosHumanos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\",
       "BasePath": "_content/RecursosHumanos",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

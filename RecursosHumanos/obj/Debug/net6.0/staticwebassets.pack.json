@@ -1,491 +1,491 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RecursosHumanos.bundle.scp.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RecursosHumanos.bundle.scp.css",
       "PackagePath": "staticwebassets\\RecursosHumanos.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\instituciones.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\instituciones.css",
       "PackagePath": "staticwebassets\\css\\instituciones.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\puestos.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\puestos.css",
       "PackagePath": "staticwebassets\\css\\puestos.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\00a82e50-639c-4ee2-b80e-93ce5e1e8640.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\00a82e50-639c-4ee2-b80e-93ce5e1e8640.png",
       "PackagePath": "staticwebassets\\imagenes\\00a82e50-639c-4ee2-b80e-93ce5e1e8640.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\01559315-e304-40d1-8d6f-dd0b0429d976.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\01559315-e304-40d1-8d6f-dd0b0429d976.png",
       "PackagePath": "staticwebassets\\imagenes\\01559315-e304-40d1-8d6f-dd0b0429d976.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\01a021ad-9a33-4654-8d17-8b4b5290cef2.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\01a021ad-9a33-4654-8d17-8b4b5290cef2.png",
       "PackagePath": "staticwebassets\\imagenes\\01a021ad-9a33-4654-8d17-8b4b5290cef2.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\0478f2c0-9fdf-4c52-85a5-941ad89f2baa.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\0478f2c0-9fdf-4c52-85a5-941ad89f2baa.png",
       "PackagePath": "staticwebassets\\imagenes\\0478f2c0-9fdf-4c52-85a5-941ad89f2baa.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\07c5f759-d104-4ed6-b8c9-fa2e2a132891.jpeg",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\07c5f759-d104-4ed6-b8c9-fa2e2a132891.jpeg",
       "PackagePath": "staticwebassets\\imagenes\\07c5f759-d104-4ed6-b8c9-fa2e2a132891.jpeg"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\0ea44618-b181-49be-8139-aef374c87a48.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\0ea44618-b181-49be-8139-aef374c87a48.png",
       "PackagePath": "staticwebassets\\imagenes\\0ea44618-b181-49be-8139-aef374c87a48.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\1616d027-027e-48cb-964d-feababc30650.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\1616d027-027e-48cb-964d-feababc30650.png",
       "PackagePath": "staticwebassets\\imagenes\\1616d027-027e-48cb-964d-feababc30650.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\19b09040-6e08-44fb-bdbe-a743c4f257cd.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\19b09040-6e08-44fb-bdbe-a743c4f257cd.png",
       "PackagePath": "staticwebassets\\imagenes\\19b09040-6e08-44fb-bdbe-a743c4f257cd.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\26bb52c4-b164-46ea-a3d8-f9c0e39b28ac.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\26bb52c4-b164-46ea-a3d8-f9c0e39b28ac.png",
       "PackagePath": "staticwebassets\\imagenes\\26bb52c4-b164-46ea-a3d8-f9c0e39b28ac.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\3223ffaf-dd0d-4d7d-badf-a735ba3a9069.exe",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\3223ffaf-dd0d-4d7d-badf-a735ba3a9069.exe",
       "PackagePath": "staticwebassets\\imagenes\\3223ffaf-dd0d-4d7d-badf-a735ba3a9069.exe"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\3940acd3-c59a-413a-b340-bf0f5dd0cc29.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\3940acd3-c59a-413a-b340-bf0f5dd0cc29.png",
       "PackagePath": "staticwebassets\\imagenes\\3940acd3-c59a-413a-b340-bf0f5dd0cc29.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\3bc1dda5-e25a-4e23-b38c-40cc0b61eaa5.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\3bc1dda5-e25a-4e23-b38c-40cc0b61eaa5.png",
       "PackagePath": "staticwebassets\\imagenes\\3bc1dda5-e25a-4e23-b38c-40cc0b61eaa5.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\3eff60ee-5765-42ca-8b75-7ca8af26165e.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\3eff60ee-5765-42ca-8b75-7ca8af26165e.png",
       "PackagePath": "staticwebassets\\imagenes\\3eff60ee-5765-42ca-8b75-7ca8af26165e.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\48d390ff-a236-4bdb-adeb-b00e2ba4c3de.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\48d390ff-a236-4bdb-adeb-b00e2ba4c3de.png",
       "PackagePath": "staticwebassets\\imagenes\\48d390ff-a236-4bdb-adeb-b00e2ba4c3de.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\530f8e8e-0864-4ab5-80a2-0723161f0fd9.jpeg",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\530f8e8e-0864-4ab5-80a2-0723161f0fd9.jpeg",
       "PackagePath": "staticwebassets\\imagenes\\530f8e8e-0864-4ab5-80a2-0723161f0fd9.jpeg"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\54e1ae5c-b222-40ca-bcfd-e3f2886c48f8.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\54e1ae5c-b222-40ca-bcfd-e3f2886c48f8.png",
       "PackagePath": "staticwebassets\\imagenes\\54e1ae5c-b222-40ca-bcfd-e3f2886c48f8.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\5607e77c-8cb8-4917-ade9-e01a08ea2e8e.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\5607e77c-8cb8-4917-ade9-e01a08ea2e8e.png",
       "PackagePath": "staticwebassets\\imagenes\\5607e77c-8cb8-4917-ade9-e01a08ea2e8e.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\58bda82f-1794-4f47-b467-2fce2d1fca68.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\58bda82f-1794-4f47-b467-2fce2d1fca68.png",
       "PackagePath": "staticwebassets\\imagenes\\58bda82f-1794-4f47-b467-2fce2d1fca68.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\59dfad1e-d7b7-4a80-8113-ab57a5863a59.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\59dfad1e-d7b7-4a80-8113-ab57a5863a59.png",
       "PackagePath": "staticwebassets\\imagenes\\59dfad1e-d7b7-4a80-8113-ab57a5863a59.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\5fa10962-ee91-4043-9bbf-9a29cffcdbe4.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\5fa10962-ee91-4043-9bbf-9a29cffcdbe4.png",
       "PackagePath": "staticwebassets\\imagenes\\5fa10962-ee91-4043-9bbf-9a29cffcdbe4.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\63403d2a-c475-4093-a11b-15ef06c53d93.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\63403d2a-c475-4093-a11b-15ef06c53d93.png",
       "PackagePath": "staticwebassets\\imagenes\\63403d2a-c475-4093-a11b-15ef06c53d93.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\686fa2ac-718b-4b30-87b0-37e731def967.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\686fa2ac-718b-4b30-87b0-37e731def967.png",
       "PackagePath": "staticwebassets\\imagenes\\686fa2ac-718b-4b30-87b0-37e731def967.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\6b6109a1-2b5f-4fa7-91aa-bfad3440d1c7.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\6b6109a1-2b5f-4fa7-91aa-bfad3440d1c7.png",
       "PackagePath": "staticwebassets\\imagenes\\6b6109a1-2b5f-4fa7-91aa-bfad3440d1c7.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\71b80cca-5470-4058-a906-5db81655d0cf.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\71b80cca-5470-4058-a906-5db81655d0cf.png",
       "PackagePath": "staticwebassets\\imagenes\\71b80cca-5470-4058-a906-5db81655d0cf.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\762b1733-d8b2-4fe1-b833-117d5047a1cf.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\762b1733-d8b2-4fe1-b833-117d5047a1cf.png",
       "PackagePath": "staticwebassets\\imagenes\\762b1733-d8b2-4fe1-b833-117d5047a1cf.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\7957ec12-77d7-42a5-b042-4c0fc563f3cf.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\7957ec12-77d7-42a5-b042-4c0fc563f3cf.png",
       "PackagePath": "staticwebassets\\imagenes\\7957ec12-77d7-42a5-b042-4c0fc563f3cf.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\7c681a41-9334-4e2b-80b5-c29207e098e0.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\7c681a41-9334-4e2b-80b5-c29207e098e0.png",
       "PackagePath": "staticwebassets\\imagenes\\7c681a41-9334-4e2b-80b5-c29207e098e0.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\7e2ef72c-2ee0-4db4-a3ff-39c5acc20bc8.jpeg",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\7e2ef72c-2ee0-4db4-a3ff-39c5acc20bc8.jpeg",
       "PackagePath": "staticwebassets\\imagenes\\7e2ef72c-2ee0-4db4-a3ff-39c5acc20bc8.jpeg"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\816a971b-1f51-48d7-8fc0-12fb9b9d57c1.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\816a971b-1f51-48d7-8fc0-12fb9b9d57c1.png",
       "PackagePath": "staticwebassets\\imagenes\\816a971b-1f51-48d7-8fc0-12fb9b9d57c1.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\9b721c04-40db-4134-98de-f5e74f2aa1d1.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\9b721c04-40db-4134-98de-f5e74f2aa1d1.png",
       "PackagePath": "staticwebassets\\imagenes\\9b721c04-40db-4134-98de-f5e74f2aa1d1.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\b2190d94-808b-4ece-b550-fc5d826007a4.url",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\b2190d94-808b-4ece-b550-fc5d826007a4.url",
       "PackagePath": "staticwebassets\\imagenes\\b2190d94-808b-4ece-b550-fc5d826007a4.url"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\b72551f5-e3a5-4847-ab07-8b1720433609.jpeg",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\b72551f5-e3a5-4847-ab07-8b1720433609.jpeg",
       "PackagePath": "staticwebassets\\imagenes\\b72551f5-e3a5-4847-ab07-8b1720433609.jpeg"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\ba119bb9-fe2b-4063-90ab-645fa367eb41.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\ba119bb9-fe2b-4063-90ab-645fa367eb41.png",
       "PackagePath": "staticwebassets\\imagenes\\ba119bb9-fe2b-4063-90ab-645fa367eb41.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\c2669ec9-5ab5-4bbd-9fc5-aa154e1ab657.exe",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\c2669ec9-5ab5-4bbd-9fc5-aa154e1ab657.exe",
       "PackagePath": "staticwebassets\\imagenes\\c2669ec9-5ab5-4bbd-9fc5-aa154e1ab657.exe"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\c45c95cb-0347-4278-9157-0ae77afcf826.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\c45c95cb-0347-4278-9157-0ae77afcf826.png",
       "PackagePath": "staticwebassets\\imagenes\\c45c95cb-0347-4278-9157-0ae77afcf826.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\cc230270-7bd8-4659-bc90-62ed56aa3cb2.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\cc230270-7bd8-4659-bc90-62ed56aa3cb2.png",
       "PackagePath": "staticwebassets\\imagenes\\cc230270-7bd8-4659-bc90-62ed56aa3cb2.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\d3050fa5-8ed8-4b81-939a-ca229a07588f.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\d3050fa5-8ed8-4b81-939a-ca229a07588f.png",
       "PackagePath": "staticwebassets\\imagenes\\d3050fa5-8ed8-4b81-939a-ca229a07588f.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\d3a28c8a-01b1-49ed-81a3-a0b5e8f050e5.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\d3a28c8a-01b1-49ed-81a3-a0b5e8f050e5.png",
       "PackagePath": "staticwebassets\\imagenes\\d3a28c8a-01b1-49ed-81a3-a0b5e8f050e5.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\d4366928-23a6-4e32-a145-90a8fa7f5fd9.url",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\d4366928-23a6-4e32-a145-90a8fa7f5fd9.url",
       "PackagePath": "staticwebassets\\imagenes\\d4366928-23a6-4e32-a145-90a8fa7f5fd9.url"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\e986da7b-8931-43fc-b5c5-9213cc2c22a1.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\e986da7b-8931-43fc-b5c5-9213cc2c22a1.png",
       "PackagePath": "staticwebassets\\imagenes\\e986da7b-8931-43fc-b5c5-9213cc2c22a1.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\056c2caf-6697-40f1-a53a-03a784acda02.jpeg",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\056c2caf-6697-40f1-a53a-03a784acda02.jpeg",
       "PackagePath": "staticwebassets\\imagenes\\instituciones\\056c2caf-6697-40f1-a53a-03a784acda02.jpeg"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\1a4f68b0-e507-49bf-bb4c-72dc9887a7f9.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\1a4f68b0-e507-49bf-bb4c-72dc9887a7f9.png",
       "PackagePath": "staticwebassets\\imagenes\\instituciones\\1a4f68b0-e507-49bf-bb4c-72dc9887a7f9.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\416f715a-c69d-472e-9ef6-e5691e2d5115.jpeg",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\416f715a-c69d-472e-9ef6-e5691e2d5115.jpeg",
       "PackagePath": "staticwebassets\\imagenes\\instituciones\\416f715a-c69d-472e-9ef6-e5691e2d5115.jpeg"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\6ea74130-df04-4b97-83cb-341d1068a4fb.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\6ea74130-df04-4b97-83cb-341d1068a4fb.png",
       "PackagePath": "staticwebassets\\imagenes\\instituciones\\6ea74130-df04-4b97-83cb-341d1068a4fb.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\83cfca5f-901c-4e2b-991d-5b8e0e52e7e3.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\83cfca5f-901c-4e2b-991d-5b8e0e52e7e3.png",
       "PackagePath": "staticwebassets\\imagenes\\instituciones\\83cfca5f-901c-4e2b-991d-5b8e0e52e7e3.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\842c9b3b-64df-451a-8589-15f25c9934b1.jpeg",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\842c9b3b-64df-451a-8589-15f25c9934b1.jpeg",
       "PackagePath": "staticwebassets\\imagenes\\instituciones\\842c9b3b-64df-451a-8589-15f25c9934b1.jpeg"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\8e984c97-252e-4bb1-91b0-0faed3db7016.jpeg",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\8e984c97-252e-4bb1-91b0-0faed3db7016.jpeg",
       "PackagePath": "staticwebassets\\imagenes\\instituciones\\8e984c97-252e-4bb1-91b0-0faed3db7016.jpeg"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\abe58298-ab81-4e52-906d-2b305e5d5ac8.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\abe58298-ab81-4e52-906d-2b305e5d5ac8.png",
       "PackagePath": "staticwebassets\\imagenes\\instituciones\\abe58298-ab81-4e52-906d-2b305e5d5ac8.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\b28204bf-1874-4acb-af10-3d096a89ac9d.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\b28204bf-1874-4acb-af10-3d096a89ac9d.png",
       "PackagePath": "staticwebassets\\imagenes\\instituciones\\b28204bf-1874-4acb-af10-3d096a89ac9d.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\b774cf95-bc2d-4978-8ab8-0aca0eb7ec25.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\b774cf95-bc2d-4978-8ab8-0aca0eb7ec25.png",
       "PackagePath": "staticwebassets\\imagenes\\instituciones\\b774cf95-bc2d-4978-8ab8-0aca0eb7ec25.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\c1dc4534-4be9-429e-8e3b-82b1522c7778.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\c1dc4534-4be9-429e-8e3b-82b1522c7778.png",
       "PackagePath": "staticwebassets\\imagenes\\instituciones\\c1dc4534-4be9-429e-8e3b-82b1522c7778.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\dbbdc70b-57c9-4474-8d6b-6aff71a93847.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\dbbdc70b-57c9-4474-8d6b-6aff71a93847.png",
       "PackagePath": "staticwebassets\\imagenes\\instituciones\\dbbdc70b-57c9-4474-8d6b-6aff71a93847.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\dc4c6478-e22c-459e-a05f-c47b5873be69.jpeg",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\dc4c6478-e22c-459e-a05f-c47b5873be69.jpeg",
       "PackagePath": "staticwebassets\\imagenes\\instituciones\\dc4c6478-e22c-459e-a05f-c47b5873be69.jpeg"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\e1793fb0-cad6-4457-b4a0-7fd24e40be61.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\e1793fb0-cad6-4457-b4a0-7fd24e40be61.png",
       "PackagePath": "staticwebassets\\imagenes\\instituciones\\e1793fb0-cad6-4457-b4a0-7fd24e40be61.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\e9072c97-8e14-4b49-8297-450bfeaeeb73.jpeg",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\e9072c97-8e14-4b49-8297-450bfeaeeb73.jpeg",
       "PackagePath": "staticwebassets\\imagenes\\instituciones\\e9072c97-8e14-4b49-8297-450bfeaeeb73.jpeg"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\f9a36d0e-cd9a-4cd8-8e40-69f146dcf157.jpeg",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\f9a36d0e-cd9a-4cd8-8e40-69f146dcf157.jpeg",
       "PackagePath": "staticwebassets\\imagenes\\instituciones\\f9a36d0e-cd9a-4cd8-8e40-69f146dcf157.jpeg"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\fb9abbef-8cbb-4ab7-8e74-82707ec2d4ab.png",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\imagenes\\instituciones\\fb9abbef-8cbb-4ab7-8e74-82707ec2d4ab.png",
       "PackagePath": "staticwebassets\\imagenes\\instituciones\\fb9abbef-8cbb-4ab7-8e74-82707ec2d4ab.png"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\instituciones.js",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\instituciones.js",
       "PackagePath": "staticwebassets\\js\\instituciones.js"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\puestos.js",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\puestos.js",
       "PackagePath": "staticwebassets\\js\\puestos.js"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Dayra Solano\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\arias\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\RecursosHumanos\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

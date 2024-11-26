@@ -6,7 +6,7 @@
     color: #505050;
 }
 
-#heroInstitucion {
+#heroPuesto {
     position: relative;
     height: 60vh;
     display: flex;
@@ -15,14 +15,14 @@
     text-align: center;
     color: white;
     overflow: hidden;
-    background-color: #252525;
+    background-color: #f28b31;
 }
 
-#hero-contentInstitucion {
+#hero-contentPuesto {
     z-index: 1;
 }
 
-.btn-cta-Institucion {
+.btn-cta-Puesto {
     background-color: #ff6600;
     color: white;
     padding: 10px 20px;
@@ -31,7 +31,7 @@
     transition: background-color 0.3s ease;
 }
 
-    .btn-cta-Institucion:hover {
+    .btn-cta-Puesto:hover {
         background-color: #cc5200;
     }
 
@@ -57,7 +57,7 @@
         background-color: rgba(50, 50, 50, 0.7);
     }
 
-#overlay-Institucion {
+#overlay-Puesto {
     position: absolute;
     top: 0;
     left: 0;
@@ -68,7 +68,7 @@
     z-index: 1;
 }
 
-#card-content-Institucion {
+#card-content-Puesto {
     position: relative;
     z-index: 2;
     padding: 20px;
