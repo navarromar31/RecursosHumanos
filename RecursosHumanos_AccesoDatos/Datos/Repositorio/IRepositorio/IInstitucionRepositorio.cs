@@ -11,5 +11,7 @@ namespace RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio
     {
         void Actualizar(Institucion institucion);
 
+        IEnumerable<Institucion> ObtenerInstitucionesEliminadas();
+
     }
 }

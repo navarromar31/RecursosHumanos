@@ -1,143 +1,154 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using RecursosHumanos_AccesoDatos;
+﻿using Microsoft.AspNetCore.Mvc;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
+using RecursosHumanos_Models.ViewModels;
 using RecursosHumanos_Models;
-using RecursosHumanos_Utilidades;
 
-namespace RecursosHumanos.Controllers
+public class PuestoController : Controller
 {
-    [Authorize(Roles = WC.AdminRole)]
-    public class PuestoController : Controller
+    private readonly IPuestoRepositorio _puestoRepo;
+
+    public PuestoController(IPuestoRepositorio puestoRepo)
     {
+        _puestoRepo = puestoRepo;
+    }
 
-        //private readonly ApplicationDbContext _db;
-
-
-        //public CategoriaController(ApplicationDbContext db)
-        //{
-        //    _db = db;  
-        //}
-
-
-        private readonly IPuestoRepositorio _puestoRepo;
-
-        public PuestoController(IPuestoRepositorio puestoRepo)//recibe nuestro contexto de BD
+    // GET: Index (Lista de instituciones no eliminadas)
+    public IActionResult Index()
+    {
+        var lista = _puestoRepo.ObtenerTodos()
+            .Where(i => !i.Eliminada); // Filtrar instituciones no eliminadas
+        PuestoVM model = new PuestoVM
         {
-            //    _db = db;
-            _puestoRepo = puestoRepo;
+            Puesto = lista.ToList() // Pasar la lista filtrada
+        };
 
+        return View(model); // Pasar el modelo a la vista
+    }
+
+    // Acción GET para ver la Papelera de Instituciones (instituciones eliminadas)
+    public IActionResult Papelera()
+    {
+        var listaEliminada = _puestoRepo.ObtenerPuestosEliminados();  // Aquí debes obtener las instituciones eliminadas
+        PuestoVM model = new PuestoVM
+        {
+            Puesto = listaEliminada.ToList()  // Pasar la lista de instituciones eliminadas a la vista
+        };
+
+        return View(model); // Pasar el modelo a la vista de la papelera
+    }
+
+    public IActionResult Upsert(int? id)
+    {
+        Puesto model = new Puesto();
+
+        if (id == null || id == 0)
+        {
+            // Crear una nueva institución
+            return View(model);
         }
-
-
-        public IActionResult Index()
+        else
         {
-            IEnumerable<Puesto> lista = _puestoRepo.ObtenerTodos();
-
-            return View(lista);
-        }
-
-        //Get
-        public IActionResult Crear()
-        {
-
-
-            return View();
-        }
-
-
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Crear(Puesto puesto)
-        {
-
-            if (ModelState.IsValid)
-            {
-                _puestoRepo.Agregar(puesto);
-                _puestoRepo.Grabar();
-                TempData[WC.Exitosa] = "Puesto creado exitosamente";
-                return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
-            }
-            TempData[WC.Error] = "Error al crear un nuevo puesto";
-            return View(puesto);
-        }
-
-
-        //GET EDITAR QUE RECIBE DE LA VISTA EL ID DE LA CAT A EDITAR
-        public IActionResult Editar(int? Id)
-        {
-
-            if (Id == null || Id == 0)
-            {
-                return NotFound();
-
-            }
-            var objDep = _puestoRepo.Obtener(Id.GetValueOrDefault());
-
-            if (objDep == null)
+            // Editar una institución existente
+            model = _puestoRepo.Obtener(id.GetValueOrDefault());
+            if (model == null)
             {
                 return NotFound();
             }
-            return View(objDep);
+            return View(model);
         }
+    }
 
-
-
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Editar(Puesto puesto)
+    // Acción POST para guardar los cambios
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public IActionResult Upsert(Puesto model)
+    {
+        if (ModelState.IsValid)
         {
-
-            if (ModelState.IsValid)
+            if (model.Id == 0)
             {
-                _puestoRepo.Actualizar(puesto);
-                _puestoRepo.Grabar();
-                return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
+                // Crear una nueva institución
+                _puestoRepo.Agregar(model);
             }
-            return View(puesto);
-        }
-
-
-
-        //GET ELIMINAR
-        public IActionResult Eliminar(int? Id)
-        {
-
-            if (Id == null || Id == 0)
+            else
             {
-                return NotFound();
-
+                // Actualizar una institución existente
+                _puestoRepo.Actualizar(model);
             }
-            var objDep = _puestoRepo.Obtener(Id.GetValueOrDefault());
 
-            if (objDep == null)
-            {
-                return NotFound();
-            }
-            return View(objDep);
-        }
-
-        //POST ELIMINAR
-
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Eliminar(Puesto puesto)
-        {
-
-            if (puesto == null)
-            {
-                return NotFound();
-            }
-            _puestoRepo.Remover(puesto);
             _puestoRepo.Grabar();
-            return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
-
+            TempData["Exitosa"] = "Puesto guardada exitosamente.";
+            return RedirectToAction(nameof(Index));
         }
 
+        return View(model);
+    }
 
+    // Acción GET para restaurar una institución eliminada
+    public IActionResult Restaurar(int? id)
+    {
+        if (id == null || id == 0)
+        {
+            return NotFound();
+        }
 
+        var puesto = _puestoRepo.Obtener(id.GetValueOrDefault());
+        if (puesto == null)
+        {
+            return NotFound();
+        }
+
+        // Restaurar la institución cambiando su estado de eliminada a falso
+        puesto.Eliminada = false;
+        _puestoRepo.Actualizar(puesto);
+        _puestoRepo.Grabar();
+
+        TempData["Exitosa"] = "Puesto restaurada exitosamente";
+        return RedirectToAction(nameof(Papelera));
+    }
+
+    // Acción GET para eliminar permanentemente una institución
+    public IActionResult EliminarPermanente(int? id)
+    {
+        if (id == null || id == 0)
+        {
+            return NotFound();
+        }
+
+        var puesto = _puestoRepo.Obtener(id.GetValueOrDefault());
+        if (puesto == null)
+        {
+            return NotFound();
+        }
+
+        // Eliminar permanentemente la institución de la base de datos
+        _puestoRepo.Remover(puesto);
+        _puestoRepo.Grabar();
+
+        TempData["Exitosa"] = "Puesto eliminada permanentemente";
+        return RedirectToAction(nameof(Papelera));
+    }
+
+    // GET: Eliminar (Mover a papelera)
+    public IActionResult Eliminar(int? id)
+    {
+        if (id == null || id == 0)
+        {
+            return NotFound();
+        }
+
+        var obj = _puestoRepo.Obtener(id.GetValueOrDefault());
+        if (obj == null)
+        {
+            return NotFound();
+        }
+
+        // Cambiar el estado de Eliminada a true (mover a la papelera)
+        obj.Eliminada = true;
+        _puestoRepo.Actualizar(obj);
+        _puestoRepo.Grabar();
+
+        TempData["Exitosa"] = "Puesto movida a la papelera";
+        return RedirectToAction(nameof(Index));
     }
 }

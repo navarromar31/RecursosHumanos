@@ -1,0 +1,42 @@
+﻿@model RecursosHumanos_Models.Institucion
+
+@{
+    ViewData["Title"] = "Crear Nueva Institución";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="~/css/instituciones.css" rel="stylesheet" />
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="container">
+    <div class="row">
+        <!-- Formulario de creación de institución -->
+        <div class="col-md-8">
+            <form asp-action="Crear" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="NombreInstitucion">Nombre de la Institución</label>
+                    <input type="text" class="form-control" id="NombreInstitucion" name="NombreInstitucion" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="DescripcionInstitucion">Descripción</label>
+                    <textarea class="form-control" id="DescripcionInstitucion" name="DescripcionInstitucion" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="ImagenInstitucion">Imagen de la Institución</label>
+                    <input type="file" class="form-control" id="ImagenInstitucion" name="imagenInstitucion" />
+                </div>
+
+                <button type="submit" class="btn" style="background-color: #ff6600; color: white;">Crear</button>
+                <a href="@Url.Action("Index", "Institucion")" class="btn btn-secondary">Cancelar</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/instituciones.js"></script>
+

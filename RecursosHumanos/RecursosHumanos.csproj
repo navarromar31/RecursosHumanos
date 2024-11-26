@@ -26,8 +26,4 @@
     <ProjectReference Include="..\RecursosHumanos_Utilidades\RecursosHumanos_Utilidades.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Puesto\" />
-  </ItemGroup>
-
 </Project>

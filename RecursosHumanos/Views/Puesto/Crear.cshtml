@@ -1,0 +1,37 @@
+﻿@model RecursosHumanos_Models.Puesto
+
+@{
+    ViewData["Title"] = "Crear Nuevo Puesto";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="~/css/puestos.css" rel="stylesheet" />
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="container">
+    <div class="row">
+        <!-- Formulario de creación de puesto -->
+        <div class="col-md-8">
+            <form asp-action="Crear" method="post">
+                <div class="form-group">
+                    <label for="NombrePuesto">Nombre del Puesto</label>
+                    <input type="text" class="form-control" id="NombrePuesto" name="NombrePuesto" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="DescripcionPuesto">Descripción</label>
+                    <textarea class="form-control" id="DescripcionPuesto" name="DescripcionPuesto" required></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="background-color: #ff6600; color: white;">Crear</button>
+                <a href="@Url.Action("Index", "Puesto")" style=" background-color: #ff6900"  class="btn btn-secondary">Cancelar</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/puestos.js"></script>

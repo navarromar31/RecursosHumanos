@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\RecursosHumanos.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\Crud.css",
+      "PackagePath": "staticwebassets\\css\\Crud.css"
+    },
+    {
       "Id": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\EvaPrincipal.css",
       "PackagePath": "staticwebassets\\css\\EvaPrincipal.css"
     },
@@ -13,12 +17,36 @@
       "PackagePath": "staticwebassets\\css\\EvaluacionHoja.css"
     },
     {
+      "Id": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\departamentos.css",
+      "PackagePath": "staticwebassets\\css\\departamentos.css"
+    },
+    {
+      "Id": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\instituciones.css",
+      "PackagePath": "staticwebassets\\css\\instituciones.css"
+    },
+    {
+      "Id": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\puestos.css",
+      "PackagePath": "staticwebassets\\css\\puestos.css"
+    },
+    {
       "Id": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\departamentos.js",
+      "PackagePath": "staticwebassets\\js\\departamentos.js"
+    },
+    {
+      "Id": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\instituciones.js",
+      "PackagePath": "staticwebassets\\js\\instituciones.js"
+    },
+    {
+      "Id": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\puestos.js",
+      "PackagePath": "staticwebassets\\js\\puestos.js"
     },
     {
       "Id": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\site.js",

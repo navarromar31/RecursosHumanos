@@ -1,0 +1,93 @@
+﻿
+
+@{
+    ViewData["Title"] = "Instituciones";
+    Layout = null;
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="~/css/instituciones.css" rel="stylesheet" />
+
+<body>
+    <!-- Encabezado hero con título y llamada a la acción -->
+    <header id="heroInstitucion" class="hero">
+        <div class="hero-contentInstitucion">
+            <h1>Instituciones Asociadas a HHC</h1>
+            <p>Juntos construimos un futuro brillante para Costa Rica</p>
+            <a href="#" id="btn-cta-Institucion" class="btn btn-cta">¡Conócenos!</a>
+        </div>
+    </header>
+
+    <!-- Sección para mostrar las instituciones -->
+    <section id="instituciones" class="container my-5">
+        <h2 class="text-center mb-4">@ViewData["Title"]</h2>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            @foreach (var institucion in Model.Institucion)
+            {
+                <div class="col">
+                    <a href="@Url.Action("Upsert", new { id = institucion.Id })" class="text-decoration-none">
+                        <div class="glass-card shadow-lg border-0 position-relative" style="height: 300px;">
+                            <!-- Imagen de la institución con difuminado -->
+                            <div class="image-container" style="height: 100%;">
+                                <img src="@institucion.ImagenUrlInstitucion" class="card-img-top image-blur" alt="Imagen de @institucion.NombreInstitucion" style="object-fit: cover; height: 100%; width: 100%;" />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+
+            <!-- Tarjeta para agregar nueva institución (con el mismo formato de las demás tarjetas) -->
+            <div class="col">
+                <div class="glass-card shadow-lg border-0 position-relative" style="height: 300px; display: flex; justify-content: center; align-items: center;">
+                    <button class="btn" id="botonagregarinsti" data-bs-toggle="modal" data-bs-target="#crearInstitucionModal" style="font-size: 1.7rem; padding: 10px 20px; background-color: transparent; border: 2px solid #555; color: white; font-weight: bold;">
+                        <i class="bi bi-building-fill-add" style="font-size: 1.8rem; color: white;"></i> Añadir Institución
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para agregar una nueva institución -->
+    <div class="modal fade" id="crearInstitucionModal" tabindex="-1" aria-labelledby="crearInstitucionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="crearInstitucionModalLabel">Agregar Nueva Institución</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Formulario de creación de institución -->
+                    <form id="crearInstitucionForm" method="post" enctype="multipart/form-data" asp-action="Upsert">
+                        <div class="mb-3">
+                            <label for="NombreInstitucion" class="form-label">Nombre de la institución</label>
+                            <input type="text" class="form-control" id="NombreInstitucion" name="NombreInstitucion" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="DescripcionInstitucion" class="form-label">Descripción</label>
+                            <textarea class="form-control" id="DescripcionInstitucion" name="DescripcionInstitucion" rows="4" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="ImagenInstitucion" class="form-label">Imagen de la institución</label>
+                            <input type="file" class="form-control" id="ImagenInstitucion" name="imagenInstitucion" required />
+                        </div>
+                        <button type="submit" id="botonagregarinsti" class="btn" style="background-color: #ff6600; color: white;">
+                            Agregar Institución
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón flotante para ver la papelera -->
+    <a href="@Url.Action("Papelera")" class="btn btn-warning rounded-circle btn-lg position-fixed bottom-0 end-0 m-4 d-flex justify-content-center align-items-center" style="background-color: #ff6600; width: 60px; height: 60px;">
+        <i class="bi bi-trash" style="color: white; font-size: 1.5rem;"></i>
+    </a>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/instituciones.js"></script>
+</body>
