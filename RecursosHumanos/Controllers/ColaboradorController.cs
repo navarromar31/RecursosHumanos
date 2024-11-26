@@ -2,6 +2,7 @@
 using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
 using RecursosHumanos_Models.ViewModels;
 using RecursosHumanos_Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 public class ColaboradorController : Controller
 {
@@ -33,12 +34,14 @@ public class ColaboradorController : Controller
 
     public IActionResult Crear()
     {
+        // Inicializamos el ViewModel con las listas de datos
         ColaboradorVM colaboradorVM = new ColaboradorVM()
         {
             Colaborador = new Colaborador(),
-            Departamento = _colaboradorRepo.ObtenerTodosDropDownList(WC_DepartamentoNombre),
-            Institucion = _colaboradorRepo.ObtenerTodosDropDownList(WC_InstitucionNombre),
-            Puesto = _colaboradorRepo.ObtenerTodosDropDownList(WC_PuestoNombre)
+            // Aseguramos que las listas nunca sean null, incluso si no hay datos
+            Departamento = _colaboradorRepo.ObtenerTodosDropDownList(WC_DepartamentoNombre) ?? new List<SelectListItem>(),
+            Institucion = _colaboradorRepo.ObtenerTodosDropDownList(WC_InstitucionNombre) ?? new List<SelectListItem>(),
+            Puesto = _colaboradorRepo.ObtenerTodosDropDownList(WC_PuestoNombre) ?? new List<SelectListItem>()
         };
 
         return View(colaboradorVM);
@@ -105,4 +108,30 @@ public class ColaboradorController : Controller
 
         return View(colaboradorVM);
     }
+
+    private string GuardarImagen(IFormFile imagenColaborador)
+    {
+        string rutaPrincipal = _webHostEnvironment.WebRootPath;
+        string subCarpeta = @"imagenes\colaboradores";
+        string nombreArchivo = Guid.NewGuid().ToString() + Path.GetExtension(imagenColaborador.FileName);
+        string rutaCompleta = Path.Combine(rutaPrincipal, subCarpeta);
+
+        if (!Directory.Exists(rutaCompleta))
+        {
+            Directory.CreateDirectory(rutaCompleta);
+        }
+
+        string rutaArchivo = Path.Combine(rutaCompleta, nombreArchivo);
+
+        using (var fileStream = new FileStream(rutaArchivo, FileMode.Create))
+        {
+            imagenColaborador.CopyTo(fileStream);
+        }
+
+        // Devolver la ruta relativa para almacenarla en la base de datos
+        return Path.Combine(subCarpeta, nombreArchivo).Replace("\\", "/");
+    }
+
+
+
 }
