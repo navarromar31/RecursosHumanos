@@ -1,6 +1,8 @@
-﻿using RecursosHumanos_AccesoDatos.Datos.Repositorio;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using RecursosHumanos_AccesoDatos.Datos.Repositorio;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio; // Importamos la interfaz del repositorio.
 using RecursosHumanos_Models; // Importamos los modelos.
+using RecursosHumanos_Utilidades;
 using System; // Importamos System para las clases básicas del .NET Framework.
 using System.Collections.Generic; // Importamos colecciones genéricas.
 using System.Linq; // Importamos LINQ para consultas.
@@ -26,6 +28,24 @@ namespace RecursosHumanos_AccesoDatos.Datos.Repositorio
         public IEnumerable<Puesto> ObtenerPuestosEliminados()
         {
             return dbSet.Where(i => i.Eliminada).ToList();
+        }
+        public IEnumerable<SelectListItem> ObtenerTodosDropDownList(string obj)
+        {
+            //  throw new NotImplementedException();
+
+            if (obj == WC.PuestoNombre)
+            {
+                return _db.puesto.Select(c => new SelectListItem
+                {
+                    Text = c.NombrePuesto,
+                    Value = c.Id.ToString()
+
+                });
+
+            }
+
+            return null;
+
         }
     }
 }

@@ -12,7 +12,7 @@ using RecursosHumanos_AccesoDatos.Datos;
 namespace RecursosHumanos_AccesoDatos.Migrations
 {
     [DbContext(typeof(AplicationDbContext))]
-    [Migration("20241126190257_TablasFinales")]
+    [Migration("20241127065752_TablasFinales")]
     partial class TablasFinales
     {
         /// <inheritdoc />

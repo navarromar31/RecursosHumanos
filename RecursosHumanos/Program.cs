@@ -14,7 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<AplicationDbContext>(options =>
                                                 options.UseSqlServer(
-                                                builder.Configuration.GetConnectionString("SaraConnection")));
+                                                builder.Configuration.GetConnectionString("DayraConnection")));
 /*
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<AplicationDbContext>();
@@ -25,7 +25,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 //Lo modificamos para agregar al servicio la asignacion de roles de usuario
 builder.Services.AddIdentity<IdentityUser, IdentityRole>().
     AddDefaultTokenProviders().AddDefaultUI().
-    AddEntityFrameworkStores<AplicationDbContext>(); 
+    AddEntityFrameworkStores<AplicationDbContext>();
 // ESTO SE OCUPA CUANDO HAGAMOS EL EMAIL SENDER
 
 
@@ -37,9 +37,9 @@ builder.Services.AddScoped<IColaboradorRepositorio, ColaboradorRepositorio>();
 builder.Services.AddScoped<IEvaluacionRepositorio, EvaluacionRepositorio>();
 builder.Services.AddScoped<IInstitucionRepositorio, InstitucionRepositorio>();
 builder.Services.AddScoped<IDepartamentoRepositorio, DepartamentoRepositorio>();
-builder.Services.AddScoped<IPreguntaRepositorio,PreguntaRepositorio>();
+builder.Services.AddScoped<IPreguntaRepositorio, PreguntaRepositorio>();
 builder.Services.AddScoped<IPuestoRepositorio, PuestoRepositorio>();
-builder.Services.AddScoped<IRespuestaRepositorio,RespuestaRepositorio>();
+builder.Services.AddScoped<IRespuestaRepositorio, RespuestaRepositorio>();
 
 
 // A?ade el servicio HttpContextAccessor al contenedor de servicios
