@@ -2,6 +2,7 @@
 @model RegisterModel
 @{
     ViewData["Title"] = "Register";
+    Layout = null;
 }
 @if (User.IsInRole(RecursosHumanos_Utilidades.WC.AdminRole))
 {
@@ -9,9 +10,9 @@
 }
 else
 {
-    <h1>Registrar </h1>
+    <h1> </h1>
 }
-<h1>@ViewData["Title"]</h1>
+<h1></h1>
 
 <!DOCTYPE html>
 <html lang="en">
