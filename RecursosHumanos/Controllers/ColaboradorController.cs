@@ -141,51 +141,81 @@ namespace RecursosHumanos.Controllers
 
         public IActionResult Editar(int? Id)
         {
-
-
             if (Id == null || Id == 0)
             {
-
                 return NotFound();
             }
 
-            Colaborador colaborador = _colaboradorRepo.ObtenerPrimero(p => p.Id == Id);    //aca traemos los datos del producto de
-                                                                                           //acuerdo con el ID que recibimos de la vista
-
-
+            // Obtén el colaborador
+            var colaborador = _colaboradorRepo.ObtenerPrimero(p => p.Id == Id);
             if (colaborador == null)
             {
-                //en caso de que no exista 
                 return NotFound();
             }
 
-            return View(colaborador); //le retornamos a la vista aliminar los datos del producto a eliminar 
+            // Crea el ViewModel
+            var colaboradorVM = new ColaboradorVM
+            {
+                Colaborador = colaborador,
+                DepartamentoLista = _departamentoRepo.ObtenerTodos().Select(d => new SelectListItem
+                {
+                    Value = d.Id.ToString(),
+                    Text = d.NombreDepartamento
+                }).ToList(),
+                InstitucionLista = _institucionRepo.ObtenerTodos().Select(i => new SelectListItem
+                {
+                    Value = i.Id.ToString(),
+                    Text = i.NombreInstitucion
+                }).ToList(),
+                PuestoLista = _puestoRepo.ObtenerTodos().Select(p => new SelectListItem
+                {
+                    Value = p.Id.ToString(),
+                    Text = p.NombrePuesto
+                }).ToList()
+            };
 
-
+            return View(colaboradorVM); // Devuelve el ViewModel a la vista
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Editar(Colaborador colaborador)
+        public IActionResult Editar(ColaboradorVM colaboradorVM)
         {
-
             if (ModelState.IsValid)
             {
-
-                _colaboradorRepo.Actualizar(colaborador);
+                // Actualiza el colaborador
+                _colaboradorRepo.Actualizar(colaboradorVM.Colaborador);
                 _colaboradorRepo.Grabar();
 
+                // Mensaje de confirmación
+                TempData["Success"] = "El colaborador ha sido actualizado correctamente.";
 
-                return RedirectToAction(nameof(Index));
+                // Redirigir al índice tras guardar los cambios
             }
 
+            // Si hay errores, recarga las listas
+            colaboradorVM.DepartamentoLista = _departamentoRepo.ObtenerTodos().Select(d => new SelectListItem
+            {
+                Value = d.Id.ToString(),
+                Text = d.NombreDepartamento
+            }).ToList();
+            colaboradorVM.InstitucionLista = _institucionRepo.ObtenerTodos().Select(i => new SelectListItem
+            {
+                Value = i.Id.ToString(),
+                Text = i.NombreInstitucion
+            }).ToList();
+            colaboradorVM.PuestoLista = _puestoRepo.ObtenerTodos().Select(p => new SelectListItem
+            {
+                Value = p.Id.ToString(),
+                Text = p.NombrePuesto
+            }).ToList();
 
-            return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
+            return RedirectToAction(nameof(Index));
         }
 
-        
+
+
 
     }
-
-
 
 }
