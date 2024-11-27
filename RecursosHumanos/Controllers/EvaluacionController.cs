@@ -207,7 +207,7 @@ namespace RecursosHumanos.Controllers
             }
 
             foreach (Pregunta pregunta in evaluacion.Preguntas)
-            {
+            {s
                 if (pregunta.Id == id)
                 {
 
