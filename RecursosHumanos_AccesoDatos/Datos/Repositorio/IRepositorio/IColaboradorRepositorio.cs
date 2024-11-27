@@ -14,5 +14,8 @@ namespace RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio
 
         IEnumerable<SelectListItem> ObtenerTodosDropDownList(string obj);
 
+        Colaborador ObtenerPorCorreoYCedula(string correo, string cedula);
+        Task<Colaborador> ObtenerPorCorreoYCedulaAsync(string correo, string cedula);
+
     }
 }

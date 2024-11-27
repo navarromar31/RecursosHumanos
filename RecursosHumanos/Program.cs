@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using RecursosHumanos_AccesoDatos.Datos.Repositorio;
+using RecursosHumanos.Areas.Identity.Pages.Account;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,7 +15,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<AplicationDbContext>(options =>
                                                 options.UseSqlServer(
-                                                builder.Configuration.GetConnectionString("DayraConnection")));
+                                                builder.Configuration.GetConnectionString("MarianaConnection")));
 /*
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<AplicationDbContext>();
@@ -40,6 +41,7 @@ builder.Services.AddScoped<IDepartamentoRepositorio, DepartamentoRepositorio>();
 builder.Services.AddScoped<IPreguntaRepositorio,PreguntaRepositorio>();
 builder.Services.AddScoped<IPuestoRepositorio, PuestoRepositorio>();
 builder.Services.AddScoped<IRespuestaRepositorio,RespuestaRepositorio>();
+builder.Services.AddScoped<ILoginRepositorio, LoginRepositorio>(); // Registrar el servicio de validación
 
 
 // A?ade el servicio HttpContextAccessor al contenedor de servicios
@@ -82,6 +84,10 @@ app.UseAuthorization();
 app.UseSession();//este el pipeline para utlizar el servicio de sesiones 
 
 app.MapRazorPages();
+
+////////////////////////////////////////////////////
+
+
 
 
 app.MapControllerRoute(
