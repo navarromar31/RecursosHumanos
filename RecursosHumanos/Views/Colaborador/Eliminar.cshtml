@@ -29,7 +29,7 @@
 
             <div id="Evaluacion-container" class="container mt-5">
 
-                <h2>Editar Colaborador  </h2>
+                <h2> Editar evaluación</h2>
 
                 <div id="linea-Formulario"></div>
 
@@ -39,7 +39,7 @@
                         <div class="card mb-4">
 
                             <div class="card-body">
-
+                                Nombre
                                 <input asp-for="NombreColaborador" id="input-Evaluacion" class="form-control" placeholder="Introduce el nombre del colaborador" type="text" />
 
                             </div>
@@ -48,39 +48,49 @@
 
                     </div>
                     <div class="col-md-6 mb-4">
+                        <div class="card mb-4">
+
+                            <div class="card-body">
+                                Apellido Uno
+                                <input asp-for="Apellido1" id="input-Evaluacion" class="form-control" placeholder="Introduce el primer apellido del colaborador" type="text" />
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row mb-4 mt-5">
+                    <div class="col-md-6 mb-4">
 
                         <div class="card mb-4">
 
                             <div class="card-body">
-
-                                <input asp-for="CorreoColaborador" id="input-Evaluacion" class="form-control mb-2" placeholder="Introduce el correo del colaborador" type="text" />
-
+                                Apellido Dos
+                                <input asp-for="Apellido2" id="input-Evaluacion" class="form-control" placeholder="Introduce el segundo apellido del colaborador" type="text" />
                             </div>
 
                         </div>
 
                     </div>
                     <div class="col-md-6 mb-4">
-
                         <div class="card mb-4">
 
                             <div class="card-body">
-
-                                <input asp-for="CedulaColaborador" id="input-Evaluacion" class="form-control mb-2" placeholder="Introduce la cédula del colaborador" type="text" />
+                                Cédula
+                                <input asp-for="CedulaColaborador" readonly id="input-Evaluacion" class="form-control mb-2" placeholder="Introduce la cédula del colaborador" type="text" />>
 
                             </div>
+                            <div class="card-body">
+                                Correo
+                                <input asp-for="CorreoColaborador" id="input-Evaluacion" class="form-control mb-2" placeholder="Introduce el correo del colaborador" type="text" />
 
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <label asp-for="IdDepartamento" class="form-label">Capacacitacion a la que pertenece esta pregunta</label>
-                            <select asp-for="IdDepartamento" asp-items="@Model.IdDepartamento" class="form-select">
-                                <option disabled selected>--Seleccione Capacacitacion </option>
-                            </select>
 
-
-                        </div>
                     </div>
                 </div>
+
 
                 <div class="d-flex justify-content-end">
 

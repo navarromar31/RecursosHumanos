@@ -24,11 +24,17 @@ namespace RecursosHumanos.Controllers
         private readonly ILogger<EvaluacionController> _logger;
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly IColaboradorRepositorio  _colaboradorRepo;
+        private readonly IDepartamentoRepositorio _departamentoRepo;
+        private readonly IInstitucionRepositorio _institucionRepo;
+        private readonly IPuestoRepositorio _puestoRepo;
         public static Colaborador colaborador;
-        public ColaboradorController(ILogger<EvaluacionController> logger, IColaboradorRepositorio colaboradorRepo, IWebHostEnvironment webHostEnvironment)//recibe nuestro contexto de BD
+        public ColaboradorController(ILogger<EvaluacionController> logger, IColaboradorRepositorio colaboradorRepo, IWebHostEnvironment webHostEnvironment, IDepartamentoRepositorio departamentoRepo, IInstitucionRepositorio institucionRepo, IPuestoRepositorio puestoRepos )//recibe nuestro contexto de BD
         {
             // _db = db;
             _colaboradorRepo = colaboradorRepo;
+            _departamentoRepo= departamentoRepo;
+            _institucionRepo= institucionRepo;
+            _puestoRepo= puestoRepos;
             _webHostEnvironment = webHostEnvironment;
             _logger = logger;
         }
@@ -37,9 +43,12 @@ namespace RecursosHumanos.Controllers
         {
             ColaboradorVM colaboradorVM = new ColaboradorVM()
             {
-                ColaboradorLista= _colaboradorRepo.ObtenerTodos(incluirPropiedades: "Departamentos,Instituciones,Puestos")
-
+                ColaboradorLista = _colaboradorRepo.ObtenerTodos(incluirPropiedades: "Departamento,Institucion,Puesto"),
+                DepartamentoLista = _departamentoRepo.ObtenerTodosDropDownList(WC.DepartamentoNombre),
+                InstitucionLista = _institucionRepo.ObtenerTodosDropDownList(WC.InstitucionNombre),
+                PuestoLista = _puestoRepo.ObtenerTodosDropDownList(WC.PuestoNombre)
             };
+            
             if (colaborador == null)
             {
                 colaborador = new Colaborador();
@@ -55,7 +64,11 @@ namespace RecursosHumanos.Controllers
         {
             ColaboradorVM colaboradorVM = new ColaboradorVM()
             {
-                Colaborador=colaborador
+                Colaborador=colaborador,
+                ColaboradorLista = _colaboradorRepo.ObtenerTodos(incluirPropiedades: "Departamento,Institucion,Puesto"),
+                DepartamentoLista = _departamentoRepo.ObtenerTodosDropDownList(WC.DepartamentoNombre),
+                InstitucionLista = _institucionRepo.ObtenerTodosDropDownList(WC.InstitucionNombre),
+                PuestoLista = _puestoRepo.ObtenerTodosDropDownList(WC.PuestoNombre)
 
             };
 
@@ -115,17 +128,7 @@ namespace RecursosHumanos.Controllers
 
             }
 
-            //ahora lo primero es proceder a eliminar la imagen de nuestro server 
-
-
-            string upload = _webHostEnvironment.WebRootPath + WC.ImagenRuta;//LA PRoPIEDAD DE WC ES LA QUE TIENE LA RUTA DE DONDE esta  GUARDAda LA IMAGEN
-
-
-            var anteriorFile = Path.Combine(upload, colaborador.ImagenUrlCol);
-            if (System.IO.File.Exists(anteriorFile))//VERIFICAMOS SI LA IMG ANTERIOR EXISTE
-            {
-                System.IO.File.Delete(anteriorFile);    // SI EXISTE LA BORRAMOS
-            }
+        
 
             _colaboradorRepo.Remover(colaborador);  //Ahora eliminamos el producto
             _colaboradorRepo.Grabar();
@@ -176,10 +179,10 @@ namespace RecursosHumanos.Controllers
             }
 
 
-            return View(colaborador);
+            return RedirectToAction(nameof(Index)); //esto es para que ne redirigir al index
         }
 
-
+        
 
     }
 
