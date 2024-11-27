@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\josel\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\josel\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\views\\evaluacion\\_evaluacioncard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:views\\evaluacion\\_evaluacioncard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\josel\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\controllers\\evaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:controllers\\evaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\josel\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\josel\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\views\\evaluacion\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -143,10 +147,6 @@
       "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\josel\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\views\\evaluacion\\_evaluacioncard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:views\\evaluacion\\_evaluacioncard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|c:\\users\\josel\\onedrive\\documentos\\github\\recursoshumanos\\recursoshumanos\\views\\evaluacion\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{39F70D82-E10B-40DC-A83B-A04CE49021B2}|RecursosHumanos.csproj|solutionrelative:views\\evaluacion\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -259,36 +259,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EvaluacionController.cs",
-              "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\EvaluacionController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EvaluacionController.cs",
-              "ToolTip": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\EvaluacionController.cs",
-              "RelativeToolTip": "Controllers\\EvaluacionController.cs",
-              "ViewState": "AgIAAMoAAAAAAAAAAAAAANkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T10:35:28.086Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Departamento\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Departamento\\Index.cshtml",
-              "ToolTip": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Departamento\\Index.cshtml",
-              "RelativeToolTip": "Views\\Departamento\\Index.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-27T05:41:05.41Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Eliminar.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Departamento\\Eliminar.cshtml",
               "RelativeDocumentMoniker": "Views\\Departamento\\Eliminar.cshtml",
@@ -300,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Editar.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Departamento\\Editar.cshtml",
               "RelativeDocumentMoniker": "Views\\Departamento\\Editar.cshtml",
@@ -312,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Crear.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Departamento\\Crear.cshtml",
               "RelativeDocumentMoniker": "Views\\Departamento\\Crear.cshtml",
@@ -324,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Upsert.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Puesto\\Upsert.cshtml",
               "RelativeDocumentMoniker": "Views\\Puesto\\Upsert.cshtml",
@@ -336,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "_LayoutRRHH.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Shared\\_LayoutRRHH.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_LayoutRRHH.cshtml",
@@ -348,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -361,7 +336,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
+              "Title": "_EvaluacionCard.cshtml",
+              "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\_EvaluacionCard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Evaluacion\\_EvaluacionCard.cshtml",
+              "ToolTip": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\_EvaluacionCard.cshtml",
+              "RelativeToolTip": "Views\\Evaluacion\\_EvaluacionCard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-27T08:50:35.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EvaluacionController.cs",
+              "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\EvaluacionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EvaluacionController.cs",
+              "ToolTip": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\EvaluacionController.cs",
+              "RelativeToolTip": "Controllers\\EvaluacionController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAuwNkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T10:35:28.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Departamento\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Departamento\\Index.cshtml",
+              "ToolTip": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Departamento\\Index.cshtml",
+              "RelativeToolTip": "Views\\Departamento\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-27T05:41:05.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Eliminar.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Puesto\\Eliminar.cshtml",
               "RelativeDocumentMoniker": "Views\\Puesto\\Eliminar.cshtml",
@@ -373,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "departamentos.js",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\departamentos.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\departamentos.js",
@@ -385,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Crear.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\Crear.cshtml",
               "RelativeDocumentMoniker": "Views\\Evaluacion\\Crear.cshtml",
@@ -397,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Puesto\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Puesto\\Index.cshtml",
@@ -409,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "departamentos.css",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\css\\departamentos.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\departamentos.css",
@@ -421,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Crear.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Puesto\\Crear.cshtml",
               "RelativeDocumentMoniker": "Views\\Puesto\\Crear.cshtml",
@@ -433,7 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Crear.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Institucion\\Crear.cshtml",
               "RelativeDocumentMoniker": "Views\\Institucion\\Crear.cshtml",
@@ -445,7 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "upsert.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Institucion\\upsert.cshtml",
               "RelativeDocumentMoniker": "Views\\Institucion\\upsert.cshtml",
@@ -457,7 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Papelera.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Institucion\\Papelera.cshtml",
               "RelativeDocumentMoniker": "Views\\Institucion\\Papelera.cshtml",
@@ -469,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Institucion\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Institucion\\Index.cshtml",
@@ -481,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Eliminar.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Institucion\\Eliminar.cshtml",
               "RelativeDocumentMoniker": "Views\\Institucion\\Eliminar.cshtml",
@@ -493,7 +506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "colaboradores.js",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\colaboradores.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\colaboradores.js",
@@ -505,7 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "index.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Capacitacion\\index.cshtml",
               "RelativeDocumentMoniker": "Views\\Capacitacion\\index.cshtml",
@@ -517,7 +530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Upsert.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Capacitacion\\Upsert.cshtml",
               "RelativeDocumentMoniker": "Views\\Capacitacion\\Upsert.cshtml",
@@ -529,7 +542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "_ColaboradorCard.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Colaborador\\_ColaboradorCard.cshtml",
               "RelativeDocumentMoniker": "Views\\Colaborador\\_ColaboradorCard.cshtml",
@@ -541,7 +554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Crear.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Colaborador\\Crear.cshtml",
               "RelativeDocumentMoniker": "Views\\Colaborador\\Crear.cshtml",
@@ -553,7 +566,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Editar.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Colaborador\\Editar.cshtml",
               "RelativeDocumentMoniker": "Views\\Colaborador\\Editar.cshtml",
@@ -565,7 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Eliminar.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Colaborador\\Eliminar.cshtml",
               "RelativeDocumentMoniker": "Views\\Colaborador\\Eliminar.cshtml",
@@ -577,7 +590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Colaborador\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Colaborador\\Index.cshtml",
@@ -589,7 +602,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "Eliminar.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Capacitacion\\Eliminar.cshtml",
               "RelativeDocumentMoniker": "Views\\Capacitacion\\Eliminar.cshtml",
@@ -601,7 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "_LayoutColaborador.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Shared\\_LayoutColaborador.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_LayoutColaborador.cshtml",
@@ -625,7 +638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "capacitacion.js",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\wwwroot\\js\\capacitacion.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\capacitacion.js",
@@ -637,7 +650,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -649,7 +662,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -661,7 +674,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "Eliminar.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\Eliminar.cshtml",
               "RelativeDocumentMoniker": "Views\\Evaluacion\\Eliminar.cshtml",
@@ -673,7 +686,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "_PreguntaCard.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\_PreguntaCard.cshtml",
               "RelativeDocumentMoniker": "Views\\Evaluacion\\_PreguntaCard.cshtml",
@@ -686,18 +699,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 35,
-              "Title": "_EvaluacionCard.cshtml",
-              "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\_EvaluacionCard.cshtml",
-              "RelativeDocumentMoniker": "Views\\Evaluacion\\_EvaluacionCard.cshtml",
-              "ToolTip": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Views\\Evaluacion\\_EvaluacionCard.cshtml",
-              "RelativeToolTip": "Views\\Evaluacion\\_EvaluacionCard.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-27T08:50:35.91Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Documentos\\GitHub\\RecursosHumanos\\RecursosHumanos\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
