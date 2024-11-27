@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace RecursosHumanos_AccesoDatos.Migrations
 {
     /// <inheritdoc />
-    public partial class TablasFinales : Migration
+    public partial class tablasssscola : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -323,30 +323,30 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                     ImagenUrlCol = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     EstadoColaborador = table.Column<bool>(type: "bit", nullable: true),
                     IdPuesto = table.Column<int>(type: "int", nullable: false),
-                    PuestoId = table.Column<int>(type: "int", nullable: true),
                     IdInstitucion = table.Column<int>(type: "int", nullable: false),
-                    InstitucionId = table.Column<int>(type: "int", nullable: true),
-                    IdDepartamento = table.Column<int>(type: "int", nullable: false),
-                    DepartamentoId = table.Column<int>(type: "int", nullable: true)
+                    IdDepartamento = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_colaborador", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_colaborador_departamentos_DepartamentoId",
-                        column: x => x.DepartamentoId,
+                        name: "FK_colaborador_departamentos_IdDepartamento",
+                        column: x => x.IdDepartamento,
                         principalTable: "departamentos",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_colaborador_instituciones_InstitucionId",
-                        column: x => x.InstitucionId,
+                        name: "FK_colaborador_instituciones_IdInstitucion",
+                        column: x => x.IdInstitucion,
                         principalTable: "instituciones",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_colaborador_puesto_PuestoId",
-                        column: x => x.PuestoId,
+                        name: "FK_colaborador_puesto_IdPuesto",
+                        column: x => x.IdPuesto,
                         principalTable: "puesto",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
@@ -389,19 +389,19 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_colaborador_DepartamentoId",
+                name: "IX_colaborador_IdDepartamento",
                 table: "colaborador",
-                column: "DepartamentoId");
+                column: "IdDepartamento");
 
             migrationBuilder.CreateIndex(
-                name: "IX_colaborador_InstitucionId",
+                name: "IX_colaborador_IdInstitucion",
                 table: "colaborador",
-                column: "InstitucionId");
+                column: "IdInstitucion");
 
             migrationBuilder.CreateIndex(
-                name: "IX_colaborador_PuestoId",
+                name: "IX_colaborador_IdPuesto",
                 table: "colaborador",
-                column: "PuestoId");
+                column: "IdPuesto");
 
             migrationBuilder.CreateIndex(
                 name: "IX_evaluacionColaborador_EvaluacionId",

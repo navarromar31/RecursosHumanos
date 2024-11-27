@@ -289,9 +289,6 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("DepartamentoId")
-                        .HasColumnType("int");
-
                     b.Property<bool?>("EstadoColaborador")
                         .HasColumnType("bit");
 
@@ -307,23 +304,17 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                     b.Property<string>("ImagenUrlCol")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("InstitucionId")
-                        .HasColumnType("int");
-
                     b.Property<string>("NombreColaborador")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("PuestoId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("DepartamentoId");
+                    b.HasIndex("IdDepartamento");
 
-                    b.HasIndex("InstitucionId");
+                    b.HasIndex("IdInstitucion");
 
-                    b.HasIndex("PuestoId");
+                    b.HasIndex("IdPuesto");
 
                     b.ToTable("colaborador");
                 });
@@ -591,15 +582,21 @@ namespace RecursosHumanos_AccesoDatos.Migrations
                 {
                     b.HasOne("RecursosHumanos_Models.Departamento", "Departamento")
                         .WithMany()
-                        .HasForeignKey("DepartamentoId");
+                        .HasForeignKey("IdDepartamento")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("RecursosHumanos_Models.Institucion", "Institucion")
                         .WithMany()
-                        .HasForeignKey("InstitucionId");
+                        .HasForeignKey("IdInstitucion")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("RecursosHumanos_Models.Puesto", "Puesto")
                         .WithMany()
-                        .HasForeignKey("PuestoId");
+                        .HasForeignKey("IdPuesto")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Departamento");
 

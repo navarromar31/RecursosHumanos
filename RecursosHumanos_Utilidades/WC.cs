@@ -6,7 +6,7 @@
         public static string ImagenRuta = @"\dondesea\dondesea\";
 
         public const string ColaboradorNombre = "Colaborador";
-        public const string DeartamentoNombre = "Departamento";
+        public const string DepartamentoNombre = "Departamento";
         public const string InstitucionNombre = "Institucion";
         public const string PuestoNombre = "Puesto";
         public const string PreguntaNo = "Pregunta";

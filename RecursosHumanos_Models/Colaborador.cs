@@ -26,17 +26,17 @@ namespace RecursosHumanos_Models
 
         [Required(ErrorMessage = "El colaborador debe ser asignado a un puesto obligatoriamente")]
         public int IdPuesto { get; set; }
-        [ForeignKey("PuestoId")]
+        [ForeignKey("IdPuesto")]
         public virtual Puesto? Puesto { get; set; }
 
         [Required(ErrorMessage = "El colaborador debe ser asignado a una institución obligatoriamente")]
         public int IdInstitucion { get; set; }
-        [ForeignKey("InstitucionId")]
+        [ForeignKey("IdInstitucion")]
         public virtual Institucion? Institucion { get; set; }
 
         [Required(ErrorMessage = "El colaborador debe estar asignado a un departamento obligatoriamente")]
         public int IdDepartamento { get; set; }
-        [ForeignKey("DepartamentoId")]
+        [ForeignKey("IdDepartamento")]
         public virtual Departamento? Departamento { get; set; }
 
     }

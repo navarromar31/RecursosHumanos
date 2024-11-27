@@ -1,135 +1,209 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
-using RecursosHumanos_Models.ViewModels;
 using RecursosHumanos_Models;
+using RecursosHumanos_AccesoDatos.Datos.Repositorio.IRepositorio;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Hosting;
+using System.IO;
+using System;
+using System.Linq;
+using RecursosHumanos_Models.ViewModels;
+using RecursosHumanos_Utilidades;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-public class ColaboradorController : Controller
+
+namespace RecursosHumanos.Controllers
 {
-    private readonly IWebHostEnvironment _webHostEnvironment;
-    private readonly IColaboradorRepositorio _colaboradorRepo;
-    private readonly string WC_ImagenRuta = "imagenes/colaboradores";
-    private readonly string WC_DepartamentoNombre = "Departamento";
-    private readonly string WC_InstitucionNombre = "Institucion";
-    private readonly string WC_PuestoNombre = "Puesto";
-
-    public ColaboradorController(IColaboradorRepositorio colaboradorRepo, IWebHostEnvironment webHostEnvironment)
+    public class ColaboradorController : Controller
     {
-        _colaboradorRepo = colaboradorRepo;
-        _webHostEnvironment = webHostEnvironment;
-    }
 
-    // Acción para mostrar la lista de colaboradores
-    public IActionResult Index()
-    {
-        var listaColaboradores = _colaboradorRepo.ObtenerTodos(incluirPropiedades: "Departamento,Institucion,Puesto");
+        // vamos a invocar  a nuestro dbcontext 
 
-        ColaboradorVM colaboradorVM = new ColaboradorVM()
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly IColaboradorRepositorio  _colaboradorRepo;
+        public ColaboradorController(IColaboradorRepositorio colaboradorRepo, IWebHostEnvironment webHostEnvironment)//recibe nuestro contexto de BD
         {
-            Colaboradores = listaColaboradores
-        };
+            // _db = db;
+            _colaboradorRepo = colaboradorRepo;
+            _webHostEnvironment = webHostEnvironment;
 
-        return View(colaboradorVM);
-    }
+        }
 
-    public IActionResult Crear()
-    {
-        // Inicializamos el ViewModel con las listas de datos
-        ColaboradorVM colaboradorVM = new ColaboradorVM()
+        public IActionResult Index()
         {
-            Colaborador = new Colaborador(),
-            // Aseguramos que las listas nunca sean null, incluso si no hay datos
-            Departamento = _colaboradorRepo.ObtenerTodosDropDownList(WC_DepartamentoNombre) ?? new List<SelectListItem>(),
-            Institucion = _colaboradorRepo.ObtenerTodosDropDownList(WC_InstitucionNombre) ?? new List<SelectListItem>(),
-            Puesto = _colaboradorRepo.ObtenerTodosDropDownList(WC_PuestoNombre) ?? new List<SelectListItem>()
-        };
+            var lista = _colaboradorRepo.ObtenerTodos();
+            return View(lista);
+        }
 
-        return View(colaboradorVM);
-    }
+        public IActionResult Upsert(int? id)
+        {
+            // Inicializar ViewModel con las listas necesarias
+            ColaboradorVM colaboradorVM = new ColaboradorVM
+            {
+                Colaborador = new Colaborador(),
+                InstitucionLista = _colaboradorRepo.ObtenerTodos()
+                    .Select(i => new SelectListItem
+                    {
+                        Text = i.NombreColaborador,
+                        Value = i.Id.ToString()
+                    }),
+                DepartamentoLista = _colaboradorRepo.ObtenerTodos()
+                    .Select(d => new SelectListItem
+                    {
+                        Text = d.NombreColaborador,
+                        Value = d.Id.ToString()
+                    }),
+                PuestoLista = _colaboradorRepo.ObtenerTodos()
+                    .Select(p => new SelectListItem
+                    {
+                        Text = p.NombreColaborador,
+                        Value = p.Id.ToString()
+                    })
+            };
 
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public IActionResult Crear(ColaboradorVM colaboradorVM)
-    {
-        try
+            // Si es edición, cargar la capacitación desde la base de datos
+            if (id != null && id != 0)
+            {
+                colaboradorVM.Colaborador = _colaboradorRepo.Obtener(id.GetValueOrDefault());
+                if (colaboradorVM.Colaborador == null)
+                {
+                    return NotFound();
+                }
+            }
+
+            return View(colaboradorVM);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Upsert(ColaboradorVM colaboradorVM, IFormFile imagenColaborador)
         {
             if (ModelState.IsValid)
             {
-                var files = HttpContext.Request.Form.Files;
-                string webRootPath = _webHostEnvironment.WebRootPath;
-
-                if (files != null && files.Count > 0)
+                // Manejo de imagen (igual que antes)
+                if (imagenColaborador != null)
                 {
-                    string upload = Path.Combine(webRootPath, WC_ImagenRuta);
-
-                    // Verificar si la carpeta de destino existe
-                    if (!Directory.Exists(upload))
+                    string folderPath = Path.Combine(_webHostEnvironment.WebRootPath, "imagenes");
+                    if (!Directory.Exists(folderPath))
                     {
-                        Directory.CreateDirectory(upload);
+                        Directory.CreateDirectory(folderPath);
                     }
 
-                    string fileName = Guid.NewGuid().ToString();
-                    string extension = Path.GetExtension(files[0].FileName).ToLower();
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(imagenColaborador.FileName);
+                    string filePath = Path.Combine(folderPath, fileName);
 
-                    // Validar si el archivo es una imagen válida
-                    if (extension != ".jpg" && extension != ".jpeg" && extension != ".png")
+                    using (var stream = new FileStream(filePath, FileMode.Create))
                     {
-                        ModelState.AddModelError("Imagen", "El archivo debe ser una imagen válida (.jpg, .jpeg, .png).");
-                        return View(colaboradorVM);
+                        imagenColaborador.CopyTo(stream);
                     }
 
-                    // Guardar el archivo en el servidor
-                    using (var fileStream = new FileStream(Path.Combine(upload, fileName + extension), FileMode.Create))
-                    {
-                        files[0].CopyTo(fileStream);
-                    }
-
-                    colaboradorVM.Colaborador.ImagenUrlCol = fileName + extension;
+                    colaboradorVM.Colaborador.ImagenUrlCol = "/imagenes/" + fileName;
+                }
+                else if (colaboradorVM.Colaborador.Id != 0) // Conservar la imagen actual al editar
+                {
+                    var colaboradorEnDb = _colaboradorRepo.Obtener(colaboradorVM.Id);
+                    colaboradorVM.ImagenUrlCol = colaboradorEnDb.ImagenUrlCol;
                 }
 
-                // Agregar el colaborador a la base de datos
-                _colaboradorRepo.Agregar(colaboradorVM.Colaborador);
-                _colaboradorRepo.Grabar();
+                // Guardar en la base de datos
+                if (colaboradorVM.Colaborador.Id == 0)
+                {
+                    _colaboradorRepo.Agregar(colaboradorVM.Colaborador);
+                }
+                else
+                {
+                    _colaboradorRepo.Actualizar(colaboradorVM.Colaborador);
+                }
 
+                _colaboradorRepo.Grabar();
+                TempData["Exitosa"] = colaboradorVM.Colaborador.Id == 0 ? "Colaborador creada exitosamente" : "Colaborador actualizada exitosamente";
                 return RedirectToAction(nameof(Index));
             }
+
+            TempData["Error"] = "Error al guardar la colaborador";
+
+            // Volver a cargar las listas para evitar errores al recargar la vista
+            colaboradorVM.InstitucionLista = _colaboradorRepo.ObtenerTodos()
+                .Select(i => new SelectListItem
+                {
+                    Text = i.NombreColaborador,
+                    Value = i.Id.ToString()
+                });
+            colaboradorVM.DepartamentoLista = _colaboradorRepo.ObtenerTodos()
+                .Select(d => new SelectListItem
+                {
+                    Text = d.NombreColaborador,
+                    Value = d.Id.ToString()
+                });
+            colaboradorVM.PuestoLista = _colaboradorRepo.ObtenerTodos()
+                .Select(p => new SelectListItem
+                {
+                    Text = p.NombreColaborador,
+                    Value = p.Id.ToString()
+                });
+
+            return View(colaboradorVM);
         }
-        catch (Exception ex)
+
+
+        // ACA NO SOLAMENTE ELIMINAMOS EL PRODUCTO , SINO TBM LA IMG ASOCIADA A ESTE
+        //GET
+
+
+        public IActionResult Eliminar(int? id)
         {
-            // Manejo de excepciones, loguear el error y agregar mensaje al modelo
-            ModelState.AddModelError("", "Hubo un error al guardar el colaborador. Intente nuevamente.");
-            Console.WriteLine("Error al crear colaborador: " + ex.Message);
+
+            if (id == null || id == 0)
+            {
+
+                return NotFound();
+            }
+
+            Colaborador colaborador = _colaboradorRepo.ObtenerPrimero(p => p.Id == id);    //aca traemos los datos del producto de
+                                                                                  //acuerdo con el ID que recibimos de la vista
+
+
+            if (colaborador == null)
+            {
+                //en caso de que no exista 
+                return NotFound();
+            }
+
+            return View(colaborador); //le retornamos a la vista aliminar los datos del producto a eliminar 
+
         }
 
-        // Si no es válido, regresamos a la vista Crear con el ViewModel y los dropdowns
-        colaboradorVM.Departamento = _colaboradorRepo.ObtenerTodosDropDownList(WC_DepartamentoNombre);
-        colaboradorVM.Institucion = _colaboradorRepo.ObtenerTodosDropDownList(WC_InstitucionNombre);
-        colaboradorVM.Puesto = _colaboradorRepo.ObtenerTodosDropDownList(WC_PuestoNombre);
 
-        return View(colaboradorVM);
-    }
-
-    private string GuardarImagen(IFormFile imagenColaborador)
-    {
-        string rutaPrincipal = _webHostEnvironment.WebRootPath;
-        string subCarpeta = @"imagenes\colaboradores";
-        string nombreArchivo = Guid.NewGuid().ToString() + Path.GetExtension(imagenColaborador.FileName);
-        string rutaCompleta = Path.Combine(rutaPrincipal, subCarpeta);
-
-        if (!Directory.Exists(rutaCompleta))
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Eliminar(Colaborador colaborador)
         {
-            Directory.CreateDirectory(rutaCompleta);
+            if (colaborador == null)
+            {
+                return NotFound();
+
+            }
+
+            //ahora lo primero es proceder a eliminar la imagen de nuestro server 
+
+
+            string upload = _webHostEnvironment.WebRootPath + WC.ImagenRuta;//LA PRoPIEDAD DE WC ES LA QUE TIENE LA RUTA DE DONDE esta  GUARDAda LA IMAGEN
+
+
+            var anteriorFile = Path.Combine(upload, colaborador.ImagenUrlCol);
+            if (System.IO.File.Exists(anteriorFile))//VERIFICAMOS SI LA IMG ANTERIOR EXISTE
+            {
+                System.IO.File.Delete(anteriorFile);    // SI EXISTE LA BORRAMOS
+            }
+
+            _colaboradorRepo.Remover(colaborador);  //Ahora eliminamos el producto
+            _colaboradorRepo.Grabar();
+            return RedirectToAction(nameof(Index));
+
+
         }
 
-        string rutaArchivo = Path.Combine(rutaCompleta, nombreArchivo);
 
-        using (var fileStream = new FileStream(rutaArchivo, FileMode.Create))
-        {
-            imagenColaborador.CopyTo(fileStream);
-        }
 
-        // Devolver la ruta relativa para almacenarla en la base de datos
-        return Path.Combine(subCarpeta, nombreArchivo).Replace("\\", "/");
     }
 
 
