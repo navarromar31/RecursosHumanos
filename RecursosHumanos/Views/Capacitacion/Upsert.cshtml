@@ -3,7 +3,9 @@
 
 @{
     var titulo = Model.Id > 0 ? "Editar Capacitación" : "Crear Nueva Capacitación";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    Layout = "_LayoutRRHH";
 }
 
 <h2>@titulo</h2>
@@ -78,35 +80,4 @@
     </div>
 </form>
 
-@section Scripts {
-    <script>
-        document.getElementById('ImagenCapacitacion').addEventListener('change', function () {
-            const fileName = this.files[0] ? this.files[0].name : 'Ningún archivo seleccionado';
-            document.getElementById('imagenNombre').value = fileName;
-        });
-
-        document.getElementById('MinColabIncrement').onclick = () => {
-            let input = document.getElementById('MinColab');
-            input.value = parseInt(input.value || 0) + 1;
-        };
-
-        document.getElementById('MinColabDecrement').onclick = () => {
-            let input = document.getElementById('MinColab');
-            if (parseInt(input.value || 0) > 0) {
-                input.value = parseInt(input.value || 0) - 1;
-            }
-        };
-
-        document.getElementById('MaxColabIncrement').onclick = () => {
-            let input = document.getElementById('MaxColab');
-            input.value = parseInt(input.value || 0) + 1;
-        };
-
-        document.getElementById('MaxColabDecrement').onclick = () => {
-            let input = document.getElementById('MaxColab');
-            if (parseInt(input.value || 0) > 0) {
-                input.value = parseInt(input.value || 0) - 1;
-            }
-        };
-    </script>
-}
+<script src="~/js/capacitacion.js"></script>

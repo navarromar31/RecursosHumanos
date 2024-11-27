@@ -31,9 +31,11 @@ namespace RecursosHumanos.Controllers
 
         public IActionResult Index()
         {
+            
+
             HomeVM homeVM = new HomeVM()
             {
-                Capacitacion = _capacitacionRepo.ObtenerTodos(incluirPropiedades: "Colaborador"),
+                Capacitacion = _capacitacionRepo.ObtenerTodos(), // Sin incluir propiedades
                 Colaborador = _colaboradorRepo.ObtenerTodos(incluirPropiedades: "Puesto,Institucion,Departamento"),
                 Evaluacion = _evaluacionRepo.ObtenerTodos()
             };

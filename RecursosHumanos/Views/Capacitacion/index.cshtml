@@ -1,7 +1,9 @@
 ﻿@model RecursosHumanos_Models.ViewModels.CapacitacionVM
 @{
-    ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "index";
+}
+@{
+    Layout = "_LayoutRRHH";
 }
 
 <div class="container mt-4">
@@ -100,42 +102,4 @@
     }
 </div>
 
-@section Scripts {
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const searchInput = document.getElementById('searchInput');
-            const searchButton = document.getElementById('searchButton');
-            const noResultsMessage = document.getElementById('noResultsMessage');
-            const cards = document.querySelectorAll('.capacitacion-card');
-
-            // Función para filtrar tarjetas y mostrar mensaje si no hay resultados
-            function filterCards() {
-                const searchTerm = searchInput.value.toLowerCase();
-                let foundResults = false;
-
-                cards.forEach(card => {
-                    const name = card.querySelector('.card-title').textContent.toLowerCase();
-                    const modalidad = card.querySelector('.card-text').textContent.toLowerCase();
-
-                    if (name.includes(searchTerm) || modalidad.includes(searchTerm)) {
-                        card.style.display = 'block';
-                        foundResults = true;
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-
-                // Mostrar el mensaje si no se encontraron resultados
-                if (!foundResults && searchTerm !== "") {
-                    noResultsMessage.style.display = 'block';
-                } else {
-                    noResultsMessage.style.display = 'none';
-                }
-            }
-
-            // Buscar cuando se presiona el botón o se escribe en el campo
-            searchButton.addEventListener('click', filterCards);
-            searchInput.addEventListener('input', filterCards);
-        });
-    </script>
-}
+<script src="~/js/capacitacion.js"></script>
