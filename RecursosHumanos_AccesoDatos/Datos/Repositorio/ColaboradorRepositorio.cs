@@ -28,7 +28,7 @@ namespace RecursosHumanos_AccesoDatos.Datos.Repositorio
         {
             //  throw new NotImplementedException();
 
-            if (obj == WC.DeartamentoNombre)
+            if (obj == WC.DepartamentoNombre)
             {
                 return _db.departamentos.Select(c => new SelectListItem
                 {

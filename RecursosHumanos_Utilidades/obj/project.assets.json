@@ -3178,24 +3178,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Daniel Romero\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Usuario01\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daniel Romero\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\RecursosHumanos_Utilidades.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\RecursosHumanos_Utilidades.csproj",
       "projectName": "RecursosHumanos_Utilidades",
-      "projectPath": "C:\\Users\\Daniel Romero\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\RecursosHumanos_Utilidades.csproj",
-      "packagesPath": "C:\\Users\\Daniel Romero\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daniel Romero\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\obj\\",
+      "projectPath": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\RecursosHumanos_Utilidades.csproj",
+      "packagesPath": "C:\\Users\\Usuario01\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario01\\Documents\\GitHub\\RecursosHumanos\\RecursosHumanos_Utilidades\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Daniel Romero\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Usuario01\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3264,7 +3259,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400-preview.0.24324.5\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
